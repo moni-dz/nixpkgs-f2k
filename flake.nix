@@ -13,7 +13,6 @@
     abstractdark-sddm-theme-src = { url = "github:3ximus/abstractdark-sddm-theme"; flake = false; };
     downloader-cli-src = { url = "github:deepjyoti30/downloader-cli"; flake = false; };
     awesome-src = { url = "github:awesomeWM/awesome"; flake = false; };
-    nixos-wallpapers = { url = "github:fortuneteller2k/nixos-wallpapers"; flake = false; };
     picom-src = { url = "github:yshui/picom"; flake = false; };
     slock-src = { url = "github:khuedoan/slock"; flake = false; };
     xmonad-src = { url = "github:xmonad/xmonad"; flake = false; };
@@ -30,7 +29,6 @@
         iosevka = self.packages.${final.system}.iosevka;
         abstractdark-sddm-theme = self.packages.${final.system}.abstractdark-sddm-theme;
         downloader-cli = self.packages.${final.system}.downloader-cli;
-        nixos-wallpapers = self.packages.${final.system}.nixos-wallpapers;
         kile-wl = self.packages.${final.system}.kile-wl;
         simber = self.packages.${final.system}.simber;
         pydes = self.packages.${final.system}.pydes;
@@ -68,8 +66,6 @@
         defaultPackage = self.packages.${system}.eww;
 
         packages = rec {
-          inherit (args) nixos-wallpapers;
-
           awesome-git = with pkgs; (awesome.overrideAttrs (old: rec {
             src = args.awesome-src;
 

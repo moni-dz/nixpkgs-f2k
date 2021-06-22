@@ -142,22 +142,6 @@
         "type": "gitlab"
       }
     },
-    "nixos-wallpapers": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1623475359,
-        "narHash": "sha256-wWNT91znVL0v4DCH5NmKa7LOjlilp0J20ZFgrfl2/Ok=",
-        "owner": "fortuneteller2k",
-        "repo": "nixos-wallpapers",
-        "rev": "48b66beb37d007d3dfe5a3cc30b29d814719b23f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "fortuneteller2k",
-        "repo": "nixos-wallpapers",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1624377671,
@@ -215,7 +199,6 @@
         "flake-compat": "flake-compat",
         "flake-utils": "flake-utils",
         "kile-wl-src": "kile-wl-src",
-        "nixos-wallpapers": "nixos-wallpapers",
         "nixpkgs": "nixpkgs",
         "picom-src": "picom-src",
         "rust-nightly": "rust-nightly",
