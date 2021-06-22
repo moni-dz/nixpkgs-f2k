@@ -15,3 +15,5 @@ jobs:
         extra_nix_config: |
           experimental-features = nix-command flakes
     - run: nix flake check
+      env:
+        NIXPKGS_ALLOW_BROKEN: "1"

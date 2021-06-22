@@ -1,5 +1,7 @@
 { lib, stdenv, toLuaModule, lua, src }:
 
+
+
 toLuaModule (stdenv.mkDerivation rec {
   pname = "bling";
   version = "unstable";
@@ -19,6 +21,6 @@ toLuaModule (stdenv.mkDerivation rec {
     homepage = "https://blingcorp.github.io/bling/#/";
     license = licenses.mit;
     maintainers = with maintainers; [ fortuneteller2k ];
-    broken = true;
+    broken = builtins.trace "this builds but doesn't work as a module" false;
   };
 })

@@ -51,6 +51,7 @@
       let
         pkgs = import nixpkgs {
           inherit system;
+          allowBroken = true;
           allowUnsupportedSystem = true;
           overlays = [ rust-nightly.overlay ];
         };
