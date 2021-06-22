@@ -126,18 +126,50 @@
         "type": "github"
       }
     },
+    "kile-wl-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1624054348,
+        "narHash": "sha256-FLauEjuXEVcCpy+ZGamb11tjwFpU6t05GZX1z614Mao=",
+        "owner": "snakedye",
+        "repo": "kile",
+        "rev": "de14f434e5dbcbb17560d5890c8a329ac4c617b9",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "snakedye",
+        "repo": "kile",
+        "type": "gitlab"
+      }
+    },
+    "nixos-wallpapers": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623475359,
+        "narHash": "sha256-wWNT91znVL0v4DCH5NmKa7LOjlilp0J20ZFgrfl2/Ok=",
+        "owner": "fortuneteller2k",
+        "repo": "nixos-wallpapers",
+        "rev": "48b66beb37d007d3dfe5a3cc30b29d814719b23f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fortuneteller2k",
+        "repo": "nixos-wallpapers",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1624024598,
-        "narHash": "sha256-X++38oH5MKEmPW4/2WdMaHQvwJzO8pJfbnzMD7DbG1E=",
+        "lastModified": 1624377671,
+        "narHash": "sha256-m4MOSt6wvdkQV5FRstpaxGrWb+cr5V3fNTQHN07EL7I=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "33d42ad7cf2769ce6364ed4e52afa8e9d1439d58",
+        "rev": "c601d56e19dd2ed71b23d8aa76be8437d043d4c5",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-unstable",
+        "ref": "master",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -157,6 +189,22 @@
         "type": "github"
       }
     },
+    "picom-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1624169104,
+        "narHash": "sha256-AGv3kAQbB3ldLpNlNsrgROrZDPwR16239ZEosXAq3hU=",
+        "owner": "yshui",
+        "repo": "picom",
+        "rev": "2a23c2458507ac25b2e6fc4748730dc07c3a8d8b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yshui",
+        "repo": "picom",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "abstractdark-sddm-theme-src": "abstractdark-sddm-theme-src",
@@ -166,8 +214,12 @@
         "eww-src": "eww-src",
         "flake-compat": "flake-compat",
         "flake-utils": "flake-utils",
+        "kile-wl-src": "kile-wl-src",
+        "nixos-wallpapers": "nixos-wallpapers",
         "nixpkgs": "nixpkgs",
+        "picom-src": "picom-src",
         "rust-nightly": "rust-nightly",
+        "slock-src": "slock-src",
         "xmonad-contrib-src": "xmonad-contrib-src",
         "xmonad-src": "xmonad-src",
         "ytmdl-src": "ytmdl-src"
@@ -189,6 +241,22 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "slock-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1618191521,
+        "narHash": "sha256-++R5tTk4nbNo3elzoD2jJbEBAV7gjxUf8Cegeo0fVGA=",
+        "owner": "khuedoan",
+        "repo": "slock",
+        "rev": "37f091cb167f719103ef70baa6b46b95645e5b95",
+        "type": "github"
+      },
+      "original": {
+        "owner": "khuedoan",
+        "repo": "slock",
         "type": "github"
       }
     },

@@ -1,17 +1,21 @@
 {
-  description = "";
+  description = "fortuneteller2k's stash of fresh packages";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/master";
     rust-nightly.url = "github:oxalica/rust-overlay";
     flake-utils.url = "github:numtide/flake-utils";
     flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
 
     bling-src = { url = "github:BlingCorp/bling"; flake = false; };
     eww-src = { url = "github:elkowar/eww"; flake = false; };
+    kile-wl-src = { url = "gitlab:snakedye/kile"; flake = false; };
     abstractdark-sddm-theme-src = { url = "github:3ximus/abstractdark-sddm-theme"; flake = false; };
     downloader-cli-src = { url = "github:deepjyoti30/downloader-cli"; flake = false; };
     awesome-src = { url = "github:awesomeWM/awesome"; flake = false; };
+    nixos-wallpapers = { url = "github:fortuneteller2k/nixos-wallpapers"; flake = false; };
+    picom-src = { url = "github:yshui/picom"; flake = false; };
+    slock-src = { url = "github:khuedoan/slock"; flake = false; };
     xmonad-src = { url = "github:xmonad/xmonad"; flake = false; };
     xmonad-contrib-src = { url = "github:xmonad/xmonad-contrib"; flake = false; };
     ytmdl-src = { url = "github:deepjyoti30/ytmdl"; flake = false; };
@@ -26,9 +30,13 @@
         iosevka = self.packages.${final.system}.iosevka;
         abstractdark-sddm-theme = self.packages.${final.system}.abstractdark-sddm-theme;
         downloader-cli = self.packages.${final.system}.downloader-cli;
+        nixos-wallpapers = self.packages.${final.system}.nixos-wallpapers;
+        kile-wl = self.packages.${final.system}.kile-wl;
         simber = self.packages.${final.system}.simber;
         pydes = self.packages.${final.system}.pydes;
         itunespy = self.packages.${final.system}.itunespy;
+        picom = self.packages.${final.system}.picom;
+        slock = self.packages.${final.system}.slock;
         xmonad = self.packages.${final.system}.xmonad;
         xmonad-contrib = self.packages.${final.system}.xmonad-contrib;
         youtube-search = self.packages.${final.system}.youtube-search;
@@ -60,6 +68,8 @@
         defaultPackage = self.packages.${system}.eww;
 
         packages = rec {
+          inherit (args) nixos-wallpapers;
+
           awesome-git = with pkgs; (awesome.overrideAttrs (old: rec {
             src = args.awesome-src;
 
@@ -83,6 +93,15 @@
           };
 
           iosevka = pkgs.callPackage ./pkgs/iosevka-ft-bin { };
+
+          kile-wl = pkgs.kile-wl.overrideAttrs (old: rec { src = args.kile-wl-src; });
+
+          picom = pkgs.picom.overrideAttrs (old: rec { src = args.picom-src; });
+
+          slock = pkgs.slock.overrideAttrs (old: rec {
+            src = args.slock-src;
+            patches = [ ./patches/slock_patch.diff ];
+          });
 
           abstractdark-sddm-theme = pkgs.callPackage ./pkgs/abstractdark-sddm-theme {
             src = args.abstractdark-sddm-theme-src;
