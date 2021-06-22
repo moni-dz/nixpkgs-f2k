@@ -1,6 +1,4 @@
-{ lib, python3Packages }:
-
-with python3Packages;
+{ lib, python3Packages, buildPythonPackage, fetchPypi, colorama }:
 
 buildPythonPackage rec {
   pname = "simber";

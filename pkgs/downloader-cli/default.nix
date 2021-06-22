@@ -1,6 +1,4 @@
-{ lib, python3Packages, src }:
-
-with python3Packages;
+{ lib, python3Packages, buildPythonPackage, urllib3, src }:
 
 buildPythonPackage rec {
   pname = "downloader-cli";
@@ -11,8 +9,7 @@ buildPythonPackage rec {
   buildInputs = [ urllib3 ];
 
   meta = with lib; {
-    description =
-      "A simple downloader written in Python with an awesome customizable progressbar";
+    description = "A simple downloader written in Python with an awesome customizable progressbar";
     homepage = "https://github.com/deepjyoti30/downloader-cli";
     license = licenses.mit;
     maintainers = with maintainers; [ fortuneteller2k ];

@@ -1,6 +1,4 @@
-{ lib, python3Packages }:
-
-with python3Packages;
+{ lib, python3Packages, buildPythonPackage, fetchPypi }:
 
 buildPythonPackage rec {
   pname = "pyDes";
@@ -12,8 +10,7 @@ buildPythonPackage rec {
   };
 
   meta = with lib; {
-    description =
-      "Pure python implementation of DES and TRIPLE DES encryption algorithm";
+    description = "Pure python implementation of DES and TRIPLE DES encryption algorithm";
     homepage = "https://github.com/twhiteman/pyDes";
     license = licenses.mit;
     maintainers = with maintainers; [ fortuneteller2k ];

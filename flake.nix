@@ -12,6 +12,8 @@
     abstractdark-sddm-theme-src = { url = "github:3ximus/abstractdark-sddm-theme"; flake = false; };
     downloader-cli-src = { url = "github:deepjyoti30/downloader-cli"; flake = false; };
     awesome-src = { url = "github:awesomeWM/awesome"; flake = false; };
+    xmonad-src = { url = "github:xmonad/xmonad"; flake = false; };
+    xmonad-contrib-src = { url = "github:xmonad/xmonad-contrib"; flake = false; };
     ytmdl-src = { url = "github:deepjyoti30/ytmdl"; flake = false; };
   };
 
@@ -27,8 +29,22 @@
         simber = self.packages.${final.system}.simber;
         pydes = self.packages.${final.system}.pydes;
         itunespy = self.packages.${final.system}.itunespy;
+        xmonad = self.packages.${final.system}.xmonad;
+        xmonad-contrib = self.packages.${final.system}.xmonad-contrib;
         youtube-search = self.packages.${final.system}.youtube-search;
         ytmdl = self.packages.${final.system}.ytmdl;
+
+        haskellPackages = prev.haskellPackages.extend (hfinal: hprev: {
+          X11 = hprev.X11_1_10;
+
+          xmonad = prev.haskellPackages.callPackage ./pkgs/xmonad {
+            src = args.xmonad-src;
+          };
+
+          xmonad-contrib = prev.haskellPackages.callPackage ./pkgs/xmonad-contrib {
+            src = args.xmonad-contrib-src;
+          };
+        });
       };
     }
     // flake-utils.lib.eachSystem [ "x86_64-linux" "aarch64-linux" ] (system:
@@ -55,6 +71,7 @@
             gtk3Support = true;
           };
 
+          # FIXME: awesome doesn't detect this
           bling = pkgs.callPackage ./pkgs/bling {
             inherit (pkgs.lua53Packages) lua toLuaModule;
             src = args.bling-src;
@@ -70,21 +87,20 @@
             src = args.abstractdark-sddm-theme-src;
           };
 
-          simber = pkgs.callPackage ./pkgs/simber { };
+          simber = pkgs.python3Packages.callPackage ./pkgs/simber { };
 
-          pydes = pkgs.callPackage ./pkgs/pydes { };
+          pydes = pkgs.python3Packages.callPackage ./pkgs/pydes { };
 
-          downloader-cli = pkgs.callPackage ./pkgs/downloader-cli {
+          downloader-cli = pkgs.python3Packages.callPackage ./pkgs/downloader-cli {
             src = args.downloader-cli-src;
           };
 
-          itunespy = pkgs.callPackage ./pkgs/itunespy { };
+          itunespy = pkgs.python3Packages.callPackage ./pkgs/itunespy { };
 
-          youtube-search = pkgs.callPackage ./pkgs/youtube-search { };
+          youtube-search = pkgs.python3Packages.callPackage ./pkgs/youtube-search { };
 
-          ytmdl = pkgs.callPackage ./pkgs/ytmdl {
+          ytmdl = pkgs.python3Packages.callPackage ./pkgs/ytmdl {
             inherit itunespy simber pydes downloader-cli youtube-search;
-            inherit (pkgs.python3Packages) buildPythonPackage fetchPypi;
             src = args.ytmdl-src;
           };
         };
