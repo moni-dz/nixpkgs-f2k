@@ -19,5 +19,6 @@ toLuaModule (stdenv.mkDerivation rec {
     homepage = "https://blingcorp.github.io/bling/#/";
     license = licenses.mit;
     maintainers = with maintainers; [ fortuneteller2k ];
+    broken = true;
   };
 })
