@@ -7,16 +7,14 @@
 , youtube-search
 , downloader-cli
 , itunespy
+, src
 }:
 
 buildPythonPackage rec {
   pname = "ytmdl";
   version = "2021.3.4";
 
-  src = fetchPypi {
-    inherit pname version;
-    sha256 = "sha256-WFXodF9MHf7/Gz3KJDgZqW6PQtCiP4gphomcJFfJLSI=";
-  };
+  inherit src;
 
   patches = [ ./use-beautifulsoup4.diff ];
 

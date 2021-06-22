@@ -12,6 +12,7 @@
     abstractdark-sddm-theme-src = { url = "github:3ximus/abstractdark-sddm-theme"; flake = false; };
     downloader-cli-src = { url = "github:deepjyoti30/downloader-cli"; flake = false; };
     awesome-src = { url = "github:awesomeWM/awesome"; flake = false; };
+    ytmdl-src = { url = "github:deepjyoti30/ytmdl"; flake = false; };
   };
 
   outputs = args@{ self, flake-utils, nixpkgs, rust-nightly, ... }:
@@ -84,6 +85,7 @@
           ytmdl = pkgs.callPackage ./pkgs/ytmdl {
             inherit itunespy simber pydes downloader-cli youtube-search;
             inherit (pkgs.python3Packages) buildPythonPackage fetchPypi;
+            src = args.ytmdl-src;
           };
         };
       }

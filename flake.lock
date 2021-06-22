@@ -167,7 +167,8 @@
         "flake-compat": "flake-compat",
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs",
-        "rust-nightly": "rust-nightly"
+        "rust-nightly": "rust-nightly",
+        "ytmdl-src": "ytmdl-src"
       }
     },
     "rust-nightly": {
@@ -186,6 +187,22 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "ytmdl-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1622118127,
+        "narHash": "sha256-+KTENGajlZgBfGJ1imYsGXMV4rgjrynGAsfmveOiLl4=",
+        "owner": "deepjyoti30",
+        "repo": "ytmdl",
+        "rev": "ded7857acad0fb5774d46e397d2e90bc75af5132",
+        "type": "github"
+      },
+      "original": {
+        "owner": "deepjyoti30",
+        "repo": "ytmdl",
         "type": "github"
       }
     }
