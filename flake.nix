@@ -61,12 +61,15 @@
           allowUnsupportedSystem = true;
           overlays = [ rust-nightly.overlay ];
         };
+
+        version = "unstable";
       in
       {
         defaultPackage = self.packages.${system}.eww;
 
         packages = rec {
           awesome-git = with pkgs; (awesome.overrideAttrs (old: rec {
+            inherit version;
             src = args.awesome-src;
 
             GI_TYPELIB_PATH = "${playerctl}/lib/girepository-1.0:"
@@ -90,11 +93,18 @@
 
           iosevka = pkgs.callPackage ./pkgs/iosevka-ft-bin { };
 
-          kile-wl = pkgs.kile-wl.overrideAttrs (old: rec { src = args.kile-wl-src; });
+          kile-wl = pkgs.kile-wl.overrideAttrs (old: rec {
+            inherit version;
+            src = args.kile-wl-src;
+          });
 
-          picom = pkgs.picom.overrideAttrs (old: rec { src = args.picom-src; });
+          picom = pkgs.picom.overrideAttrs (old: rec {
+            inherit version;
+            src = args.picom-src;
+          });
 
           slock = pkgs.slock.overrideAttrs (old: rec {
+            inherit version;
             src = args.slock-src;
             patches = [ ./patches/slock_patch.diff ];
           });
