@@ -26,17 +26,15 @@
         awesome-git = self.packages.${final.system}.awesome-git;
         bling = self.packages.${final.system}.bling;
         eww = self.packages.${final.system}.eww;
-        iosevka = self.packages.${final.system}.iosevka;
+        iosevka-ft-bin = self.packages.${final.system}.iosevka;
         abstractdark-sddm-theme = self.packages.${final.system}.abstractdark-sddm-theme;
         downloader-cli = self.packages.${final.system}.downloader-cli;
-        kile-wl = self.packages.${final.system}.kile-wl;
+        kile-wl-git = self.packages.${final.system}.kile-wl;
         simber = self.packages.${final.system}.simber;
         pydes = self.packages.${final.system}.pydes;
         itunespy = self.packages.${final.system}.itunespy;
-        picom = self.packages.${final.system}.picom;
-        slock = self.packages.${final.system}.slock;
-        xmonad = self.packages.${final.system}.xmonad;
-        xmonad-contrib = self.packages.${final.system}.xmonad-contrib;
+        picom-git = self.packages.${final.system}.picom;
+        slock-fancy = self.packages.${final.system}.slock;
         youtube-search = self.packages.${final.system}.youtube-search;
         ytmdl = self.packages.${final.system}.ytmdl;
 
