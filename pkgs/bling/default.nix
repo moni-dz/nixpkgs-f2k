@@ -1,4 +1,4 @@
-{ lib, stdenv, toLuaModule, lua, src }:
+{ lib, stdenv, toLuaModule, luaPackages, src }:
 
 toLuaModule (stdenv.mkDerivation rec {
   pname = "bling";
@@ -6,12 +6,11 @@ toLuaModule (stdenv.mkDerivation rec {
 
   inherit src;
 
-  buildInputs = [ lua ];
+  buildInputs = [ luaPackages.lua ];
 
   installPhase = ''
-    mkdir -p $out/lib/lua/${lua.luaversion}/
-    cp -r . $out/lib/lua/${lua.luaversion}/${pname}/
-    printf "package.path = '$out/lib/lua/${lua.luaversion}/${pname}/init.lua;' ..  package.path\nreturn require((...) .. '.init')\n" > $out/lib/lua/${lua.luaversion}/${pname}.lua
+    mkdir -p $out/lib/lua/${luaPackages.lua.luaversion}/${pname}
+    cp -r . $out/lib/lua/${luaPackages.lua.luaversion}/${pname}
   '';
 
   meta = with lib; {

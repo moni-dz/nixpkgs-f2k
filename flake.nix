@@ -35,7 +35,6 @@
       let
         pkgs = import nixpkgs {
           inherit system;
-          allowUnsupportedSystem = true;
           overlays = [ rust-nightly.overlay ];
         };
       in
@@ -54,9 +53,8 @@
             luaPackages = pkgs.lua52Packages;
             gtk3Support = true;
           };
-
-          bling = pkgs.callPackage ./pkgs/bling {
-            inherit (pkgs.lua53Packages) lua toLuaModule;
+          
+          bling = pkgs.lua52Packages.callPackage ./pkgs/bling {
             src = args.bling-src;
           };
 
