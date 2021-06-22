@@ -5,6 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     rust-nightly.url = "github:oxalica/rust-overlay";
     flake-utils.url = "github:numtide/flake-utils";
+    flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
 
     bling-src = { url = "github:BlingCorp/bling"; flake = false; };
     eww-src = { url = "github:elkowar/eww"; flake = false; };
