@@ -11,7 +11,7 @@ toLuaModule (stdenv.mkDerivation rec {
   installPhase = ''
     mkdir -p $out/lib/lua/${lua.luaversion}/
     cp -r . $out/lib/lua/${lua.luaversion}/bling/
-    printf "package.path = '$out/lib/lua/${lua.luaversion}/?/init.lua;' ..  package.path\nreturn require((...) .. '.init')\n" > $out/lib/lua/${lua.luaversion}/bling.lua
+    printf "package.path = '$out/lib/lua/${lua.luaversion}/bling/init.lua;' ..  package.path\nreturn require((...) .. '.init')\n" > $out/lib/lua/${lua.luaversion}/bling.lua
   '';
 
   meta = with lib; {
