@@ -17,6 +17,8 @@
     awesome-src = { url = "github:awesomeWM/awesome"; flake = false; };
     picom-src = { url = "github:yshui/picom"; flake = false; };
     slock-src = { url = "github:khuedoan/slock"; flake = false; };
+    sway-src = { url = "github:swaywm/sway"; flake = false; };
+    wlroots-src = { url = "github:swaywm/wlroots"; flake = false; };
     xmonad-src = { url = "github:xmonad/xmonad"; flake = false; };
     xmonad-contrib-src = { url = "github:xmonad/xmonad-contrib"; flake = false; };
     ytmdl-src = { url = "github:deepjyoti30/ytmdl"; flake = false; };
@@ -39,6 +41,8 @@
         itunespy = self.packages.${final.system}.itunespy;
         picom-git = self.packages.${final.system}.picom-git;
         slock-fancy = self.packages.${final.system}.slock-fancy;
+        sway-unwrapped-git = self.packages.${final.system}.sway-git;
+        wlroots-git = self.packages.${final.system}.wlroots-git;
         youtube-search = self.packages.${final.system}.youtube-search;
         ytmdl = self.packages.${final.system}.ytmdl;
 
@@ -141,6 +145,22 @@
             inherit version;
             src = args.slock-src;
             patches = [ ./patches/slock_patch.diff ];
+          });
+
+          sway-unwrapped-git = (pkgs.sway-unwrapped.overrideAttrs (_: {
+            inherit version;
+            src = args.sway-src;
+          })).override {
+            wlroots = wlroots-git;
+          };
+
+          wlroots-git = pkgs.wlroots.overrideAttrs (old: {
+            inherit version;
+            src = args.wlroots-src;
+
+            buildInputs = (old.buildInputs or [ ]) ++ (with pkgs; [
+              libseat
+            ]);
           });
 
           abstractdark-sddm-theme = pkgs.callPackage ./pkgs/abstractdark-sddm-theme {
