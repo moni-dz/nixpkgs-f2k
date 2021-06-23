@@ -17,7 +17,6 @@
     awesome-src = { url = "github:awesomeWM/awesome"; flake = false; };
     picom-src = { url = "github:yshui/picom"; flake = false; };
     slock-src = { url = "github:khuedoan/slock"; flake = false; };
-    wezterm-src = { url = "github:wez/wezterm"; flake = false; submodules = true; };
     xmonad-src = { url = "github:xmonad/xmonad"; flake = false; };
     xmonad-contrib-src = { url = "github:xmonad/xmonad-contrib"; flake = false; };
     ytmdl-src = { url = "github:deepjyoti30/ytmdl"; flake = false; };
@@ -40,7 +39,6 @@
         itunespy = self.packages.${final.system}.itunespy;
         picom-git = self.packages.${final.system}.picom-git;
         slock-fancy = self.packages.${final.system}.slock-fancy;
-        wezterm-git = self.packages.${final.system}.wezterm-git;
         youtube-search = self.packages.${final.system}.youtube-search;
         ytmdl = self.packages.${final.system}.ytmdl;
 
@@ -158,16 +156,6 @@
           };
 
           itunespy = pkgs.python3Packages.callPackage ./pkgs/itunespy { };
-
-          wezterm-git = pkgs.wezterm.overrideAttrs (old: rec {
-            inherit version;
-            src = args.wezterm-src;
-
-            cargoDeps = old.cargoDeps.overrideAttrs (_: {
-              inherit src;
-              outputHash = "sha256-/FAplcGzFk0gy9Iz6dOUaDzzYSev/sgiCyr3VmETOC8=";
-            });
-          });
 
           youtube-search = pkgs.python3Packages.callPackage ./pkgs/youtube-search { };
 

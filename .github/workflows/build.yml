@@ -27,4 +27,4 @@ jobs:
         name: fortuneteller2k
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
     # Packages that compile like snails
-    - run: nix build -L .#eww .#awesome-git .#kile-wl-git .#picom-git .#alacritty-ligatures .#wezterm-git
+    - run: nix build -L .#eww .#awesome-git .#kile-wl-git .#picom-git .#alacritty-ligatures
