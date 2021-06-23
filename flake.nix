@@ -17,7 +17,7 @@
     awesome-src = { url = "github:awesomeWM/awesome"; flake = false; };
     picom-src = { url = "github:yshui/picom"; flake = false; };
     slock-src = { url = "github:khuedoan/slock"; flake = false; };
-    wezterm-src = { url = "github:wez/wezterm"; flake = false; };
+    wezterm-src = { url = "github:wez/wezterm"; flake = false; submodules = true; };
     xmonad-src = { url = "github:xmonad/xmonad"; flake = false; };
     xmonad-contrib-src = { url = "github:xmonad/xmonad-contrib"; flake = false; };
     ytmdl-src = { url = "github:deepjyoti30/ytmdl"; flake = false; };
