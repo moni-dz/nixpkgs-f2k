@@ -12,6 +12,7 @@
     kile-wl-src = { url = "gitlab:snakedye/kile"; flake = false; };
     abstractdark-sddm-theme-src = { url = "github:3ximus/abstractdark-sddm-theme"; flake = false; };
     downloader-cli-src = { url = "github:deepjyoti30/downloader-cli"; flake = false; };
+    river-src = { url = "github:ifreund/river"; flake = false; };
     awesome-src = { url = "github:awesomeWM/awesome"; flake = false; };
     picom-src = { url = "github:yshui/picom"; flake = false; };
     slock-src = { url = "github:khuedoan/slock"; flake = false; };
@@ -24,17 +25,19 @@
     {
       overlay = final: prev: {
         awesome-git = self.packages.${final.system}.awesome-git;
+        alacritty-ligatures = self.packages.${final.system}.alacritty-ligatures;
         bling = self.packages.${final.system}.bling;
         eww = self.packages.${final.system}.eww;
-        iosevka-ft-bin = self.packages.${final.system}.iosevka;
+        iosevka-ft-bin = self.packages.${final.system}.iosevka-ft-bin;
+        river-git = self.packages.${final.system}.river-git;
         abstractdark-sddm-theme = self.packages.${final.system}.abstractdark-sddm-theme;
         downloader-cli = self.packages.${final.system}.downloader-cli;
-        kile-wl-git = self.packages.${final.system}.kile-wl;
+        kile-wl-git = self.packages.${final.system}.kile-wl-git;
         simber = self.packages.${final.system}.simber;
         pydes = self.packages.${final.system}.pydes;
         itunespy = self.packages.${final.system}.itunespy;
-        picom-git = self.packages.${final.system}.picom;
-        slock-fancy = self.packages.${final.system}.slock;
+        picom-git = self.packages.${final.system}.picom-git;
+        slock-fancy = self.packages.${final.system}.slock-fancy;
         youtube-search = self.packages.${final.system}.youtube-search;
         ytmdl = self.packages.${final.system}.ytmdl;
 
@@ -79,6 +82,37 @@
             gtk3Support = true;
           };
 
+          alacritty-ligatures = with pkgs; (alacritty.overrideAttrs (old: rec {
+            src = fetchFromGitHub {
+              owner = "zenixls2";
+              repo = old.pname;
+              rev = "3ed043046fc74f288d4c8fa7e4463dc201213500";
+              sha256 = "sha256-1dGk4ORzMSUQhuKSt5Yo7rOJCJ5/folwPX2tLiu0suA=";
+            };
+
+            postInstall = ''
+              install -D extra/linux/Alacritty.desktop -t $out/share/applications/
+              install -D extra/logo/compat/alacritty-term.svg $out/share/icons/hicolor/scalable/apps/Alacritty.svg
+              strip -S $out/bin/alacritty
+              patchelf --set-rpath "${lib.makeLibraryPath old.buildInputs}:${stdenv.cc.cc.lib}/lib${lib.optionalString stdenv.is64bit "64"}" $out/bin/alacritty
+              installShellCompletion --zsh extra/completions/_alacritty
+              installShellCompletion --bash extra/completions/alacritty.bash
+              installShellCompletion --fish extra/completions/alacritty.fish
+              install -dm755 "$out/share/man/man1"
+              gzip -c extra/alacritty.man > "$out/share/man/man1/alacritty.1.gz"
+              install -Dm644 alacritty.yml $out/share/doc/alacritty.yml
+              install -dm755 "$terminfo/share/terminfo/a/"
+              tic -xe alacritty,alacritty-direct -o "$terminfo/share/terminfo" extra/alacritty.info
+              mkdir -p $out/nix-support
+              echo "$terminfo" >> $out/nix-support/propagated-user-env-packages
+            '';
+
+            cargoDeps = old.cargoDeps.overrideAttrs (_: {
+              inherit src;
+              outputHash = "sha256-Oc5DdthZqSd0Dc6snE3/WAa19+vOe6wkXkR8d6uPWJo=";
+            });
+          }));
+
           # FIXME: awesome doesn't detect this
           bling = pkgs.callPackage ./pkgs/bling {
             inherit (pkgs.lua53Packages) lua toLuaModule;
@@ -89,19 +123,24 @@
             src = args.eww-src;
           };
 
-          iosevka = pkgs.callPackage ./pkgs/iosevka-ft-bin { };
+          iosevka-ft-bin = pkgs.callPackage ./pkgs/iosevka-ft-bin { };
 
-          kile-wl = pkgs.kile-wl.overrideAttrs (old: rec {
+          kile-wl-git = pkgs.kile-wl.overrideAttrs (_: rec {
             inherit version;
             src = args.kile-wl-src;
           });
 
-          picom = pkgs.picom.overrideAttrs (old: rec {
+          picom-git = pkgs.picom.overrideAttrs (_: rec {
             inherit version;
             src = args.picom-src;
           });
 
-          slock = pkgs.slock.overrideAttrs (old: rec {
+          river-git = pkgs.river.overrideAttrs (_: rec {
+            inherit version;
+            src = args.river-src;
+          });
+
+          slock-fancy = pkgs.slock.overrideAttrs (_: rec {
             inherit version;
             src = args.slock-src;
             patches = [ ./patches/slock_patch.diff ];
