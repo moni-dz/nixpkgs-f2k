@@ -16,6 +16,23 @@
         "type": "github"
       }
     },
+    "alacritty-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1612842776,
+        "narHash": "sha256-1dGk4ORzMSUQhuKSt5Yo7rOJCJ5/folwPX2tLiu0suA=",
+        "owner": "zenixls2",
+        "repo": "alacritty",
+        "rev": "3ed043046fc74f288d4c8fa7e4463dc201213500",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zenixls2",
+        "ref": "ligature",
+        "repo": "alacritty",
+        "type": "github"
+      }
+    },
     "awesome-src": {
       "flake": false,
       "locked": {
@@ -144,11 +161,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1624416471,
-        "narHash": "sha256-DrwnALZsx9Kknb75mz3vo8PKriaoeIJjDUJFJy0R8ps=",
+        "lastModified": 1624417387,
+        "narHash": "sha256-jg0MWJu1RIErJB831iEUW24syzFZDQsOgNRKUV8nDKw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "f64fb8bd312afc7c05c955a9e5afafbd5cb3d85b",
+        "rev": "0ff9967dac0c2184cb171e058d8093af8cd4367f",
         "type": "github"
       },
       "original": {
@@ -208,6 +225,7 @@
     "root": {
       "inputs": {
         "abstractdark-sddm-theme-src": "abstractdark-sddm-theme-src",
+        "alacritty-src": "alacritty-src",
         "awesome-src": "awesome-src",
         "bling-src": "bling-src",
         "downloader-cli-src": "downloader-cli-src",
@@ -220,6 +238,7 @@
         "river-src": "river-src",
         "rust-nightly": "rust-nightly",
         "slock-src": "slock-src",
+        "wezterm-src": "wezterm-src",
         "xmonad-contrib-src": "xmonad-contrib-src",
         "xmonad-src": "xmonad-src",
         "ytmdl-src": "ytmdl-src"
@@ -257,6 +276,22 @@
       "original": {
         "owner": "khuedoan",
         "repo": "slock",
+        "type": "github"
+      }
+    },
+    "wezterm-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1624419591,
+        "narHash": "sha256-zuAZfm/XM2iQP32OqPoNpPpOzSv1+KW8iFY7QGPBlEI=",
+        "owner": "wez",
+        "repo": "wezterm",
+        "rev": "ea95f3f73538f2160406c2033ed4c552d0760110",
+        "type": "github"
+      },
+      "original": {
+        "owner": "wez",
+        "repo": "wezterm",
         "type": "github"
       }
     },

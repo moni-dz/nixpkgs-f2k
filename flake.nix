@@ -159,9 +159,14 @@
 
           itunespy = pkgs.python3Packages.callPackage ./pkgs/itunespy { };
 
-          wezterm-git = pkgs.wezterm.overrideAttrs (_: {
+          wezterm-git = pkgs.wezterm.overrideAttrs (old: rec {
             inherit version;
             src = args.wezterm-src;
+
+            cargoDeps = old.cargoDeps.overrideAttrs (_: {
+              inherit src;
+              outputHash = "sha256-/FAplcGzFk0gy9Iz6dOUaDzzYSev/sgiCyr3VmETOC8=";
+            });
           });
 
           youtube-search = pkgs.python3Packages.callPackage ./pkgs/youtube-search { };
