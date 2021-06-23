@@ -11,11 +11,13 @@
     eww-src = { url = "github:elkowar/eww"; flake = false; };
     kile-wl-src = { url = "gitlab:snakedye/kile"; flake = false; };
     abstractdark-sddm-theme-src = { url = "github:3ximus/abstractdark-sddm-theme"; flake = false; };
+    alacritty-src = { url = "github:zenixls2/alacritty/ligature"; flake = false; };
     downloader-cli-src = { url = "github:deepjyoti30/downloader-cli"; flake = false; };
     river-src = { url = "github:ifreund/river"; flake = false; };
     awesome-src = { url = "github:awesomeWM/awesome"; flake = false; };
     picom-src = { url = "github:yshui/picom"; flake = false; };
     slock-src = { url = "github:khuedoan/slock"; flake = false; };
+    wezterm-src = { url = "github:wez/wezterm"; flake = false; };
     xmonad-src = { url = "github:xmonad/xmonad"; flake = false; };
     xmonad-contrib-src = { url = "github:xmonad/xmonad-contrib"; flake = false; };
     ytmdl-src = { url = "github:deepjyoti30/ytmdl"; flake = false; };
@@ -38,6 +40,7 @@
         itunespy = self.packages.${final.system}.itunespy;
         picom-git = self.packages.${final.system}.picom-git;
         slock-fancy = self.packages.${final.system}.slock-fancy;
+        wezterm-git = self.packages.${final.system}.wezterm-git;
         youtube-search = self.packages.${final.system}.youtube-search;
         ytmdl = self.packages.${final.system}.ytmdl;
 
@@ -84,12 +87,7 @@
           };
 
           alacritty-ligatures = with pkgs; (alacritty.overrideAttrs (old: rec {
-            src = fetchFromGitHub {
-              owner = "zenixls2";
-              repo = old.pname;
-              rev = "3ed043046fc74f288d4c8fa7e4463dc201213500";
-              sha256 = "sha256-1dGk4ORzMSUQhuKSt5Yo7rOJCJ5/folwPX2tLiu0suA=";
-            };
+            src = args.alacritty-src;
 
             postInstall = ''
               install -D extra/linux/Alacritty.desktop -t $out/share/applications/
@@ -160,6 +158,11 @@
           };
 
           itunespy = pkgs.python3Packages.callPackage ./pkgs/itunespy { };
+
+          wezterm-git = pkgs.wezterm.overrideAttrs (_: {
+            inherit version;
+            src = args.wezterm-src;
+          });
 
           youtube-search = pkgs.python3Packages.callPackage ./pkgs/youtube-search { };
 
