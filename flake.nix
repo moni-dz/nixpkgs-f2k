@@ -41,7 +41,7 @@
         youtube-search = self.packages.${final.system}.youtube-search;
         ytmdl = self.packages.${final.system}.ytmdl;
 
-        haskellPackages = prev.haskellPackages.extend (hfinal: hprev: {
+        haskellPackages = prev.haskellPackages.extend (hfinal: hprev: rec {
           X11 = hprev.X11_1_10;
 
           xmonad = prev.haskellPackages.callPackage ./pkgs/xmonad {
@@ -49,6 +49,7 @@
           };
 
           xmonad-contrib = prev.haskellPackages.callPackage ./pkgs/xmonad-contrib {
+            inherit xmonad;
             src = args.xmonad-contrib-src;
           };
         });
