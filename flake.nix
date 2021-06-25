@@ -160,7 +160,7 @@
             src = args.wlroots-src;
 
             buildInputs = (old.buildInputs or [ ]) ++ (with pkgs; [
-              libseat
+              seatd
             ]);
           });
 
