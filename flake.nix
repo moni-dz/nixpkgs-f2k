@@ -7,6 +7,7 @@
     flake-utils.url = "github:numtide/flake-utils";
     flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
 
+    # Equivalent to multiple fetchFromGit[Hub/Lab] invocations
     bling-src = { url = "github:BlingCorp/bling"; flake = false; };
     eww-src = { url = "github:elkowar/eww"; flake = false; };
     kile-wl-src = { url = "gitlab:snakedye/kile"; flake = false; };
@@ -69,7 +70,7 @@
           overlays = [ rust-nightly.overlay ];
         };
 
-        version = "unstable";
+        version = "999-unstable";
       in
       {
         defaultPackage = self.packages.${system}.eww;
