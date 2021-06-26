@@ -3,9 +3,10 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/master";
+    # NOTE: remove when meson has advanced to 0.58.1 in master
+    meson058.url = "github:jtojnar/nixpkgs/meson-0.58";
     rust-nightly.url = "github:oxalica/rust-overlay";
     flake-utils.url = "github:numtide/flake-utils";
-    flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
 
     # Equivalent to multiple fetchFromGit[Hub/Lab] invocations
     bling-src = { url = "github:BlingCorp/bling"; flake = false; };
@@ -25,7 +26,7 @@
     ytmdl-src = { url = "github:deepjyoti30/ytmdl"; flake = false; };
   };
 
-  outputs = args@{ self, flake-utils, nixpkgs, rust-nightly, ... }:
+  outputs = args@{ self, flake-utils, nixpkgs, rust-nightly, meson058, ... }:
     {
       overlay = final: prev: {
         awesome-git = self.packages.${final.system}.awesome-git;
@@ -71,6 +72,8 @@
         };
 
         version = "999-unstable";
+
+        mesonPkgs = import meson058 { inherit system; };
       in
       {
         defaultPackage = self.packages.${system}.eww;
@@ -155,14 +158,16 @@
             wlroots = wlroots-git;
           };
 
-          wlroots-git = pkgs.wlroots.overrideAttrs (old: {
+          wlroots-git = (pkgs.wlroots.overrideAttrs (old: {
             inherit version;
             src = args.wlroots-src;
 
             buildInputs = (old.buildInputs or [ ]) ++ (with pkgs; [
               seatd
             ]);
-          });
+          })).override {
+            inherit (mesonPkgs) meson;
+          };
 
           abstractdark-sddm-theme = pkgs.callPackage ./pkgs/abstractdark-sddm-theme {
             src = args.abstractdark-sddm-theme-src;
