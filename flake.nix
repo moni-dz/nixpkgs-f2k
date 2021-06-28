@@ -8,48 +8,66 @@
     rust-nightly.url = "github:oxalica/rust-overlay";
     flake-utils.url = "github:numtide/flake-utils";
 
-    # Equivalent to multiple fetchFromGit[Hub/Lab] invocations
-    bling-src = { url = "github:BlingCorp/bling"; flake = false; };
-    eww-src = { url = "github:elkowar/eww"; flake = false; };
-    kile-wl-src = { url = "gitlab:snakedye/kile"; flake = false; };
+    ### Equivalent to multiple fetchFromGit[Hub/Lab] invocations
+
+    # Themes
     abstractdark-sddm-theme-src = { url = "github:3ximus/abstractdark-sddm-theme"; flake = false; };
+
+    # Programs
     alacritty-src = { url = "github:zenixls2/alacritty/ligature"; flake = false; };
     downloader-cli-src = { url = "github:deepjyoti30/downloader-cli"; flake = false; };
-    river-src = { url = "github:ifreund/river"; flake = false; };
-    awesome-src = { url = "github:awesomeWM/awesome"; flake = false; };
-    picom-src = { url = "github:yshui/picom"; flake = false; };
     slock-src = { url = "github:khuedoan/slock"; flake = false; };
-    sway-src = { url = "github:swaywm/sway"; flake = false; };
-    wlroots-src = { url = "github:swaywm/wlroots"; flake = false; };
     weechat-src = { url = "github:weechat/weechat"; flake = false; };
+    ytmdl-src = { url = "github:deepjyoti30/ytmdl"; flake = false; };
+
+    # Utilities
+    bling-src = { url = "github:BlingCorp/bling"; flake = false; };
+    eww-src = { url = "github:elkowar/eww"; flake = false; };
+
+    # X11
+    awesome-src = { url = "github:awesomeWM/awesome"; flake = false; };
     xmonad-src = { url = "github:xmonad/xmonad"; flake = false; };
     xmonad-contrib-src = { url = "github:xmonad/xmonad-contrib"; flake = false; };
-    ytmdl-src = { url = "github:deepjyoti30/ytmdl"; flake = false; };
+    picom-src = { url = "github:yshui/picom"; flake = false; };
+
+    # Wayland
+    kile-wl-src = { url = "gitlab:snakedye/kile"; flake = false; };
+    river-src = { url = "github:ifreund/river"; flake = false; };
+    sway-src = { url = "github:swaywm/sway"; flake = false; };
+    wlroots-src = { url = "github:swaywm/wlroots"; flake = false; };
+    xdpw-src = { url = "github:emersion/xdg-desktop-portal-wlr"; flake = false; };
   };
 
   outputs = args@{ self, flake-utils, nixpkgs, rust-nightly, meson058, ... }:
     {
       overlay = final: prev: {
         inherit (self.packages.${final.system})
-          awesome-git
-          alacritty-ligatures
-          bling
-          eww
-          iosevka-ft-bin
-          river-git
+        # Themes
           abstractdark-sddm-theme
-          downloader-cli
-          kile-wl-git
-          simber
+        # Programs
+          alacritty-ligatures
           pydes
-          itunespy
-          picom-git
-          slock-fancy
-          sway-unwrapped-git
-          wlroots-git
+          simber
           weechat-unwrapped-git
           youtube-search
-          ytmdl;
+          ytmdl
+        # Utilities
+          downloader-cli
+          itunespy
+          eww
+        # X11
+          awesome-git
+          bling
+          picom-git
+          slock-fancy
+        # Wayland
+          kile-wl-git
+          river-git
+          sway-unwrapped-git
+          wlroots-git
+          xdg-desktop-portal-wlr-git
+        # Fonts
+          iosevka-ft-bin;
 
         haskellPackages = prev.haskellPackages.extend (hfinal: hprev: rec {
           X11 = hprev.X11_1_10;
@@ -187,10 +205,16 @@
           pydes = pkgs.python3Packages.callPackage ./pkgs/pydes { };
 
           downloader-cli = pkgs.python3Packages.callPackage ./pkgs/downloader-cli {
+            inherit version;
             src = args.downloader-cli-src;
           };
 
           itunespy = pkgs.python3Packages.callPackage ./pkgs/itunespy { };
+
+          xdg-desktop-portal-wlr-git = pkgs.xdg-desktop-portal-wlr.overrideAttrs (_: {
+            inherit version;
+            src = args.xdpw-src;
+          });
 
           youtube-search = pkgs.python3Packages.callPackage ./pkgs/youtube-search { };
 
