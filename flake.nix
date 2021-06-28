@@ -21,6 +21,7 @@
     slock-src = { url = "github:khuedoan/slock"; flake = false; };
     sway-src = { url = "github:swaywm/sway"; flake = false; };
     wlroots-src = { url = "github:swaywm/wlroots"; flake = false; };
+    weechat-src = { url = "github:weechat/weechat"; flake = false; };
     xmonad-src = { url = "github:xmonad/xmonad"; flake = false; };
     xmonad-contrib-src = { url = "github:xmonad/xmonad-contrib"; flake = false; };
     ytmdl-src = { url = "github:deepjyoti30/ytmdl"; flake = false; };
@@ -29,24 +30,25 @@
   outputs = args@{ self, flake-utils, nixpkgs, rust-nightly, meson058, ... }:
     {
       overlay = final: prev: {
-        awesome-git = self.packages.${final.system}.awesome-git;
-        alacritty-ligatures = self.packages.${final.system}.alacritty-ligatures;
-        bling = self.packages.${final.system}.bling;
-        eww = self.packages.${final.system}.eww;
-        iosevka-ft-bin = self.packages.${final.system}.iosevka-ft-bin;
-        river-git = self.packages.${final.system}.river-git;
-        abstractdark-sddm-theme = self.packages.${final.system}.abstractdark-sddm-theme;
-        downloader-cli = self.packages.${final.system}.downloader-cli;
-        kile-wl-git = self.packages.${final.system}.kile-wl-git;
-        simber = self.packages.${final.system}.simber;
-        pydes = self.packages.${final.system}.pydes;
-        itunespy = self.packages.${final.system}.itunespy;
-        picom-git = self.packages.${final.system}.picom-git;
-        slock-fancy = self.packages.${final.system}.slock-fancy;
-        sway-unwrapped-git = self.packages.${final.system}.sway-git;
-        wlroots-git = self.packages.${final.system}.wlroots-git;
-        youtube-search = self.packages.${final.system}.youtube-search;
-        ytmdl = self.packages.${final.system}.ytmdl;
+        inherit (self.packages.${final.system})
+          awesome-git
+          alacritty-ligatures
+          bling
+          eww
+          iosevka-ft-bin
+          river-git
+          abstractdark-sddm-theme
+          downloader-cli
+          kile-wl-git
+          simber
+          pydes
+          itunespy
+          picom-git
+          slock-fancy
+          sway-unwrapped-git
+          wlroots-git
+          youtube-search
+          ytmdl;
 
         haskellPackages = prev.haskellPackages.extend (hfinal: hprev: rec {
           X11 = hprev.X11_1_10;
@@ -168,6 +170,11 @@
           })).override {
             inherit (mesonPkgs) meson;
           };
+
+          weechat-unwrapped-git = pkgs.weechat-unwrapped.overrideAttrs (_: {
+            inherit version;
+            src = args.weechat-src;
+          });
 
           abstractdark-sddm-theme = pkgs.callPackage ./pkgs/abstractdark-sddm-theme {
             src = args.abstractdark-sddm-theme-src;
