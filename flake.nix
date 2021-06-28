@@ -47,6 +47,7 @@
           slock-fancy
           sway-unwrapped-git
           wlroots-git
+          weechat-unwrapped-git
           youtube-search
           ytmdl;
 
@@ -174,6 +175,7 @@
           weechat-unwrapped-git = pkgs.weechat-unwrapped.overrideAttrs (_: {
             inherit version;
             src = args.weechat-src;
+            patches = [ ];
           });
 
           abstractdark-sddm-theme = pkgs.callPackage ./pkgs/abstractdark-sddm-theme {
