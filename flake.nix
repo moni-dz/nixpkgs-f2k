@@ -7,6 +7,7 @@
     meson058.url = "github:jtojnar/nixpkgs/meson-0.58";
     rust-nightly.url = "github:oxalica/rust-overlay";
     flake-utils.url = "github:numtide/flake-utils";
+    flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
 
     ### Equivalent to multiple fetchFromGit[Hub/Lab] invocations
 
@@ -42,31 +43,31 @@
     {
       overlay = final: prev: {
         inherit (self.packages.${final.system})
-        # Themes
+          # Themes
           abstractdark-sddm-theme
-        # Programs
+          # Programs
           alacritty-ligatures
           pydes
           simber
           weechat-unwrapped-git
           youtube-search
           ytmdl
-        # Utilities
+          # Utilities
           downloader-cli
           itunespy
           eww
-        # X11
+          # X11
           awesome-git
           bling
           picom-git
           slock-fancy
-        # Wayland
+          # Wayland
           kile-wl-git
           river-git
           sway-unwrapped-git
           wlroots-git
           xdg-desktop-portal-wlr-git
-        # Fonts
+          # Fonts
           iosevka-ft-bin;
 
         haskellPackages = prev.haskellPackages.extend (hfinal: hprev: rec {
@@ -205,7 +206,6 @@
           pydes = pkgs.python3Packages.callPackage ./pkgs/pydes { };
 
           downloader-cli = pkgs.python3Packages.callPackage ./pkgs/downloader-cli {
-            inherit version;
             src = args.downloader-cli-src;
           };
 
