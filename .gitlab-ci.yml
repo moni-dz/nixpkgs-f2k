@@ -2,7 +2,7 @@ image: nixpkgs/nix-flakes:latest
 
 build:
   before_script:
-    - nix-env -iA nixpkgs.cachix nixpkgs.bash
+    - nix --experimental-features ca-references profile install nixpkgs#cachix nixpkgs#bash
     - cachix authtoken "$CACHIX_AUTH_TOKEN"
     - cachix use fortuneteller2k
     - nix path-info --all > /tmp/store-path-pre-build
