@@ -184,6 +184,7 @@
             inherit version;
             src = args.sway-src;
           })).override {
+            inherit (mesonPkgs) meson;
             wlroots = wlroots-git;
           };
 
