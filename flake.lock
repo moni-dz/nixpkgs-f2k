@@ -177,11 +177,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1625101435,
-        "narHash": "sha256-6sHWsxsJ3q8rpBvc/E1OPtRuLwrNeDWIUjKeaZUxL7w=",
+        "lastModified": 1625125698,
+        "narHash": "sha256-ykd58lbM3ink4NNWmnPLNg9GwFpO2WhvzcCMPPhbwjI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "993a67821705151cf0a196581b3bbabfeb14560b",
+        "rev": "2d03841467e0b5ef11ca0b0cd1e239041d9466af",
         "type": "github"
       },
       "original": {
@@ -261,8 +261,7 @@
         "xdpw-src": "xdpw-src",
         "xmonad-contrib-src": "xmonad-contrib-src",
         "xmonad-src": "xmonad-src",
-        "ytmdl-src": "ytmdl-src",
-        "zig-src": "zig-src"
+        "ytmdl-src": "ytmdl-src"
       }
     },
     "rust-nightly": {
@@ -409,22 +408,6 @@
       "original": {
         "owner": "deepjyoti30",
         "repo": "ytmdl",
-        "type": "github"
-      }
-    },
-    "zig-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1625103544,
-        "narHash": "sha256-cMZWfGTXU6V04m7fN+4aTIOqnYVXAtORZzcts/fls5A=",
-        "owner": "ziglang",
-        "repo": "zig",
-        "rev": "acf2e8fe6484a48cef76c20368ff06fe9d7b264e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ziglang",
-        "repo": "zig",
         "type": "github"
       }
     }
