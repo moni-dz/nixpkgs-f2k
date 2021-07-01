@@ -222,11 +222,6 @@
             inherit itunespy simber pydes downloader-cli youtube-search;
             src = args.ytmdl-src;
           };
-
-          zig-git = pkgs.zig.overrideAttrs (_: {
-            inherit version;
-            src = args.zig-src;
-          });
         };
       }
     );
