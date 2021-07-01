@@ -32,7 +32,7 @@
 
     # Wayland
     kile-wl-src = { url = "gitlab:snakedye/kile"; flake = false; };
-    river-src = { url = "github:ifreund/river"; flake = false; };
+    river-src = { type = "git"; url = "https://github.com/ifreund/river.git"; submodules = true; flake = false; };
     sway-src = { url = "github:swaywm/sway"; flake = false; };
     wlroots-src = { url = "github:swaywm/wlroots"; flake = false; };
     xdpw-src = { url = "github:emersion/xdg-desktop-portal-wlr"; flake = false; };
