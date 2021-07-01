@@ -1,6 +1,8 @@
 # Usage
 
-Flake enabled Nix:
+**NOTE: these instructions aren't 100% what you should do, use accordingly to your configuration**
+
+## Flake enabled Nix:
 
 ```nix
 {
@@ -20,7 +22,7 @@ Flake enabled Nix:
 
 I also provide a `defaultPackage` attribute (default is `eww`), and a `packages` attribute if overlays aren't your thing.
 
-Non-flake enabled Nix, append to `configuration.nix`, or `home.nix`:
+## Non-flake enabled Nix, append to `configuration.nix`, or `home.nix`:
 ```nix
 {
   nixpkgs.overlays = [
