@@ -10,10 +10,6 @@
     flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
 
     ### Equivalent to multiple fetchFromGit[Hub/Lab] invocations
-
-    # Compilers
-    zig-src = { url = "github:ziglang/zig"; flake = false; };
-
     # Themes
     abstractdark-sddm-theme-src = { url = "github:3ximus/abstractdark-sddm-theme"; flake = false; };
 
@@ -46,8 +42,6 @@
     {
       overlay = final: prev: {
         inherit (self.packages.${final.system})
-          # Compilers
-          zig-git
           # Themes
           abstractdark-sddm-theme
           # Programs
@@ -167,12 +161,10 @@
             src = args.picom-src;
           });
 
-          river-git = (pkgs.river.overrideAttrs (_: rec {
+          river-git = pkgs.river.overrideAttrs (_: rec {
             inherit version;
             src = args.river-src;
-          })).override {
-            zig = zig-git;
-          };
+          });
 
           slock-fancy = pkgs.slock.overrideAttrs (_: rec {
             inherit version;
