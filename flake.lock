@@ -177,11 +177,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1625191069,
-        "narHash": "sha256-M8/UH9pMgQEtuzY9bFwklYw8hx0pOKtUTyQC8E2UTHY=",
+        "lastModified": 1625273651,
+        "narHash": "sha256-WMWbBs1751DDqmLoV9W7LjbRcCzJstBWHmMyByWt9Ms=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d8079260a3028ae3221d7a5467443ee3a9edd2b8",
+        "rev": "5a4b7d989f0d53d9cd9df094ba5980b35338f28c",
         "type": "github"
       },
       "original": {
@@ -225,11 +225,11 @@
     "river-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1625043873,
-        "narHash": "sha256-/JjNQXQ/HA2QAUDZsxEefek0RZg+djnTrSiirpdCJ/g=",
+        "lastModified": 1625245896,
+        "narHash": "sha256-/eAHptTOX7Fi83dL8tmhNYJvbE7SAJ7oh5wukQt0bJY=",
         "ref": "master",
-        "rev": "e2e4cd295342b23e54d4e7d16fef49a3f34ed082",
-        "revCount": 658,
+        "rev": "ba6a38f491adffb51eb3437158bcd16a4bbbaa3f",
+        "revCount": 659,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/ifreund/river.git"
@@ -272,11 +272,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1625192067,
-        "narHash": "sha256-hP8zqM/VogAVE7yhROqenIG51E2eWFVWFZQeW2dxNYE=",
+        "lastModified": 1625278274,
+        "narHash": "sha256-F7vBKpCaM20FdvjsyDDMCYihvq4kpoMFEhryXBYtiLA=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "add2c66884d6f31d1929d26dc6a70dd1e9ae6b2a",
+        "rev": "1189bc5dc5dcaefb4f36b4e67fee35225a176feb",
         "type": "github"
       },
       "original": {
@@ -320,11 +320,11 @@
     "weechat-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1624918638,
-        "narHash": "sha256-oh49gNnyT0NO9bhsJOmhVXn1iTbEYcL9rSTQ+o4HqII=",
+        "lastModified": 1625255930,
+        "narHash": "sha256-r4qpI2xu0eYmEQug96QsXhsJqkfa9SSjngD3u8Rf+mg=",
         "owner": "weechat",
         "repo": "weechat",
-        "rev": "1ac800906b9ceda4e98b57b5842d46e66406d72a",
+        "rev": "9432b44a2b73acddcb3cc9ac2568a6c1e86204bc",
         "type": "github"
       },
       "original": {
@@ -352,11 +352,11 @@
     "xdpw-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1625140171,
-        "narHash": "sha256-kuBJVVyQlPvVVSxggXvEZGE5uOzhUDxkAc/uHJcrLGM=",
+        "lastModified": 1625220737,
+        "narHash": "sha256-+8WdgJajVwq7pgfnTm3L916ve3l3WEOYuIJHzIyz9kk=",
         "owner": "emersion",
         "repo": "xdg-desktop-portal-wlr",
-        "rev": "668509e317d8ad3b05afabe57e91b517771c1269",
+        "rev": "6cc3a017417fa77fd9f3dd4fe230a9caf10418fb",
         "type": "github"
       },
       "original": {
