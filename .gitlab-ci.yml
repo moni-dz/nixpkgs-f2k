@@ -7,7 +7,7 @@ build:
     - cachix use fortuneteller2k
     - nix path-info --all > /tmp/store-path-pre-build
   script:
-    - nix build .#eww .#awesome-git .#kile-wl-git .#picom-git .#alacritty-ligatures .#sway-unwrapped-git .#wlroots-git .#weechat-unwrapped-git .#xdg-desktop-portal-wlr-git .#river-git
+    - nix build -L .#eww .#awesome-git .#kile-wl-git .#picom-git .#alacritty-ligatures .#sway-unwrapped-git .#wlroots-git .#weechat-unwrapped-git .#xdg-desktop-portal-wlr-git .#river-git
   after_script:
     - cachix authtoken "$CACHIX_AUTH_TOKEN"
     - comm -13 <(sort /tmp/store-path-pre-build | grep -v '\.drv$') <(nix path-info --all | grep -v '\.drv$' | sort) | cachix push fortuneteller2k
