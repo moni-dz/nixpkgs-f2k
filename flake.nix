@@ -8,6 +8,7 @@
     rust-nightly.url = "github:oxalica/rust-overlay";
     flake-utils.url = "github:numtide/flake-utils";
     flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
+    flake-compat-ci.url = "github:hercules-ci/flake-compat-ci";
 
     ### Equivalent to multiple fetchFromGit[Hub/Lab] invocations
     # Themes
@@ -40,6 +41,8 @@
 
   outputs = args@{ self, flake-utils, nixpkgs, rust-nightly, meson058, ... }:
     {
+      ciNix = args.flake-compat-ci.lib.recurseIntoFlake self;
+
       overlay = final: prev: {
         inherit (self.packages.${final.system})
           # Themes
