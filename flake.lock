@@ -192,11 +192,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1626487777,
-        "narHash": "sha256-spbRJPn645H9fdmnNs/fUMmVDjFEIlMH91I2NdFNHpo=",
+        "lastModified": 1626562464,
+        "narHash": "sha256-yzLj+jLiktzWzBFNH5+d7WmgNtI1+fux1wGsAb9docQ=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "6e5f2d2b0105aea7aa925dd9eaa61d59317fcefe",
+        "rev": "688b4cb03efd8bd6bd0796297a8738f8f91a5ff6",
         "type": "github"
       },
       "original": {
@@ -240,11 +240,11 @@
     "river-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1626350422,
-        "narHash": "sha256-v49eTbaho94YB5SoEPf3DpCPBSCMAZAEWJDd2MFWnnc=",
+        "lastModified": 1626531190,
+        "narHash": "sha256-1g/BIIel6OuGZfxsVEruAiLiybPVQlZTHY/HYmEKJ88=",
         "ref": "master",
-        "rev": "28fc8792d7929a6cd273b0ee78137097dc1e245a",
-        "revCount": 667,
+        "rev": "f30610d64c5c8e09b43a0551d6ddc16344044c47",
+        "revCount": 670,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/ifreund/river.git"
@@ -288,11 +288,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1626488045,
-        "narHash": "sha256-qGkU/Rg3jvGPGoaDy6ceHhaA+P+0wQoHUv+IUigiXnI=",
+        "lastModified": 1626574430,
+        "narHash": "sha256-W+pyuPm7dqRHGKHuWqlM2qWLDxQq5UhAOoytYa7u/7Q=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "462835d47b901e8d5b445642940de40f6344f4f3",
+        "rev": "5344f4d10c3ca00339cf5bf1c6a4acf008ca0bf5",
         "type": "github"
       },
       "original": {
