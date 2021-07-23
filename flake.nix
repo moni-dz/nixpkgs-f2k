@@ -148,7 +148,7 @@
             src = args.bling-src;
           };
 
-          inherit (args.eww.defaultPackage.${system}) eww;
+          eww = args.eww.defaultPackage.${system};
 
           iosevka-ft-bin = pkgs.callPackage ./pkgs/iosevka-ft-bin { };
 
