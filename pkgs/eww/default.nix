@@ -9,7 +9,8 @@ rustPlatform.buildRustPackage rec {
   inherit src;
 
   cargoLock = {
-    lockFile = "${src}/Cargo.lock";
+    # lockFile = "${src}/Cargo.lock";
+    lockFile = ./Cargo.lock;
   };
 
   nativeBuildInputs = [
