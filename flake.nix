@@ -57,6 +57,7 @@
           # Utilities
           downloader-cli
           itunespy
+          eww
           # X11
           awesome-git
           bling
@@ -70,8 +71,6 @@
           xdg-desktop-portal-wlr-git
           # Fonts
           iosevka-ft-bin;
-
-        inherit (args.eww.defaultPackage.${final.system}) eww;
 
         haskellPackages = prev.haskellPackages.extend (hfinal: hprev: rec {
           X11 = hprev.X11_1_10;
