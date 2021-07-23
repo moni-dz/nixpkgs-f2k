@@ -23,7 +23,7 @@
 
     # Utilities
     bling-src = { url = "github:BlingCorp/bling"; flake = false; };
-    eww-src = { url = "github:elkowar/eww"; flake = false; };
+    eww.url = "github:elkowar/eww";
 
     # X11
     awesome-src = { url = "github:awesomeWM/awesome"; flake = false; };
@@ -57,7 +57,6 @@
           # Utilities
           downloader-cli
           itunespy
-          eww
           # X11
           awesome-git
           bling
@@ -71,6 +70,8 @@
           xdg-desktop-portal-wlr-git
           # Fonts
           iosevka-ft-bin;
+
+        inherit (eww.defaultPackage.${final.system}) eww;
 
         haskellPackages = prev.haskellPackages.extend (hfinal: hprev: rec {
           X11 = hprev.X11_1_10;
@@ -148,9 +149,7 @@
             src = args.bling-src;
           };
 
-          eww = pkgs.callPackage ./pkgs/eww {
-            src = args.eww-src;
-          };
+          inherit (args.eww.defaultPackage.${system}) eww;
 
           iosevka-ft-bin = pkgs.callPackage ./pkgs/iosevka-ft-bin { };
 
