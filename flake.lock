@@ -318,11 +318,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1627003206,
-        "narHash": "sha256-xSrMaKKBwsMfDsqoDZ1d96FK9chnL2j2KY8hnkQdL7U=",
+        "lastModified": 1627081573,
+        "narHash": "sha256-wtJruQ42KxS25CP8+6PVYlfV+pBEpgiVxlBkWZDK5qc=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "0eaa40b01d7a88b3787e01093d3f7bb711ad35ab",
+        "rev": "ab0caff134dbe8b5123feead5297708e6e3144b4",
         "type": "github"
       },
       "original": {
@@ -350,11 +350,11 @@
     "picom-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1626985577,
-        "narHash": "sha256-TjbNTIP9rQTpARwbWjaehBmZXCIJWDuJNam+ok8V6pQ=",
+        "lastModified": 1627071353,
+        "narHash": "sha256-xvrUVdNcpb6P/cudXlWIObZ3tq9VFd0bSqW0HvWcHC4=",
         "owner": "yshui",
         "repo": "picom",
-        "rev": "084b670f6a9f5b08d4f61d0611c8c86e4ee052aa",
+        "rev": "24b445072664378186c6a408b816179e0181bc01",
         "type": "github"
       },
       "original": {
@@ -366,11 +366,11 @@
     "river-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1626947146,
-        "narHash": "sha256-kmmPsC2gflWxpmUQ7OPtPIeJWgv9U87ZHCtP8JFJZ90=",
+        "lastModified": 1627086615,
+        "narHash": "sha256-yoTWkwiq9mxk8xcdMSCzqMXWBdEyCCo/O6LKQXgeUW8=",
         "ref": "master",
-        "rev": "b7d330c0dabdebf7fb844ed8cafff4aa44ed79bc",
-        "revCount": 679,
+        "rev": "f371e00716898d2330c22d2f17d9785e918f115e",
+        "revCount": 688,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/ifreund/river.git"
@@ -431,11 +431,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1627006532,
-        "narHash": "sha256-yy+BxQ3zKdCVwBIAyUCV4BRUaJlSJjfxfAcrnqud4AA=",
+        "lastModified": 1627092891,
+        "narHash": "sha256-6nN+rfsP+SNpnL3UPbrcwZe4qfh9/NH0LWtXhn9w/a4=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "8ca45fe1a756176b50f5fc14ee8dd96e70fd25e4",
+        "rev": "939f2cf1aebc86bc3e9544645b495cd05995524a",
         "type": "github"
       },
       "original": {
@@ -463,11 +463,11 @@
     "sway-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1626941553,
-        "narHash": "sha256-d4imxrUzdiLH3ul7YzHnLS3ZyRsc3zkxKQQACIBfoZE=",
+        "lastModified": 1627063516,
+        "narHash": "sha256-chaa8bYsi2MLVPc+iXTxrugdp4bulq+RVfp/niigzh0=",
         "owner": "swaywm",
         "repo": "sway",
-        "rev": "c9458b9fb1034b1fd9a946aa85d4a7c1f07f2af3",
+        "rev": "e7f4e50da0a46babf968c266250df1f2a09f620f",
         "type": "github"
       },
       "original": {
@@ -495,11 +495,11 @@
     "wlroots-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1626985704,
-        "narHash": "sha256-KjYtLPd0U4rhjYkEL0km3GrmP9iudFKOH1EA+dFFX0w=",
+        "lastModified": 1627054037,
+        "narHash": "sha256-soWHy88uEiNGaVuv6O92SeQENUOKsnDRhHJqIM5EHhY=",
         "owner": "swaywm",
         "repo": "wlroots",
-        "rev": "04d4fb536d2112caf38ad9903a7ce8616a21ba33",
+        "rev": "ace2eda073f838e1327abd7ffb8e5111e52f4b86",
         "type": "github"
       },
       "original": {
@@ -527,11 +527,11 @@
     "xmonad-contrib-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1626947314,
-        "narHash": "sha256-uxp5CBk5HNygZmZ4N6hi3bLVu6Og8QjM50WB3MbVChE=",
+        "lastModified": 1627060728,
+        "narHash": "sha256-T/ciXlUNiSactVezUPRwmjpl2ZW884Qmo3r1NJz8wZc=",
         "owner": "xmonad",
         "repo": "xmonad-contrib",
-        "rev": "6b16e45166f40e623d10651cd983ab5e4fad3e20",
+        "rev": "815d0e397b40a52ca9cc14b5d2f27240d557d1a3",
         "type": "github"
       },
       "original": {
@@ -559,11 +559,11 @@
     "ytmdl-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1624802815,
-        "narHash": "sha256-IE9M/DcEPPfNamqKPdk107ViSIaI0qAdE1znxUnHUFs=",
+        "lastModified": 1627046677,
+        "narHash": "sha256-ahUzHjdOdv+a18hdVUwn0CX1ZsGnfmuQ4UuWUHiTGQc=",
         "owner": "deepjyoti30",
         "repo": "ytmdl",
-        "rev": "f8bd567602a4eacd15863b4b4d1e644f43ac8d40",
+        "rev": "7db8d606d28604a0036a97a71161d3b8c90e6aa0",
         "type": "github"
       },
       "original": {
