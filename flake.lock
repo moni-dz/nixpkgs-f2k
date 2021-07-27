@@ -318,11 +318,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1627263011,
-        "narHash": "sha256-TI6qqoMw+++AU0rJ0NwXnf8XL0tJZ3q0JXQgL4vczBA=",
+        "lastModified": 1627352951,
+        "narHash": "sha256-6P+sDCOcZvRL21tL9gx0j5TKDOUntcuAoOlASrHGOE8=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "e8d424833ebbd90977106ea1c4cafa30ffc2571a",
+        "rev": "0ffdd74547be88eebd45ca6f3d5487b4a84ae232",
         "type": "github"
       },
       "original": {
@@ -366,11 +366,11 @@
     "river-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1627245047,
-        "narHash": "sha256-ZPH8ODXX89U7ImLOclRlZm/xyrmvHdA+sjEc/jYAwX0=",
+        "lastModified": 1627342294,
+        "narHash": "sha256-pw5+c2muq8oatZigpEGea1/6wo2Ib7RzwXiDjRs3nkM=",
         "ref": "master",
-        "rev": "bbfd0c334cd77dd07336ea5ce15f31ac9c4bb816",
-        "revCount": 704,
+        "rev": "90008cfa53df4dab107a5b5d708d50e6f42758ce",
+        "revCount": 707,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/ifreund/river.git"
@@ -431,11 +431,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1627265773,
-        "narHash": "sha256-d+CNUwqV0//fdA+fJunifn/T7AufLk3NbM0WqihbzmA=",
+        "lastModified": 1627352243,
+        "narHash": "sha256-2H8Xi/xLRrzubc8FyH3/gKAzwFxPfQEvjsFihVHyDNs=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "bb00ab948702b4170914064263b37eff0b122471",
+        "rev": "1855713491fee52f23bab6dad6e1c3cfb178997d",
         "type": "github"
       },
       "original": {
@@ -463,11 +463,11 @@
     "sway-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1627063516,
-        "narHash": "sha256-chaa8bYsi2MLVPc+iXTxrugdp4bulq+RVfp/niigzh0=",
+        "lastModified": 1627311508,
+        "narHash": "sha256-e0eRqlEZ4biXUYGhultLABWXhnsMqYSOM1YwkVTfwnA=",
         "owner": "swaywm",
         "repo": "sway",
-        "rev": "e7f4e50da0a46babf968c266250df1f2a09f620f",
+        "rev": "daf9ad1af73a0358fdabc29ca5817511c16e15a4",
         "type": "github"
       },
       "original": {
@@ -495,11 +495,11 @@
     "wlroots-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1627054037,
-        "narHash": "sha256-soWHy88uEiNGaVuv6O92SeQENUOKsnDRhHJqIM5EHhY=",
+        "lastModified": 1627338936,
+        "narHash": "sha256-EXkDzHZoUHeaFxrvdpuouMYotbD1tkYkGcQmctnr6js=",
         "owner": "swaywm",
         "repo": "wlroots",
-        "rev": "ace2eda073f838e1327abd7ffb8e5111e52f4b86",
+        "rev": "7667ab73bdff671aad29452f33cc2e0e17c73d9e",
         "type": "github"
       },
       "original": {
@@ -527,11 +527,11 @@
     "xmonad-contrib-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1627114966,
-        "narHash": "sha256-CsEz4ZyTX3437IaGG4H0WHfV4P+TYddwE3vNTwbCPEM=",
+        "lastModified": 1627321942,
+        "narHash": "sha256-SwLgUOEa5TPaS5vYx2CAwC15yNlziMYAkNfSUNOpAjg=",
         "owner": "xmonad",
         "repo": "xmonad-contrib",
-        "rev": "97289ff6ca1f0edd0447870b9dcbe9a4b6858d9b",
+        "rev": "4c759ff70cd2105cfe39bd682056f4890001a844",
         "type": "github"
       },
       "original": {
