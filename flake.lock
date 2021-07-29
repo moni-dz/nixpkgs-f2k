@@ -318,11 +318,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1627427471,
-        "narHash": "sha256-8qEEPkr9BVSM+ce4Qs2dL3O4ooZkVxF7Ow2WxB9w6Es=",
+        "lastModified": 1627524134,
+        "narHash": "sha256-z0EJ9unH469VrHsMS1PK7+/YsN9g56CVWGX8kZ4o+S0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "0efb458bc1d1c5d4f36e55ae3c513d5dec615d46",
+        "rev": "dbede767093cd5b539d4fefd3d63ea27f44f724b",
         "type": "github"
       },
       "original": {
@@ -366,11 +366,11 @@
     "river-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1627342294,
-        "narHash": "sha256-pw5+c2muq8oatZigpEGea1/6wo2Ib7RzwXiDjRs3nkM=",
+        "lastModified": 1627500650,
+        "narHash": "sha256-vxKdG/oFV6XNWQd2zNHSaccXzYkaCzaVg8O7+aty9WE=",
         "ref": "master",
-        "rev": "90008cfa53df4dab107a5b5d708d50e6f42758ce",
-        "revCount": 707,
+        "rev": "f56c89295800af0f043342af82febf64a70a1208",
+        "revCount": 710,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/ifreund/river.git"
@@ -431,11 +431,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1627438617,
-        "narHash": "sha256-pJ7QX5RxX27SLgrJwyhrRoA24YQvts5PNIj45Zph34Q=",
+        "lastModified": 1627524933,
+        "narHash": "sha256-7qCl4c+vZ+yJhdiOE/yA3rS5wHcuTWIr/opACzrF7tQ=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "f2865d93afeab55ba158717dda47ef38dec331f7",
+        "rev": "b5ee17f42141064953982ece1944ee29b4f88107",
         "type": "github"
       },
       "original": {
@@ -495,11 +495,11 @@
     "wlroots-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1627411553,
-        "narHash": "sha256-breApGsUYd+G3ux//CUTCmxoGZYbTZk7zuHAqpXDPG4=",
+        "lastModified": 1627505961,
+        "narHash": "sha256-v5GHeNgieOVuAWLuNTx+6K7TtjreOFLSFz0Oxspr3X0=",
         "owner": "swaywm",
         "repo": "wlroots",
-        "rev": "6f19295647fe9a1c0afec96eebd3947f1a52ec2b",
+        "rev": "55ac7e335aa0ec2c77980fcbc8509a4e71880dcc",
         "type": "github"
       },
       "original": {
