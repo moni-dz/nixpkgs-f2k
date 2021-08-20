@@ -52,11 +52,11 @@
     "bling-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1629312233,
-        "narHash": "sha256-lZe4noM1FDrhulXk/VWcpzWvmoknW5RNHeECuHyM9A0=",
+        "lastModified": 1629394847,
+        "narHash": "sha256-xsunM+A5x55OvX/6W3O8fI8ShiFoBaszu+p3zmWUXw0=",
         "owner": "BlingCorp",
         "repo": "bling",
-        "rev": "7387f6d53c43dfd49ad8f8929749c55b30951816",
+        "rev": "91650152bc37ac12a0193a9184ab1d5b25f4e9f6",
         "type": "github"
       },
       "original": {
@@ -90,11 +90,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1629299698,
-        "narHash": "sha256-nMwAWb/OrkC7K1jxaPnb41uTbmsYdcGi9cF4YSdM3k8=",
+        "lastModified": 1629380707,
+        "narHash": "sha256-JpWsua5uN532Nvd5t6nBzJkNJN3Eh3QPPSrTSu7v2Ko=",
         "owner": "elkowar",
         "repo": "eww",
-        "rev": "7ffebf69033ca9d9254de50cda9b669933201d72",
+        "rev": "9ce219a420b84adf87ff09ff08b511e38ee444db",
         "type": "github"
       },
       "original": {
@@ -318,11 +318,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1629339339,
-        "narHash": "sha256-b85+FG9QHEcMqzr0GLR2JkV951DQdXYAKr05TltmuRA=",
+        "lastModified": 1629417598,
+        "narHash": "sha256-/17hqxmBytHjnFBmC3EhWZ9xEjzI6z61QjXZBesBaz0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "af19fdbed57912148198666675e7bf5c57f15378",
+        "rev": "5edf5b60c3d8f82b5fc5e73e822b6f7460584945",
         "type": "github"
       },
       "original": {
@@ -366,11 +366,11 @@
     "river-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1629318110,
-        "narHash": "sha256-CiI3bsZ1v2TF+zohQwvXUCHs5ckHiPTZ4KhhpXtlqwY=",
+        "lastModified": 1629377932,
+        "narHash": "sha256-R/Wg8KLh4v3ccX1Uh0Q+7026tRH7XLxHpX9/BgsGGdA=",
         "ref": "master",
-        "rev": "e9bfc5251eb0cc80678860d2b0cac0beb82c750b",
-        "revCount": 725,
+        "rev": "e59c2a73d72853cb54f55eecc446f337c94cda24",
+        "revCount": 726,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/ifreund/river.git"
@@ -431,11 +431,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1629339155,
-        "narHash": "sha256-SAjBE50DCSGon0iEohwGSHCWOlC4IksnwJLjPCtOPLI=",
+        "lastModified": 1629425558,
+        "narHash": "sha256-EUS9RfETbPDhEaUGlsr6gs6DP0GmtFvCxHO1RheYlzI=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "ccff7deccd6f32dda56687354cbb1153a1ae0d65",
+        "rev": "f0631f23c29a71b9d98169206f54dd6c5db88646",
         "type": "github"
       },
       "original": {
@@ -463,11 +463,11 @@
     "sway-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1629115548,
-        "narHash": "sha256-VqXM7RyqVEqsXk7itbzeYBUzf+FYHLIsPtBQa+bCCno=",
+        "lastModified": 1629389189,
+        "narHash": "sha256-XzfhmVSSEy7Yhlh8QR+ZSgaW6eowlK2Kn8BHjzB4npE=",
         "owner": "swaywm",
         "repo": "sway",
-        "rev": "d0c5c5a60b63ec0582d2a26fb3eb95776dd0b715",
+        "rev": "bb3fd0abc56f39e35dc7f4e86f25da1b4a6efbd7",
         "type": "github"
       },
       "original": {
@@ -495,11 +495,11 @@
     "wlroots-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1629313165,
-        "narHash": "sha256-Ys4zohFwYwMkQgwhJmBduWkFWARfqNRhFTSwvTvjnFw=",
+        "lastModified": 1629398856,
+        "narHash": "sha256-8ZvTSHDXkPoXoUjX6+0jeleGhtPupKc2o+LJNGFVg3g=",
         "owner": "swaywm",
         "repo": "wlroots",
-        "rev": "46c42e55c6e0b08d9e7db989d6a10f073525e999",
+        "rev": "18c2dce65ed0dacdb3920357be695c2b263ada54",
         "type": "github"
       },
       "original": {
@@ -527,11 +527,11 @@
     "xmonad-contrib-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1629194489,
-        "narHash": "sha256-5Bq46zbNsJbfBwV34WlJprdamLxy8uJK68EBDlNKP+o=",
+        "lastModified": 1629355201,
+        "narHash": "sha256-1Hkih7CvTP2/Z1z0fe1S3G5ybsmW9IBWgU7K6Tu5lwc=",
         "owner": "xmonad",
         "repo": "xmonad-contrib",
-        "rev": "a9ad56be11eac5a0fb97d3e016ea410da952db6d",
+        "rev": "04713d2e9c0d2a42b69df3e6024ad419da0700bf",
         "type": "github"
       },
       "original": {
