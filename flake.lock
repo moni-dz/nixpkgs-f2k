@@ -220,11 +220,11 @@
     "kile-wl-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1630012647,
-        "narHash": "sha256-dB8/DHTUEk8GTGUR9Jx91Def4nH/l9P/6Shm8EuKXwY=",
+        "lastModified": 1630528902,
+        "narHash": "sha256-O5sdPw9tR3GFPmJmb/QDmdBc7yeSGui4k+yn4Xo016A=",
         "owner": "snakedye",
         "repo": "kile",
-        "rev": "70f1cee182660f7769c3b2cf9431c7d291d1d392",
+        "rev": "acd61f7e59cc34091c976b0cdc3067dd35b53cae",
         "type": "gitlab"
       },
       "original": {
@@ -318,11 +318,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1630458975,
-        "narHash": "sha256-oF14AYZ6mB6i/vg0cuv5lI6l81hWxp6HOOPuW2e1gAo=",
+        "lastModified": 1630548584,
+        "narHash": "sha256-+VFTKqiJDASDmpFsXfmUbwMeaP9IFOcxDey/WQBmEJk=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d99cb5bd7d6e351815f2376871ba048fd1fc78cd",
+        "rev": "abfdb24af00d88abff4ed7184f45b0c0b8abf268",
         "type": "github"
       },
       "original": {
@@ -431,11 +431,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1630462601,
-        "narHash": "sha256-hsra74yhaThhfQVW7V2Pd5uiE3xMUaqrbDeNTIyNmkY=",
+        "lastModified": 1630548746,
+        "narHash": "sha256-SLzeWhEN0kRDTzL+AHfDxwbYEZm09UEcdIcPDdOIZew=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "df5dcf49c16330f0b4424f04f0f357c0ab22b115",
+        "rev": "00f6332f8c690480c7b7137fb8b1f069e7b2e18a",
         "type": "github"
       },
       "original": {
@@ -495,11 +495,11 @@
     "wlroots-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1630336211,
-        "narHash": "sha256-7OJ53PR/kCFg5ZntOTjXpiZGFUfheo3CclW2BBdSO+8=",
+        "lastModified": 1630525863,
+        "narHash": "sha256-ux0ZNzfFMdTGeeRiFt6Ne1J31sVSf13WHhNAI8D5mC8=",
         "owner": "swaywm",
         "repo": "wlroots",
-        "rev": "c8d97e27916e1a1df6d103fa957a56829af6add3",
+        "rev": "267eb02c310a5905a5dab107fd10ac7c2d6137c4",
         "type": "github"
       },
       "original": {
@@ -511,11 +511,11 @@
     "xdpw-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1628593810,
-        "narHash": "sha256-ObzWrAmOg9RLLoQKK91lnQf3SW9qYVTCkYGTD7Pvby8=",
+        "lastModified": 1630526048,
+        "narHash": "sha256-Y2x4JFy186IQYMHhmcfCx45a5My6kVZBldciyhIvEMo=",
         "owner": "emersion",
         "repo": "xdg-desktop-portal-wlr",
-        "rev": "5f5a29ccfdbd24e7efd874eb8317fb01e908a301",
+        "rev": "9ef1d6aa2b611fdc2b6146d705dec44aacc92893",
         "type": "github"
       },
       "original": {
