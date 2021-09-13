@@ -112,7 +112,6 @@
             + old.GI_TYPELIB_PATH;
           })).override {
             stdenv = clangStdenv;
-            luaPackages = pkgs.lua52Packages;
             gtk3Support = true;
           };
 
