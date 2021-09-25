@@ -232,18 +232,18 @@
         "type": "gitlab"
       }
     },
-    "meson058": {
+    "meson059": {
       "locked": {
-        "lastModified": 1623329606,
-        "narHash": "sha256-1gIRvnFQAcU8AytqF0fATemhqezf5AmZNwi+u+fSTL4=",
-        "owner": "jtojnar",
+        "lastModified": 1630326031,
+        "narHash": "sha256-Rj3/3RinSJvMV589I/mK/2QrhqbmEBNhm3FdBwpN89s=",
+        "owner": "boppyt",
         "repo": "nixpkgs",
-        "rev": "277d025f7c6cde258a6992244194187fe0213d1a",
+        "rev": "3c9014a761ba5a8af56e04035cb1a20c706d814a",
         "type": "github"
       },
       "original": {
-        "owner": "jtojnar",
-        "ref": "meson-0.58",
+        "owner": "boppyt",
+        "ref": "meson",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -296,11 +296,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1632536667,
-        "narHash": "sha256-er1B/LZgMojRYd8/ij9SNR4RsDTvGg/aG3FTZh7EzoY=",
+        "lastModified": 1632555494,
+        "narHash": "sha256-5hm4AV9n+hX7UzfXXPdtIkO7OO470kQb1Ed3SkT9n0w=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "f99035f446c0ee0d641189fc7102c7beefe3d360",
+        "rev": "2284d552d1d468ded810f3d39c54d2babe916150",
         "type": "github"
       },
       "original": {
@@ -371,7 +371,7 @@
         "flake-compat-ci": "flake-compat-ci",
         "flake-utils": "flake-utils_2",
         "kile-wl-src": "kile-wl-src",
-        "meson058": "meson058",
+        "meson059": "meson059",
         "nixpkgs": "nixpkgs_3",
         "picom-src": "picom-src",
         "river-src": "river-src",
