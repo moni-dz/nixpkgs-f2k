@@ -219,11 +219,11 @@
     "kile-wl-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1632667940,
-        "narHash": "sha256-7rjgQNzpt4yHVq4kANA4vJRJWwYvTp3cY9j8LKbjTVE=",
+        "lastModified": 1632950628,
+        "narHash": "sha256-+SjdhSRT6TGbwvgZti8t9wYJx8LEtY3pleDZx/AEkio=",
         "owner": "snakedye",
         "repo": "kile",
-        "rev": "beab3eef829b76a7710b0c3b44486ba4b93c588b",
+        "rev": "b543d435b92498b72609a05048bc368837a7b455",
         "type": "gitlab"
       },
       "original": {
@@ -296,11 +296,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1632880373,
-        "narHash": "sha256-OnTHyJacC9QByVReKIogWG8aPAFnh6VLcsg8ddsXgFM=",
+        "lastModified": 1632965522,
+        "narHash": "sha256-YU5lUvVakvD+mUmwvutTH9FgBSu2SBS62vKSAcLomaU=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "8a587c79f6c970059b98a9e30e10bb33674b6340",
+        "rev": "bf84010052ebf0396465f66ca6a544daf52cf9e8",
         "type": "github"
       },
       "original": {
@@ -409,11 +409,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1632881542,
-        "narHash": "sha256-0FQLc2t7tYc+Xx4rrZ/EZx74oseb3YoVhxq15FA437E=",
+        "lastModified": 1632968438,
+        "narHash": "sha256-WVQ0jypBiQ1BUXlDGXAHkr9NhG9ph5iAaIXxyXhhOWI=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "f802d2fa14f4de676bb5afe85422baa0042ff970",
+        "rev": "113b177e6e51757904af0b384d894c19d9115c4f",
         "type": "github"
       },
       "original": {
