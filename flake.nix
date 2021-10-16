@@ -164,12 +164,12 @@
             inherit version;
             src = args.picom-src;
           });
-          
+
           picom-dccsillag = pkgs.picom.overrideAttrs (_: rec {
             inherit version;
             src = args.picom-dccsillag;
           });
-          
+
           picom-pijulius = pkgs.picom.overrideAttrs (_: rec {
             inherit version;
             src = args.picom-pijulius;
