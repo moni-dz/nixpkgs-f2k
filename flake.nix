@@ -30,6 +30,8 @@
     xmonad-src = { url = "github:xmonad/xmonad"; flake = false; };
     xmonad-contrib-src = { url = "github:xmonad/xmonad-contrib"; flake = false; };
     picom-src = { url = "github:yshui/picom"; flake = false; };
+    picom-dccsillag = { url = "github:dccsillag/picom/implement-window-animations"; flake = false; };
+    picom-pijulius = { url = "github:pijulius/picom/implement-window-animations"; flake = false; };
 
     # Wayland
     kile-wl-src = { url = "gitlab:snakedye/kile"; flake = false; };
@@ -62,6 +64,8 @@
           awesome-git
           bling
           picom-git
+          picom-dccsillag
+          picom-pijulius
           slock-fancy
           # Wayland
           kile-wl-git
@@ -159,6 +163,16 @@
           picom-git = pkgs.picom.overrideAttrs (_: rec {
             inherit version;
             src = args.picom-src;
+          });
+
+          picom-dccsillag = pkgs.picom.overrideAttrs (_: rec {
+            inherit version;
+            src = args.picom-dccsillag;
+          });
+
+          picom-pijulius = pkgs.picom.overrideAttrs (_: rec {
+            inherit version;
+            src = args.picom-pijulius;
           });
 
           river-git = pkgs.river.overrideAttrs (_: rec {
