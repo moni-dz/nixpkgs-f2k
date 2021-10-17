@@ -90,11 +90,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1634110148,
-        "narHash": "sha256-oIa+iLqdYD54VrUgOZ1H/M/w4dpao63e//+addd08Ng=",
+        "lastModified": 1634386544,
+        "narHash": "sha256-K4IilchWY5ZTgaieaM8rRxIDoL+PpDYVWXws7p505xc=",
         "owner": "elkowar",
         "repo": "eww",
-        "rev": "00bb0b4b0b353dcb469c589db4afbb2eac7f8f5a",
+        "rev": "c50bfb718450e724fa2352ba91107e2f41985d95",
         "type": "github"
       },
       "original": {
@@ -296,11 +296,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1634347910,
-        "narHash": "sha256-DXfBiG1GnhDtzoHxEKkF/4DoUYgaEiVvSiaK79EAxj4=",
+        "lastModified": 1634436779,
+        "narHash": "sha256-D/nrXTWpe1bPIjFy85sgiLHYqu+AeaC6v5/+KlA9PRg=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "3760e1bd71d0b22a01e76bb01e99dc02babe6b8d",
+        "rev": "9aeeb7574fb784eaf6395f4400705b5f619e6cc3",
         "type": "github"
       },
       "original": {
@@ -322,6 +322,40 @@
       "original": {
         "owner": "NixOS",
         "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "picom-dccsillag": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1632048604,
+        "narHash": "sha256-gErByb5Z2UNXFUwBakfs9tqLXXeqn+OgPrQZyyv9E98=",
+        "owner": "dccsillag",
+        "repo": "picom",
+        "rev": "6a5019896741ca365072a3a1450b5ba055332653",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dccsillag",
+        "ref": "implement-window-animations",
+        "repo": "picom",
+        "type": "github"
+      }
+    },
+    "picom-pijulius": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633078577,
+        "narHash": "sha256-r0QFkZH2c0sp3MC9ARN7DtuiDEWqtJxkcXFMWKVR5TU=",
+        "owner": "pijulius",
+        "repo": "picom",
+        "rev": "d6d27126cc4f068472c0e97cf999b5d6976ed773",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pijulius",
+        "ref": "implement-window-animations",
+        "repo": "picom",
         "type": "github"
       }
     },
@@ -373,6 +407,8 @@
         "kile-wl-src": "kile-wl-src",
         "meson059": "meson059",
         "nixpkgs": "nixpkgs_3",
+        "picom-dccsillag": "picom-dccsillag",
+        "picom-pijulius": "picom-pijulius",
         "picom-src": "picom-src",
         "river-src": "river-src",
         "rust-nightly": "rust-nightly",
@@ -409,11 +445,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1634350762,
-        "narHash": "sha256-uq3vkK0T4iwRQvYvryKhlOSGiy3oHqxwXGCjf7u6tPU=",
+        "lastModified": 1634436934,
+        "narHash": "sha256-iTUUR1PMAXhWPKUtqCNYon9sw6rXMFcUDTELpoNH2uA=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "03477e4ff28c6ce5fc6a6e21f7e1190d8d0e7ae3",
+        "rev": "f21c6544665850e1a57a30a2489009df88b56342",
         "type": "github"
       },
       "original": {
@@ -441,11 +477,11 @@
     "sway-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1634319243,
-        "narHash": "sha256-j8QomtxH2gdOSYbqwCN4/HRK/7ut+UiE7jYnjyBN4ew=",
+        "lastModified": 1634364972,
+        "narHash": "sha256-vK79uoM7gmegwKXbYACIXbwUJxQ5mEaGes13Hno50oo=",
         "owner": "swaywm",
         "repo": "sway",
-        "rev": "0c210a5e68ea611b7520da6a2bf9c290a1faf571",
+        "rev": "ca8c6c3d18a17f6de2eea3f27f0ad2d2f24d6eb9",
         "type": "github"
       },
       "original": {
