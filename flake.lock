@@ -296,11 +296,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1634695016,
-        "narHash": "sha256-T99cJF0jm96pIvYbMJT3Ltd5PudzR7//Zk5UtU1IXts=",
+        "lastModified": 1634782485,
+        "narHash": "sha256-psfh4OQSokGXG0lpq3zKFbhOo3QfoeudRcaUnwMRkQo=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ce4181027814af6c25273057c1ee63c71923d7a7",
+        "rev": "34ad3ffe08adfca17fcb4e4a47bb5f3b113687be",
         "type": "github"
       },
       "original": {
@@ -378,11 +378,11 @@
     "river-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1634057228,
-        "narHash": "sha256-bJfB0qcSRy8eA48b/WzRypS9p3sSkFd1DS4lZ7bsLSw=",
+        "lastModified": 1634737250,
+        "narHash": "sha256-TWUWlXKKB4W04CM7BWWYsgxYVh7mOyfNXCfHpr+jQD0=",
         "ref": "master",
-        "rev": "4b94b9c0839eb75e5a8d3eeaf26e85e516a89015",
-        "revCount": 749,
+        "rev": "e447e1b41fbb4fa210e0a2cf8ecb1e3ac932ab32",
+        "revCount": 752,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/ifreund/river.git"
@@ -445,11 +445,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1634696278,
-        "narHash": "sha256-KVJ3DvC7nSKKSNY1NKvlkh8+8+1yxTQSTTrP6mWZv4g=",
+        "lastModified": 1634782823,
+        "narHash": "sha256-3xEL3bTDzejLog5sVq4SRqEJ6ux9w7qR7M+fZO4QMPI=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "ebad3f79de18e96619ae120e0adb160b338ca1bc",
+        "rev": "4129ba9dacaf069e5f85956fdc1272324b2908c9",
         "type": "github"
       },
       "original": {
@@ -541,11 +541,11 @@
     "xmonad-contrib-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1634673241,
-        "narHash": "sha256-Kgg0ycPKM1ZEg/msrv17nyRsxImb9wK4s3t5OXmFUnU=",
+        "lastModified": 1634741920,
+        "narHash": "sha256-Pf73dxNlq6dyQ3GKp/DLJa1NYiqn5N+RowN/rxgkUYY=",
         "owner": "xmonad",
         "repo": "xmonad-contrib",
-        "rev": "e0c7e35b3dcdf0e1f9ceccf9c11b3c053ec7cf61",
+        "rev": "e5b5ce74b203085998b9ca6f59f23be387e4aef2",
         "type": "github"
       },
       "original": {
