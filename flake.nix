@@ -202,6 +202,7 @@
               seatd
               vulkan-headers
               vulkan-loader
+              glslang
             ]);
           })).override {
             inherit (mesonPkgs) meson;
