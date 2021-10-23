@@ -201,6 +201,7 @@
             buildInputs = (old.buildInputs or [ ]) ++ (with pkgs; [
               seatd
               vulkan-headers
+              vulkan-loader
             ]);
           })).override {
             inherit (mesonPkgs) meson;
