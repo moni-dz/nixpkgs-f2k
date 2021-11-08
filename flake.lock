@@ -68,11 +68,11 @@
     "downloader-cli-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1616736236,
-        "narHash": "sha256-nJevgF0T1suUtsFfK1KnP95csS3o1FrRvDBkO6mei2c=",
+        "lastModified": 1636271329,
+        "narHash": "sha256-l6SIGf4gijUr8OYabDmZI9FUVxTgXBwmOH31MJupcZs=",
         "owner": "deepjyoti30",
         "repo": "downloader-cli",
-        "rev": "dd0b8c6d8f6794e7d0e05e6f7764841de8ace302",
+        "rev": "339aeb58c5f256a1e6d3fa70c388973ad2d3026a",
         "type": "github"
       },
       "original": {
@@ -296,11 +296,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1636247702,
-        "narHash": "sha256-KGiI9BoaBWj7ra3yK92VLd/ufYEliDvEuodUHp3QwCE=",
+        "lastModified": 1636337426,
+        "narHash": "sha256-vHt+QYKQTX3tCnvN+Bo5e9E+XCyCWKLixLXq84j07q4=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "81e952e8a49d936f0612e98e0234eaf4dd192f02",
+        "rev": "d42bb5839d057ac9bcadd1b4ce2fbe2b1fbc0147",
         "type": "github"
       },
       "original": {
@@ -445,11 +445,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1636251445,
-        "narHash": "sha256-N05TJfuq+JaTLfYMN2GVrzwMEOZXwo467E+B2cKO+mk=",
+        "lastModified": 1636337726,
+        "narHash": "sha256-Yhhb84u7/zykA/XzltuIm7g9HPJFlsUE/eanW1iMxRg=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "0385d848c7fbb36dc22851d6ade00c76a6157f53",
+        "rev": "1eb86a50e2afda6bae23526249a927127b67e35e",
         "type": "github"
       },
       "original": {
@@ -493,11 +493,11 @@
     "weechat-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1636221469,
-        "narHash": "sha256-yiFnk5elZMGFrXV0Rg9R1W2evP3p8U7cC8lD/wkxV/8=",
+        "lastModified": 1636312586,
+        "narHash": "sha256-oKN0GmdwaZCc0Qzf66a6pCKclvgNMB/436TSnYi5rv0=",
         "owner": "weechat",
         "repo": "weechat",
-        "rev": "9303f5abd9eb2666da0b4926837cf28b085b5da9",
+        "rev": "253b25db035c92e0e86e7a5dac3559ff144469f7",
         "type": "github"
       },
       "original": {
@@ -573,11 +573,11 @@
     "ytmdl-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1627809517,
-        "narHash": "sha256-uGjk3P513mBpM3mn6XqUflovO69xRMaHeBzSuTEShGA=",
+        "lastModified": 1636266481,
+        "narHash": "sha256-W8tAGeZ3v3aMtINFyX8rdAlBvw4VIFMyFZtIBp8aarM=",
         "owner": "deepjyoti30",
         "repo": "ytmdl",
-        "rev": "b016582520b9209a7481d7d8b18c8befd889e477",
+        "rev": "0227541f303739a01e27a6d74499229d9bf44f84",
         "type": "github"
       },
       "original": {
