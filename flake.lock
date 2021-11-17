@@ -52,11 +52,11 @@
     "bling-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1636404158,
-        "narHash": "sha256-6Xb74hnF4MpzFWftltm77/SwXEK+GrIeploac4JOdLM=",
+        "lastModified": 1637065108,
+        "narHash": "sha256-Zcuee+YK0VgV2fPNYx+IhxHTz03phKP0TCw0NkP9sdA=",
         "owner": "BlingCorp",
         "repo": "bling",
-        "rev": "3c8b3b8cc01e398171f73601824810ee01d49f87",
+        "rev": "0da8b7b7f0a846804063f098418d7f9ea79b03eb",
         "type": "github"
       },
       "original": {
@@ -296,11 +296,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1637028241,
-        "narHash": "sha256-3Ku3wt9zSVgwGsThGgk2ZpH3O/WLXH0Li7Ucn3o3UwA=",
+        "lastModified": 1637114448,
+        "narHash": "sha256-33UrD1eOg+EhXb5tTXVAfZXEMtFQh8OnEacIGaWBHK0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "18d56c5c6ef6843903ce5fe4ddc15b931a44d3f0",
+        "rev": "6ad04bcb7d3a198c63823e037138013503e089fd",
         "type": "github"
       },
       "original": {
@@ -445,11 +445,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1637028901,
-        "narHash": "sha256-MJWtQbSZC1kNzJb2pg6mBcHTmIQdNBeQMznwbAfoqUg=",
+        "lastModified": 1637115307,
+        "narHash": "sha256-G+RKZeE1yLrnq+ExHF+HnSJsT+QJWebGhssgZHz3B00=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "ac1c572e4060c943e4077987da4b07bb7c3a491c",
+        "rev": "8a2e5fa870df3d34667d28fb3383d19516d182e4",
         "type": "github"
       },
       "original": {
