@@ -18,7 +18,6 @@
     alacritty-src = { url = "github:zenixls2/alacritty/ligature"; flake = false; };
     downloader-cli-src = { url = "github:deepjyoti30/downloader-cli"; flake = false; };
     slock-src = { url = "github:khuedoan/slock"; flake = false; };
-    weechat-src = { url = "github:weechat/weechat"; flake = false; };
     ytmdl-src = { url = "github:deepjyoti30/ytmdl"; flake = false; };
 
     # Utilities
@@ -53,7 +52,6 @@
           alacritty-ligatures
           pydes
           simber
-          weechat-unwrapped-git
           youtube-search
           ytmdl
           # Utilities
@@ -77,8 +75,6 @@
           iosevka-ft-bin;
 
         haskellPackages = prev.haskellPackages.extend (hfinal: hprev: rec {
-          X11 = hprev.X11_1_10;
-
           xmonad = prev.haskellPackages.callPackage ./pkgs/xmonad {
             src = args.xmonad-src;
           };
@@ -207,12 +203,6 @@
           })).override {
             inherit (mesonPkgs) meson;
           };
-
-          weechat-unwrapped-git = pkgs.weechat-unwrapped.overrideAttrs (_: {
-            inherit version;
-            src = args.weechat-src;
-            patches = [ ];
-          });
 
           abstractdark-sddm-theme = pkgs.callPackage ./pkgs/abstractdark-sddm-theme {
             src = args.abstractdark-sddm-theme-src;
