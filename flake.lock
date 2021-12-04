@@ -296,11 +296,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1638584463,
-        "narHash": "sha256-xXIDmiK+Lddih601RnQcjtEJQzuG8BV+uzvWsK8McKA=",
+        "lastModified": 1638590870,
+        "narHash": "sha256-HQ0KlmCVGeTngX+top/5s6QYN9dQrWmskWzB7iREpeA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "f01e91259921d0e3308d9586f4180c5b927ca12e",
+        "rev": "bb9bd465b625bfc971908c5d3d84ce517e1c0691",
         "type": "github"
       },
       "original": {
@@ -415,7 +415,6 @@
         "rust-nightly": "rust-nightly",
         "slock-src": "slock-src",
         "sway-src": "sway-src",
-        "weechat-src": "weechat-src",
         "wlroots-src": "wlroots-src",
         "xdpw-src": "xdpw-src",
         "xmonad-contrib-src": "xmonad-contrib-src",
@@ -488,22 +487,6 @@
       "original": {
         "owner": "swaywm",
         "repo": "sway",
-        "type": "github"
-      }
-    },
-    "weechat-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1638529388,
-        "narHash": "sha256-XU5Nca+KBUSpnbOqr9G3jZ0cwq9VYRNVTTmWNisePSs=",
-        "owner": "weechat",
-        "repo": "weechat",
-        "rev": "67a364550f083375ca1e4fb7b9cf53803490892a",
-        "type": "github"
-      },
-      "original": {
-        "owner": "weechat",
-        "repo": "weechat",
         "type": "github"
       }
     },
