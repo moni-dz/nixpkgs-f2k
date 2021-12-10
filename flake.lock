@@ -36,11 +36,11 @@
     "awesome-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1638140391,
-        "narHash": "sha256-szo2aVHN+91z+91WWWHKDHU29fI4hGInyy3h+emBhB8=",
+        "lastModified": 1639080677,
+        "narHash": "sha256-6tCce0fHj64PEkgNkOZBKMfxEpgM9OWMFSfLVaHsZVM=",
         "owner": "awesomeWM",
         "repo": "awesome",
-        "rev": "1932bd017f1fd433a74f621d9fe836e355ec054a",
+        "rev": "70524e72faf263cfed18600339431de513d76186",
         "type": "github"
       },
       "original": {
@@ -90,11 +90,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1637008234,
-        "narHash": "sha256-unxR6KYdOxc27rvGRKIl6a9AHvgAES89uJDM1FYQzfc=",
+        "lastModified": 1639081916,
+        "narHash": "sha256-SI564NfvFK9idNHa6/x4HktojDXslE/syO0QhK8r4rs=",
         "owner": "elkowar",
         "repo": "eww",
-        "rev": "fc06db07043f4fb82d029fcb420e1e68d1bbe74e",
+        "rev": "5e5692742e046a97e3da3a5e19c50c331403c115",
         "type": "github"
       },
       "original": {
@@ -296,11 +296,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1639017129,
-        "narHash": "sha256-8uG/4DRajmFOUXQlWILy9PFF3Wv3uPuCRzFl/Ly3IpY=",
+        "lastModified": 1639103473,
+        "narHash": "sha256-gNmXW8szTEq6LCWSamEU5caBW1jiNfU4Puou321efZ8=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "595b2e2e8ff6c91ac3767e9c7084d3be032db801",
+        "rev": "7a53e850a3268a4747d754cb00ea655db4d4f34e",
         "type": "github"
       },
       "original": {
@@ -445,11 +445,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1639016267,
-        "narHash": "sha256-yKg7evu9hwSpBmLQ7qFtSEM7t/xCnZx+RlsboF4g48w=",
+        "lastModified": 1639102532,
+        "narHash": "sha256-QttOHrcI8whgENYUfGSWkt0gsG9fUntLW3t+hUiCVlk=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "057a3e295951ccbadd968b79016dbfc4557d9694",
+        "rev": "bc31b806e66c9712b6f794de97e34a07e7db2912",
         "type": "github"
       },
       "original": {
@@ -477,11 +477,11 @@
     "sway-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1638887217,
-        "narHash": "sha256-dIer7y0JK+pJQvOth17W737u5/g0MPSSXDY6g3j3xiA=",
+        "lastModified": 1639068421,
+        "narHash": "sha256-+lQPzeMiMA3Bpxb7XdU920vk9+f963TFINbW40OaPv8=",
         "owner": "swaywm",
         "repo": "sway",
-        "rev": "1eaa61f503f38673db2c18d22515406c66d13424",
+        "rev": "3f58f12617ca4d6a311d060081e40bf01a73c239",
         "type": "github"
       },
       "original": {
