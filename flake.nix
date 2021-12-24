@@ -3,7 +3,8 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/master";
-    # NOTE: remove when meson has advanced to 0.59.1 in master
+    staging.url = "github:NixOS/nixpkgs/staging";
+    # NOTE: remove when meson has advanced to 0.60.0 in master
     meson.url = "github:Princemachiavelli/nixpkgs/meson-0.60";
     rust-nightly.url = "github:oxalica/rust-overlay";
     flake-utils.url = "github:numtide/flake-utils";
@@ -36,11 +37,11 @@
     kile-wl-src = { url = "gitlab:snakedye/kile"; flake = false; };
     river-src = { type = "git"; url = "https://github.com/ifreund/river.git"; submodules = true; flake = false; };
     sway-src = { url = "github:swaywm/sway"; flake = false; };
-    wlroots-src = { url = "github:swaywm/wlroots"; flake = false; };
+    wlroots-src = { url = "git+https://gitlab.freedesktop.org/wlroots/wlroots.git"; flake = false; };
     xdpw-src = { url = "github:emersion/xdg-desktop-portal-wlr"; flake = false; };
   };
 
-  outputs = args@{ self, flake-utils, nixpkgs, rust-nightly, meson, ... }:
+  outputs = args@{ self, flake-utils, nixpkgs, staging, rust-nightly, meson, ... }:
     {
       ciNix = args.flake-compat-ci.lib.recurseIntoFlake self;
 
@@ -93,6 +94,12 @@
           allowBroken = true;
           allowUnsupportedSystem = true;
           overlays = [ rust-nightly.overlay ];
+        };
+
+        staging-pkgs = import staging {
+          inherit system;
+          allowBroken = true;
+          allowUnsupportedSystem = true;
         };
 
         version = "999-unstable";
@@ -171,10 +178,12 @@
             src = args.picom-pijulius;
           });
 
-          river-git = pkgs.river.overrideAttrs (_: rec {
+          river-git = (pkgs.river.overrideAttrs (_: rec {
             inherit version;
             src = args.river-src;
-          });
+          })).override {
+            wlroots = wlroots-git;
+          };
 
           slock-fancy = pkgs.slock.overrideAttrs (_: rec {
             inherit version;
@@ -202,6 +211,7 @@
             ]);
           })).override {
             inherit (mesonPkgs) meson;
+            inherit (staging-pkgs) wayland;
           };
 
           abstractdark-sddm-theme = pkgs.callPackage ./pkgs/abstractdark-sddm-theme {
