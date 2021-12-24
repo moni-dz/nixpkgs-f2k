@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/master";
     # NOTE: remove when meson has advanced to 0.59.1 in master
-    meson059.url = "github:boppyt/nixpkgs/meson";
+    meson.url = "github:Princemachiavelli/nixpkgs/meson-0.60";
     rust-nightly.url = "github:oxalica/rust-overlay";
     flake-utils.url = "github:numtide/flake-utils";
     flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
@@ -40,7 +40,7 @@
     xdpw-src = { url = "github:emersion/xdg-desktop-portal-wlr"; flake = false; };
   };
 
-  outputs = args@{ self, flake-utils, nixpkgs, rust-nightly, meson059, ... }:
+  outputs = args@{ self, flake-utils, nixpkgs, rust-nightly, meson, ... }:
     {
       ciNix = args.flake-compat-ci.lib.recurseIntoFlake self;
 
@@ -97,7 +97,7 @@
 
         version = "999-unstable";
 
-        mesonPkgs = import meson059 { inherit system; };
+        mesonPkgs = import meson { inherit system; };
       in
       {
         defaultPackage = self.packages.${system}.eww;
