@@ -92,7 +92,7 @@
           allowUnsupportedSystem = true;
           overlays = [ rust-nightly.overlay ];
         };
-      
+
         version = "999-unstable";
 
         mesonPkgs = import meson { inherit system; };
