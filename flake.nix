@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/master";
-    staging.url = "github:NixOS/nixpkgs/staging";
     # NOTE: remove when meson has advanced to 0.60.0 in master
     meson.url = "github:Princemachiavelli/nixpkgs/meson-0.60";
     # NOTE: remove when pipewire is 0.3.42 in master
@@ -43,7 +42,7 @@
     xdpw-src = { url = "github:emersion/xdg-desktop-portal-wlr"; flake = false; };
   };
 
-  outputs = args@{ self, flake-utils, nixpkgs, staging, rust-nightly, meson, ... }:
+  outputs = args@{ self, flake-utils, nixpkgs, rust-nightly, meson, ... }:
     {
       overlay = final: prev: {
         inherit (self.packages.${final.system})
@@ -95,19 +94,7 @@
           allowUnsupportedSystem = true;
           overlays = [ rust-nightly.overlay ];
         };
-
-        staging-pkgs = import staging {
-          inherit system;
-          allowBroken = true;
-          allowUnsupportedSystem = true;
-        };
-        
-        pipewire-pkgs = import staging {
-          inherit system;
-          allowBroken = true;
-          allowUnsupportedSystem = true;
-        };
-
+      
         version = "999-unstable";
 
         mesonPkgs = import meson { inherit system; };
@@ -217,7 +204,6 @@
             ]);
           })).override {
             inherit (mesonPkgs) meson;
-            inherit (staging-pkgs) wayland;
           };
 
           abstractdark-sddm-theme = pkgs.callPackage ./pkgs/abstractdark-sddm-theme {
