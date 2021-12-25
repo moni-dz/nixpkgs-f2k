@@ -5,8 +5,6 @@
     nixpkgs.url = "github:NixOS/nixpkgs/master";
     # NOTE: remove when meson has advanced to 0.60.0 in master
     meson.url = "github:Princemachiavelli/nixpkgs/meson-0.60";
-    # NOTE: remove when pipewire is 0.3.42 in master
-    libpipewire.url = "github:jansol/nixpkgs/master";
     rust-nightly.url = "github:oxalica/rust-overlay";
     flake-utils.url = "github:numtide/flake-utils";
     flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
@@ -220,12 +218,10 @@
 
           itunespy = pkgs.python3Packages.callPackage ./pkgs/itunespy { };
 
-          xdg-desktop-portal-wlr-git = (pkgs.xdg-desktop-portal-wlr.overrideAttrs (_: {
+          xdg-desktop-portal-wlr-git = pkgs.xdg-desktop-portal-wlr.overrideAttrs (_: {
             inherit version;
             src = args.xdpw-src;
-          })).override {
-            inherit (pipewire-pkgs) pipewire;
-          };
+          });
 
           youtube-search = pkgs.python3Packages.callPackage ./pkgs/youtube-search { };
 
