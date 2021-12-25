@@ -16,7 +16,7 @@
         ./configuration.nix
       ];
     };
-  }
+  };
 }
 ```
 
