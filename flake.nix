@@ -3,8 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/master";
-    # NOTE: remove when meson has advanced to 0.60.0 in master
-    meson.url = "github:Princemachiavelli/nixpkgs/meson-0.60";
+    nixpkgs-wayland.url = "github:nix-community/nixpkgs-wayland";
     rust-nightly.url = "github:oxalica/rust-overlay";
     flake-utils.url = "github:numtide/flake-utils";
     flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
@@ -35,9 +34,6 @@
     # Wayland
     kile-wl-src = { url = "gitlab:snakedye/kile"; flake = false; };
     river-src = { type = "git"; url = "https://github.com/ifreund/river.git"; submodules = true; flake = false; };
-    sway-src = { url = "github:swaywm/sway"; flake = false; };
-    wlroots-src = { url = "git+https://gitlab.freedesktop.org/wlroots/wlroots.git"; flake = false; };
-    xdpw-src = { url = "github:emersion/xdg-desktop-portal-wlr"; flake = false; };
   };
 
   outputs = args@{ self, flake-utils, nixpkgs, rust-nightly, meson, ... }:
@@ -66,9 +62,6 @@
           # Wayland
           kile-wl-git
           river-git
-          sway-unwrapped-git
-          wlroots-git
-          xdg-desktop-portal-wlr-git
           # Fonts
           iosevka-ft-bin;
 
@@ -173,7 +166,7 @@
             inherit version;
             src = args.river-src;
           })).override {
-            wlroots = wlroots-git;
+            inherit (args.nixpkgs-wayland.packages.${system}) wlroots;
           };
 
           slock-fancy = pkgs.slock.overrideAttrs (_: rec {
@@ -182,27 +175,6 @@
             patches = [ ./patches/slock_patch.diff ];
           });
 
-          sway-unwrapped-git = (pkgs.sway-unwrapped.overrideAttrs (_: {
-            inherit version;
-            src = args.sway-src;
-          })).override {
-            inherit (mesonPkgs) meson;
-            wlroots = wlroots-git;
-          };
-
-          wlroots-git = (pkgs.wlroots.overrideAttrs (old: {
-            inherit version;
-            src = args.wlroots-src;
-
-            buildInputs = (old.buildInputs or [ ]) ++ (with pkgs; [
-              seatd
-              vulkan-headers
-              vulkan-loader
-              glslang
-            ]);
-          })).override {
-            inherit (mesonPkgs) meson;
-          };
 
           abstractdark-sddm-theme = pkgs.callPackage ./pkgs/abstractdark-sddm-theme {
             src = args.abstractdark-sddm-theme-src;
@@ -217,11 +189,6 @@
           };
 
           itunespy = pkgs.python3Packages.callPackage ./pkgs/itunespy { };
-
-          xdg-desktop-portal-wlr-git = pkgs.xdg-desktop-portal-wlr.overrideAttrs (_: {
-            inherit version;
-            src = args.xdpw-src;
-          });
 
           youtube-search = pkgs.python3Packages.callPackage ./pkgs/youtube-search { };
 
