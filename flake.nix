@@ -7,7 +7,6 @@
     rust-nightly.url = "github:oxalica/rust-overlay";
     flake-utils.url = "github:numtide/flake-utils";
     flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
-    flake-compat-ci.url = "github:hercules-ci/flake-compat-ci";
 
     ### Equivalent to multiple fetchFromGit[Hub/Lab] invocations
     # Themes
@@ -36,7 +35,7 @@
     river-src = { type = "git"; url = "https://github.com/ifreund/river.git"; submodules = true; flake = false; };
   };
 
-  outputs = args@{ self, flake-utils, nixpkgs, rust-nightly, meson, ... }:
+  outputs = args@{ self, flake-utils, nixpkgs, rust-nightly, ... }:
     {
       overlay = final: prev: {
         inherit (self.packages.${final.system})
@@ -87,8 +86,6 @@
         };
 
         version = "999-unstable";
-
-        mesonPkgs = import meson { inherit system; };
       in
       {
         defaultPackage = self.packages.${system}.eww;
