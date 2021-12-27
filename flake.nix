@@ -9,17 +9,10 @@
     flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
 
     ### Equivalent to multiple fetchFromGit[Hub/Lab] invocations
-    # Themes
-    abstractdark-sddm-theme-src = { url = "github:3ximus/abstractdark-sddm-theme"; flake = false; };
-
     # Programs
     alacritty-src = { url = "github:zenixls2/alacritty/ligature"; flake = false; };
-    downloader-cli-src = { url = "github:deepjyoti30/downloader-cli"; flake = false; };
-    slock-src = { url = "github:khuedoan/slock"; flake = false; };
-    ytmdl-src = { url = "github:deepjyoti30/ytmdl"; flake = false; };
 
     # Utilities
-    bling-src = { url = "github:BlingCorp/bling"; flake = false; };
     eww.url = "github:elkowar/eww";
 
     # X11
