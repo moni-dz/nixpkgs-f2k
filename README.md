@@ -32,3 +32,25 @@ I also provide a `defaultPackage` attribute (default is `eww`), and a `packages`
   ];
 }
 ```
+
+## Binary Cache
+
+```sh
+cachix use fortuneteller2k
+```
+
+or if you're like me, and is doing it the manual approach
+
+```nix
+{
+  nix.binaryCaches = [
+    "https://cache.nixos.org?priority=10"
+    "https://fortuneteller2k.cachix.org"
+  ];
+
+  nix.binaryCachePublicKeys = [
+    "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+    "fortuneteller2k.cachix.org-1:kXXNkMV5yheEQwT0I4XYh1MaCSz+qg72k8XAi2PthJI="
+  ];
+}
+```
