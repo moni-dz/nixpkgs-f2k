@@ -24,8 +24,8 @@
 
     # X11
     awesome-src = { url = "github:awesomeWM/awesome"; flake = false; };
-    xmonad-src = { url = "github:xmonad/xmonad"; flake = false; };
-    xmonad-contrib-src = { url = "github:xmonad/xmonad-contrib"; flake = false; };
+    xmonad.url = "github:xmonad/xmonad";
+    xmonad-contrib.url = "github:xmonad/xmonad-contrib";
     picom-src = { url = "github:yshui/picom"; flake = false; };
     picom-dccsillag = { url = "github:dccsillag/picom/implement-window-animations"; flake = false; };
     picom-pijulius = { url = "github:pijulius/picom/implement-window-animations"; flake = false; };
@@ -57,14 +57,7 @@
           iosevka-ft-bin;
 
         haskellPackages = prev.haskellPackages.extend (hfinal: hprev: rec {
-          xmonad = prev.haskellPackages.callPackage ./pkgs/xmonad {
-            src = args.xmonad-src;
-          };
-
-          xmonad-contrib = prev.haskellPackages.callPackage ./pkgs/xmonad-contrib {
-            inherit xmonad;
-            src = args.xmonad-contrib-src;
-          };
+          inherit (self.packages.${final.system}) xmonad xmonad-contrib;
         });
       };
     }
@@ -155,6 +148,9 @@
             inherit version;
             src = args.sway-borders-src;
           });
+
+          xmonad = args.xmonad.defaultPackage.${system};
+          xmonad-contrib = args.xmonad.defaultPackage.${system};
         };
       }
     );
