@@ -40,28 +40,19 @@
     {
       overlay = final: prev: {
         inherit (self.packages.${final.system})
-          # Themes
-          abstractdark-sddm-theme
           # Programs
           alacritty-ligatures
-          pydes
-          simber
-          youtube-search
-          ytmdl
           # Utilities
-          downloader-cli
-          itunespy
           eww
           # X11
           awesome-git
-          bling
           picom-git
           picom-dccsillag
           picom-pijulius
-          slock-fancy
           # Wayland
           kile-wl-git
           river-git
+          sway-borders
           # Fonts
           iosevka-ft-bin;
 
@@ -100,7 +91,6 @@
             + "${upower}/lib/girepository-1.0:"
             + old.GI_TYPELIB_PATH;
           })).override {
-            stdenv = clangStdenv;
             gtk3Support = true;
           };
 
@@ -129,12 +119,6 @@
               outputHash = "sha256-tY5sle1YUlUidJcq7RgTzkPsGLnWyG/3rtPqy2GklkY=";
             });
           }));
-
-          # FIXME: awesome doesn't detect this
-          bling = pkgs.callPackage ./pkgs/bling {
-            inherit (pkgs.lua53Packages) lua toLuaModule;
-            src = args.bling-src;
-          };
 
           eww = args.eww.defaultPackage.${system};
 
@@ -171,34 +155,6 @@
             inherit version;
             src = args.sway-borders-src;
           });
-
-          slock-fancy = pkgs.slock.overrideAttrs (_: rec {
-            inherit version;
-            src = args.slock-src;
-            patches = [ ./patches/slock_patch.diff ];
-          });
-
-
-          abstractdark-sddm-theme = pkgs.callPackage ./pkgs/abstractdark-sddm-theme {
-            src = args.abstractdark-sddm-theme-src;
-          };
-
-          simber = pkgs.python3Packages.callPackage ./pkgs/simber { };
-
-          pydes = pkgs.python3Packages.callPackage ./pkgs/pydes { };
-
-          downloader-cli = pkgs.python3Packages.callPackage ./pkgs/downloader-cli {
-            src = args.downloader-cli-src;
-          };
-
-          itunespy = pkgs.python3Packages.callPackage ./pkgs/itunespy { };
-
-          youtube-search = pkgs.python3Packages.callPackage ./pkgs/youtube-search { };
-
-          ytmdl = pkgs.python3Packages.callPackage ./pkgs/ytmdl {
-            inherit itunespy simber pydes downloader-cli youtube-search;
-            src = args.ytmdl-src;
-          };
         };
       }
     );
