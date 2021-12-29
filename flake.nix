@@ -47,6 +47,7 @@
           river-git
           sway-borders
           # Fonts
+          iosevka-ft
           iosevka-ft-bin;
 
         haskellPackages = prev.haskellPackages.extend (hfinal: hprev: rec {
@@ -108,7 +109,12 @@
 
           eww = args.eww.defaultPackage.${system};
 
-          iosevka-ft-bin = pkgs.callPackage ./pkgs/iosevka-ft-bin { };
+          iosevka-ft = pkgs.iosevka.override {
+            privateBuildPlan = import ./pkgs/iosevka-ft/build-plan.nix;
+            set = "ft";
+          };
+
+          iosevka-ft-bin = pkgs.callPackage ./pkgs/iosevka-ft { };
 
           kile-wl-git = pkgs.kile-wl.overrideAttrs (_: rec {
             inherit version;
