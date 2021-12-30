@@ -116,7 +116,7 @@
           };
 
           iosevka-ft-qp = pkgs.iosevka.override {
-            privateBuildPlan = import ./pkgs/iosevka-ft/build-plan.nix { proportional = true; };
+            privateBuildPlan = import ./pkgs/iosevka-ft/build-plan-qp.nix;
             set = "ft-qp";
           };
 

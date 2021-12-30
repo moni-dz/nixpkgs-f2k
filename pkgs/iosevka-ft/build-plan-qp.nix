@@ -1,15 +1,15 @@
 ''
-  [buildPlans.iosevka-ft]
-  family = "Iosevka FT"
-  spacing = "term"
+  [buildPlans.iosevka-ft-qp]
+  family = "Iosevka FT QP"
+  spacing = "quasi-proportional"
   serifs = "sans"
   no-cv-ss = false
   export-glyph-names = true
 
-    [buildPlans.iosevka-ft.variants]
+    [buildPlans.iosevka-ft-qp.variants]
     inherits = "ss14"
 
-      [buildPlans.iosevka-ft.variants.design]
+      [buildPlans.iosevka-ft-qp.variants.design]
       capital-j = "serifless"
       capital-k = "curly-serifless"
       capital-r = "curly"
@@ -38,14 +38,14 @@
       ascii-grave = "raised-turn-comma"
       question = "smooth"
 
-      [buildPlans.iosevka-ft.variants.italic]
+      [buildPlans.iosevka-ft-qp.variants.italic]
       a = "double-storey-serifless"
       f = "serifless"
 
-      [buildPlans.iosevka-ft.variants.oblique]
+      [buildPlans.iosevka-ft-qp.variants.oblique]
       f = "serifless"
       cyrl-ef = "cursive"
 
-  [buildPlans.iosevka-ft.ligations]
+  [buildPlans.iosevka-ft-qp.ligations]
   inherits = "dlig"
 ''
