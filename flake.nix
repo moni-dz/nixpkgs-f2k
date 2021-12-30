@@ -35,6 +35,9 @@
         inherit (self.packages.${final.system})
           # Programs
           alacritty-ligatures
+          discord-openasar
+          discord-ptb-openasar
+          discord-canary-openasar
           # Utilities
           eww
           # X11
@@ -62,6 +65,7 @@
         pkgs = import nixpkgs {
           inherit system;
           allowBroken = true;
+          allowUnfree = true;
           allowUnsupportedSystem = true;
           overlays = [ rust-nightly.overlay ];
         };
@@ -108,6 +112,21 @@
               outputHash = "sha256-tY5sle1YUlUidJcq7RgTzkPsGLnWyG/3rtPqy2GklkY=";
             });
           }));
+
+          discord-openasar = import ./pkgs/discord {
+            branch = "stable";
+            inherit pkgs;
+          };
+
+          discord-ptb-openasar = import ./pkgs/discord {
+            branch = "ptb";
+            inherit pkgs;
+          };
+
+          discord-canary-openasar = import ./pkgs/discord {
+            branch = "canary";
+            inherit pkgs;
+          };
 
           eww = args.eww.defaultPackage.${system};
 
