@@ -8,8 +8,11 @@ fetchFromGitHub rec {
 
   owner = "fortuneteller2k";
   repo = "iosevka-ft";
-  rev = "1a025b46e4641082226645028c53cb023d3bf85e";
-  sha256 = "sha256-gYu5Ija8zRc5THsEIAyYlPI2DbAR6jrx0crnX02oVMU=";
+  rev = "d73925ef7f2acfb23ad2f29964148c149be13bba";
+  sha256 =
+    if proportional then
+      "sha256-gYu5Ija8zRc5THsEIAyYlPI2DbAR6jrx0crnX02oVMU="
+    else "sha256-AFmHOYCEusjZbpg9hsNsF9jGvl5NVBWA3Y4uztXCB20=";
 
   postFetch = ''
     tar xzf $downloadedFile --strip=1
