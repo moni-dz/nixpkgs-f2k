@@ -7,7 +7,7 @@ build:
     - cachix use fortuneteller2k
     - nix path-info --all > /tmp/store-path-pre-build
   script:
-    - nix build -L .#eww .#awesome-git .#kile-wl-git .#picom-git .#picom-dccsillag .#picom-pijulius .#xmonad .#xmonad-contrib .#alacritty-ligatures .#discord-openasar .#discord-ptb-openasar .#discord-canary-openasar
+    - nix build -L .#eww .#awesome-git .#kile-wl-git .#picom-git .#picom-dccsillag .#picom-pijulius .#xmonad .#xmonad-contrib .#alacritty-ligatures .#discord-openasar .#discord-ptb-openasar .#discord-canary-openasar .#iosevka-ft-qp
   after_script:
     - cachix authtoken "$CACHIX_AUTH_TOKEN"
     - comm -13 <(sort /tmp/store-path-pre-build | grep -v '\.drv$') <(nix path-info --all | grep -v '\.drv$' | sort) | cachix push fortuneteller2k
