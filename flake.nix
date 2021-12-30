@@ -48,6 +48,7 @@
           sway-borders
           # Fonts
           iosevka-ft
+          iosevka-ft-qp
           iosevka-ft-bin;
 
         haskellPackages = prev.haskellPackages.extend (hfinal: hprev: rec {
@@ -112,6 +113,11 @@
           iosevka-ft = pkgs.iosevka.override {
             privateBuildPlan = import ./pkgs/iosevka-ft/build-plan.nix;
             set = "ft";
+          };
+
+          iosevka-ft-qp = pkgs.iosevka.override {
+            privateBuildPlan = import ./pkgs/iosevka-ft/build-plan.nix { proportional = true; };
+            set = "ft-qp";
           };
 
           iosevka-ft-bin = pkgs.callPackage ./pkgs/iosevka-ft { };

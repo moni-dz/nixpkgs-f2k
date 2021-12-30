@@ -1,7 +1,9 @@
+{ proportional ? false }:
+
 ''
   [buildPlans.iosevka-ft]
   family = "Iosevka FT"
-  spacing = "term"
+  spacing = "${if proportional then "quasi-proportional" else "term"}"
   serifs = "sans"
   no-cv-ss = false
   export-glyph-names = true
