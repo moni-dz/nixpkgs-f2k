@@ -2,12 +2,12 @@ image: nixpkgs/nix-flakes:latest
 
 build:
   before_script:
-    - nix --experimental-features "ca-references nix-command flakes" profile install nixpkgs#cachix nixpkgs#bash nixpkgs#gnugrep
+    - nix --experimental-features "nix-command flakes" profile install nixpkgs#cachix nixpkgs#bash nixpkgs#gnugrep
     - cachix authtoken "$CACHIX_AUTH_TOKEN"
     - cachix use fortuneteller2k
     - nix path-info --all > /tmp/store-path-pre-build
   script:
-    - nix build -L .#eww .#awesome-git .#kile-wl-git .#sway-borders .#picom-git .#picom-dccsillag .#picom-pijulius .#xmonad .#xmonad-contrib .#alacritty-ligatures .#iosevka-ft .#iosevka-ft-qp
+    - nix build -L .#eww .#awesome-git .#kile-wl-git .#sway-borders .#picom-git .#picom-dccsillag .#picom-pijulius .#xmonad .#xmonad-contrib .#alacritty-ligatures
   after_script:
     - cachix authtoken "$CACHIX_AUTH_TOKEN"
     - comm -13 <(sort /tmp/store-path-pre-build | grep -v '\.drv$') <(nix path-info --all | grep -v '\.drv$' | sort) | cachix push fortuneteller2k

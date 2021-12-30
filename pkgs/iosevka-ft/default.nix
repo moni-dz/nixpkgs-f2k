@@ -1,21 +1,23 @@
-{ lib, fetchFromGitHub }:
+{ lib, fetchFromGitHub, proportional ? false }:
 
 let
   version = "11.0.1";
 in
 fetchFromGitHub rec {
-  name = "iosevka-ft-bin-${version}";
+  name = "iosevka-ft${lib.optionalString proportional "-qp"}-bin-${version}";
 
   owner = "fortuneteller2k";
   repo = "iosevka-ft";
-  rev = "b578b0216ffacede8438490c17eda33d23929e4b";
-  sha256 = "sha256-AFmHOYCEusjZbpg9hsNsF9jGvl5NVBWA3Y4uztXCB20=";
+  rev = "1a025b46e4641082226645028c53cb023d3bf85e";
+  sha256 = "sha256-gYu5Ija8zRc5THsEIAyYlPI2DbAR6jrx0crnX02oVMU=";
 
   postFetch = ''
     tar xzf $downloadedFile --strip=1
     mkdir -p $out/share/fonts/truetype
-    install truetype-v11/*.ttf $out/share/fonts/truetype
-  '';
+  ''
+  +
+  (if proportional then "install truetype-v11-quasi-proportional/*.ttf $out/share/fonts/truetype"
+  else "install truetype-v11/*.ttf $out/share/fonts/truetype");
 
   meta = with lib; {
     description = "Custom build of Iosevka by fortuneteller2k";

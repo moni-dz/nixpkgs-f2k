@@ -49,7 +49,8 @@
           # Fonts
           iosevka-ft
           iosevka-ft-qp
-          iosevka-ft-bin;
+          iosevka-ft-bin
+          iosevka-ft-qp-bin;
 
         haskellPackages = prev.haskellPackages.extend (hfinal: hprev: rec {
           inherit (self.packages.${final.system}) xmonad xmonad-contrib;
@@ -121,6 +122,8 @@
           };
 
           iosevka-ft-bin = pkgs.callPackage ./pkgs/iosevka-ft { };
+
+          iosevka-ft-qp-bin = pkgs.callPackage ./pkgs/iosevka-ft { proportional = true; };
 
           kile-wl-git = pkgs.kile-wl.overrideAttrs (_: rec {
             inherit version;
