@@ -1,4 +1,4 @@
-{ branch ? "stable", pkgs }:
+{ branch ? "stable", waylandSupport ? false, pkgs }:
 
 let
   inherit (pkgs) callPackage fetchurl;
@@ -9,6 +9,7 @@ in
     binaryName = "Discord";
     desktopName = "Discord";
     version = "0.0.16";
+    inherit waylandSupport;
 
     src = fetchurl {
       url = "https://dl.discordapp.net/apps/linux/${version}/discord-${version}.tar.gz";
@@ -21,6 +22,7 @@ in
     binaryName = "DiscordPTB";
     desktopName = "Discord PTB";
     version = "0.0.26";
+    inherit waylandSupport;
 
     src = fetchurl {
       url = "https://dl-ptb.discordapp.net/apps/linux/${version}/discord-ptb-${version}.tar.gz";
@@ -33,6 +35,7 @@ in
     binaryName = "DiscordCanary";
     desktopName = "Discord Canary";
     version = "0.0.131";
+    inherit waylandSupport;
 
     src = fetchurl {
       url = "https://dl-canary.discordapp.net/apps/linux/${version}/discord-canary-${version}.tar.gz";

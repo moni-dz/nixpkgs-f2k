@@ -49,6 +49,7 @@
 , libdbusmenu
 , writeScript
 , common-updater-scripts
+, waylandSupport ? false
 }:
 
 let
@@ -142,6 +143,12 @@ stdenv.mkDerivation rec {
     ln -s $out/opt/${binaryName}/${binaryName} $out/bin/${lib.strings.toLower binaryName} || true
     ln -s $out/opt/${binaryName}/discord.png $out/share/pixmaps/${pname}.png
     ln -s "${desktopItem}/share/applications" $out/share/
+  '';
+
+  postFixup = lib.optionalString waylandSupport ''
+    wrapProgram $out/bin/${binaryName} \
+      --add-flags "--enable-features=UseOzonePlatform" \
+      --add-flags "--ozone-platform=wayland"
   '';
 
   desktopItem = makeDesktopItem {
