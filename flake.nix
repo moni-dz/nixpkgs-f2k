@@ -177,7 +177,7 @@
           });
 
           xmonad = args.xmonad.defaultPackage.${system};
-          xmonad-contrib = args.xmonad.defaultPackage.${system};
+          xmonad-contrib = args.xmonad-contrib.defaultPackage.${system};
         };
       }
     );
