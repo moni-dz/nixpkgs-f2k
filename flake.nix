@@ -26,7 +26,7 @@
     # Wayland
     kile-wl-src = { url = "gitlab:snakedye/kile"; flake = false; };
     river-src = { type = "git"; url = "https://github.com/ifreund/river.git"; submodules = true; flake = false; };
-    sway-borders-src = { url = "github:fluix-dev/sway-borders/9ecbfe366596f627e843886d94e47097e19df5d5"; flake = false; };
+    sway-borders-src = { url = "github:fluix-dev/sway-borders"; flake = false; };
   };
 
   outputs = args@{ self, flake-utils, nixpkgs, nixpkgs-wayland, rust-nightly, ... }:
