@@ -353,11 +353,11 @@
     },
     "nixpkgs_11": {
       "locked": {
-        "lastModified": 1641850495,
-        "narHash": "sha256-V+luTtgE/W1ldiGJBPGjjBw6B+yKG62owwOs/Kj9fI8=",
+        "lastModified": 1641939011,
+        "narHash": "sha256-a0z5+KgAFkqrDSFI9dl80GpnvtCgWnEHMewASkGrSE0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "81f05d871faf75d1456df6adec1d2118d787f65c",
+        "rev": "1b29f6fdb8ca9389f5000f479cdec42ceb67e161",
         "type": "github"
       },
       "original": {
@@ -382,11 +382,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1641952939,
-        "narHash": "sha256-KzRPVjMx5NquMI+7KRG5ehUPS8N9l+OiOcUe2XMNC74=",
+        "lastModified": 1642041506,
+        "narHash": "sha256-YIPjYAAw9BrlF2QOzyPVaaIyLB4QGPXAbhYt2L58bjc=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "69ef2ab05a3999074a07bd186f683226b50672c8",
+        "rev": "400be99192b675e5e34bc9abcd580895c00d05ab",
         "type": "github"
       },
       "original": {
@@ -444,11 +444,11 @@
     },
     "nixpkgs_7": {
       "locked": {
-        "lastModified": 1641850495,
-        "narHash": "sha256-V+luTtgE/W1ldiGJBPGjjBw6B+yKG62owwOs/Kj9fI8=",
+        "lastModified": 1641939011,
+        "narHash": "sha256-a0z5+KgAFkqrDSFI9dl80GpnvtCgWnEHMewASkGrSE0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "81f05d871faf75d1456df6adec1d2118d787f65c",
+        "rev": "1b29f6fdb8ca9389f5000f479cdec42ceb67e161",
         "type": "github"
       },
       "original": {
@@ -472,11 +472,11 @@
     },
     "nixpkgs_9": {
       "locked": {
-        "lastModified": 1641850495,
-        "narHash": "sha256-V+luTtgE/W1ldiGJBPGjjBw6B+yKG62owwOs/Kj9fI8=",
+        "lastModified": 1641939011,
+        "narHash": "sha256-a0z5+KgAFkqrDSFI9dl80GpnvtCgWnEHMewASkGrSE0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "81f05d871faf75d1456df6adec1d2118d787f65c",
+        "rev": "1b29f6fdb8ca9389f5000f479cdec42ceb67e161",
         "type": "github"
       },
       "original": {
@@ -537,11 +537,11 @@
     "river-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1641623867,
-        "narHash": "sha256-3XNn8x0ypLCW92WZ0d/aJPkjFrF7bD2OTUaqYEwK++0=",
+        "lastModified": 1641995455,
+        "narHash": "sha256-1mVWd8EkMdVSXlNBG5s9rJ704Cd1NIfsxXyWbKHAAK4=",
         "ref": "master",
-        "rev": "0c3a581f54a530b8001cb46fea134071e7b3a32f",
-        "revCount": 787,
+        "rev": "c9fd8b3f37bb8e8432b83b72776026cfb9bf7c5a",
+        "revCount": 788,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/ifreund/river.git"
