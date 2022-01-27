@@ -38,6 +38,8 @@
           discord-openasar
           discord-ptb-openasar
           discord-canary-openasar
+          # Cursors
+          phinger-cursors
           # Utilities
           eww
           # X11
@@ -163,6 +165,8 @@
             inherit version;
             src = args.picom-pijulius;
           });
+
+          phinger-cursors = pkgs.callPackage ./pkgs/phinger-cursors { };
 
           river-git = (pkgs.river.overrideAttrs (_: rec {
             inherit version;
