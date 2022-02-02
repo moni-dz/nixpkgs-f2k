@@ -168,12 +168,10 @@
 
           phinger-cursors-git = pkgs.callPackage ./pkgs/phinger-cursors { };
 
-          river-git = (pkgs.river.overrideAttrs (_: rec {
+          river-git = pkgs.river.overrideAttrs (_: rec {
             inherit version;
             src = args.river-src;
-          })).override {
-            inherit (nixpkgs-wayland.packages.${system}) wlroots;
-          };
+          });
 
           sway-borders = nixpkgs-wayland.packages.${system}.sway-unwrapped.overrideAttrs (_: rec {
             inherit version;
