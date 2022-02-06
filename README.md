@@ -43,12 +43,14 @@ or if you're like me, and is doing it the manual approach
 
 ```nix
 {
-  nix.binaryCaches = [
+  # Older versions use `nix.binaryCaches`
+  nix.settings.substituters = [
     "https://cache.nixos.org?priority=10"
     "https://fortuneteller2k.cachix.org"
   ];
 
-  nix.binaryCachePublicKeys = [
+  # Older versions use `nix.binaryCachePublicKeys`
+  nix.settings.trusted-public-keys = [
     "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
     "fortuneteller2k.cachix.org-1:kXXNkMV5yheEQwT0I4XYh1MaCSz+qg72k8XAi2PthJI="
   ];
