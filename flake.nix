@@ -75,8 +75,6 @@
         version = "999-unstable";
       in
       {
-        defaultPackage = self.packages.${system}.eww;
-
         packages = rec {
           awesome-git = with pkgs; (awesome.overrideAttrs (old: rec {
             inherit version;
@@ -131,6 +129,7 @@
           };
 
           eww = args.eww.defaultPackage.${system};
+          inherit (args.eww.packages) eww-wayland;
 
           iosevka-ft = pkgs.iosevka.override {
             privateBuildPlan = import ./pkgs/iosevka-ft/build-plan.nix;
