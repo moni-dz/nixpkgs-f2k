@@ -42,6 +42,7 @@
           phinger-cursors-git
           # Utilities
           eww
+          eww-wayland
           # X11
           awesome-git
           picom-git
@@ -129,7 +130,8 @@
           };
 
           eww = args.eww.defaultPackage.${system};
-          inherit (args.eww.packages) eww-wayland;
+          
+          inherit (args.eww.packages.${system}) eww-wayland;
 
           iosevka-ft = pkgs.iosevka.override {
             privateBuildPlan = import ./pkgs/iosevka-ft/build-plan.nix;
