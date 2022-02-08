@@ -130,7 +130,7 @@
           };
 
           eww = args.eww.defaultPackage.${system};
-          
+
           inherit (args.eww.packages.${system}) eww-wayland;
 
           iosevka-ft = pkgs.iosevka.override {
