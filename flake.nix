@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/master";
     nixpkgs-wayland.url = "github:nix-community/nixpkgs-wayland";
     rust-nightly.url = "github:oxalica/rust-overlay";
-    naersk.url = "github:nix-community/naersk";
+    # naersk.url = "github:nix-community/naersk";
     flake-utils.url = "github:numtide/flake-utils";
     flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
 
@@ -13,13 +13,13 @@
     # Programs
     alacritty-src = { url = "github:zenixls2/alacritty/ligature"; flake = false; };
 
-    wezterm-src = {
-      type = "git";
-      url = "https://github.com/wez/wezterm.git";
-      ref = "main";
-      submodules = true;
-      flake = false;
-    };
+    #wezterm-src = {
+    #  type = "git";
+    #  url = "https://github.com/wez/wezterm.git";
+    #  ref = "main";
+    #  submodules = true;
+    #  flake = false;
+    #};
 
     # Utilities
     eww.url = "github:elkowar/eww";
@@ -47,7 +47,7 @@
           discord-openasar
           discord-ptb-openasar
           discord-canary-openasar
-          wezterm
+          #wezterm
           # Utilities
           eww
           eww-wayland
@@ -190,11 +190,11 @@
             src = args.sway-borders-src;
           });
 
-          wezterm-git = naersk.buildPackage {
-            pname = "wezterm-git";
-            inherit version;
-            root = args.wezterm-src;
-          };
+          #wezterm-git = naersk.buildPackage {
+          #  pname = "wezterm-git";
+          #  inherit version;
+          #  root = args.wezterm-src;
+          #};
 
           xmonad = args.xmonad.defaultPackage.${system};
           xmonad-contrib = args.xmonad-contrib.defaultPackage.${system};
