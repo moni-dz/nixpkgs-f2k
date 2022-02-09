@@ -5,12 +5,21 @@
     nixpkgs.url = "github:NixOS/nixpkgs/master";
     nixpkgs-wayland.url = "github:nix-community/nixpkgs-wayland";
     rust-nightly.url = "github:oxalica/rust-overlay";
+    naersk.url = "github:nix-community/naersk";
     flake-utils.url = "github:numtide/flake-utils";
     flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
 
     ### Equivalent to multiple fetchFromGit[Hub/Lab] invocations
     # Programs
     alacritty-src = { url = "github:zenixls2/alacritty/ligature"; flake = false; };
+
+    wezterm-src = {
+      type = "git";
+      url = "https://github.com/wez/wezterm.git";
+      ref = "main";
+      submodules = true;
+      flake = false;
+    };
 
     # Utilities
     eww.url = "github:elkowar/eww";
@@ -38,8 +47,7 @@
           discord-openasar
           discord-ptb-openasar
           discord-canary-openasar
-          # Cursors
-          phinger-cursors-git
+          wezterm
           # Utilities
           eww
           eww-wayland
@@ -71,6 +79,11 @@
           allowUnfree = true;
           allowUnsupportedSystem = true;
           overlays = [ rust-nightly.overlay ];
+        };
+
+        naersk = args.naersk.lib."${system}".override {
+          cargo = pkgs.rust-bin.nightly.latest.minimal;
+          rustc = pkgs.rust-bin.nightly.latest.minimal;
         };
 
         version = "999-unstable";
@@ -167,8 +180,6 @@
             src = args.picom-pijulius;
           });
 
-          phinger-cursors-git = pkgs.callPackage ./pkgs/phinger-cursors { };
-
           river-git = pkgs.river.overrideAttrs (_: rec {
             inherit version;
             src = args.river-src;
@@ -178,6 +189,12 @@
             inherit version;
             src = args.sway-borders-src;
           });
+
+          wezterm-git = naersk.buildPackage {
+            pname = "wezterm-git";
+            inherit version;
+            root = args.wezterm-src;
+          };
 
           xmonad = args.xmonad.defaultPackage.${system};
           xmonad-contrib = args.xmonad-contrib.defaultPackage.${system};
