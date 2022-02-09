@@ -22,4 +22,4 @@ jobs:
         name: fortuneteller2k
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
     # Packages that compile like snails
-    - run: nix build -L .#wezterm
+    - run: nix build -L .#wezterm-git
