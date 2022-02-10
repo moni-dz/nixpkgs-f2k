@@ -484,6 +484,22 @@
         "type": "indirect"
       }
     },
+    "phocus-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1620191988,
+        "narHash": "sha256-jetVGSSMlzuR0WJD5ExEC71gNGK06QWY2wRFSyhDz80=",
+        "owner": "fortuneteller2k",
+        "repo": "gtk",
+        "rev": "cd013dedeeb94cccc534d9e6e50249ef965707bc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fortuneteller2k",
+        "repo": "gtk",
+        "type": "github"
+      }
+    },
     "picom-dccsillag": {
       "flake": false,
       "locked": {
@@ -562,6 +578,7 @@
         "kile-wl-src": "kile-wl-src",
         "nixpkgs": "nixpkgs_3",
         "nixpkgs-wayland": "nixpkgs-wayland",
+        "phocus-src": "phocus-src",
         "picom-dccsillag": "picom-dccsillag",
         "picom-pijulius": "picom-pijulius",
         "picom-src": "picom-src",
