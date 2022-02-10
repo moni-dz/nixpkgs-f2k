@@ -28,8 +28,8 @@ stdenvNoCC.mkDerivation rec {
       --replace "hsl(265,60%,60%)" "#${base0F}" \
       --replace "hsl(300,60%,60%)" "#${base0E}" \
       --replace "rgba(255,255,255,0.15)" "#${base04}" \
-      --replace "$accent-7;" "#${primary};" \
-      --replace "$accent-4;" "#${secondary};"
+      --replace "\$accent-7;" "#${primary};" \
+      --replace "\$accent-4;" "#${secondary};"
   '';
 
   nativeBuildInputs = [ sass ];

@@ -173,6 +173,8 @@
             inherit version;
             src = args.phocus-src;
 
+            inherit (pkgs.nodePackages) sass;
+
             colors = {
               base00 = "212121";
               base01 = "303030";
