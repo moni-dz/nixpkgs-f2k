@@ -487,15 +487,15 @@
     "phocus-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1620191988,
-        "narHash": "sha256-jetVGSSMlzuR0WJD5ExEC71gNGK06QWY2wRFSyhDz80=",
-        "owner": "fortuneteller2k",
+        "lastModified": 1619871645,
+        "narHash": "sha256-MiSrbOlG/XxEBWwCRlVe0kbC5NqPqgrsRyx6So3oRr8=",
+        "owner": "phocus",
         "repo": "gtk",
-        "rev": "cd013dedeeb94cccc534d9e6e50249ef965707bc",
+        "rev": "898584f0e51c5e72a49e308039bb57f6c59e5f8e",
         "type": "github"
       },
       "original": {
-        "owner": "fortuneteller2k",
+        "owner": "phocus",
         "repo": "gtk",
         "type": "github"
       }

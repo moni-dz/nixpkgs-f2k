@@ -21,7 +21,7 @@
     #  flake = false;
     #};
     # Themes
-    phocus-src = { url = "github:fortuneteller2k/gtk"; flake = false; };
+    phocus-src = { url = "github:phocus/gtk"; flake = false; };
 
     # Utilities
     eww.url = "github:elkowar/eww";
@@ -191,6 +191,9 @@
               base0E = "C792EA";
               base0F = "FF5370";
             };
+
+            primary = "F07178";
+            secondary = "C3E88D";
           };
 
           picom-git = pkgs.picom.overrideAttrs (_: rec {
