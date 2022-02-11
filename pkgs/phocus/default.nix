@@ -1,8 +1,6 @@
 { lib, stdenvNoCC, sass, src, version, colors, primary, secondary }:
 
 stdenvNoCC.mkDerivation rec {
-  __contentAddressed = true;
-
   pname = "phocus";
   inherit version;
   inherit src;
