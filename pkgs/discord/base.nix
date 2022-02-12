@@ -123,36 +123,36 @@ stdenv.mkDerivation rec {
   ];
 
   installPhase = ''
-    mkdir -p $out/{bin,opt/${binaryName},share/pixmaps}
+     mkdir -p $out/{bin,opt/${binaryName},share/pixmaps}
 
-    rm -rf *.so ${binaryName} chrome-sandbox swiftshader
+     rm -rf *.so ${binaryName} chrome-sandbox swiftshader
 
-    echo "Replacing app.asar with OpenAsar..."
-    cp ${openasar} resources/app.asar
+     echo "Replacing app.asar with OpenAsar..."
+     cp ${openasar} resources/app.asar
 
-    ${asar}/bin/asar e resources/app.asar resources/app
-    rm resources/app.asar
-    sed -i "s|'join\(__dirname,\'..\'\)'|'$out/opt/${binaryName}/resources/'|" resources/app/index.js
-    sed -i "s|process.resourcesPath|'$out/opt/${binaryName}/resources/'|" resources/app/utils/buildInfo.js
-    sed -i "s|'dirname\(app.getPath\('exe'\)\)'|'$out/share/pixmaps/'|" resources/app/paths.js
-    ${asar}/bin/asar p resources/app resources/app.asar --unpack-dir '**'
-    rm -rf resources/app
+     ${asar}/bin/asar e resources/app.asar resources/app
+     rm resources/app.asar
+     sed -i "s|'join\(__dirname,\'..\'\)'|'$out/opt/${binaryName}/resources/'|" resources/app/index.js
+     sed -i "s|process.resourcesPath|'$out/opt/${binaryName}/resources/'|" resources/app/utils/buildInfo.js
+     sed -i "s|'dirname\(app.getPath\('exe'\)\)'|'$out/share/pixmaps/'|" resources/app/paths.js
+     ${asar}/bin/asar p resources/app resources/app.asar --unpack-dir '**'
+     rm -rf resources/app
 
-    mv * $out/opt/${binaryName}
+     mv * $out/opt/${binaryName}
 
-   # --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--enable-features=UseOzonePlatform --ozone-platform=wayland}}" \
+    # --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--enable-features=UseOzonePlatform --ozone-platform=wayland}}" \
 
-    makeWrapper ${electron}/bin/electron $out/opt/${binaryName}/${binaryName} \
-      "''${gappsWrapperArgs[@]}" \
-      --add-flags $out/opt/${binaryName}/resources/app.asar \
-      --prefix XDG_DATA_DIRS : "${gtk3}/share/gsettings-schemas/${gtk3.name}/" \
-      --prefix LD_LIBRARY_PATH : ${libPath}:$out/opt/${binaryName}
+     makeWrapper ${electron}/bin/electron $out/opt/${binaryName}/${binaryName} \
+       "''${gappsWrapperArgs[@]}" \
+       --add-flags $out/opt/${binaryName}/resources/app.asar \
+       --prefix XDG_DATA_DIRS : "${gtk3}/share/gsettings-schemas/${gtk3.name}/" \
+       --prefix LD_LIBRARY_PATH : ${libPath}:$out/opt/${binaryName}
 
-    ln -s $out/opt/${binaryName}/${binaryName} $out/bin/
-    # Without || true the install would fail on case-insensitive filesystems
-    ln -s $out/opt/${binaryName}/${binaryName} $out/bin/${lib.strings.toLower binaryName} || true
-    ln -s $out/opt/${binaryName}/discord.png $out/share/pixmaps/${pname}.png
-    ln -s "${desktopItem}/share/applications" $out/share/
+     ln -s $out/opt/${binaryName}/${binaryName} $out/bin/
+     # Without || true the install would fail on case-insensitive filesystems
+     ln -s $out/opt/${binaryName}/${binaryName} $out/bin/${lib.strings.toLower binaryName} || true
+     ln -s $out/opt/${binaryName}/discord.png $out/share/pixmaps/${pname}.png
+     ln -s "${desktopItem}/share/applications" $out/share/
   '';
 
   desktopItem = makeDesktopItem {
