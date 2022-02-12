@@ -56,7 +56,7 @@
 let
   openasar = fetchurl {
     url = "https://github.com/GooseMod/OpenAsar/releases/download/nightly/app.asar";
-    sha256 = "sha256-fpqqMvM0j1ZRGwveW4efVYxbpfvAOkOmar5XPJnATvg=";
+    sha256 = "sha256-JgWn8pVxqiNW0hu55j51ryvwEOMSXFskBpP+cWYGBEA=";
   };
 in
 stdenv.mkDerivation rec {
