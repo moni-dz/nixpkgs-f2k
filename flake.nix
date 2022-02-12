@@ -47,8 +47,6 @@
           # Programs
           alacritty-ligatures
           discord-openasar
-          discord-ptb-openasar
-          discord-canary-openasar
           #wezterm
           # Themes
           phocus
@@ -134,16 +132,8 @@
           discord-openasar = import ./pkgs/discord {
             branch = "stable";
             inherit pkgs;
-          };
-
-          discord-ptb-openasar = import ./pkgs/discord {
-            branch = "ptb";
-            inherit pkgs;
-          };
-
-          discord-canary-openasar = import ./pkgs/discord {
-            branch = "canary";
-            inherit pkgs;
+            inherit (pkgs.nodePackages) asar;
+            electron = pkgs.electron_16;
           };
 
           eww = args.eww.defaultPackage.${system};

@@ -1,4 +1,4 @@
-{ branch ? "stable", pkgs }:
+{ branch ? "stable", asar, electron, pkgs }:
 
 let
   inherit (pkgs) callPackage fetchurl;
@@ -9,6 +9,8 @@ in
     binaryName = "Discord";
     desktopName = "Discord";
     version = "0.0.16";
+    inherit asar;
+    inherit electron;
 
     src = fetchurl {
       url = "https://dl.discordapp.net/apps/linux/${version}/discord-${version}.tar.gz";
@@ -20,11 +22,13 @@ in
     pname = "discord-ptb-openasar";
     binaryName = "DiscordPTB";
     desktopName = "Discord PTB";
-    version = "0.0.26";
+    version = "0.0.28";
+    inherit asar;
+    inherit electron;
 
     src = fetchurl {
       url = "https://dl-ptb.discordapp.net/apps/linux/${version}/discord-ptb-${version}.tar.gz";
-      sha256 = "1rlj76yhxjwwfmdln3azjr69hvfx1bjqdg9jhdn4fp6mlirkrcq4";
+      sha256 = "sha256-+ButCM4l4WcKJBLZNQ10YiIt38NUCftN7dKrK9tig9I=";
     };
   };
 
@@ -32,11 +36,13 @@ in
     pname = "discord-canary-openasar";
     binaryName = "DiscordCanary";
     desktopName = "Discord Canary";
-    version = "0.0.131";
+    version = "0.0.133";
+    inherit asar;
+    inherit electron;
 
     src = fetchurl {
       url = "https://dl-canary.discordapp.net/apps/linux/${version}/discord-canary-${version}.tar.gz";
-      sha256 = "087rzyivk0grhc73v7ldxxghks0n16ifrvpmk95vzaw99l9xv0v5";
+      sha256 = "sha256-CqwWLedPh4KCXEQAGM0lFlAyULRtKLVIAonvP9/kqHM=";
     };
   };
 }.${branch}

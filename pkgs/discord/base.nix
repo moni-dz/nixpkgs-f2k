@@ -9,12 +9,14 @@
 , stdenv
 , wrapGAppsHook
 , alsa-lib
+, asar
 , at-spi2-atk
 , at-spi2-core
 , atk
 , cairo
 , cups
 , dbus
+, electron
 , expat
 , fetchurl
 , fontconfig
@@ -52,11 +54,9 @@
 }:
 
 let
-  inherit binaryName;
-
   openasar = fetchurl {
     url = "https://github.com/GooseMod/OpenAsar/releases/download/nightly/app.asar";
-    sha256 = "sha256-MEdyIQcTlwkLNuCTEM8GcI92SbLLXZQC0sckOn20zvk=";
+    sha256 = "sha256-fpqqMvM0j1ZRGwveW4efVYxbpfvAOkOmar5XPJnATvg=";
   };
 in
 stdenv.mkDerivation rec {
@@ -124,18 +124,29 @@ stdenv.mkDerivation rec {
 
   installPhase = ''
     mkdir -p $out/{bin,opt/${binaryName},share/pixmaps}
-    mv * $out/opt/${binaryName}
+
+    rm -rf *.so ${binaryName} chrome-sandbox swiftshader
+
     echo "Replacing app.asar with OpenAsar..."
-    cp ${openasar} $out/opt/${binaryName}/app.asar 
-    chmod +x $out/opt/${binaryName}/${binaryName}
+    cp ${openasar} resources/app.asar
 
-    patchelf --set-interpreter ${stdenv.cc.bintools.dynamicLinker} \
-      $out/opt/${binaryName}/${binaryName}
+    ${asar}/bin/asar e resources/app.asar resources/app
+    rm resources/app.asar
+    sed -i "s|'join\(__dirname,\'..\'\)'|'$out/opt/${binaryName}/resources/'|" resources/app/index.js
+    sed -i "s|process.resourcesPath|'$out/opt/${binaryName}/resources/'|" resources/app/utils/buildInfo.js
+    sed -i "s|'dirname\(app.getPath\('exe'\)\)'|'$out/share/pixmaps/'|" resources/app/paths.js
+    ${asar}/bin/asar p resources/app resources/app.asar --unpack-dir '**'
+    rm -rf resources/app
 
-    wrapProgram $out/opt/${binaryName}/${binaryName} \
-        "''${gappsWrapperArgs[@]}" \
-        --prefix XDG_DATA_DIRS : "${gtk3}/share/gsettings-schemas/${gtk3.name}/" \
-        --prefix LD_LIBRARY_PATH : ${libPath}:$out/opt/${binaryName}
+    mv * $out/opt/${binaryName}
+
+   # --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--enable-features=UseOzonePlatform --ozone-platform=wayland}}" \
+
+    makeWrapper ${electron}/bin/electron $out/opt/${binaryName}/${binaryName} \
+      "''${gappsWrapperArgs[@]}" \
+      --add-flags $out/opt/${binaryName}/resources/app.asar \
+      --prefix XDG_DATA_DIRS : "${gtk3}/share/gsettings-schemas/${gtk3.name}/" \
+      --prefix LD_LIBRARY_PATH : ${libPath}:$out/opt/${binaryName}
 
     ln -s $out/opt/${binaryName}/${binaryName} $out/bin/
     # Without || true the install would fail on case-insensitive filesystems
