@@ -324,11 +324,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1645050060,
-        "narHash": "sha256-pvMxq98enZ0GB3nZ0cLEUmTXntT0B3526Nl26jV4WUk=",
+        "lastModified": 1645096981,
+        "narHash": "sha256-nRqX2q/RudCU2H/KLrT0PVFcSIJEs8MpMsVbcluqTNM=",
         "owner": "nix-community",
         "repo": "nixpkgs-wayland",
-        "rev": "5bf5d883252fddbd4c527aa24548053398059caf",
+        "rev": "1cc0cb5eb398e4a50f733861de99f09b42163b7c",
         "type": "github"
       },
       "original": {
@@ -382,11 +382,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1645061863,
-        "narHash": "sha256-wxUP3lewKjDSdSbmSMQJhlzElWGQeBR0KZrGDjUBv1w=",
+        "lastModified": 1645148627,
+        "narHash": "sha256-rzJM3YGwkaIyHfmm9Xtb9jyDPbDF2j2s/beq+Z2LOu8=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "18d06230cedf1471ef086220203d5a1ca08c542a",
+        "rev": "8a95d272032aaf3a0b89b9f66528c05e11779c56",
         "type": "github"
       },
       "original": {
@@ -553,11 +553,11 @@
     "river-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1644324832,
-        "narHash": "sha256-+ehfzbu6Lb78TrXkc4M/4IA87KSaJ86TiHVT99Ge8dM=",
+        "lastModified": 1645119686,
+        "narHash": "sha256-o51MsUKL+nD90vn+18F6XT48fpN53d6A24w20Y7MDG0=",
         "ref": "master",
-        "rev": "89433073d6572573073b858a6ce2ccf5a6da5624",
-        "revCount": 810,
+        "rev": "d7d0c3cfb9b4e454e3baf9ef87ce3008c9daaa58",
+        "revCount": 811,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/ifreund/river.git"
@@ -612,11 +612,11 @@
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
-        "lastModified": 1644978925,
-        "narHash": "sha256-135oqknTCNLe62WpHdv18umHXxJVhzaA1SVBxxYHp/E=",
+        "lastModified": 1645064920,
+        "narHash": "sha256-MA1TWy+XGnFWHH1EAxZ943UOEBqYTToubV9w4+r/cbE=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "e55ef9daac4ed57d7b30c649fdbc380c9c0f8e04",
+        "rev": "66a6dd1e56fca9a42dd18c3616dc66c25ff8d204",
         "type": "github"
       },
       "original": {
