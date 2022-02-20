@@ -8,9 +8,10 @@ stdenvNoCC.mkDerivation rec {
   patches = [
     ./remove-npm.diff
     ./gradient.diff
+    ./accent-substitute-all.diff
   ];
 
-  prePatch = with colors; ''
+  postPatch = with colors; ''
     substituteInPlace scss/gtk-3.0/_colors.scss \
       --replace "hsl(240, 3%, 4%)" "#${base00}" \
       --replace "hsl(240, 3%, 8%)" "#${base01}" \
@@ -26,8 +27,8 @@ stdenvNoCC.mkDerivation rec {
       --replace "hsl(265,60%,60%)" "#${base0F}" \
       --replace "hsl(300,60%,60%)" "#${base0E}" \
       --replace "rgba(255,255,255,0.15)" "#${base04}" \
-      --replace "\$accent-7;" "#${primary};" \
-      --replace "\$accent-4;" "#${secondary};"
+      --replace "@primary@" "#${primary}" \
+      --replace "@secondary@" "#${secondary}"
   '';
 
   nativeBuildInputs = [ sass ];

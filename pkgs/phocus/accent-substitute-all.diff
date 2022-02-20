@@ -1,0 +1,21 @@
+diff --git a/scss/gtk-3.0/_colors.scss b/scss/gtk-3.0/_colors.scss
+index bca0c09..7a646de 100644
+--- a/scss/gtk-3.0/_colors.scss
++++ b/scss/gtk-3.0/_colors.scss
+@@ -13,12 +13,12 @@ $accent-6: hsl(240,60%,60%);
+ $accent-7: hsl(265,60%,60%);
+ $accent-8: hsl(300,60%,60%);
+ 
+-$primary-accent: $accent-7;
+-$secondary-accent: $accent-4;
++$primary-accent: @primary@;
++$secondary-accent: @secondary@;
+ 
+ $foreground-color: lighten($surface-5, 45%);
+ 
+ $highlight: rgba(255,255,255,0.15);
+ 
+ // TODO: is there a better way to do this? this is for example used in gnome-calculator for the result top-border
+-@define-color borders #{"" +$surface-2};
+\ No newline at end of file
++@define-color borders #{"" +$surface-2};
