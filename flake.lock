@@ -324,11 +324,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1645313659,
-        "narHash": "sha256-TFnFFt9ZEYtWfM4DBcnahDtOD5J+oPjfhf0sf0NawXI=",
+        "lastModified": 1645380651,
+        "narHash": "sha256-zZS4l9TCqidqXmXRk0PGJFghPtiz5mB/P1Bw+a70BXk=",
         "owner": "nix-community",
         "repo": "nixpkgs-wayland",
-        "rev": "9441e2716fb6dd01b19887b337c219c0cc45ac41",
+        "rev": "25bbc7c692327823215481cda8aebbcbfd52b464",
         "type": "github"
       },
       "original": {
@@ -382,11 +382,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1645323794,
-        "narHash": "sha256-xstF6Mm03Zj+C3VZ4IvLB5C3qFVTm3BFGkJNrBjPGQE=",
+        "lastModified": 1645410002,
+        "narHash": "sha256-QPid2lqAxO1oh4gAG332Jdzhi7AgnXabgmTXe5z5Z+s=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "0eb8f11cb77ed63430fcb35677e536b762d71cc9",
+        "rev": "2b4dbfc4cafc0bd4c97c1a6602fecf3a8d694253",
         "type": "github"
       },
       "original": {
@@ -612,11 +612,11 @@
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
-        "lastModified": 1645323562,
-        "narHash": "sha256-Zv1s9KKgUmxAJqwnrQeanof5wJr9Hti+7odqXnNbPcY=",
+        "lastModified": 1645409726,
+        "narHash": "sha256-rji0+Ii6WpBB8VCPh3siV/MFfaSiksNbDHOE1DHcHCA=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "5893aa14811d0d982128e3730d1addb17754d436",
+        "rev": "d12fa61b3991d332d3b18ccb20a27d5e473f876e",
         "type": "github"
       },
       "original": {
@@ -669,11 +669,11 @@
         "xmonad": "xmonad_2"
       },
       "locked": {
-        "lastModified": 1645267964,
-        "narHash": "sha256-T01Bt84SMhSBa5wpPtAIYAPs8d+ILEmGVjlwWQOcXf8=",
+        "lastModified": 1645381499,
+        "narHash": "sha256-TmFlxY7i01whjcD0EcxyOpyNatpTtwHpQUoAnXvlwlg=",
         "owner": "xmonad",
         "repo": "xmonad-contrib",
-        "rev": "e98d666447061b85394f7bc8f1eca82f6c222fcb",
+        "rev": "d2b174f2697f9e4cda1f97d57206a66f62326fe2",
         "type": "github"
       },
       "original": {
