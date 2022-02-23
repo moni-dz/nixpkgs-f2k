@@ -14,9 +14,11 @@
 , openssl
 , perl
 , pkg-config
+, pnanme
 , python3
 , rustPlatform
 , src
+, version
 , wayland
 , xcbutil
 , xcbutilimage
@@ -48,9 +50,8 @@ let
   ];
 in
 naersk-lib.buildPackage {
-  pname = "wezterm-git";
-  version = "999-nightly";
-
+  inherit pname;
+  inherit version;
   inherit src;
 
   nativeBuildInputs = [
