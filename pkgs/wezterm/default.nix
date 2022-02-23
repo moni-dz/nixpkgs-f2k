@@ -14,7 +14,6 @@
 , openssl
 , perl
 , pkg-config
-, pnanme
 , python3
 , rustPlatform
 , src
@@ -50,7 +49,8 @@ let
   ];
 in
 naersk-lib.buildPackage {
-  inherit pname;
+  pname = "wezterm-git";
+  
   inherit version;
   inherit src;
 
