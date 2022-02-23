@@ -48,7 +48,7 @@
           # Programs
           alacritty-ligatures
           discord-openasar
-          #wezterm
+          wezterm-git
           # Themes
           phocus
           # Utilities
