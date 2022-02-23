@@ -214,7 +214,7 @@
             src = args.sway-borders-src;
           });
 
-          wezterm-git = ./pkgs/wezterm {
+          wezterm-git = pkgs.callPackage ./pkgs/wezterm {
             pname = "wezterm-git";
             inherit version;
             naersk-lib = naersk;
