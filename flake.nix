@@ -215,7 +215,6 @@
           });
 
           wezterm-git = pkgs.callPackage ./pkgs/wezterm {
-            pname = "wezterm-git";
             inherit version;
             naersk-lib = naersk;
             src = args.wezterm-src;
