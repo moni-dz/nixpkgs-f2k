@@ -50,7 +50,7 @@ let
 in
 naersk-lib.buildPackage {
   pname = "wezterm-git";
-  
+
   inherit version;
   inherit src;
 

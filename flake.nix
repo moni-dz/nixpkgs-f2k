@@ -20,7 +20,7 @@
       submodules = true;
       flake = false;
     };
-    
+
     # Themes
     phocus-src = { url = "github:phocus/gtk"; flake = false; };
 
@@ -219,7 +219,7 @@
             naersk-lib = naersk;
             src = args.wezterm-src;
           };
-          
+
           xmonad = args.xmonad.defaultPackage.${system};
           xmonad-contrib = args.xmonad-contrib.defaultPackage.${system};
         };
