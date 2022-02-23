@@ -81,6 +81,6 @@ naersk-lib.buildPackage {
     homepage = "https://wezfurlong.org/wezterm";
     license = licenses.mit;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ fortuneteller2k javacafe01 ];
+    maintainers = with maintainers; [ fortuneteller2k ];
   };
 }
