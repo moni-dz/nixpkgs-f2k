@@ -111,11 +111,11 @@
     "flake-compat_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1641205782,
-        "narHash": "sha256-4jY7RCWUoZ9cKD8co0/4tFARpWB+57+r1bLLvXNJliY=",
+        "lastModified": 1648199409,
+        "narHash": "sha256-JwPKdC2PoVBkG6E+eWw3j6BMR6sL3COpYWfif7RVb8Y=",
         "owner": "edolstra",
         "repo": "flake-compat",
-        "rev": "b7547d3eed6f32d06102ead8991ec52ab0a4f1a7",
+        "rev": "64a525ee38886ab9028e6f61790de0832aa3ef03",
         "type": "github"
       },
       "original": {
@@ -127,11 +127,11 @@
     "flake-compat_3": {
       "flake": false,
       "locked": {
-        "lastModified": 1641205782,
-        "narHash": "sha256-4jY7RCWUoZ9cKD8co0/4tFARpWB+57+r1bLLvXNJliY=",
+        "lastModified": 1648199409,
+        "narHash": "sha256-JwPKdC2PoVBkG6E+eWw3j6BMR6sL3COpYWfif7RVb8Y=",
         "owner": "edolstra",
         "repo": "flake-compat",
-        "rev": "b7547d3eed6f32d06102ead8991ec52ab0a4f1a7",
+        "rev": "64a525ee38886ab9028e6f61790de0832aa3ef03",
         "type": "github"
       },
       "original": {
@@ -359,11 +359,11 @@
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
-        "lastModified": 1648132835,
-        "narHash": "sha256-39ZTwXjxk87aBOVX4BPVcrhIALxvowju1+wk2ZVkjtE=",
+        "lastModified": 1648207781,
+        "narHash": "sha256-XAPrR/hxQRT75P75igTUtb0m2rw0y/GwyhmP6WiE9H8=",
         "owner": "nix-community",
         "repo": "nixpkgs-wayland",
-        "rev": "d59f774e53ee13df57270077067a30a4dd56b673",
+        "rev": "588a7fb0ec9f483c190cc22e266db7900401927a",
         "type": "github"
       },
       "original": {
@@ -445,11 +445,11 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1648175834,
-        "narHash": "sha256-mL+zcC4IR0TwQKHdlQZmnUtQnfS1wvlQR1bbsFKhpi8=",
+        "lastModified": 1648261307,
+        "narHash": "sha256-ONBZPEL+rdMYLYSQcWm5uBWJMSgmYsQFIx9PO3QiRHA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c7c341796d0308562ea518869c9db5a9e032bda8",
+        "rev": "7bd96c43cf54088e660967940f6d02056e0c0c8e",
         "type": "github"
       },
       "original": {
@@ -461,11 +461,11 @@
     },
     "nixpkgs_5": {
       "locked": {
-        "lastModified": 1647893727,
-        "narHash": "sha256-pOi7VdCb+s5Cwh5CS7YEZVRgH9uCmE87J5W7iXv29Ck=",
+        "lastModified": 1648069223,
+        "narHash": "sha256-BXzQV8p/RR440EB9qY0ULYfTH0zSW1stjUCYeP4SF+E=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "1ec61dd4167f04be8d05c45780818826132eea0d",
+        "rev": "1d08ea2bd83abef174fb43cbfb8a856b8ef2ce26",
         "type": "github"
       },
       "original": {
@@ -663,11 +663,11 @@
         "nixpkgs": "nixpkgs_6"
       },
       "locked": {
-        "lastModified": 1648175353,
-        "narHash": "sha256-1tw/CwsP5gi/J0CewA9aKG4FsczXEzCckrnnx4dIFA0=",
+        "lastModified": 1648261903,
+        "narHash": "sha256-AyOSR8qnnh5o5oSf0G2Gqvj9dewKK06OU4Unw3Dxruo=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "453070deaba6d2157103e269f46b752435bec266",
+        "rev": "007b22cd37d1e847ce5f042754f95c09f4be93a3",
         "type": "github"
       },
       "original": {
@@ -695,11 +695,11 @@
     "wezterm-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1648171593,
-        "narHash": "sha256-5L1QavnA9TV5JWXC4Pa54Xb574a3m2kPNXGMU1fu65I=",
+        "lastModified": 1648226784,
+        "narHash": "sha256-WDhVEXQQukRD9AGfPdAFWTYIP0PdcALazTt1w+6HHH0=",
         "ref": "main",
-        "rev": "638278f7e74841315df6bae1c4c09d2b8aaf3c6f",
-        "revCount": 5222,
+        "rev": "72cbf4caeb221e10422cc946b622c908486e96a8",
+        "revCount": 5225,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/wez/wezterm.git"
@@ -739,11 +739,11 @@
         "xmonad": "xmonad_2"
       },
       "locked": {
-        "lastModified": 1648063107,
-        "narHash": "sha256-iVWtUcCAUNQ3dAPa9vGtiY98N+3jOVKhFJqmFg4UumU=",
+        "lastModified": 1648192020,
+        "narHash": "sha256-uEltAU7MkF3EsyYfy5/9FoKNycohbxAJEHtNkegxFY0=",
         "owner": "xmonad",
         "repo": "xmonad-contrib",
-        "rev": "8693654bdd5250437f18c208cc41fd55813bd2da",
+        "rev": "0f788a9d926cd75651588aeda746993f0fcbf442",
         "type": "github"
       },
       "original": {
