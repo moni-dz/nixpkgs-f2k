@@ -41,7 +41,6 @@
     "fenix": {
       "inputs": {
         "nixpkgs": [
-          "eww",
           "nixpkgs"
         ],
         "rust-analyzer-src": "rust-analyzer-src"
@@ -154,11 +153,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1649190597,
-        "narHash": "sha256-XO3OawNJE4wVYj+2bh5VZEyRUhCepd33QKN3OGE+yWs=",
+        "lastModified": 1649298330,
+        "narHash": "sha256-J0ChN/HPXGQ6kVvBpIr8QvPkPE/t82TjEgG4FRQSr2w=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "651a8e878226b7d3cace0592cae93f004afa713b",
+        "rev": "9f2cb4a6c32663a755995032e25063c1a047faf2",
         "type": "github"
       },
       "original": {
