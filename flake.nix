@@ -70,6 +70,7 @@
 
             GI_TYPELIB_PATH = "${pkgs.playerctl}/lib/girepository-1.0:"
             + "${pkgs.upower}/lib/girepository-1.0:"
+            + "${pkgs.networkmanager}/lib/girepository-1.0:"
             + old.GI_TYPELIB_PATH;
           })).override {
             gtk3Support = true;
