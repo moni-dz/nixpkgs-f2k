@@ -8,13 +8,13 @@ in
     pname = "discord-openasar";
     binaryName = "Discord";
     desktopName = "Discord";
-    version = "0.0.16";
+    version = "0.0.17";
     inherit asar;
     inherit electron;
 
     src = fetchurl {
       url = "https://dl.discordapp.net/apps/linux/${version}/discord-${version}.tar.gz";
-      sha256 = "UTVKjs/i7C/m8141bXBsakQRFd/c//EmqqhKhkr1OOk=";
+      sha256 = "0hdgif8jpp5pz2c8lxas88ix7mywghdf9c9fn95n0dwf8g1c1xbb";
     };
   };
 
