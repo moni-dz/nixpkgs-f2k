@@ -76,11 +76,8 @@
             gtk3Support = true;
           };
 
-          discord-openasar = import ./pkgs/discord {
+          discord-openasar = pkgs.callPackage ./pkgs/discord {
             branch = "stable";
-            inherit pkgs;
-            inherit (pkgs.nodePackages) asar;
-            inherit (pkgs) electron;
           };
 
           inherit (args.eww.packages.${system}) eww eww-wayland;
