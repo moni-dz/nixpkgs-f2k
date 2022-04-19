@@ -1,21 +1,20 @@
 diff --git a/scss/gtk-3.0/widgets/_progressbar.scss b/scss/gtk-3.0/widgets/_progressbar.scss
-index f8d0dea..3be2ad0 100644
+index 0c0dedf..3113179 100644
 --- a/scss/gtk-3.0/widgets/_progressbar.scss
 +++ b/scss/gtk-3.0/widgets/_progressbar.scss
-@@ -5,7 +5,8 @@ progressbar {
-   trough {
-     background: colors.$highlight;
+@@ -6,6 +6,8 @@ progressbar {
+     background: colors.$white-weakest;
      progress {
--      background: colors.$secondary-accent;
-+      &.horizontal progress { background-image: linear-gradient(to right, colors.$accent-7, colors.$accent-4); }
-+      &.vertical progress { background-image: linear-gradient(to bottom, colors.$accent-7, colors.$accent-4); }
+       background: colors.$accent-secondary;
++      &.horizontal progress { background-image: linear-gradient(to right, colors.$accent-primary, colors.$accent-secondary); }
++      &.vertical progress { background-image: linear-gradient(to bottom, colors.$accent-primary, colors.$accent-secondary); }
      }
    }
 -}
 \ No newline at end of file
 +}
 diff --git a/scss/gtk-3.0/widgets/_scale.scss b/scss/gtk-3.0/widgets/_scale.scss
-index c0a3d0f..da7ba7a 100644
+index 1da322d..ea6a59d 100644
 --- a/scss/gtk-3.0/widgets/_scale.scss
 +++ b/scss/gtk-3.0/widgets/_scale.scss
 @@ -13,9 +13,7 @@ scale {
@@ -23,7 +22,7 @@ index c0a3d0f..da7ba7a 100644
          border-radius: 100%;
        }
 -      highlight {
--        background: colors.$primary-accent;
+-        background: colors.$accent-primary;
 -      }
 +      highlight { }
      }
@@ -33,8 +32,8 @@ index c0a3d0f..da7ba7a 100644
      }
    }
  
-+  &.horizontal highlight { background-image: linear-gradient(to right, colors.$accent-7, colors.$accent-4); }
-+  &.vertical highlight { background-image: linear-gradient(to bottom, colors.$accent-7, colors.$accent-4); }
++  &.horizontal highlight { background-image: linear-gradient(to right, colors.$accent-primary, colors.$accent-secondary); }
++  &.vertical highlight { background-image: linear-gradient(to bottom, colors.$accent-primary, colors.$accent-secondary); }
    &:disabled { opacity: 0.3; }
 -}
 \ No newline at end of file

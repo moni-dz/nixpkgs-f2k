@@ -13,20 +13,27 @@ stdenvNoCC.mkDerivation rec {
 
   postPatch = with colors; ''
     substituteInPlace scss/gtk-3.0/_colors.scss \
-      --replace "hsl(240, 3%, 4%)" "#${base00}" \
-      --replace "hsl(240, 3%, 8%)" "#${base01}" \
-      --replace "hsl(240, 3%, 12%)" "#${base02}" \
-      --replace "hsl(240, 3%, 16%)" "#${base03}" \
-      --replace "hsl(240, 3%, 20%)" "#${base04}" \
-      --replace "hsl(0,60%,60%)" "#${base08}" \
-      --replace "hsl(25,60%,60%)" "#${base09}" \
-      --replace "hsl(55,60%,60%)" "#${base0A}" \
-      --replace "hsl(145,60%,60%)" "#${base0B}" \
-      --replace "hsl(185,60%,60%)" "#${base0C}" \
-      --replace "hsl(240,60%,60%)" "#${base0D}" \
-      --replace "hsl(265,60%,60%)" "#${base0F}" \
-      --replace "hsl(300,60%,60%)" "#${base0E}" \
-      --replace "rgba(255,255,255,0.15)" "#${base04}" \
+      --replace "@bg0@" "#${base00}" \
+      --replace "@bg1@" "#${base01}" \
+      --replace "@bg2@" "#${base02}" \
+      --replace "@bg3@" "#${base03}" \
+      --replace "@bg4@" "#${base04}" \
+      --replace "@red@" "#${base08}" \
+      --replace "@lred@" "#${base08}" \
+      --replace "@orange@" "#${base09}" \
+      --replace "@lorange@" "#${base09}" \
+      --replace "@yellow@" "#${base0A}" \
+      --replace "@lyellow@" "#${base0A}" \
+      --replace "@green@" "#${base0B}" \
+      --replace "@lgreen@" "#${base0B}" \
+      --replace "@cyan@" "#${base0C}" \
+      --replace "@lcyan@" "#${base0C}" \
+      --replace "@blue@" "#${base0D}" \
+      --replace "@lblue@" "#${base0D}" \
+      --replace "@purple@" "#${base0F}" \
+      --replace "@lpurple@" "#${base0F}" \
+      --replace "@pink@" "#${base0E}" \
+      --replace "@lpink@" "#${base0E}" \
       --replace "@primary@" "#${primary}" \
       --replace "@secondary@" "#${secondary}"
   '';
