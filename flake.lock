@@ -25,11 +25,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1650311041,
-        "narHash": "sha256-zN3I7O3CNnz+E5cfxK9wtW1AFqMJGcCR/ermqoQje5M=",
+        "lastModified": 1650392125,
+        "narHash": "sha256-F+RnhaT0U4g9gpRLvbEXsKLhXPkrcPrWgjHU6sCbZLI=",
         "owner": "elkowar",
         "repo": "eww",
-        "rev": "b79f7b8fb71ff42285444cbdde93ee02ee464250",
+        "rev": "4ffb7d48414ecba9936be1a2dfffce4130dcbdaa",
         "type": "github"
       },
       "original": {
@@ -154,11 +154,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1650338528,
-        "narHash": "sha256-FV2h7TVvd5eaWeGv8Km2XsXkrFXufdnWnZEmp0SqWY4=",
+        "lastModified": 1650414675,
+        "narHash": "sha256-3dtUozBgiye1gWgLugspZTQmm3cYVx7jPq1KqpP2+iE=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "cecedd60464564f1966cef52f163113307fb71c2",
+        "rev": "62745b65f4684a4772bd70fdfa09669a9c6af874",
         "type": "github"
       },
       "original": {
@@ -171,11 +171,11 @@
     "phocus-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1650004362,
-        "narHash": "sha256-TZNx7kAVL/CuUXchyQGgnCdr8x0SRzF+idZoy52EYhc=",
+        "lastModified": 1650371924,
+        "narHash": "sha256-jfJSdZ9pOoTb42ArIjPc9N0qqeckxGb/qWFiSVfZBH0=",
         "owner": "phocus",
         "repo": "gtk",
-        "rev": "6026fc400c6c4c8fecfdadc802282ae31eb0adc8",
+        "rev": "c5eb54e4f115f089bb2c25a676401c0a55633e08",
         "type": "github"
       },
       "original": {
@@ -237,11 +237,11 @@
     "river-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1649961575,
-        "narHash": "sha256-19jW7MHD+aPs+uhS0JTXNqj6tdNItYbrrWEv43htzsY=",
+        "lastModified": 1650359453,
+        "narHash": "sha256-o8AOqWGXL5ErBoQGDBAOECF/rwZaYMhLeoXVeHOYR2s=",
         "ref": "master",
-        "rev": "a8491eb13e18ed7d9f69229ac0930a0255834d35",
-        "revCount": 824,
+        "rev": "e0246c04104fad95573f07c3bfc4547c7ce1d116",
+        "revCount": 825,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/ifreund/river.git"
