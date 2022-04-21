@@ -154,11 +154,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1650414675,
-        "narHash": "sha256-3dtUozBgiye1gWgLugspZTQmm3cYVx7jPq1KqpP2+iE=",
+        "lastModified": 1650509924,
+        "narHash": "sha256-3+RnLe2TT854udPRLIzOFHyN3z6MxSO+NrrfPiBxmEM=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "62745b65f4684a4772bd70fdfa09669a9c6af874",
+        "rev": "cdfcc5cecf00fd0be74c1e03effe10970212576a",
         "type": "github"
       },
       "original": {
@@ -237,11 +237,11 @@
     "river-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1650359453,
-        "narHash": "sha256-o8AOqWGXL5ErBoQGDBAOECF/rwZaYMhLeoXVeHOYR2s=",
+        "lastModified": 1650479635,
+        "narHash": "sha256-IdgmSdp6xoqJp1I5aKpdDnc4zK8HffDXe0J8jTZqZgo=",
         "ref": "master",
-        "rev": "e0246c04104fad95573f07c3bfc4547c7ce1d116",
-        "revCount": 825,
+        "rev": "8f59075bc505910207bb803d3530c6daee36577c",
+        "revCount": 828,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/ifreund/river.git"
