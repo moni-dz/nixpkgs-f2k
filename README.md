@@ -31,6 +31,18 @@ I also provide a `defaultPackage` attribute (default is `eww`), and a `packages`
 }
 ```
 
+Enabling `nix-command` and `flakes`
+
+```nix
+{
+  nix.extraOptions = ''
+    experimental-features = nix-command flakes
+  '';
+}
+```
+
+
+
 ## Binary Cache
 
 ```sh
