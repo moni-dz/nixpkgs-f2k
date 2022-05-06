@@ -24,10 +24,12 @@
     picom-pijulius = { url = "github:pijulius/picom/implement-window-animations"; flake = false; };
 
     # Wayland
+    nixpkgs-wayland.url = "github:nix-community/nixpkgs-wayland";
+    hyprland-src = { url = "github:vaxerski/hyprland"; flake = false; };
     river-src = { type = "git"; url = "https://github.com/ifreund/river.git"; submodules = true; flake = false; };
   };
 
-  outputs = args@{ self, flake-utils, nixpkgs, ... }:
+  outputs = args@{ self, flake-utils, nixpkgs, nixpkgs-wayland, ... }:
     {
       overlay = final: prev: {
         inherit (self.packages.${final.system})
@@ -74,6 +76,12 @@
             + old.GI_TYPELIB_PATH;
           })).override {
             gtk3Support = true;
+          };
+
+          hyprland = pkgs.callPackage ./pkgs/hyprland {
+            inherit version;
+            src = args.hyprland-src;
+            inherit (nixpkgs-wayland.packages.${system}) wlroots;
           };
 
           discord-openasar = pkgs.callPackage ./pkgs/discord {
