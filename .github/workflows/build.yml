@@ -11,16 +11,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.3.4
+    - uses: actions/checkout@v3.0.2
+    - uses: cachix/install-nix-action@v17
       with:
-        # Nix Flakes doesn't work on shallow clones
-        fetch-depth: 0
-    - uses: cachix/install-nix-action@v12
-      with:
-        install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.7.0pre20220209_52f5231/install
+        install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.9.0pre20220428_660835d/install
         extra_nix_config: |
           experimental-features = nix-command flakes
-    - uses: cachix/cachix-action@v8
+    - uses: cachix/cachix-action@v10
       with:
         name: fortuneteller2k
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'

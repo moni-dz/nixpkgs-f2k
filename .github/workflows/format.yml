@@ -6,12 +6,10 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3.0.2
+    - uses: cachix/install-nix-action@v17
       with:
-          fetch-depth: 0
-    - uses: cachix/install-nix-action@v12
-      with:
-        install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.4pre20210604_8e6ee1b/install
+        install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.9.0pre20220428_660835d/install
         extra_nix_config: |
           experimental-features = nix-command flakes
     - run: nix run nixpkgs#nixpkgs-fmt -- --check ./
