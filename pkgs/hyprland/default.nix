@@ -18,6 +18,8 @@
 , wayland-scanner
 , wlroots
 , xcbutilwm
+, xwayland
+, xwaylandSupport ? true
 }:
 
 stdenv.mkDerivation {
@@ -25,11 +27,11 @@ stdenv.mkDerivation {
   inherit src version;
 
   nativeBuildInputs = [
-    pkg-config
-    wayland
     cmake
     ninja
-  ];
+    pkg-config
+    wayland
+  ] ++ lib.optional xwaylandSupport xwayland;
 
   buildInputs = [
     libdrm
