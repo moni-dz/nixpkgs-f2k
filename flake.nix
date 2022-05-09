@@ -72,6 +72,8 @@
           allowUnfree = true;
         };
 
+        naersk = args.naersk.lib."${system}";
+
         version = "999-unstable";
       in
       {
@@ -164,7 +166,7 @@
 
           wezterm-git = pkgs.callPackage ./pkgs/wezterm {
             inherit version;
-            naersk-lib = args.naersk;
+            naersk-lib = naersk;
             src = args.wezterm-git-src;
           };
         };
