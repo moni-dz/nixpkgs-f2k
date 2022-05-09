@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/master";
     flake-utils.url = "github:numtide/flake-utils";
+    naersk.url = "github:nix-community/naersk";
 
     /*
       Equivalent to multiple fetchFromGit[Hub/Lab] invocations
@@ -16,6 +17,14 @@
 
     # Utilities
     eww.url = "github:elkowar/eww";
+
+    wezterm-git-src = {
+      type = "git";
+      url = "https://github.com/wez/wezterm.git";
+      ref = "main";
+      submodules = true;
+      flake = false;
+    };
 
     # X11
     awesome-src = { url = "github:awesomeWM/awesome"; flake = false; };
@@ -35,6 +44,7 @@
         inherit (self.packages.${final.system})
           # Programs
           discord-openasar
+          wezterm-git
           # Themes
           phocus
           # Utilities
@@ -151,6 +161,12 @@
             inherit version;
             src = args.river-src;
           });
+
+          wezterm-git = pkgs.callPackage ./pkgs/wezterm {
+            inherit version;
+            naersk-lib = args.naersk;
+            src = args.wezterm-git-src;
+          };
         };
       }
     );
