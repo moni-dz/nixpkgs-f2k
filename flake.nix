@@ -34,7 +34,6 @@
 
     # Wayland
     nixpkgs-wayland.url = "github:nix-community/nixpkgs-wayland";
-    hyprland-src = { url = "github:vaxerski/hyprland"; flake = false; };
     river-src = { type = "git"; url = "https://github.com/ifreund/river.git"; submodules = true; flake = false; };
   };
 
@@ -90,11 +89,7 @@
             gtk3Support = true;
           };
 
-          hyprland = pkgs.callPackage ./pkgs/hyprland {
-            inherit version;
-            src = args.hyprland-src;
-            inherit (nixpkgs-wayland.packages.${system}) wlroots;
-          };
+          hyprland = builtins.throw "use upstream flake for hyprland, thanks -- f2k";
 
           discord-openasar = pkgs.callPackage ./pkgs/discord {
             branch = "stable";
