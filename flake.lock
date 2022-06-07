@@ -244,11 +244,11 @@
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
-        "lastModified": 1654449249,
-        "narHash": "sha256-n0TEbWy54PFUj0TLxsVe+6wuaigV7pdw3qnu9OKmzM0=",
+        "lastModified": 1654498071,
+        "narHash": "sha256-EWnHEF7RF5KPj+kT45NiJ/m0LA8sQ2VpacoUtIEu2o0=",
         "owner": "nix-community",
         "repo": "nixpkgs-wayland",
-        "rev": "5842ccd46cd2776dd5515d59a43512ca82511535",
+        "rev": "a29acbb3afe3cbf195004e96fe3005fc8c6912d4",
         "type": "github"
       },
       "original": {
@@ -288,11 +288,11 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1654479824,
-        "narHash": "sha256-v6E4rZlvBYI1WwA3Tjnnmep8q7pJLqM2uhgQTXVkuGI=",
+        "lastModified": 1654568412,
+        "narHash": "sha256-BZkGyX62PyB8fzFHOcjGBJTWGb+PQ28lEbZEUR2x9JM=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "e4cb4bdb05605d691ca31b54703f2866197944ef",
+        "rev": "d23be02c22add83d28588ac164dcbac733305b04",
         "type": "github"
       },
       "original": {
@@ -387,11 +387,11 @@
     "river-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1654291867,
-        "narHash": "sha256-CoEuV5yUdfiR0bjogpTCK4c2PK/sXvkT6Yb1bYHZ7UE=",
+        "lastModified": 1654545235,
+        "narHash": "sha256-14A++t/Fazj4oXJNHcEePbxCHs717OJRdEEMfRd8h8o=",
         "ref": "master",
-        "rev": "a4137901584c98141ad8f32c667cfb3cb7736abb",
-        "revCount": 856,
+        "rev": "37da205be0c49969bc8dce9c784e785247eb4f30",
+        "revCount": 857,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/ifreund/river.git"
@@ -438,11 +438,11 @@
     "wezterm-git-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1654436131,
-        "narHash": "sha256-jqXpkGSmkri5z7mrv0Y1cc9TcJGhIyJozVrrgraOeQ0=",
+        "lastModified": 1654493486,
+        "narHash": "sha256-1Muu2A9wwbIfDVpgkDpJ3S7JNkYs1XgmX0rop0AivSs=",
         "ref": "main",
-        "rev": "e7258e0e03e612ba966a783daa8a81b78319740a",
-        "revCount": 5707,
+        "rev": "4776c8d9d9410041e124eb4647b39b612c3ef71a",
+        "revCount": 5708,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/wez/wezterm.git"
