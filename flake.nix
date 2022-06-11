@@ -55,6 +55,7 @@
           picom-dccsillag
           picom-pijulius
           # Wayland
+          glfw-wayland-minecraft
           river-git
           # Fonts
           iosevka-ft
@@ -90,13 +91,33 @@
             gtk3Support = true;
           };
 
-          hyprland = builtins.throw "use upstream flake for hyprland, thanks -- f2k";
-
           discord-openasar = pkgs.callPackage ./pkgs/discord {
             branch = "stable";
           };
 
           inherit (args.eww.packages.${system}) eww eww-wayland;
+
+          glfw-wayland-minecraft = pkgs.glfw-wayland.overrideAttrs (old: {
+            patches = [
+              # Don't crash on calls to focus or icon
+              (pkgs.fetchpatch {
+                url = "https://raw.githubusercontent.com/Admicos/minecraft-wayland/main/0003-Don-t-crash-on-calls-to-focus-or-icon.patch";
+                hash = "sha256-3U/nzFUI8nz3ixxhRFzgppoWH62kNMlGJnXSaJPbtRY=";
+              })
+
+              # wayland: fix broken opengl screenshots on mutter
+              (pkgs.fetchpatch {
+                url = "https://raw.githubusercontent.com/Admicos/minecraft-wayland/main/0004-wayland-fix-broken-opengl-screenshots-on-mutter.patch";
+                hash = "sha256-ZVlnXZkqp7B5WZzzkMGjAyYvjmidlZyYvpa0z3GNW4U=";
+              })
+
+              # Add warning about being an unofficial patch
+              (pkgs.fetchpatch {
+                url = "https://raw.githubusercontent.com/Admicos/minecraft-wayland/main/0005-Add-warning-about-being-an-unofficial-patch.patch";
+                hash = "sha256-j/z6c/bGKFtCwBvIVNGi63xa+7yIF1mRKc9q3Ykigaw=";
+              })
+            ];
+          });
 
           iosevka-ft = pkgs.iosevka.override {
             privateBuildPlan = import ./pkgs/iosevka-ft/build-plan.nix;
