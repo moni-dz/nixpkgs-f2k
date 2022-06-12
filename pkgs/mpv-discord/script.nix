@@ -17,6 +17,8 @@ stdenvNoCC.mkDerivation rec {
     cp -r scripts $out/share/mpv
   '';
 
+  passthru.scriptName = "discord.lua";
+
   meta = with lib; {
     description = "A cross-platform Discord Rich Presence integration for mpv with no external dependencies (mpv script)";
     homepage = "https://github.com/tnychn/mpv-discord";
