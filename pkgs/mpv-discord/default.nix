@@ -1,18 +1,9 @@
-{ lib, buildGoModule, fetchFromGitHub }:
+{ lib, buildGoModule, src, version }:
 
 buildGoModule rec {
   pname = "mpv-discord";
-  version = "1.6.1";
-
-  src = fetchFromGitHub {
-    owner = "tnychn";
-    repo = pname;
-    rev = "v${version}";
-    hash = "sha256-P1UaXGboOiqrXapfLzJI6IT3esNtflkQkcNXt4Umukc=";
-  };
-
+  inherit src version;
   sourceRoot = "source/${pname}";
-
   vendorSha256 = "sha256-xe1jyWFQUD+Z4qBAVQ0SBY0gdxmi5XG9t29n3f/WKDs=";
 
   meta = with lib; {

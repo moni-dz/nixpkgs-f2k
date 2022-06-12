@@ -171,6 +171,22 @@
         "type": "github"
       }
     },
+    "mpv-discord-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645436349,
+        "narHash": "sha256-P1UaXGboOiqrXapfLzJI6IT3esNtflkQkcNXt4Umukc=",
+        "owner": "tnychn",
+        "repo": "mpv-discord",
+        "rev": "861bfe54f4b3a1538c475fcf8e4e1fea38039419",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tnychn",
+        "repo": "mpv-discord",
+        "type": "github"
+      }
+    },
     "naersk": {
       "inputs": {
         "nixpkgs": "nixpkgs"
@@ -407,6 +423,7 @@
         "awesome-src": "awesome-src",
         "eww": "eww",
         "flake-utils": "flake-utils_2",
+        "mpv-discord-src": "mpv-discord-src",
         "naersk": "naersk_2",
         "nixpkgs": "nixpkgs_4",
         "nixpkgs-wayland": "nixpkgs-wayland",

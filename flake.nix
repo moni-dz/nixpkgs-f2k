@@ -17,6 +17,7 @@
 
     # Utilities
     eww.url = "github:elkowar/eww";
+    mpv-discord-src = { url = "github:tnychn/mpv-discord"; flake = false; };
 
     wezterm-git-src = {
       type = "git";
@@ -49,6 +50,8 @@
           # Utilities
           eww
           eww-wayland
+          mpv-discord
+          mpv-discord-script
           # X11
           awesome-git
           picom-git
@@ -132,8 +135,15 @@
           iosevka-ft-bin = pkgs.callPackage ./pkgs/iosevka-ft { };
           iosevka-ft-qp-bin = pkgs.callPackage ./pkgs/iosevka-ft { proportional = true; };
 
-          mpv-discord = pkgs.callPackage ./pkgs/mpv-discord { };
-          mpv-discord-script = pkgs.callPackage ./pkgs/mpv-discord/script.nix { };
+          mpv-discord = pkgs.callPackage ./pkgs/mpv-discord {
+            inherit version;
+            src = args.mpv-discord-src;
+          };
+
+          mpv-discord-script = pkgs.callPackage ./pkgs/mpv-discord/script.nix {
+            inherit version;
+            src = args.mpv-discord-src;
+          };
 
           phocus = pkgs.callPackage ./pkgs/phocus {
             inherit version;

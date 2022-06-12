@@ -1,4 +1,4 @@
-{ lib, stdenvNoCC, fetchFromGitHub }:
+{ lib, stdenvNoCC, src, version }:
 
 /*
   Usage: `pkgs.mpv.override { scripts = [ inputs.nixpkgs-f2k.packages.${system}.mpv-discord-script ]; }`
@@ -9,15 +9,7 @@
 */
 stdenvNoCC.mkDerivation rec {
   pname = "mpv-discord-script";
-  version = "1.6.1";
-
-  src = fetchFromGitHub {
-    owner = "tnychn";
-    repo = "mpv-discord";
-    rev = "v${version}";
-    hash = "sha256-P1UaXGboOiqrXapfLzJI6IT3esNtflkQkcNXt4Umukc=";
-  };
-
+  inherit src version;
   dontBuild = true;
 
   installPhase = ''
