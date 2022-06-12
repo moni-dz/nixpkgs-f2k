@@ -72,8 +72,8 @@
           allowUnfree = true;
         };
 
+        inherit (pkgs) lib;
         naersk = args.naersk.lib."${system}";
-
         version = "999-unstable";
       in
       {
@@ -131,6 +131,9 @@
 
           iosevka-ft-bin = pkgs.callPackage ./pkgs/iosevka-ft { };
           iosevka-ft-qp-bin = pkgs.callPackage ./pkgs/iosevka-ft { proportional = true; };
+
+          mpv-discord = pkgs.callPackage ./pkgs/mpv-discord { };
+          mpv-discord-script = pkgs.callPackage ./pkgs/mpv-discord/script.nix { };
 
           phocus = pkgs.callPackage ./pkgs/phocus {
             inherit version;

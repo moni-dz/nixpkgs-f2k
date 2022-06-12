@@ -22,4 +22,4 @@ jobs:
         name: fortuneteller2k
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
     # Packages that compile like snails
-    - run: nix build -L .#discord-openasar .#eww .#eww-wayland .#awesome-git .#picom-git .#picom-dccsillag .#picom-pijulius .#glfw-wayland-minecraft .#river-git .#wezterm-git
+    - run: nix build -L .#discord-openasar .#eww .#eww-wayland .#awesome-git .#picom-git .#picom-dccsillag .#picom-pijulius .#glfw-wayland-minecraft .#mpv-discord .#mpv-discord-script .#river-git .#wezterm-git
