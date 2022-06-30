@@ -12,7 +12,15 @@
     nixosConfigurations.desktop = inputs.nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        { nixpkgs.overlays = [ nixpkgs-f2k.overlay ]; }
+        {
+	  nixpkgs.overlays = [
+	    # Check flake.nix or clone and use `nix flake show` for available subsets of overlays
+
+	    nixpkgs-f2k.overlays.compositors # for X11 compositors
+	    nixpkgs-f2k.overlays.window-managers # window managers such as awesome or river
+	    # nixpkgs-f2k.overlays.default # for all packages
+	  ];
+	}
         ./configuration.nix
       ];
     };
@@ -20,13 +28,11 @@
 }
 ```
 
-I also provide a `defaultPackage` attribute (default is `eww`), and a `packages` attribute if overlays aren't your thing.
-
 ## Non-flake configurations, enable flakes then append to `configuration.nix`, or `home.nix`:
 ```nix
 {
   nixpkgs.overlays = [
-    (builtins.getFlake "github:fortuneteller2k/nixpkgs-f2k").overlay
+    (builtins.getFlake "github:fortuneteller2k/nixpkgs-f2k").overlays.default
   ];
 }
 ```
@@ -40,8 +46,6 @@ Enabling `nix-command` and `flakes`
   '';
 }
 ```
-
-
 
 ## Binary Cache
 
