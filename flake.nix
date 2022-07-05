@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/master";
     naersk.url = "github:nix-community/naersk";
+    eww.url = "github:elkowar/eww";
 
     /*
       Equivalent to multiple fetchFromGit[Hub/Lab] invocations
@@ -11,7 +12,6 @@
       Yes, this is me abusing `flake = false` against it's intended behavior.
     */
     phocus-src = { url = "github:phocus/gtk"; flake = false; };
-    eww.url = "github:elkowar/eww";
     mpv-discord-src = { url = "github:tnychn/mpv-discord"; flake = false; };
     awesome-src = { url = "github:awesomeWM/awesome"; flake = false; };
     picom-src = { url = "github:yshui/picom"; flake = false; };
@@ -171,6 +171,56 @@
             });
           };
 
+          stdenvs = final: prev:
+            let
+              commonFlags = [
+                "-O3"
+                "-pipe"
+                "-ffloat-store"
+                "-fexcess-precision=fast"
+                "-ffast-math"
+                "-fno-rounding-math"
+                "-fno-signaling-nans"
+                "-fno-math-errno"
+                "-funsafe-math-optimizations"
+                "-fassociative-math"
+                "-freciprocal-math"
+                "-ffinite-math-only"
+                "-fno-signed-zeros"
+                "-fno-trapping-math"
+                "-frounding-math"
+                "-fsingle-precision-constant"
+                # not supported on clang 14 yet, and isn't ignored
+                # "-fcx-limited-range"
+                # "-fcx-fortran-rules"
+              ];
+
+              /*
+                Example:
+
+                { lib, clangStdenv, ... }:
+
+                (lib.optimizedStdenv "armv9-a" clangStdenv).mkDerivation { ... }
+              */
+              optimizeStdenv = march: prev.stdenvAdapters.addAttrsToDerivation {
+                NIX_CFLAGS_COMPILE = prev.lib.concatStringsSep " " (commonFlags ++ [ "-march=${march}" ]);
+              };
+            in
+            {
+              lib = prev.lib // { inherit optimizeStdenv; };
+            }
+            //
+            (with prev; {
+              optimizedV4Stdenv = optimizeStdenv "x86-64-v4" stdenv;
+              optimizedV3Stdenv = optimizeStdenv "x86-64-v3" stdenv;
+              optimizedV2Stdenv = optimizeStdenv "x86-64-v2" stdenv;
+              optimizedNativeStdenv = lib.warn "using native optimizations, forfeiting reproducibility" optimizeStdenv "native" stdenv;
+              optimizedV4ClangStdenv = optimizeStdenv "x86-64-v4" llvmPackages_14.stdenv;
+              optimizedV3ClangStdenv = optimizeStdenv "x86-64-v3" llvmPackages_14.stdenv;
+              optimizedV2ClangStdenv = optimizeStdenv "x86-64-v2" llvmPackages_14.stdenv;
+              optimizedNativeClangStdenv = lib.warn "using native optimizations, forfeiting reproducibility" optimizeStdenv "native" llvmPackages_14.stdenv;
+            });
+
           default = final: prev: with self.overlays;
             (applications final prev)
             // (compositors final prev)
@@ -178,7 +228,8 @@
             // (terminal-emulators final prev)
             // (themes final prev)
             // (misc final prev)
-            // (window-managers final prev);
+            // (window-managers final prev)
+            // (stdenvs final prev);
         };
 
       packages = nixpkgs.lib.genAttrs [ "aarch64-linux" "x86_64-linux" ] (system:
@@ -186,6 +237,7 @@
           pkgs = import nixpkgs {
             inherit system;
             allowUnfree = true;
+            overlays = [ self.overlays.stdenvs ];
           };
         in
         self.overlays.default pkgs pkgs
