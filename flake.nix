@@ -200,7 +200,7 @@
 
                 { lib, clangStdenv, ... }:
 
-                (lib.optimizedStdenv "armv9-a" clangStdenv).mkDerivation { ... }
+                (lib.optimizeStdenv "armv9-a" clangStdenv).mkDerivation { ... }
               */
               optimizeStdenv = march: prev.stdenvAdapters.addAttrsToDerivation {
                 NIX_CFLAGS_COMPILE = prev.lib.concatStringsSep " " (commonFlags ++ [ "-march=${march}" ]);
