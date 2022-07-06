@@ -32,5 +32,5 @@ git.fetchSubmodules = true
 [wezterm]
 src.git = "https://github.com/wez/wezterm"
 src.branch = "main"
-fetch.github = "wez/wezterm"
+fetch.git = "https://github.com/wez/wezterm.git"
 git.fetchSubmodules = true
