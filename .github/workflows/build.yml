@@ -1,11 +1,11 @@
 name: "build"
 
 on:
-  push:
+  # push:
   pull_request:
   workflow_dispatch:
-  schedule:
-    - cron: '10 2 * * *'
+  # schedule:
+  #  - cron: '10 2 * * *'
 
 jobs:
   build:
@@ -22,5 +22,5 @@ jobs:
         name: fortuneteller2k
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
     # Packages that compile like snails
-    - run: nix build .#awesome-git .#picom-git .#picom-dccsillag .#picom-pijulius .#glfw-wayland-minecraft .#mpv-discord .#mpv-discord-script .#river-git
+    - run: nix build .#awesome-git .#picom-git .#picom-dccsillag .#picom-pijulius .#glfw-wayland-minecraft .#mpv-discord .#mpv-discord-script .#river-git .#wezterm-git
     # - run: nix build .#wezterm-git
