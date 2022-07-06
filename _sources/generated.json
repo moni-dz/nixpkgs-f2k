@@ -1,0 +1,154 @@
+{
+    "awesome": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "awesome",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "awesomeWM",
+            "repo": "awesome",
+            "rev": "9ca7bb487a5d1d2d5c102f94cd9e8cb5b6e7ffaa",
+            "sha256": "sha256-RRpwAIYNLkovXI0y/eXO9uRDqB4qQcXlnYYUCEmx/EA=",
+            "type": "github"
+        },
+        "version": "9ca7bb487a5d1d2d5c102f94cd9e8cb5b6e7ffaa"
+    },
+    "mpv-discord": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "mpv-discord",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "tnychn",
+            "repo": "mpv-discord",
+            "rev": "861bfe54f4b3a1538c475fcf8e4e1fea38039419",
+            "sha256": "sha256-P1UaXGboOiqrXapfLzJI6IT3esNtflkQkcNXt4Umukc=",
+            "type": "github"
+        },
+        "version": "861bfe54f4b3a1538c475fcf8e4e1fea38039419"
+    },
+    "phocus": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "phocus",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "phocus",
+            "repo": "gtk",
+            "rev": "945ad3940c69222d45a2bd06e0838164002b6690",
+            "sha256": "sha256-yz4gcK7gZ4lFAyehiPgtLDcPs12xFP+RqSriOsbv6to=",
+            "type": "github"
+        },
+        "version": "945ad3940c69222d45a2bd06e0838164002b6690"
+    },
+    "picom": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "picom",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "yshui",
+            "repo": "picom",
+            "rev": "cd50596f0ed81c0aa28cefed62176bd6f050a1c6",
+            "sha256": "sha256-e0Zd/kVqRiYUL6afsp4+JHKSe0qtNLyBE2s6Nem4A1I=",
+            "type": "github"
+        },
+        "version": "cd50596f0ed81c0aa28cefed62176bd6f050a1c6"
+    },
+    "picom-dccsillag": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "picom-dccsillag",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "dccsillag",
+            "repo": "picom",
+            "rev": "51b21355696add83f39ccdb8dd82ff5009ba0ae5",
+            "sha256": "sha256-crCwRJd859DCIC0pEerpDqdX2j8ZrNAzVaSSB3mTPN8=",
+            "type": "github"
+        },
+        "version": "51b21355696add83f39ccdb8dd82ff5009ba0ae5"
+    },
+    "picom-pijulius": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "picom-pijulius",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "pijulius",
+            "repo": "picom",
+            "rev": "982bb43e5d4116f1a37a0bde01c9bda0b88705b9",
+            "sha256": "sha256-YiuLScDV9UfgI1MiYRtjgRkJ0VuA1TExATA2nJSJMhM=",
+            "type": "github"
+        },
+        "version": "982bb43e5d4116f1a37a0bde01c9bda0b88705b9"
+    },
+    "river": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "river",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "riverwm",
+            "repo": "river",
+            "rev": "b58bd829c28435799e2c080acf75f245b51e246b",
+            "sha256": "sha256-x2Dlvfq4fwg8UzJID1xGYAXX8EOGfpZHwefCwiwjPC0=",
+            "type": "github"
+        },
+        "version": "b58bd829c28435799e2c080acf75f245b51e246b"
+    },
+    "wezterm": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "wezterm",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "wez",
+            "repo": "wezterm",
+            "rev": "6334e3bc446c10dd0182a6ee13ac571109f063b9",
+            "sha256": "sha256-7SH4t/BEImulsAafhuR7q7BiXyEQZ26jxXit2TiSskE=",
+            "type": "github"
+        },
+        "version": "6334e3bc446c10dd0182a6ee13ac571109f063b9"
+    }
+}

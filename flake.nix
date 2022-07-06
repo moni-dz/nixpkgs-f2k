@@ -5,27 +5,6 @@
     nixpkgs.url = "github:NixOS/nixpkgs/master";
     naersk.url = "github:nix-community/naersk";
     eww.url = "github:elkowar/eww";
-
-    /*
-      Equivalent to multiple fetchFromGit[Hub/Lab] invocations
-
-      Yes, this is me abusing `flake = false` against it's intended behavior.
-    */
-    phocus-src = { url = "github:phocus/gtk"; flake = false; };
-    mpv-discord-src = { url = "github:tnychn/mpv-discord"; flake = false; };
-    awesome-src = { url = "github:awesomeWM/awesome"; flake = false; };
-    picom-src = { url = "github:yshui/picom"; flake = false; };
-    picom-dccsillag = { url = "github:dccsillag/picom/implement-window-animations"; flake = false; };
-    picom-pijulius = { url = "github:pijulius/picom/implement-window-animations"; flake = false; };
-    river-src = { type = "git"; url = "https://github.com/ifreund/river.git"; submodules = true; flake = false; };
-
-    wezterm-git-src = {
-      type = "git";
-      url = "https://github.com/wez/wezterm.git";
-      ref = "main";
-      submodules = true;
-      flake = false;
-    };
   };
 
   outputs = args@{ self, nixpkgs, naersk, ... }:
@@ -34,7 +13,9 @@
 
       overlays =
         let
-          version = "999-unstable";
+          getPackage = pname: pkgs: (import ./_sources/generated.nix {
+            inherit (pkgs) fetchgit fetchurl fetchFromGitHub;
+          }).${pname};
         in
         {
           applications = final: prev: {
@@ -44,20 +25,29 @@
           };
 
           compositors = final: prev: {
-            picom-git = prev.picom.overrideAttrs (_: rec {
-              inherit version;
-              src = args.picom-src;
-            });
+            picom-git = prev.picom.overrideAttrs (_:
+              let
+                package = getPackage "picom" prev;
+              in
+              {
+                inherit (package) src version;
+              });
 
-            picom-dccsillag = prev.picom.overrideAttrs (_: rec {
-              inherit version;
-              src = args.picom-dccsillag;
-            });
+            picom-dccsillag = prev.picom.overrideAttrs (_:
+              let
+                package = getPackage "picom-dccsillag" prev;
+              in
+              {
+                inherit (package) src version;
+              });
 
-            picom-pijulius = prev.picom.overrideAttrs (_: rec {
-              inherit version;
-              src = args.picom-pijulius;
-            });
+            picom-pijulius = prev.picom.overrideAttrs (_:
+              let
+                package = getPackage "picom-pijulius" prev;
+              in
+              {
+                inherit (package) src version;
+              });
           };
 
           fonts = final: prev: {
@@ -76,42 +66,48 @@
           };
 
           terminal-emulators = final: prev: {
-            wezterm-git = prev.callPackage ./pkgs/wezterm {
-              inherit version;
-              naersk-lib = naersk.lib."${prev.system}";
-              src = args.wezterm-git-src;
-            };
+            wezterm-git =
+              let
+                package = getPackage "wezterm" prev;
+              in
+              prev.callPackage ./pkgs/wezterm {
+                inherit (package) src version;
+                naersk-lib = naersk.lib."${prev.system}";
+              };
           };
 
           themes = final: prev: {
-            phocus = prev.callPackage ./pkgs/phocus {
-              inherit version;
-              src = args.phocus-src;
+            phocus =
+              let
+                package = getPackage "phocus" prev;
+              in
+              prev.callPackage ./pkgs/phocus {
+                inherit (package) src version;
 
-              inherit (prev.nodePackages) sass;
+                inherit (prev.nodePackages) sass;
 
-              colors = {
-                base00 = "212121";
-                base01 = "303030";
-                base02 = "353535";
-                base03 = "4A4A4A";
-                base04 = "B2CCD6";
-                base05 = "EEFFFF";
-                base06 = "EEFFFF";
-                base07 = "FFFFFF";
-                base08 = "F07178";
-                base09 = "F78C6C";
-                base0A = "FFCB6B";
-                base0B = "C3E88D";
-                base0C = "89DDFF";
-                base0D = "82AAFF";
-                base0E = "C792EA";
-                base0F = "FF5370";
+                colors = {
+                  base00 = "212121";
+                  base01 = "303030";
+                  base02 = "353535";
+                  base03 = "4A4A4A";
+                  base04 = "B2CCD6";
+                  base05 = "EEFFFF";
+                  base06 = "EEFFFF";
+                  base07 = "FFFFFF";
+                  base08 = "F07178";
+                  base09 = "F78C6C";
+                  base0A = "FFCB6B";
+                  base0B = "C3E88D";
+                  base0C = "89DDFF";
+                  base0D = "82AAFF";
+                  base0E = "C792EA";
+                  base0F = "FF5370";
+                };
+
+                primary = "F07178";
+                secondary = "C3E88D";
               };
-
-              primary = "F07178";
-              secondary = "C3E88D";
-            };
           };
 
           misc = final: prev: {
@@ -139,36 +135,48 @@
               ];
             });
 
-            mpv-discord = prev.callPackage ./pkgs/mpv-discord {
-              inherit version;
-              src = args.mpv-discord-src;
-            };
+            mpv-discord =
+              let
+                package = getPackage "mpv-discord" prev;
+              in
+              prev.callPackage ./pkgs/mpv-discord {
+                inherit (package) src version;
+              };
 
-            mpv-discord-script = prev.callPackage ./pkgs/mpv-discord/script.nix {
-              inherit version;
-              src = args.mpv-discord-src;
-            };
+            mpv-discord-script =
+              let
+                package = getPackage "mpv-discord" prev;
+              in
+              prev.callPackage ./pkgs/mpv-discord/script.nix {
+                inherit (package) src version;
+              };
           };
 
           window-managers = final: prev: {
-            awesome-git = (prev.awesome.overrideAttrs (old: rec {
-              inherit version;
-              src = args.awesome-src;
-              patches = [ ];
+            awesome-git = (prev.awesome.overrideAttrs (old:
+              let
+                package = getPackage "awesome" prev;
+              in
+              {
+                inherit (package) src version;
+                patches = [ ];
 
-              GI_TYPELIB_PATH = "${prev.playerctl}/lib/girepository-1.0:"
-                + "${prev.upower}/lib/girepository-1.0:"
-                + "${prev.networkmanager}/lib/girepository-1.0:"
-                + old.GI_TYPELIB_PATH;
-            })).override {
+                GI_TYPELIB_PATH = "${prev.playerctl}/lib/girepository-1.0:"
+                  + "${prev.upower}/lib/girepository-1.0:"
+                  + "${prev.networkmanager}/lib/girepository-1.0:"
+                  + old.GI_TYPELIB_PATH;
+              })).override {
               gtk3Support = true;
             };
 
             # Yes, it's a *compositor* because of how Wayland works, I can't be bothered.
-            river-git = prev.river.overrideAttrs (_: rec {
-              inherit version;
-              src = args.river-src;
-            });
+            river-git = prev.river.overrideAttrs (_:
+              let
+                package = getPackage "river" prev;
+              in
+              {
+                inherit (package) src version;
+              });
           };
 
           stdenvs = final: prev:

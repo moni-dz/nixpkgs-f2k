@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "awesome-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656603165,
-        "narHash": "sha256-RRpwAIYNLkovXI0y/eXO9uRDqB4qQcXlnYYUCEmx/EA=",
-        "owner": "awesomeWM",
-        "repo": "awesome",
-        "rev": "9ca7bb487a5d1d2d5c102f94cd9e8cb5b6e7ffaa",
-        "type": "github"
-      },
-      "original": {
-        "owner": "awesomeWM",
-        "repo": "awesome",
-        "type": "github"
-      }
-    },
     "eww": {
       "inputs": {
         "fenix": "fenix",
@@ -41,6 +25,7 @@
     "fenix": {
       "inputs": {
         "nixpkgs": [
+          "eww",
           "nixpkgs"
         ],
         "rust-analyzer-src": "rust-analyzer-src"
@@ -87,22 +72,6 @@
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "mpv-discord-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1645436349,
-        "narHash": "sha256-P1UaXGboOiqrXapfLzJI6IT3esNtflkQkcNXt4Umukc=",
-        "owner": "tnychn",
-        "repo": "mpv-discord",
-        "rev": "861bfe54f4b3a1538c475fcf8e4e1fea38039419",
-        "type": "github"
-      },
-      "original": {
-        "owner": "tnychn",
-        "repo": "mpv-discord",
         "type": "github"
       }
     },
@@ -173,11 +142,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1657056915,
-        "narHash": "sha256-pzpuGI0+UHNlWae91QYeAlK0rY0FGZJAhHfRArHNwKY=",
+        "lastModified": 1657086189,
+        "narHash": "sha256-wSiZ7wBqke9qCDOyYhAU68HT63iZQWrsxG6NlTfBzto=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c9ad20e7ebbe27a29d12353d15cdc853f896291b",
+        "rev": "e120ef6a5a7d835e19082d037f6a079e836ce8ca",
         "type": "github"
       },
       "original": {
@@ -187,11 +156,11 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1657072665,
-        "narHash": "sha256-4mNrY4mNNqJCa0GvRys8WphvomCP3WX+vk+Cor6Myjk=",
+        "lastModified": 1657141181,
+        "narHash": "sha256-Rpv2bcFAA/+oiBeP/8t0/jLIoe/blJ+Eig+OBB071bY=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "a27f1085d7d2312fa4eec0b160d8565d06d88f61",
+        "rev": "0cd1b87d0ecbc6bcd61bb885c7e888e80ddd4cd5",
         "type": "github"
       },
       "original": {
@@ -199,105 +168,13 @@
         "ref": "master",
         "repo": "nixpkgs",
         "type": "github"
-      }
-    },
-    "phocus-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1651860970,
-        "narHash": "sha256-yz4gcK7gZ4lFAyehiPgtLDcPs12xFP+RqSriOsbv6to=",
-        "owner": "phocus",
-        "repo": "gtk",
-        "rev": "945ad3940c69222d45a2bd06e0838164002b6690",
-        "type": "github"
-      },
-      "original": {
-        "owner": "phocus",
-        "repo": "gtk",
-        "type": "github"
-      }
-    },
-    "picom-dccsillag": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1653865492,
-        "narHash": "sha256-crCwRJd859DCIC0pEerpDqdX2j8ZrNAzVaSSB3mTPN8=",
-        "owner": "dccsillag",
-        "repo": "picom",
-        "rev": "51b21355696add83f39ccdb8dd82ff5009ba0ae5",
-        "type": "github"
-      },
-      "original": {
-        "owner": "dccsillag",
-        "ref": "implement-window-animations",
-        "repo": "picom",
-        "type": "github"
-      }
-    },
-    "picom-pijulius": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1634982684,
-        "narHash": "sha256-YiuLScDV9UfgI1MiYRtjgRkJ0VuA1TExATA2nJSJMhM=",
-        "owner": "pijulius",
-        "repo": "picom",
-        "rev": "982bb43e5d4116f1a37a0bde01c9bda0b88705b9",
-        "type": "github"
-      },
-      "original": {
-        "owner": "pijulius",
-        "ref": "implement-window-animations",
-        "repo": "picom",
-        "type": "github"
-      }
-    },
-    "picom-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1649865898,
-        "narHash": "sha256-e0Zd/kVqRiYUL6afsp4+JHKSe0qtNLyBE2s6Nem4A1I=",
-        "owner": "yshui",
-        "repo": "picom",
-        "rev": "cd50596f0ed81c0aa28cefed62176bd6f050a1c6",
-        "type": "github"
-      },
-      "original": {
-        "owner": "yshui",
-        "repo": "picom",
-        "type": "github"
-      }
-    },
-    "river-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656791172,
-        "narHash": "sha256-/5Y5koMNvBCAd7FV1yHJ4BAx0+FjcA0vfroA63B95uQ=",
-        "ref": "master",
-        "rev": "b58bd829c28435799e2c080acf75f245b51e246b",
-        "revCount": 868,
-        "submodules": true,
-        "type": "git",
-        "url": "https://github.com/ifreund/river.git"
-      },
-      "original": {
-        "submodules": true,
-        "type": "git",
-        "url": "https://github.com/ifreund/river.git"
       }
     },
     "root": {
       "inputs": {
-        "awesome-src": "awesome-src",
         "eww": "eww",
-        "mpv-discord-src": "mpv-discord-src",
         "naersk": "naersk_2",
-        "nixpkgs": "nixpkgs_4",
-        "phocus-src": "phocus-src",
-        "picom-dccsillag": "picom-dccsillag",
-        "picom-pijulius": "picom-pijulius",
-        "picom-src": "picom-src",
-        "river-src": "river-src",
-        "wezterm-git-src": "wezterm-git-src"
+        "nixpkgs": "nixpkgs_4"
       }
     },
     "rust-analyzer-src": {
@@ -315,25 +192,6 @@
         "ref": "nightly",
         "repo": "rust-analyzer",
         "type": "github"
-      }
-    },
-    "wezterm-git-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1657067743,
-        "narHash": "sha256-WNynd1ZnCE5KV8pXrhjrLMlPXoinFtsT5seQYIB7dIA=",
-        "ref": "main",
-        "rev": "df1b832fceeddcdc1b012b79c21bedad57ff6a66",
-        "revCount": 5847,
-        "submodules": true,
-        "type": "git",
-        "url": "https://github.com/wez/wezterm.git"
-      },
-      "original": {
-        "ref": "main",
-        "submodules": true,
-        "type": "git",
-        "url": "https://github.com/wez/wezterm.git"
       }
     }
   },

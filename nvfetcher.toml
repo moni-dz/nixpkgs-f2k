@@ -1,0 +1,36 @@
+[awesome]
+src.git = "https://github.com/awesomeWM/awesome"
+fetch.github = "awesomeWM/awesome"
+
+[mpv-discord]
+src.git = "https://github.com/tnychn/mpv-discord"
+fetch.github = "tnychn/mpv-discord"
+
+[phocus]
+src.git = "https://github.com/phocus/gtk"
+fetch.github = "phocus/gtk"
+
+[picom]
+src.git = "https://github.com/yshui/picom"
+fetch.github = "yshui/picom"
+
+[picom-dccsillag]
+src.git = "https://github.com/dccsillag/picom"
+src.branch = "implement-window-animations"
+fetch.github = "dccsillag/picom"
+
+[picom-pijulius]
+src.git = "https://github.com/pijulius/picom"
+src.branch = "implement-window-animations"
+fetch.github = "pijulius/picom"
+
+[river]
+src.git = "https://github.com/riverwm/river"
+fetch.github = "riverwm/river"
+git.fetchSubmodules = true
+
+[wezterm]
+src.git = "https://github.com/wez/wezterm"
+src.branch = "main"
+fetch.github = "wez/wezterm"
+git.fetchSubmodules = true

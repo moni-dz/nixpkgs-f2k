@@ -15,11 +15,13 @@ jobs:
         install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.4pre20210604_8e6ee1b/install
         extra_nix_config: |
           experimental-features = nix-command flakes
-    - run: nix flake update
+        nix_path: nixpkgs=channel:nixos-unstable
+    - run: nix run github:berberman/nvfetcher -- --commit-changes
     - uses: cachix/cachix-action@v8
       with:
         name: fortuneteller2k
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-    - uses: stefanzweifel/git-auto-commit-action@v4
+    - if: ${{ env.COMMIT_MSG != null }}
+      uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: "[gha] bump flake inputs"
+        commit_message: ${{ env.COMMIT_MSG }}
