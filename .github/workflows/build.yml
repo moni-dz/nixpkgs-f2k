@@ -14,7 +14,7 @@ jobs:
     - uses: actions/checkout@v3.0.2
     - uses: cachix/install-nix-action@v17
       with:
-        install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.9.0pre20220428_660835d/install
+        install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.10.0pre20220629_b7eb4ac/install
         extra_nix_config: |
           experimental-features = nix-command flakes
     - uses: cachix/cachix-action@v10
@@ -22,4 +22,5 @@ jobs:
         name: fortuneteller2k
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
     # Packages that compile like snails
-    - run: nix build -L --keep-going .#discord-openasar .#eww .#eww-wayland .#awesome-git .#picom-git .#picom-dccsillag .#picom-pijulius .#glfw-wayland-minecraft .#mpv-discord .#mpv-discord-script .#river-git .#wezterm-git
+    - run: nix build .#awesome-git .#picom-git .#picom-dccsillag .#picom-pijulius .#glfw-wayland-minecraft .#mpv-discord .#mpv-discord-script .#river-git
+    # - run: nix build .#wezterm-git

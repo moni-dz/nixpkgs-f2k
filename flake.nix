@@ -4,7 +4,6 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/master";
     crane.url = "github:ipetkov/crane";
-    eww.url = "github:elkowar/eww";
   };
 
   outputs = args@{ self, nixpkgs, crane, ... }:
@@ -19,9 +18,8 @@
         in
         {
           applications = final: prev: {
-            discord-openasar = prev.callPackage ./pkgs/discord {
-              branch = "stable";
-            };
+            # remove after a week -- 7/14/2022
+            discord-openasar = builtins.throw "discord with openasar has been upstreamed, use it from nixpkgs";
           };
 
           compositors = final: prev: {
@@ -111,8 +109,6 @@
           };
 
           misc = final: prev: {
-            inherit (args.eww.packages.${prev.system}) eww eww-wayland;
-
             glfw-wayland-minecraft = prev.glfw-wayland.overrideAttrs (old: {
               patches = [
                 # Don't crash on calls to focus or icon

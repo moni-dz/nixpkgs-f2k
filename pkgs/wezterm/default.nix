@@ -27,6 +27,8 @@
 }:
 
 let
+  pname = "wezterm-git";
+
   nativeBuildInputs = [
     pkg-config
     python3
@@ -54,14 +56,11 @@ let
   ];
 
   cargoArtifacts = crane-lib.buildDepsOnly {
-    pname = "wezterm-deps";
-    inherit src nativeBuildInputs buildInputs;
+    inherit src pname nativeBuildInputs buildInputs;
   };
 in
 crane-lib.buildPackage {
-  pname = "wezterm-git";
-
-  inherit src version cargoArtifacts nativeBuildInputs buildInputs;
+  inherit src pname version cargoArtifacts nativeBuildInputs buildInputs;
 
   preFixup = lib.optionalString stdenv.isLinux ''
     patchelf --add-needed "${libGL}/lib/libEGL.so.1" $out/bin/wezterm-gui
