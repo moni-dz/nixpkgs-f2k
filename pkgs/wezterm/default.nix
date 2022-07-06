@@ -9,7 +9,7 @@
 , libX11
 , libxcb
 , libxkbcommon
-, naersk-lib
+, crane-lib
 , openssl
 , perl
 , pkg-config
@@ -27,7 +27,13 @@
 }:
 
 let
-  runtimeDeps = [
+  nativeBuildInputs = [
+    pkg-config
+    python3
+    perl
+  ];
+
+  buildInputs = [
     dbus
     egl-wayland
     fontconfig
@@ -46,36 +52,22 @@ let
     xcbutilwm
     zlib
   ];
+
+  cargoArtifacts = crane-lib.buildDepsOnly {
+    pname = "wezterm-deps";
+    inherit src nativeBuildInputs buildInputs;
+  };
 in
-naersk-lib.buildPackage {
+crane-lib.buildPackage {
   pname = "wezterm-git";
 
-  inherit version;
-  inherit src;
-
-  nativeBuildInputs = [
-    pkg-config
-    python3
-    perl
-  ];
-
-  buildInputs = runtimeDeps;
+  inherit src version cargoArtifacts nativeBuildInputs buildInputs;
 
   preFixup = lib.optionalString stdenv.isLinux ''
-    for artifact in wezterm wezterm-gui wezterm-mux-server strip-ansi-escapes; do
-      patchelf --set-rpath "${
-        lib.makeLibraryPath runtimeDeps
-      }" $out/bin/$artifact
-    done
+    patchelf --add-needed "${libGL}/lib/libEGL.so.1" $out/bin/wezterm-gui
   '';
 
-  singleStep = true;
-
-  gitAllRefs = true;
-  gitSubmodules = true;
-
   doCheck = false;
-  dontPatchELF = true;
 
   meta = with lib; {
     description =

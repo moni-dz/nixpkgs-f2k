@@ -3,11 +3,11 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/master";
-    naersk.url = "github:nix-community/naersk";
+    crane.url = "github:ipetkov/crane";
     eww.url = "github:elkowar/eww";
   };
 
-  outputs = args@{ self, nixpkgs, naersk, ... }:
+  outputs = args@{ self, nixpkgs, crane, ... }:
     {
       overlay = nixpkgs.lib.warn "nixpkgs-f2k.overlay is deprecated, use nixpkgs-f2k.overlays.default instead" self.overlays.default;
 
@@ -72,7 +72,7 @@
               in
               prev.callPackage ./pkgs/wezterm {
                 inherit (package) src version;
-                naersk-lib = naersk.lib."${prev.system}";
+                crane-lib = crane.lib."${prev.system}";
               };
           };
 
