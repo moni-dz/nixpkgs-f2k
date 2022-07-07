@@ -29,8 +29,4 @@ src.git = "https://github.com/riverwm/river"
 fetch.github = "riverwm/river"
 git.fetchSubmodules = true
 
-[wezterm]
-src.git = "https://github.com/wez/wezterm"
-src.branch = "main"
-fetch.git = "https://github.com/wez/wezterm.git"
-git.fetchSubmodules = true
+

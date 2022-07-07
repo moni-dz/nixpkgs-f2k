@@ -4,6 +4,15 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/master";
     crane.url = "github:ipetkov/crane";
+
+    # nvfetcher seems to don't like wezterm
+    wezterm-src = {
+      type = "git";
+      url = "https://github.com/wez/wezterm.git";
+      ref = "main";
+      submodules = true;
+      flake = false;
+    };
   };
 
   outputs = args@{ self, nixpkgs, crane, ... }:
@@ -64,14 +73,11 @@
           };
 
           terminal-emulators = final: prev: {
-            wezterm-git =
-              let
-                package = getPackage "wezterm" prev;
-              in
-              prev.callPackage ./pkgs/wezterm {
-                inherit (package) src version;
-                crane-lib = crane.lib."${prev.system}";
-              };
+            wezterm-git = prev.callPackage ./pkgs/wezterm {
+              src = args.wezterm-src;
+              version = "999-unstable";
+              crane-lib = crane.lib."${prev.system}";
+            };
           };
 
           themes = final: prev: {

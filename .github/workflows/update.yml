@@ -16,12 +16,11 @@ jobs:
         extra_nix_config: |
           experimental-features = nix-command flakes
         nix_path: nixpkgs=channel:nixos-unstable
-    - run: nix run github:berberman/nvfetcher -- --commit-changes
+    - run: nix run github:berberman/nvfetcher && nix flake update
     - uses: cachix/cachix-action@v8
       with:
         name: fortuneteller2k
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-    - if: ${{ env.COMMIT_MSG != null }}
-      uses: stefanzweifel/git-auto-commit-action@v4
+    - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: ${{ env.COMMIT_MSG }}
+        commit_message: "update dependencies"
