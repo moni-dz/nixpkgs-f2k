@@ -67,27 +67,4 @@
       sha256 = "sha256-YiuLScDV9UfgI1MiYRtjgRkJ0VuA1TExATA2nJSJMhM=";
     });
   };
-  river = {
-    pname = "river";
-    version = "b58bd829c28435799e2c080acf75f245b51e246b";
-    src = fetchFromGitHub ({
-      owner = "riverwm";
-      repo = "river";
-      rev = "b58bd829c28435799e2c080acf75f245b51e246b";
-      fetchSubmodules = true;
-      sha256 = "sha256-x2Dlvfq4fwg8UzJID1xGYAXX8EOGfpZHwefCwiwjPC0=";
-    });
-  };
-  wezterm = {
-    pname = "wezterm";
-    version = "61fb3dffe4ca3a105042275a9f80eb70c61174ba";
-    src = fetchgit {
-      url = "https://github.com/wez/wezterm.git";
-      rev = "61fb3dffe4ca3a105042275a9f80eb70c61174ba";
-      fetchSubmodules = true;
-      deepClone = false;
-      leaveDotGit = false;
-      sha256 = "sha256-xOGDjSi4bGMaa+SKui/82mNy0a/zzKRA96P3AO6CRMY=";
-    };
-  };
 }

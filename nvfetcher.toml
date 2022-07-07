@@ -23,10 +23,3 @@ fetch.github = "dccsillag/picom"
 src.git = "https://github.com/pijulius/picom"
 src.branch = "implement-window-animations"
 fetch.github = "pijulius/picom"
-
-[river]
-src.git = "https://github.com/riverwm/river"
-fetch.github = "riverwm/river"
-git.fetchSubmodules = true
-
-

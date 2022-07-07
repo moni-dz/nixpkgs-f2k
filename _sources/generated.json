@@ -112,42 +112,5 @@
             "type": "github"
         },
         "version": "982bb43e5d4116f1a37a0bde01c9bda0b88705b9"
-    },
-    "river": {
-        "cargoLocks": null,
-        "extract": null,
-        "name": "river",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": true,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "riverwm",
-            "repo": "river",
-            "rev": "b58bd829c28435799e2c080acf75f245b51e246b",
-            "sha256": "sha256-x2Dlvfq4fwg8UzJID1xGYAXX8EOGfpZHwefCwiwjPC0=",
-            "type": "github"
-        },
-        "version": "b58bd829c28435799e2c080acf75f245b51e246b"
-    },
-    "wezterm": {
-        "cargoLocks": null,
-        "extract": null,
-        "name": "wezterm",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": true,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "61fb3dffe4ca3a105042275a9f80eb70c61174ba",
-            "sha256": "sha256-xOGDjSi4bGMaa+SKui/82mNy0a/zzKRA96P3AO6CRMY=",
-            "type": "git",
-            "url": "https://github.com/wez/wezterm.git"
-        },
-        "version": "61fb3dffe4ca3a105042275a9f80eb70c61174ba"
     }
 }

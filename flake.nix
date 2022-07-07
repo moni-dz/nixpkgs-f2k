@@ -5,7 +5,14 @@
     nixpkgs.url = "github:NixOS/nixpkgs/master";
     crane.url = "github:ipetkov/crane";
 
-    # nvfetcher seems to don't like wezterm
+    # nvfetcher seems to don't like submodules
+    river-src = {
+      type = "git";
+      url = "https://github.com/riverwm/river.git";
+      submodules = true;
+      flake = false;
+    };
+
     wezterm-src = {
       type = "git";
       url = "https://github.com/wez/wezterm.git";
@@ -172,13 +179,10 @@
             };
 
             # Yes, it's a *compositor* because of how Wayland works, I can't be bothered.
-            river-git = prev.river.overrideAttrs (_:
-              let
-                package = getPackage "river" prev;
-              in
-              {
-                inherit (package) src version;
-              });
+            river-git = prev.river.overrideAttrs (_: {
+              src = args.river-src;
+              version = "999-unstable";
+            });
           };
 
           stdenvs = final: prev:
