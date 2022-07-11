@@ -233,9 +233,9 @@
               optimizedV3Stdenv = final.lib.optimizeStdenv "x86-64-v3" prev.stdenv;
               optimizedV2Stdenv = final.lib.optimizeStdenv "x86-64-v2" prev.stdenv;
               optimizedNativeStdenv = prev.lib.warn "using native optimizations, forfeiting reproducibility" optimizeStdenvWithNative prev.stdenv;
-              optimizedV4ClangStdenv = final.optimizeStdenv "x86-64-v4" prev.llvmPackages_14.stdenv;
-              optimizedV3ClangStdenv = final.optimizeStdenv "x86-64-v3" prev.llvmPackages_14.stdenv;
-              optimizedV2ClangStdenv = final.optimizeStdenv "x86-64-v2" prev.llvmPackages_14.stdenv;
+              optimizedV4ClangStdenv = final.lib.optimizeStdenv "x86-64-v4" prev.llvmPackages_14.stdenv;
+              optimizedV3ClangStdenv = final.lib.optimizeStdenv "x86-64-v3" prev.llvmPackages_14.stdenv;
+              optimizedV2ClangStdenv = final.lib.optimizeStdenv "x86-64-v2" prev.llvmPackages_14.stdenv;
               optimizedNativeClangStdenv = prev.lib.warn "using native optimizations, forfeiting reproducibility" optimizeStdenvWithNative prev.llvmPackages_14.stdenv;
             };
 
