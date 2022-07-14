@@ -2,8 +2,7 @@
 
 stdenvNoCC.mkDerivation rec {
   pname = "phocus";
-  inherit version;
-  inherit src;
+  inherit src version;
 
   patches = [
     ./remove-npm.diff

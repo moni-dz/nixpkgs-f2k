@@ -23,6 +23,17 @@
       sha256 = "sha256-P1UaXGboOiqrXapfLzJI6IT3esNtflkQkcNXt4Umukc=";
     });
   };
+  nvidia-exec = {
+    pname = "nvidia-exec";
+    version = "1dd1ecefe383cf115ba1680d5b1aa52b66ca9101";
+    src = fetchFromGitHub ({
+      owner = "pedro00dk";
+      repo = "nvidia-exec";
+      rev = "1dd1ecefe383cf115ba1680d5b1aa52b66ca9101";
+      fetchSubmodules = false;
+      sha256 = "sha256-UYl8XgIfWnRC1IYSX9ag8gTU9ENRDqoF2fBbuBRMb3o=";
+    });
+  };
   phocus = {
     pname = "phocus";
     version = "945ad3940c69222d45a2bd06e0838164002b6690";

@@ -6,6 +6,10 @@ fetch.github = "awesomeWM/awesome"
 src.git = "https://github.com/tnychn/mpv-discord"
 fetch.github = "tnychn/mpv-discord"
 
+[nvidia-exec]
+src.git = "https://github.com/pedro00dk/nvidia-exec"
+fetch.github = "pedro00dk/nvidia-exec"
+
 [phocus]
 src.git = "https://github.com/phocus/gtk"
 fetch.github = "phocus/gtk"

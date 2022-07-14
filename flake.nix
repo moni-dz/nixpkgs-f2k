@@ -24,6 +24,8 @@
 
   outputs = args@{ self, nixpkgs, crane, ... }:
     {
+      nixosModules."nvidia-exec" = import ./modules/nvidia-exec.nix;
+
       overlay = nixpkgs.lib.warn "nixpkgs-f2k.overlay is deprecated, use nixpkgs-f2k.overlays.default instead" self.overlays.default;
 
       overlays =
@@ -34,8 +36,11 @@
         in
         {
           applications = final: prev: {
-            # remove after a week -- 7/14/2022
-            discord-openasar = builtins.throw "discord with openasar has been upstreamed, use it from nixpkgs";
+            nvidia-exec =
+              let
+                package = getPackage "nvidia-exec" prev;
+              in
+              prev.callPackage ./pkgs/nvidia-exec { inherit (package) src version; };
           };
 
           compositors = final: prev: {

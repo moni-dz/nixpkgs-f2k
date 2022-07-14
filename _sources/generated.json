@@ -37,6 +37,25 @@
         },
         "version": "861bfe54f4b3a1538c475fcf8e4e1fea38039419"
     },
+    "nvidia-exec": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "nvidia-exec",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "pedro00dk",
+            "repo": "nvidia-exec",
+            "rev": "1dd1ecefe383cf115ba1680d5b1aa52b66ca9101",
+            "sha256": "sha256-UYl8XgIfWnRC1IYSX9ag8gTU9ENRDqoF2fBbuBRMb3o=",
+            "type": "github"
+        },
+        "version": "1dd1ecefe383cf115ba1680d5b1aa52b66ca9101"
+    },
     "phocus": {
         "cargoLocks": null,
         "extract": null,
