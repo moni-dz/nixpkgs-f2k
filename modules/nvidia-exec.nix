@@ -18,6 +18,30 @@ in
   };
 
   config = mkIf cfg.enable {
+    assertions = with config.services.xserver; [
+      {
+        assertion = builtins.elem "nvidia" videoDrivers;
+        message = "nvidia-exec requires the nvidia driver to be present in services.xserver.videoDrivers";
+      }
+
+      {
+        assertion = builtins.head videoDrivers == "intel" || builtins.head videoDrivers == "amdgpu";
+
+        message = ''
+          nvidia-exec requires that the intel/amdgpu driver be loaded first.
+          intel/amdgpu must be the first item in the services.xserver.videoDrivers list.
+        '';
+      }
+    ];
+
+    boot.blacklistedKernelModules = [
+      "nouveau"
+      "nvidia"
+      "nvidia-drm"
+      "nvidia-modeset"
+      "nvidia-uvm"
+    ];
+
     systemd.services.nvidia-exec = {
       description = "Turn off GPU during boot.";
 
