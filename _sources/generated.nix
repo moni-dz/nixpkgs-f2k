@@ -12,6 +12,17 @@
       sha256 = "sha256-SxydaQScu0kvBn3VOnT29/Sji0Y+7my+tO46mpMggAQ=";
     });
   };
+  lshw = {
+    pname = "lshw";
+    version = "d76afbaaf40e953243da921844cddff8185324f3";
+    src = fetchFromGitHub ({
+      owner = "lyonel";
+      repo = "lshw";
+      rev = "d76afbaaf40e953243da921844cddff8185324f3";
+      fetchSubmodules = false;
+      sha256 = "sha256-mK2bU5dEBIYSNrTErfKWyW/DU7XeQhIo3oX48ttGP80=";
+    });
+  };
   mpv-discord = {
     pname = "mpv-discord";
     version = "861bfe54f4b3a1538c475fcf8e4e1fea38039419";
@@ -47,13 +58,13 @@
   };
   picom = {
     pname = "picom";
-    version = "60c96953940d8035504e5c385b13ef88c46ff41e";
+    version = "d621f7a3e2e3e8104910d820a89a64905c874c20";
     src = fetchFromGitHub ({
       owner = "yshui";
       repo = "picom";
-      rev = "60c96953940d8035504e5c385b13ef88c46ff41e";
+      rev = "d621f7a3e2e3e8104910d820a89a64905c874c20";
       fetchSubmodules = false;
-      sha256 = "sha256-j6yeA6YhtzRCMYTMRUIICKUA/NkASatkTBPXJi95DFE=";
+      sha256 = "sha256-cXbHYKlzhv7JWWmTVwIaGV2oJNZkPBtXJsmaZTBtAH4=";
     });
   };
   picom-dccsillag = {

@@ -18,6 +18,25 @@
         },
         "version": "b7bac1dc761f7e231355e76351500a97b27b6803"
     },
+    "lshw": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "lshw",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "lyonel",
+            "repo": "lshw",
+            "rev": "d76afbaaf40e953243da921844cddff8185324f3",
+            "sha256": "sha256-mK2bU5dEBIYSNrTErfKWyW/DU7XeQhIo3oX48ttGP80=",
+            "type": "github"
+        },
+        "version": "d76afbaaf40e953243da921844cddff8185324f3"
+    },
     "mpv-discord": {
         "cargoLocks": null,
         "extract": null,
@@ -88,11 +107,11 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "60c96953940d8035504e5c385b13ef88c46ff41e",
-            "sha256": "sha256-j6yeA6YhtzRCMYTMRUIICKUA/NkASatkTBPXJi95DFE=",
+            "rev": "d621f7a3e2e3e8104910d820a89a64905c874c20",
+            "sha256": "sha256-cXbHYKlzhv7JWWmTVwIaGV2oJNZkPBtXJsmaZTBtAH4=",
             "type": "github"
         },
-        "version": "60c96953940d8035504e5c385b13ef88c46ff41e"
+        "version": "d621f7a3e2e3e8104910d820a89a64905c874c20"
     },
     "picom-dccsillag": {
         "cargoLocks": null,

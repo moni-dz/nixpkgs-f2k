@@ -40,33 +40,37 @@
               let
                 package = getPackage "nvidia-exec" prev;
               in
-              prev.callPackage ./pkgs/nvidia-exec { inherit (package) src version; };
+              prev.callPackage ./pkgs/nvidia-exec {
+                inherit (package) src version;
+                lshw = final.lshw-git;
+              };
+
+            lshw-git =
+              let
+                package = getPackage "lshw" prev;
+              in
+              prev.lshw.overrideAttrs (old: {
+                inherit (package) src version;
+
+                nativeBuildInputs = (old.nativeBuildInputs or [ ]) ++ [ prev.gettext ];
+              });
           };
 
           compositors = final: prev: {
-            picom-git = prev.picom.overrideAttrs (_:
+            picom-git =
               let
                 package = getPackage "picom" prev;
-              in
-              {
-                inherit (package) src version;
-              });
+              in prev.picom.overrideAttrs (_: { inherit (package) src version; });
 
-            picom-dccsillag = prev.picom.overrideAttrs (_:
+            picom-dccsillag =
               let
                 package = getPackage "picom-dccsillag" prev;
-              in
-              {
-                inherit (package) src version;
-              });
+              in prev.picom.overrideAttrs (_: { inherit (package) src version; });
 
-            picom-pijulius = prev.picom.overrideAttrs (_:
+            picom-pijulius =
               let
                 package = getPackage "picom-pijulius" prev;
-              in
-              {
-                inherit (package) src version;
-              });
+              in prev.picom.overrideAttrs (_: { inherit (package) src version; });
           };
 
           fonts = final: prev: {
@@ -153,17 +157,13 @@
               let
                 package = getPackage "mpv-discord" prev;
               in
-              prev.callPackage ./pkgs/mpv-discord {
-                inherit (package) src version;
-              };
+              prev.callPackage ./pkgs/mpv-discord { inherit (package) src version; };
 
             mpv-discord-script =
               let
                 package = getPackage "mpv-discord" prev;
               in
-              prev.callPackage ./pkgs/mpv-discord/script.nix {
-                inherit (package) src version;
-              };
+              prev.callPackage ./pkgs/mpv-discord/script.nix { inherit (package) src version; };
           };
 
           window-managers = final: prev: {
@@ -260,7 +260,7 @@
           pkgs = import nixpkgs {
             inherit system;
             allowUnfree = true;
-            overlays = [ self.overlays.stdenvs ];
+            overlays = [ self.overlays.default ];
           };
         in
         self.overlays.default pkgs pkgs

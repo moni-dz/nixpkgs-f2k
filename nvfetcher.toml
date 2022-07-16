@@ -2,6 +2,10 @@
 src.git = "https://github.com/awesomeWM/awesome"
 fetch.github = "awesomeWM/awesome"
 
+[lshw]
+src.git = "https://github.com/lyonel/lshw"
+fetch.github = "lyonel/lshw"
+
 [mpv-discord]
 src.git = "https://github.com/tnychn/mpv-discord"
 fetch.github = "tnychn/mpv-discord"
