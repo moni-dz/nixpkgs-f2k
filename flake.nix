@@ -60,17 +60,20 @@
             picom-git =
               let
                 package = getPackage "picom" prev;
-              in prev.picom.overrideAttrs (_: { inherit (package) src version; });
+              in
+              prev.picom.overrideAttrs (_: { inherit (package) src version; });
 
             picom-dccsillag =
               let
                 package = getPackage "picom-dccsillag" prev;
-              in prev.picom.overrideAttrs (_: { inherit (package) src version; });
+              in
+              prev.picom.overrideAttrs (_: { inherit (package) src version; });
 
             picom-pijulius =
               let
                 package = getPackage "picom-pijulius" prev;
-              in prev.picom.overrideAttrs (_: { inherit (package) src version; });
+              in
+              prev.picom.overrideAttrs (_: { inherit (package) src version; });
           };
 
           fonts = final: prev: {
