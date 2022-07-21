@@ -186,6 +186,22 @@
               gtk3Support = true;
             };
 
+            awesome-composite-git = (prev.awesome.overrideAttrs (old:
+              let
+                package = getPackage "awesome" prev;
+              in
+              {
+                inherit (package) src version;
+                patches = [ ./patches/awesome-composite.patch ];
+
+                GI_TYPELIB_PATH = "${prev.playerctl}/lib/girepository-1.0:"
+                  + "${prev.upower}/lib/girepository-1.0:"
+                  + "${prev.networkmanager}/lib/girepository-1.0:"
+                  + old.GI_TYPELIB_PATH;
+              })).override {
+              gtk3Support = true;
+            };
+
             # Yes, it's a *compositor* because of how Wayland works, I can't be bothered.
             river-git = prev.river.overrideAttrs (_: {
               src = args.river-src;
