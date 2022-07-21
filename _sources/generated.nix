@@ -12,6 +12,17 @@
       sha256 = "sha256-SxydaQScu0kvBn3VOnT29/Sji0Y+7my+tO46mpMggAQ=";
     });
   };
+  awesome-composite = {
+    pname = "awesome-composite";
+    version = "d76de1373fefc9e67b4d5c6a528be69549b2a9a2";
+    src = fetchFromGitHub ({
+      owner = "xinhaoyuan";
+      repo = "awesome";
+      rev = "d76de1373fefc9e67b4d5c6a528be69549b2a9a2";
+      fetchSubmodules = false;
+      sha256 = "sha256-ntR5uNFDpXNKtPFvkLAVZFtrHOBbxqACtlJ79rqVr7A=";
+    });
+  };
   lshw = {
     pname = "lshw";
     version = "d76afbaaf40e953243da921844cddff8185324f3";

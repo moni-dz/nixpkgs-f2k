@@ -18,6 +18,25 @@
         },
         "version": "b7bac1dc761f7e231355e76351500a97b27b6803"
     },
+    "awesome-composite": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "awesome-composite",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "xinhaoyuan",
+            "repo": "awesome",
+            "rev": "d76de1373fefc9e67b4d5c6a528be69549b2a9a2",
+            "sha256": "sha256-ntR5uNFDpXNKtPFvkLAVZFtrHOBbxqACtlJ79rqVr7A=",
+            "type": "github"
+        },
+        "version": "d76de1373fefc9e67b4d5c6a528be69549b2a9a2"
+    },
     "lshw": {
         "cargoLocks": null,
         "extract": null,

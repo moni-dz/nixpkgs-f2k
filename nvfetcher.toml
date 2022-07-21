@@ -2,6 +2,11 @@
 src.git = "https://github.com/awesomeWM/awesome"
 fetch.github = "awesomeWM/awesome"
 
+[awesome-composite]
+src.git = "https://github.com/xinhaoyuan/awesome"
+src.branch = "xy-dev"
+fetch.github = "xinhaoyuan/awesome"
+
 [lshw]
 src.git = "https://github.com/lyonel/lshw"
 fetch.github = "lyonel/lshw"
