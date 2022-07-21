@@ -188,11 +188,11 @@
 
             awesome-composite-git = (prev.awesome.overrideAttrs (old:
               let
-                package = getPackage "awesome" prev;
+                package = getPackage "awesome-composite" prev;
               in
               {
                 inherit (package) src version;
-                patches = [ ./patches/awesome-composite.patch ];
+                patches = [ ];
 
                 GI_TYPELIB_PATH = "${prev.playerctl}/lib/girepository-1.0:"
                   + "${prev.upower}/lib/girepository-1.0:"
