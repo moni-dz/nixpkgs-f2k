@@ -14,13 +14,13 @@
   };
   awesome-composite = {
     pname = "awesome-composite";
-    version = "f183856ec37cca895b5d2ffb51dd274c796c0b65";
+    version = "cb22e6305f4549e0a283417a58610e603cffab99";
     src = fetchFromGitHub ({
       owner = "xinhaoyuan";
       repo = "awesome";
-      rev = "f183856ec37cca895b5d2ffb51dd274c796c0b65";
+      rev = "cb22e6305f4549e0a283417a58610e603cffab99";
       fetchSubmodules = false;
-      sha256 = "sha256-r5j228dspsAyIVSAmycWeBJ6QSp9ThpxF9vafZQh+2E=";
+      sha256 = "sha256-nqpccLH1wFMRb2JaGEUxmNncncdlmT/u0L28oyiaZmI=";
     });
   };
   lshw = {
