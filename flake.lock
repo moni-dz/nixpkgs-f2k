@@ -69,11 +69,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1658632815,
-        "narHash": "sha256-SvrHo++2drpILSZBO8wirkzwaqCRZBXE+2OGFHEJ4yQ=",
+        "lastModified": 1658720681,
+        "narHash": "sha256-Oy7r4IX6w+av7dFxSj5FujMZwtz/zAlDPrAjh15o+z0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "46cf1b978133b993eacf30a3c564df29044df0e5",
+        "rev": "e61492bc46d79d4a5db2f14047967dc4f018231a",
         "type": "github"
       },
       "original": {
@@ -112,11 +112,11 @@
     "wezterm-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1658546584,
-        "narHash": "sha256-r/cltGwy50J5FKqSW3Po+zp9zTcP7QrsKaC8RtvWsCk=",
+        "lastModified": 1658708159,
+        "narHash": "sha256-v99h1J7CKdR263bZ56ARey4ofCYEXCJLHn+fph9H4hM=",
         "ref": "main",
-        "rev": "355f3d3975528645dbf04982d0754eaac7d456b6",
-        "revCount": 6020,
+        "rev": "8eb44b43b3dfad99eeb4bf37b0daeb36ea8f7e2e",
+        "revCount": 6042,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/wez/wezterm.git"
