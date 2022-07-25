@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/master";
-    crane.url = "github:ipetkov/crane";
 
     # nvfetcher seems to don't like submodules
     river-src = {
@@ -22,7 +21,7 @@
     };
   };
 
-  outputs = args@{ self, nixpkgs, crane, ... }:
+  outputs = args@{ self, nixpkgs, ... }:
     {
       nixosModules."nvidia-exec" = import ./modules/nvidia-exec.nix;
 
@@ -92,11 +91,17 @@
           };
 
           terminal-emulators = final: prev: {
-            wezterm-git = prev.callPackage ./pkgs/wezterm {
+            wezterm-git = prev.wezterm.overrideAttrs (old: rec {
               src = args.wezterm-src;
               version = "999-unstable";
-              crane-lib = crane.lib."${prev.system}";
-            };
+
+              cargoDeps = old.cargoDeps.overrideAttrs (_: {
+                inherit src;
+                outputHash = "sha256-x44oemfo/VUJW3jalnnyg7Awgcdgy2TFu8uA24hn1F8=";
+              });
+
+              doCheck = false;
+            });
           };
 
           themes = final: prev: {
