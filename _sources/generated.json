@@ -31,11 +31,11 @@
             "name": null,
             "owner": "xinhaoyuan",
             "repo": "awesome",
-            "rev": "5647540775f81589cf3570b044db7634f9b79a85",
-            "sha256": "sha256-GPEHr9p0Xs7p63ustgCHruQBP3ZZKdoN814Zmvr2XqM=",
+            "rev": "5d49eb57c4c0de2f9138001847f542718a10cc10",
+            "sha256": "sha256-V7mnpIuOGem+N+bNP1sLHuOdBdUdSVcfehfWCpbKsac=",
             "type": "github"
         },
-        "version": "5647540775f81589cf3570b044db7634f9b79a85"
+        "version": "5d49eb57c4c0de2f9138001847f542718a10cc10"
     },
     "lshw": {
         "cargoLocks": null,
