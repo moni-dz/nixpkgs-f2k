@@ -3,6 +3,9 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/master";
+    nixpkgs-fmt.url = "github:nix-community/nixpkgs-fmt";
+
+    nixpkgs-fmt.inputs.nixpkgs.follows = "nixpkgs";
 
     # nvfetcher seems to don't like submodules
     river-src = {
@@ -21,7 +24,10 @@
     };
   };
 
-  outputs = args@{ self, nixpkgs, ... }:
+  outputs = args@{ self, nixpkgs, nixpkgs-fmt, ... }:
+    let
+      targetSystems = [ "x86_64-linux" "aarch64-linux" ];
+    in
     {
       nixosModules = {
         "nvidia-exec" = import ./modules/nvidia-exec.nix;
@@ -286,7 +292,7 @@
             // (stdenvs final prev);
         };
 
-      packages = nixpkgs.lib.genAttrs [ "aarch64-linux" "x86_64-linux" ] (system:
+      packages = nixpkgs.lib.genAttrs targetSystems (system:
         let
           pkgs = import nixpkgs {
             inherit system;
@@ -296,5 +302,7 @@
         in
         builtins.removeAttrs (self.overlays.default pkgs pkgs) [ "lib" ]
       );
+
+      formatter = nixpkgs.lib.genAttrs targetSystems (system: nixpkgs-fmt.defaultPackage.${system});
     };
 }
