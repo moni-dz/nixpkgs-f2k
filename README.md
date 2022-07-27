@@ -12,15 +12,21 @@
     nixosConfigurations.desktop = inputs.nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        {
+        # using the nixos modules provided
+	nixpkgs-f2k.nixosModules.stevenblack # stevenblack hosts adblocking, refer to ./modules/stevenblack.nix for options
+
+	# using the overlays (most likely you want)
+	{
 	  nixpkgs.overlays = [
 	    # Check flake.nix or clone and use `nix flake show` for available subsets of overlays
 
 	    nixpkgs-f2k.overlays.compositors # for X11 compositors
 	    nixpkgs-f2k.overlays.window-managers # window managers such as awesome or river
+	    nixpkgs-f2k.overlays.stdenvs # stdenvs with compiler optimizations, and library functions for optimizing them
 	    # nixpkgs-f2k.overlays.default # for all packages
 	  ];
 	}
+
         ./configuration.nix
       ];
     };
@@ -31,9 +37,13 @@
 ## Non-flake configurations, enable flakes then append to `configuration.nix`, or `home.nix`:
 ```nix
 {
+  # using the overlays
   nixpkgs.overlays = [
     (builtins.getFlake "github:fortuneteller2k/nixpkgs-f2k").overlays.default
   ];
+
+  # for NixOS modules (do not use them in home.nix)
+  imports = [ (builtins.getFlake "github:fortuneteller2k/nixpkgs-f2k").nixosModules.stevenblack ];
 }
 ```
 
