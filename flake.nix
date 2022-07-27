@@ -2,9 +2,12 @@
   description = "fortuneteller2k's stash of fresh packages";
 
   inputs = {
+    crane.url = "github:ipetkov/crane";
     nixpkgs.url = "github:NixOS/nixpkgs/master";
     nixpkgs-fmt.url = "github:nix-community/nixpkgs-fmt";
 
+    # follows
+    crane.inputs.nixpkgs.follows = "nixpkgs";
     nixpkgs-fmt.inputs.nixpkgs.follows = "nixpkgs";
 
     # nvfetcher seems to don't like submodules
@@ -24,7 +27,7 @@
     };
   };
 
-  outputs = args@{ self, nixpkgs, nixpkgs-fmt, ... }:
+  outputs = args@{ self, nixpkgs, crane, nixpkgs-fmt, ... }:
     let
       targetSystems = [ "x86_64-linux" "aarch64-linux" ];
     in
@@ -102,17 +105,11 @@
           };
 
           terminal-emulators = final: prev: {
-            wezterm-git = prev.wezterm.overrideAttrs (old: rec {
+            wezterm-git = prev.callPackage ./pkgs/wezterm {
               src = args.wezterm-src;
               version = versionOf args.wezterm-src;
-
-              cargoDeps = old.cargoDeps.overrideAttrs (_: {
-                inherit src;
-                outputHash = "sha256-x44oemfo/VUJW3jalnnyg7Awgcdgy2TFu8uA24hn1F8=";
-              });
-
-              doCheck = false;
-            });
+              crane-lib = crane.lib."${prev.system}";
+            };
           };
 
           themes = final: prev: {
