@@ -169,5 +169,24 @@
             "type": "github"
         },
         "version": "982bb43e5d4116f1a37a0bde01c9bda0b88705b9"
+    },
+    "stevenblack-blocklist": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "stevenblack-blocklist",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "stevenblack",
+            "repo": "hosts",
+            "rev": "3bed35fcad71b3a836aad5e834728e4282765e60",
+            "sha256": "sha256-ROoZazZ8AB4sve7srAPyLdBcoF2mWGUtAX7nJTRcq+I=",
+            "type": "github"
+        },
+        "version": "3bed35fcad71b3a836aad5e834728e4282765e60"
     }
 }

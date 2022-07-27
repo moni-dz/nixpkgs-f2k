@@ -36,3 +36,7 @@ fetch.github = "dccsillag/picom"
 src.git = "https://github.com/pijulius/picom"
 src.branch = "implement-window-animations"
 fetch.github = "pijulius/picom"
+
+[stevenblack-blocklist]
+src.git = "https://github.com/stevenblack/hosts"
+fetch.github = "stevenblack/hosts"

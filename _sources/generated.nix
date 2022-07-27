@@ -100,4 +100,15 @@
       sha256 = "sha256-YiuLScDV9UfgI1MiYRtjgRkJ0VuA1TExATA2nJSJMhM=";
     });
   };
+  stevenblack-blocklist = {
+    pname = "stevenblack-blocklist";
+    version = "3bed35fcad71b3a836aad5e834728e4282765e60";
+    src = fetchFromGitHub ({
+      owner = "stevenblack";
+      repo = "hosts";
+      rev = "3bed35fcad71b3a836aad5e834728e4282765e60";
+      fetchSubmodules = false;
+      sha256 = "sha256-ROoZazZ8AB4sve7srAPyLdBcoF2mWGUtAX7nJTRcq+I=";
+    });
+  };
 }

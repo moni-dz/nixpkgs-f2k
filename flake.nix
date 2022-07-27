@@ -23,7 +23,10 @@
 
   outputs = args@{ self, nixpkgs, ... }:
     {
-      nixosModules."nvidia-exec" = import ./modules/nvidia-exec.nix;
+      nixosModules = {
+        "nvidia-exec" = import ./modules/nvidia-exec.nix;
+        "stevenblack" = import ./modules/stevenblack.nix;
+      };
 
       overlay = nixpkgs.lib.warn "nixpkgs-f2k.overlay is deprecated, use nixpkgs-f2k.overlays.default instead" self.overlays.default;
 
@@ -172,6 +175,8 @@
                 package = getPackage "mpv-discord" prev;
               in
               prev.callPackage ./pkgs/mpv-discord/script.nix { inherit (package) src version; };
+
+            stevenblack-blocklist-git = (getPackage "stevenblack-blocklist" prev).src;
           };
 
           window-managers = final: prev: {
