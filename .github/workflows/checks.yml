@@ -1,4 +1,4 @@
-name: "statix"
+name: "checks"
 
 on:
   pull_request:
@@ -13,4 +13,4 @@ jobs:
         install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.9.0pre20220428_660835d/install
         extra_nix_config: |
           experimental-features = nix-command flakes
-    - run: nix run nixpkgs#statix -- check ./pkgs && nix run nixpkgs#statix -- check flake.nix
+    - run: nix flake check && nix run nixpkgs#statix -- check ./pkgs && nix run nixpkgs#statix -- check flake.nix

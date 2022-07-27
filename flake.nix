@@ -35,6 +35,8 @@
           getPackage = pname: pkgs: (import ./_sources/generated.nix {
             inherit (pkgs) fetchgit fetchurl fetchFromGitHub;
           }).${pname};
+
+          versionOf = input: input.rev;
         in
         {
           applications = final: prev: {
@@ -96,7 +98,7 @@
           terminal-emulators = final: prev: {
             wezterm-git = prev.wezterm.overrideAttrs (old: rec {
               src = args.wezterm-src;
-              version = "999-unstable";
+              version = versionOf args.wezterm-src;
 
               cargoDeps = old.cargoDeps.overrideAttrs (_: {
                 inherit src;
@@ -215,7 +217,7 @@
             # Yes, it's a *compositor* because of how Wayland works, I can't be bothered.
             river-git = prev.river.overrideAttrs (_: {
               src = args.river-src;
-              version = "999-unstable";
+              version = versionOf args.river-src;
             });
           };
 
@@ -292,7 +294,7 @@
             overlays = [ self.overlays.default ];
           };
         in
-        self.overlays.default pkgs pkgs
+        builtins.removeAttrs (self.overlays.default pkgs pkgs) [ "lib" ]
       );
     };
 }
