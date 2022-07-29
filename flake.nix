@@ -69,7 +69,7 @@
               });
           };
 
-          compositors = final: prev: {
+          compositors = _: prev: {
             picom-git =
               let
                 package = getPackage "picom" prev;
@@ -89,7 +89,7 @@
               prev.picom.overrideAttrs (_: { inherit (package) src version; });
           };
 
-          fonts = final: prev: {
+          fonts = _: prev: {
             iosevka-ft = prev.iosevka.override {
               privateBuildPlan = import ./pkgs/iosevka-ft/build-plan.nix;
               set = "ft";
@@ -104,7 +104,7 @@
             iosevka-ft-qp-bin = prev.callPackage ./pkgs/iosevka-ft { proportional = true; };
           };
 
-          terminal-emulators = final: prev: {
+          terminal-emulators = _: prev: {
             wezterm-git = prev.callPackage ./pkgs/wezterm {
               src = args.wezterm-src;
               version = versionOf args.wezterm-src;
@@ -112,7 +112,7 @@
             };
           };
 
-          themes = final: prev: {
+          themes = _: prev: {
             phocus =
               let
                 package = getPackage "phocus" prev;
@@ -146,8 +146,8 @@
               };
           };
 
-          misc = final: prev: {
-            glfw-wayland-minecraft = prev.glfw-wayland.overrideAttrs (old: {
+          misc = _: prev: {
+            glfw-wayland-minecraft = prev.glfw-wayland.overrideAttrs (_: {
               patches = [
                 # Don't crash on calls to focus or icon
                 (prev.fetchpatch {
@@ -184,7 +184,7 @@
             stevenblack-blocklist-git = (getPackage "stevenblack-blocklist" prev).src;
           };
 
-          window-managers = final: prev: {
+          window-managers = _: prev: {
             awesome-git = (prev.awesome.overrideAttrs (old:
               let
                 package = getPackage "awesome" prev;

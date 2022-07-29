@@ -14,3 +14,5 @@ jobs:
         extra_nix_config: |
           experimental-features = nix-command flakes
     - run: nix flake check && nix run nixpkgs#statix -- check ./pkgs && nix run nixpkgs#statix -- check flake.nix
+    - run: nix run nixpkgs#statix -- check ./pkgs && nix run nixpkgs#statix -- check ./modules && nixpkgs#statix -- check flake.nix
+    - run: nix run github:astro/deadnix -- -fh ./modules ./pkgs flake.nix
