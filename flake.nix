@@ -29,7 +29,15 @@
 
   outputs = args@{ self, nixpkgs, crane, nixpkgs-fmt, ... }:
     let
-      targetSystems = [ "x86_64-linux" "x86_64-darwin" "aarch64-darwin" ];
+      linux = [ "x86_64-linux" ];
+      darwin = [ "aarch64-darwin" "x86_64-darwin" ];
+
+      pkgsFor = system: import nixpkgs {
+        inherit system;
+        allowUnfree = true;
+        allowUnsupportedSystem = true;
+        overlays = [ self.overlays.default ];
+      };
     in
     {
       nixosModules = {
@@ -280,7 +288,12 @@
               optimizedNativeClangStdenv = prev.lib.warn "using native optimizations, forfeiting reproducibility" optimizeStdenvWithNative prev.llvmPackages_14.stdenv;
             };
 
-          default = final: prev: with self.overlays;
+          darwin = final: prev: with self.overlays;
+            (fonts final prev)
+            // (terminal-emulators final prev)
+            // (stdenvs final prev);
+
+          linux = final: prev: with self.overlays;
             (applications final prev)
             // (compositors final prev)
             // (fonts final prev)
@@ -289,20 +302,24 @@
             // (misc final prev)
             // (window-managers final prev)
             // (stdenvs final prev);
+
+          default = self.overlays.linux;
         };
 
-      packages = nixpkgs.lib.genAttrs targetSystems (system:
+      packages = (nixpkgs.lib.genAttrs linux (system:
         let
-          pkgs = import nixpkgs {
-            inherit system;
-            allowUnfree = true;
-            allowUnsupportedSystem = true;
-            overlays = [ self.overlays.default ];
-          };
+          pkgs = pkgsFor system;
         in
-        builtins.removeAttrs (self.overlays.default pkgs pkgs) [ "lib" ]
-      );
+        builtins.removeAttrs (self.overlays.linux pkgs pkgs) [ "lib" ]
+      ))
+      //
+      (nixpkgs.lib.genAttrs darwin (system:
+        let
+          pkgs = pkgsFor system;
+        in
+        builtins.removeAttrs (self.overlays.darwin pkgs pkgs) [ "lib" ]
+      ));
 
-      formatter = nixpkgs.lib.genAttrs targetSystems (system: nixpkgs-fmt.defaultPackage.${system});
+      formatter = nixpkgs.lib.genAttrs (darwin ++ linux) (system: nixpkgs-fmt.defaultPackage.${system});
     };
 }

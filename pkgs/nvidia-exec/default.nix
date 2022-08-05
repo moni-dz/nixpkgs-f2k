@@ -18,7 +18,7 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/pedro00dk/nvidia-exec";
     description = "A script to run programs on nvidia optimus setups with power management.";
     license = licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = platforms.linux;
     mainProgram = "nvx";
     maintainers = with maintainers; [ fortuneteller2k ];
   };
