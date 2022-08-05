@@ -25,6 +25,7 @@
 , xcbutilkeysyms
 , xcbutilwm
 , zlib
+, darwin
 , CoreGraphics
 , Cocoa
 , Foundation
@@ -64,7 +65,7 @@ let
     CoreGraphics
     Foundation
     libiconv
-  ];
+  ] ++ lib.optional (stdenv.isDarwin && (builtins.hasAttr "UserNotifications" darwin.apple_sdk.frameworks)) darwin.apple_sdk.frameworks.UserNotifications;
 
   cargoArtifacts = crane-lib.buildDepsOnly {
     inherit src pname nativeBuildInputs buildInputs;
