@@ -106,6 +106,8 @@
 
           terminal-emulators = _: prev: {
             wezterm-git = prev.callPackage ./pkgs/wezterm {
+              inherit (prev.darwin.apple_sdk.frameworks) Cocoa CoreGraphics Foundation;
+
               src = args.wezterm-src;
               version = versionOf args.wezterm-src;
               crane-lib = crane.lib."${prev.system}";
@@ -294,6 +296,7 @@
           pkgs = import nixpkgs {
             inherit system;
             allowUnfree = true;
+            allowUnsupportedSystem = true;
             overlays = [ self.overlays.default ];
           };
         in

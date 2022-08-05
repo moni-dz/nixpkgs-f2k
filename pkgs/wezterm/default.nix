@@ -25,6 +25,10 @@
 , xcbutilkeysyms
 , xcbutilwm
 , zlib
+, CoreGraphics
+, Cocoa
+, Foundation
+, libiconv
 }:
 
 let
@@ -33,13 +37,15 @@ let
   nativeBuildInputs = [
     pkg-config
     python3
-    perl
-  ];
+    ncurses
+  ] ++ lib.optional stdenv.isDarwin perl;
 
   buildInputs = [
+    fontconfig
+    zlib
+  ] ++ lib.optionals stdenv.isLinux [
     dbus
     egl-wayland
-    fontconfig
     freetype
     libGL
     libGLU
@@ -53,7 +59,11 @@ let
     xcbutilimage
     xcbutilkeysyms
     xcbutilwm
-    zlib
+  ] ++ lib.optionals stdenv.isDarwin [
+    Cocoa
+    CoreGraphics
+    Foundation
+    libiconv
   ];
 
   cargoArtifacts = crane-lib.buildDepsOnly {
@@ -76,6 +86,13 @@ crane-lib.buildPackage rec {
 
   preFixup = lib.optionalString stdenv.isLinux ''
     patchelf --add-needed "${libGL}/lib/libEGL.so.1" $out/bin/wezterm-gui
+  '' + lib.optionalString stdenv.isDarwin ''
+    mkdir -p "$out/Applications"
+    OUT_APP="$out/Applications/WezTerm.app"
+    cp -r assets/macos/WezTerm.app "$OUT_APP"
+    rm $OUT_APP/*.dylib
+    cp -r assets/shell-integration/* "$OUT_APP"
+    ln -s $out/bin/{wezterm,wezterm-mux-server,wezterm-gui,strip-ansi-escapes} "$OUT_APP"
   '';
 
   passthru.terminfo = runCommand "wezterm-terminfo"
