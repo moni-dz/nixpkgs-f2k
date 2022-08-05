@@ -1,4 +1,4 @@
-name: "build"
+name: "build (darwin)"
 
 on:
   push:
@@ -9,7 +9,15 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        runtime: [osx-x64, osx-arm64]
+        include:
+          - runtime: osx-x64
+            os: macos-latest
+          - runtime: osx-arm64
+            os: macos-latest
     steps:
     - uses: actions/checkout@v3.0.2
     - uses: cachix/install-nix-action@v17
@@ -21,4 +29,4 @@ jobs:
       with:
         name: fortuneteller2k
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-    - run: nix build .#awesome-git .#awesome-composite-git .#picom-git .#picom-dccsillag .#picom-pijulius .#glfw-wayland-minecraft .#mpv-discord .#mpv-discord-script .#lshw-git .#nvidia-exec .#river-git .#wezterm-git
+    - run: nix build .#wezterm-git

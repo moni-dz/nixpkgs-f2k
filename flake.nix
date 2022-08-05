@@ -29,7 +29,7 @@
 
   outputs = args@{ self, nixpkgs, crane, nixpkgs-fmt, ... }:
     let
-      targetSystems = [ "x86_64-linux" "aarch64-linux" ];
+      targetSystems = [ "x86_64-linux" "x86_64-darwin" "aarch64-darwin" ];
     in
     {
       nixosModules = {
