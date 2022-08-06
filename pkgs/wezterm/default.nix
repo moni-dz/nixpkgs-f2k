@@ -29,6 +29,7 @@
 , Cocoa
 , Foundation
 , libiconv
+, UserNotifications
 }:
 
 let
@@ -64,6 +65,7 @@ let
     CoreGraphics
     Foundation
     libiconv
+    UserNotifications
   ];
 
   cargoArtifacts = crane-lib.buildDepsOnly {
@@ -72,8 +74,6 @@ let
 in
 crane-lib.buildPackage rec {
   inherit src pname version cargoArtifacts nativeBuildInputs buildInputs;
-
-  patches = [ ./no-usernotifications.diff ];
 
   postInstall = ''
     mkdir -p $out/nix-support

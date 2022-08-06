@@ -113,8 +113,8 @@
           };
 
           terminal-emulators = _: prev: {
-            wezterm-git = prev.callPackage ./pkgs/wezterm {
-              inherit (prev.darwin.apple_sdk.frameworks) Cocoa CoreGraphics Foundation;
+            wezterm-git = prev.darwin.apple_sdk_11_0.callPackage ./pkgs/wezterm {
+              inherit (prev.darwin.apple_sdk_11_0.frameworks) Cocoa CoreGraphics Foundation UserNotifications;
 
               src = args.wezterm-src;
               version = versionOf args.wezterm-src;
