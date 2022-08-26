@@ -102,13 +102,13 @@
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
-    version = "f019980188316aa88b9be02bb4d0275c030561cd";
+    version = "71dedfa435c8cddfc915cf6b63215d33a6593682";
     src = fetchFromGitHub ({
       owner = "stevenblack";
       repo = "hosts";
-      rev = "f019980188316aa88b9be02bb4d0275c030561cd";
+      rev = "71dedfa435c8cddfc915cf6b63215d33a6593682";
       fetchSubmodules = false;
-      sha256 = "sha256-AHz1vxfWsHZwj/KK2OsC0LoBxUpmzz27UjTzJkflUYw=";
+      sha256 = "sha256-wY7sH+5VN41ojPEM+F7j7JUT12u7DTpa/7ZHiRZqmYY=";
     });
   };
 }
