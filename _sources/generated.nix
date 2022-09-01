@@ -3,13 +3,13 @@
 {
   awesome = {
     pname = "awesome";
-    version = "f3cf88593c15a233092972c997528297e546f325";
+    version = "9b1246af3da71910e84cd446e1b973b384ce0fac";
     src = fetchFromGitHub ({
       owner = "awesomeWM";
       repo = "awesome";
-      rev = "f3cf88593c15a233092972c997528297e546f325";
+      rev = "9b1246af3da71910e84cd446e1b973b384ce0fac";
       fetchSubmodules = false;
-      sha256 = "sha256-U/+aLp4fHUTULk+EqP2vtzeVD5FDcUPH53owQ835G7k=";
+      sha256 = "sha256-0/E8jjCwyOeEPkhGrgMD8x+NTpDE8Eey5wnLB2ktdaY=";
     });
   };
   awesome-composite = {
@@ -25,13 +25,13 @@
   };
   lshw = {
     pname = "lshw";
-    version = "d76afbaaf40e953243da921844cddff8185324f3";
+    version = "42fef565731411a784101de614a54bff79d1858e";
     src = fetchFromGitHub ({
       owner = "lyonel";
       repo = "lshw";
-      rev = "d76afbaaf40e953243da921844cddff8185324f3";
+      rev = "42fef565731411a784101de614a54bff79d1858e";
       fetchSubmodules = false;
-      sha256 = "sha256-mK2bU5dEBIYSNrTErfKWyW/DU7XeQhIo3oX48ttGP80=";
+      sha256 = "sha256-Gt9RoTBCr1f5szmuRdrmQo9FNAflv+arq+KfFGP9b1E=";
     });
   };
   mpv-discord = {
@@ -102,13 +102,13 @@
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
-    version = "2917a466e8bdb5735ed36f62582bf27dc4f8f08c";
+    version = "13e67aec2c991d1aead3ba8d9b420c2379ddb322";
     src = fetchFromGitHub ({
       owner = "stevenblack";
       repo = "hosts";
-      rev = "2917a466e8bdb5735ed36f62582bf27dc4f8f08c";
+      rev = "13e67aec2c991d1aead3ba8d9b420c2379ddb322";
       fetchSubmodules = false;
-      sha256 = "sha256-cp9mIzyAuk0ECnR0VN11rVkObZHL53BQxHd1oWXrixA=";
+      sha256 = "sha256-+Q/Y1bPLu8V1hx9ekAojH7IM0kPmEk8QLCTWQHNPTrs=";
     });
   };
 }

@@ -12,11 +12,11 @@
             "name": null,
             "owner": "awesomeWM",
             "repo": "awesome",
-            "rev": "f3cf88593c15a233092972c997528297e546f325",
-            "sha256": "sha256-U/+aLp4fHUTULk+EqP2vtzeVD5FDcUPH53owQ835G7k=",
+            "rev": "9b1246af3da71910e84cd446e1b973b384ce0fac",
+            "sha256": "sha256-0/E8jjCwyOeEPkhGrgMD8x+NTpDE8Eey5wnLB2ktdaY=",
             "type": "github"
         },
-        "version": "f3cf88593c15a233092972c997528297e546f325"
+        "version": "9b1246af3da71910e84cd446e1b973b384ce0fac"
     },
     "awesome-composite": {
         "cargoLocks": null,
@@ -50,11 +50,11 @@
             "name": null,
             "owner": "lyonel",
             "repo": "lshw",
-            "rev": "d76afbaaf40e953243da921844cddff8185324f3",
-            "sha256": "sha256-mK2bU5dEBIYSNrTErfKWyW/DU7XeQhIo3oX48ttGP80=",
+            "rev": "42fef565731411a784101de614a54bff79d1858e",
+            "sha256": "sha256-Gt9RoTBCr1f5szmuRdrmQo9FNAflv+arq+KfFGP9b1E=",
             "type": "github"
         },
-        "version": "d76afbaaf40e953243da921844cddff8185324f3"
+        "version": "42fef565731411a784101de614a54bff79d1858e"
     },
     "mpv-discord": {
         "cargoLocks": null,
@@ -183,10 +183,10 @@
             "name": null,
             "owner": "stevenblack",
             "repo": "hosts",
-            "rev": "2917a466e8bdb5735ed36f62582bf27dc4f8f08c",
-            "sha256": "sha256-cp9mIzyAuk0ECnR0VN11rVkObZHL53BQxHd1oWXrixA=",
+            "rev": "13e67aec2c991d1aead3ba8d9b420c2379ddb322",
+            "sha256": "sha256-+Q/Y1bPLu8V1hx9ekAojH7IM0kPmEk8QLCTWQHNPTrs=",
             "type": "github"
         },
-        "version": "2917a466e8bdb5735ed36f62582bf27dc4f8f08c"
+        "version": "13e67aec2c991d1aead3ba8d9b420c2379ddb322"
     }
 }
