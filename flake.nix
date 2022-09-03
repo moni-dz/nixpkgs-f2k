@@ -203,6 +203,11 @@
                 inherit (package) src version;
                 patches = [ ];
 
+                postPatch = ''
+                  patchShebangs tests/examples/_postprocess.lua
+                  patchShebangs tests/examples/_postprocess_cleanup.lua
+                '';
+
                 GI_TYPELIB_PATH = "${prev.playerctl}/lib/girepository-1.0:"
                   + "${prev.upower}/lib/girepository-1.0:"
                   + "${prev.networkmanager}/lib/girepository-1.0:"
