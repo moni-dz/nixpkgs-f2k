@@ -12,11 +12,11 @@
             "name": null,
             "owner": "awesomeWM",
             "repo": "awesome",
-            "rev": "c8d4f878a012bc6d6d0e8e520d17a1dd9237336d",
-            "sha256": "sha256-1jJtEIzSMwJUt8Cnu7ASPTYdyJ8865+J7UQR2JDlZX8=",
+            "rev": "0f99647c381c323509114db69f50905d8a930778",
+            "sha256": "sha256-e9oqJn6lH5NlF10Mj6nl8/FiBXHuxR97zHn9sw/lVaM=",
             "type": "github"
         },
-        "version": "c8d4f878a012bc6d6d0e8e520d17a1dd9237336d"
+        "version": "0f99647c381c323509114db69f50905d8a930778"
     },
     "awesome-composite": {
         "cargoLocks": null,
@@ -183,10 +183,10 @@
             "name": null,
             "owner": "stevenblack",
             "repo": "hosts",
-            "rev": "1da50a7fb812751a95cc2b7083976cd00bbafb94",
-            "sha256": "sha256-5P5jdDWl02K8hefer8EzD+H1JrMaulJGUP1TnP0xoUU=",
+            "rev": "56fb74cc801f8fc1ceed25f360f8279113cf20b4",
+            "sha256": "sha256-MGYevr1sv9/CQ/o0b6g5ZaydslaLi6J9B4hUYKpdqTw=",
             "type": "github"
         },
-        "version": "1da50a7fb812751a95cc2b7083976cd00bbafb94"
+        "version": "56fb74cc801f8fc1ceed25f360f8279113cf20b4"
     }
 }

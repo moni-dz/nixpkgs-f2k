@@ -3,13 +3,13 @@
 {
   awesome = {
     pname = "awesome";
-    version = "c8d4f878a012bc6d6d0e8e520d17a1dd9237336d";
+    version = "0f99647c381c323509114db69f50905d8a930778";
     src = fetchFromGitHub ({
       owner = "awesomeWM";
       repo = "awesome";
-      rev = "c8d4f878a012bc6d6d0e8e520d17a1dd9237336d";
+      rev = "0f99647c381c323509114db69f50905d8a930778";
       fetchSubmodules = false;
-      sha256 = "sha256-1jJtEIzSMwJUt8Cnu7ASPTYdyJ8865+J7UQR2JDlZX8=";
+      sha256 = "sha256-e9oqJn6lH5NlF10Mj6nl8/FiBXHuxR97zHn9sw/lVaM=";
     });
   };
   awesome-composite = {
@@ -102,13 +102,13 @@
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
-    version = "1da50a7fb812751a95cc2b7083976cd00bbafb94";
+    version = "56fb74cc801f8fc1ceed25f360f8279113cf20b4";
     src = fetchFromGitHub ({
       owner = "stevenblack";
       repo = "hosts";
-      rev = "1da50a7fb812751a95cc2b7083976cd00bbafb94";
+      rev = "56fb74cc801f8fc1ceed25f360f8279113cf20b4";
       fetchSubmodules = false;
-      sha256 = "sha256-5P5jdDWl02K8hefer8EzD+H1JrMaulJGUP1TnP0xoUU=";
+      sha256 = "sha256-MGYevr1sv9/CQ/o0b6g5ZaydslaLi6J9B4hUYKpdqTw=";
     });
   };
 }
