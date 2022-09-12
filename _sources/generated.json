@@ -183,10 +183,10 @@
             "name": null,
             "owner": "stevenblack",
             "repo": "hosts",
-            "rev": "db16b1e6b745f396ca2d3b7e6fd51ec170e884f1",
-            "sha256": "sha256-45GjVHqYq4nkhhGhBoG+ws9IPPUNLiYdKxntjJHEomM=",
+            "rev": "4d87cf744f8efa89f5e383fd88a9d0a97507b20f",
+            "sha256": "sha256-3LN2VSntlQwjyJTJtNYYRMSYI71AjcCn5Ft3lvfdy7Y=",
             "type": "github"
         },
-        "version": "db16b1e6b745f396ca2d3b7e6fd51ec170e884f1"
+        "version": "4d87cf744f8efa89f5e383fd88a9d0a97507b20f"
     }
 }
