@@ -11,6 +11,7 @@
       fetchSubmodules = false;
       sha256 = "sha256-OAd8yEcVsIhwwgy8k2mDP2YhB4YIfQgahn2T9mjkLkM=";
     });
+    date = "2022-09-22";
   };
   awesome-composite = {
     pname = "awesome-composite";
@@ -22,6 +23,7 @@
       fetchSubmodules = false;
       sha256 = "sha256-V7mnpIuOGem+N+bNP1sLHuOdBdUdSVcfehfWCpbKsac=";
     });
+    date = "2022-07-25";
   };
   lshw = {
     pname = "lshw";
@@ -33,6 +35,7 @@
       fetchSubmodules = false;
       sha256 = "sha256-Gt9RoTBCr1f5szmuRdrmQo9FNAflv+arq+KfFGP9b1E=";
     });
+    date = "2022-08-31";
   };
   mpv-discord = {
     pname = "mpv-discord";
@@ -44,6 +47,7 @@
       fetchSubmodules = false;
       sha256 = "sha256-P1UaXGboOiqrXapfLzJI6IT3esNtflkQkcNXt4Umukc=";
     });
+    date = "2022-02-21";
   };
   nvidia-exec = {
     pname = "nvidia-exec";
@@ -55,6 +59,7 @@
       fetchSubmodules = false;
       sha256 = "sha256-UYl8XgIfWnRC1IYSX9ag8gTU9ENRDqoF2fBbuBRMb3o=";
     });
+    date = "2022-06-17";
   };
   phocus = {
     pname = "phocus";
@@ -66,6 +71,7 @@
       fetchSubmodules = false;
       sha256 = "sha256-yz4gcK7gZ4lFAyehiPgtLDcPs12xFP+RqSriOsbv6to=";
     });
+    date = "2022-05-06";
   };
   picom = {
     pname = "picom";
@@ -77,6 +83,7 @@
       fetchSubmodules = false;
       sha256 = "sha256-bYK0ZgBSt4iJRFja4Pk3mUvXlBfoO7zpWbbRTnrxLqc=";
     });
+    date = "2022-09-18";
   };
   picom-dccsillag = {
     pname = "picom-dccsillag";
@@ -88,6 +95,7 @@
       fetchSubmodules = false;
       sha256 = "sha256-crCwRJd859DCIC0pEerpDqdX2j8ZrNAzVaSSB3mTPN8=";
     });
+    date = "2022-05-29";
   };
   picom-pijulius = {
     pname = "picom-pijulius";
@@ -99,6 +107,7 @@
       fetchSubmodules = false;
       sha256 = "sha256-YiuLScDV9UfgI1MiYRtjgRkJ0VuA1TExATA2nJSJMhM=";
     });
+    date = "2021-10-23";
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
@@ -110,5 +119,6 @@
       fetchSubmodules = false;
       sha256 = "sha256-Q3cSidTGqr6VF46x8V7ehO/TrImhRCjzcUf/impc0dg=";
     });
+    date = "2022-09-23";
   };
 }

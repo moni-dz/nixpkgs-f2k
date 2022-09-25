@@ -1,6 +1,7 @@
 {
     "awesome": {
         "cargoLocks": null,
+        "date": "2022-09-22",
         "extract": null,
         "name": "awesome",
         "passthru": null,
@@ -20,6 +21,7 @@
     },
     "awesome-composite": {
         "cargoLocks": null,
+        "date": "2022-07-25",
         "extract": null,
         "name": "awesome-composite",
         "passthru": null,
@@ -39,6 +41,7 @@
     },
     "lshw": {
         "cargoLocks": null,
+        "date": "2022-08-31",
         "extract": null,
         "name": "lshw",
         "passthru": null,
@@ -58,6 +61,7 @@
     },
     "mpv-discord": {
         "cargoLocks": null,
+        "date": "2022-02-21",
         "extract": null,
         "name": "mpv-discord",
         "passthru": null,
@@ -77,6 +81,7 @@
     },
     "nvidia-exec": {
         "cargoLocks": null,
+        "date": "2022-06-17",
         "extract": null,
         "name": "nvidia-exec",
         "passthru": null,
@@ -96,6 +101,7 @@
     },
     "phocus": {
         "cargoLocks": null,
+        "date": "2022-05-06",
         "extract": null,
         "name": "phocus",
         "passthru": null,
@@ -115,6 +121,7 @@
     },
     "picom": {
         "cargoLocks": null,
+        "date": "2022-09-18",
         "extract": null,
         "name": "picom",
         "passthru": null,
@@ -134,6 +141,7 @@
     },
     "picom-dccsillag": {
         "cargoLocks": null,
+        "date": "2022-05-29",
         "extract": null,
         "name": "picom-dccsillag",
         "passthru": null,
@@ -153,6 +161,7 @@
     },
     "picom-pijulius": {
         "cargoLocks": null,
+        "date": "2021-10-23",
         "extract": null,
         "name": "picom-pijulius",
         "passthru": null,
@@ -172,6 +181,7 @@
     },
     "stevenblack-blocklist": {
         "cargoLocks": null,
+        "date": "2022-09-23",
         "extract": null,
         "name": "stevenblack-blocklist",
         "passthru": null,
