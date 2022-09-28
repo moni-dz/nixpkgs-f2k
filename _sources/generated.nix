@@ -63,15 +63,15 @@
   };
   phocus = {
     pname = "phocus";
-    version = "945ad3940c69222d45a2bd06e0838164002b6690";
+    version = "325d327242622d1f3090a126ba3d1e382853fb53";
     src = fetchFromGitHub ({
       owner = "phocus";
       repo = "gtk";
-      rev = "945ad3940c69222d45a2bd06e0838164002b6690";
+      rev = "325d327242622d1f3090a126ba3d1e382853fb53";
       fetchSubmodules = false;
-      sha256 = "sha256-yz4gcK7gZ4lFAyehiPgtLDcPs12xFP+RqSriOsbv6to=";
+      sha256 = "sha256-l+wS7Eugj55mYu6z6UUNVr9oxnq2B3oaYqNK99iPUgM=";
     });
-    date = "2022-05-06";
+    date = "2022-09-27";
   };
   picom = {
     pname = "picom";
