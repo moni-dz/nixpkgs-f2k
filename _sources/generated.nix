@@ -15,15 +15,15 @@
   };
   awesome-composite = {
     pname = "awesome-composite";
-    version = "5d49eb57c4c0de2f9138001847f542718a10cc10";
+    version = "43a54e30cdbf247733ca68a88433f410af9c0a52";
     src = fetchFromGitHub ({
       owner = "xinhaoyuan";
       repo = "awesome";
-      rev = "5d49eb57c4c0de2f9138001847f542718a10cc10";
+      rev = "43a54e30cdbf247733ca68a88433f410af9c0a52";
       fetchSubmodules = false;
-      sha256 = "sha256-V7mnpIuOGem+N+bNP1sLHuOdBdUdSVcfehfWCpbKsac=";
+      sha256 = "sha256-NQbmEk9LqCa/bC5ORt2SdFWOsY6A+21udNEVPKnIXKs=";
     });
-    date = "2022-07-25";
+    date = "2022-10-09";
   };
   lshw = {
     pname = "lshw";
@@ -111,14 +111,14 @@
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
-    version = "03202d41bfa402d2ea99b71e456cf5609cb6ceec";
+    version = "ff7d9bed83732bd3980ae452927541c6c4b15382";
     src = fetchFromGitHub ({
       owner = "stevenblack";
       repo = "hosts";
-      rev = "03202d41bfa402d2ea99b71e456cf5609cb6ceec";
+      rev = "ff7d9bed83732bd3980ae452927541c6c4b15382";
       fetchSubmodules = false;
-      sha256 = "sha256-Kw1BXgSYpNGYATQsOkEkGC3kRy77q6CN0Z+FgloJh9E=";
+      sha256 = "sha256-LYYjWMy4xXXqnM3ROKseS7y0faNLYyyDPqUe1+Uf+RE=";
     });
-    date = "2022-10-06";
+    date = "2022-10-09";
   };
 }
