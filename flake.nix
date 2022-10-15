@@ -45,8 +45,6 @@
         "stevenblack" = import ./modules/stevenblack.nix;
       };
 
-      overlay = nixpkgs.lib.warn "nixpkgs-f2k.overlay is deprecated, use nixpkgs-f2k.overlays.default instead" self.overlays.default;
-
       overlays =
         let
           getPackage = pname: pkgs: (import ./_sources/generated.nix {
