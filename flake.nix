@@ -196,6 +196,7 @@
             awesome-git = (prev.awesome.overrideAttrs (old:
               let
                 package = getPackage "awesome" prev;
+                extraGIPackages = with prev; [ networkmanager upower playerctl ];
               in
               {
                 inherit (package) src version;
@@ -205,11 +206,13 @@
                   patchShebangs tests/examples/_postprocess.lua
                   patchShebangs tests/examples/_postprocess_cleanup.lua
                 '';
-
-                GI_TYPELIB_PATH = "${prev.playerctl}/lib/girepository-1.0:"
-                  + "${prev.upower}/lib/girepository-1.0:"
-                  + "${prev.networkmanager}/lib/girepository-1.0:"
-                  + old.GI_TYPELIB_PATH;
+                  
+                GI_TYPELIB_PATH =
+                  let
+                    mkTypeLibPath = pkg: "${pkg}/lib/girepository-1.0";
+                    extraGITypeLibPaths = lib.forEach extraGIPackages mkTypeLibPath;
+                  in
+                  prev.lib.concatStringsSep ":" (extraGITypeLibPaths ++ [ (mkTypeLibPath pango.out) ]);
               })).override {
               gtk3Support = true;
             };
@@ -217,6 +220,7 @@
             awesome-composite-git = (prev.awesome.overrideAttrs (old:
               let
                 package = getPackage "awesome-composite" prev;
+                extraGIPackages = with prev; [ networkmanager upower playerctl ];
               in
               {
                 inherit (package) src version;
@@ -227,10 +231,12 @@
                   patchShebangs tests/examples/_postprocess_cleanup.lua
                 '';
 
-                GI_TYPELIB_PATH = "${prev.playerctl}/lib/girepository-1.0:"
-                  + "${prev.upower}/lib/girepository-1.0:"
-                  + "${prev.networkmanager}/lib/girepository-1.0:"
-                  + old.GI_TYPELIB_PATH;
+                GI_TYPELIB_PATH =
+                  let
+                    mkTypeLibPath = pkg: "${pkg}/lib/girepository-1.0";
+                    extraGITypeLibPaths = lib.forEach extraGIPackages mkTypeLibPath;
+                  in
+                  prev.lib.concatStringsSep ":" (extraGITypeLibPaths ++ [ (mkTypeLibPath pango.out) ]);
               })).override {
               gtk3Support = true;
             };
