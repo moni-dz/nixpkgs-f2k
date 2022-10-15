@@ -210,7 +210,7 @@
                 GI_TYPELIB_PATH =
                   let
                     mkTypeLibPath = pkg: "${pkg}/lib/girepository-1.0";
-                    extraGITypeLibPaths = lib.forEach extraGIPackages mkTypeLibPath;
+                    extraGITypeLibPaths = prev.lib.forEach extraGIPackages mkTypeLibPath;
                   in
                   prev.lib.concatStringsSep ":" (extraGITypeLibPaths ++ [ (mkTypeLibPath pango.out) ]);
               })).override {
@@ -234,7 +234,7 @@
                 GI_TYPELIB_PATH =
                   let
                     mkTypeLibPath = pkg: "${pkg}/lib/girepository-1.0";
-                    extraGITypeLibPaths = lib.forEach extraGIPackages mkTypeLibPath;
+                    extraGITypeLibPaths = prev.lib.forEach extraGIPackages mkTypeLibPath;
                   in
                   prev.lib.concatStringsSep ":" (extraGITypeLibPaths ++ [ (mkTypeLibPath pango.out) ]);
               })).override {
