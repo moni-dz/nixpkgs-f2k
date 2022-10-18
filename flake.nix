@@ -212,7 +212,7 @@
                     mkTypeLibPath = pkg: "${pkg}/lib/girepository-1.0";
                     extraGITypeLibPaths = prev.lib.forEach extraGIPackages mkTypeLibPath;
                   in
-                  prev.lib.concatStringsSep ":" (extraGITypeLibPaths ++ [ (mkTypeLibPath pango.out) ]);
+                  prev.lib.concatStringsSep ":" (extraGITypeLibPaths ++ [ (mkTypeLibPath prev.pango.out) ]);
               })).override {
               gtk3Support = true;
             };
@@ -236,7 +236,7 @@
                     mkTypeLibPath = pkg: "${pkg}/lib/girepository-1.0";
                     extraGITypeLibPaths = prev.lib.forEach extraGIPackages mkTypeLibPath;
                   in
-                  prev.lib.concatStringsSep ":" (extraGITypeLibPaths ++ [ (mkTypeLibPath pango.out) ]);
+                  prev.lib.concatStringsSep ":" (extraGITypeLibPaths ++ [ (mkTypeLibPath prev.pango.out) ]);
               })).override {
               gtk3Support = true;
             };
