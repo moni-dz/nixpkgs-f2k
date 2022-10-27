@@ -193,7 +193,7 @@
           };
 
           window-managers = _: prev: {
-            awesome-git = (prev.awesome.overrideAttrs (old:
+            awesome-git = (prev.awesome.overrideAttrs (_:
               let
                 package = getPackage "awesome" prev;
                 extraGIPackages = with prev; [ networkmanager upower playerctl ];
@@ -206,7 +206,7 @@
                   patchShebangs tests/examples/_postprocess.lua
                   patchShebangs tests/examples/_postprocess_cleanup.lua
                 '';
-                  
+
                 GI_TYPELIB_PATH =
                   let
                     mkTypeLibPath = pkg: "${pkg}/lib/girepository-1.0";
@@ -217,7 +217,7 @@
               gtk3Support = true;
             };
 
-            awesome-composite-git = (prev.awesome.overrideAttrs (old:
+            awesome-composite-git = (prev.awesome.overrideAttrs (_:
               let
                 package = getPackage "awesome-composite" prev;
                 extraGIPackages = with prev; [ networkmanager upower playerctl ];
@@ -225,7 +225,7 @@
               {
                 inherit (package) src version;
                 patches = [ ];
-                
+
                 postPatch = ''
                   patchShebangs tests/examples/_postprocess.lua
                   patchShebangs tests/examples/_postprocess_cleanup.lua
