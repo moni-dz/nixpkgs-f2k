@@ -48,7 +48,7 @@
       overlays =
         let
           getPackage = pname: pkgs: (import ./_sources/generated.nix {
-            inherit (pkgs) fetchgit fetchurl fetchFromGitHub;
+            inherit (pkgs) fetchgit fetchurl fetchFromGitHub dockerTools;
           }).${pname};
 
           versionOf = input: input.rev;
