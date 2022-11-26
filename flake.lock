@@ -93,11 +93,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1669341776,
-        "narHash": "sha256-5Tt7Bq3Y+23xyqV2ITZ6NIpCYHZo+KZS7JOOqRTfq9A=",
+        "lastModified": 1669424363,
+        "narHash": "sha256-YxkDhOivh4s+VtOvizdOmrbaRbI0SVkTH6sCs9ZZYJc=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "59acc59808dffdf2d7dbc3097b4d41036be26ad5",
+        "rev": "5bb01fc84459d6d2ea14b17f75b5cd99b7f2fac6",
         "type": "github"
       },
       "original": {
@@ -132,11 +132,11 @@
     "river-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1668940422,
-        "narHash": "sha256-JUgp1ehntydM5qTdONRESAc1FY+D9pqemeeURhZjQ/8=",
+        "lastModified": 1669381591,
+        "narHash": "sha256-aa2qAkYjn3v5I2DoSm5JYKBojrR27E56+phWhK+pB7M=",
         "ref": "refs/heads/master",
-        "rev": "3ed71c51e262990d7c4b8cf513f157d463a61fac",
-        "revCount": 893,
+        "rev": "3141940efb7a241cc4998e7f8263533823f75ef3",
+        "revCount": 896,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/riverwm/river.git"
