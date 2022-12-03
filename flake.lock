@@ -10,11 +10,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1669943300,
-        "narHash": "sha256-1adQsyh7MvtlR19cJvL0VWemVTWwVbWSKrmrfX60ztU=",
+        "lastModified": 1669954375,
+        "narHash": "sha256-jEz/kMX6p8GBYLJSargxn9Fg3nSj7smSUquM281wVqQ=",
         "owner": "ipetkov",
         "repo": "crane",
-        "rev": "fb80a689c5c517bc40d9cc1828c384c38de90dda",
+        "rev": "ea271bdc05810171a52548c4ae28d4823c09d34e",
         "type": "github"
       },
       "original": {
@@ -93,11 +93,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1669947737,
-        "narHash": "sha256-hSokayqpx4PLmCw9pJ/FgqF0Pt6w+/o6ZGFRJSrcrf4=",
+        "lastModified": 1670032372,
+        "narHash": "sha256-O2RMSNuyvXqho/YV+zab8UamJt/5ND7eb+j+Sc4oxqk=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "4d8e6982cce46b318778f4a3466d466353ec1e24",
+        "rev": "8149fc84381dcd0a96b58e366d942de2f56466b7",
         "type": "github"
       },
       "original": {
@@ -132,11 +132,11 @@
     "river-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1669907408,
-        "narHash": "sha256-8UbBdq415FtqHyoMwour2OxeVUlOD8Ru51xE81yyPWY=",
+        "lastModified": 1669990753,
+        "narHash": "sha256-x971VRWp72uNRNcBTU2H81EiqWa5kg0E5n7tK8ypaQM=",
         "ref": "refs/heads/master",
-        "rev": "4af7a3cb63ce38e7995a6cd73207920e47398f29",
-        "revCount": 899,
+        "rev": "e603c5460a27bdc8ce6c32c8ee5e53fb789bc10b",
+        "revCount": 901,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/riverwm/river.git"
