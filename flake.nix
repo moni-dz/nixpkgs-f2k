@@ -80,19 +80,31 @@
               let
                 package = getPackage "picom" prev;
               in
-              prev.picom.overrideAttrs (_: { inherit (package) src version; });
+              prev.picom.overrideAttrs (old: {
+                inherit (package) src version;
+                
+                buildInputs = (old.buildInputs or [ ]) ++ [ prev.pcre2 ];
+              });
 
             picom-dccsillag =
               let
                 package = getPackage "picom-dccsillag" prev;
               in
-              prev.picom.overrideAttrs (_: { inherit (package) src version; });
+              prev.picom.overrideAttrs (old: {
+                inherit (package) src version;
+                
+                buildInputs = (old.buildInputs or [ ]) ++ [ prev.pcre2 ];
+              });
 
             picom-pijulius =
               let
                 package = getPackage "picom-pijulius" prev;
               in
-              prev.picom.overrideAttrs (_: { inherit (package) src version; });
+              prev.picom.overrideAttrs (old: {
+                inherit (package) src version;
+                
+                buildInputs = (old.buildInputs or [ ]) ++ [ prev.pcre2 ];
+              });
           };
 
           fonts = _: prev: {
