@@ -3,15 +3,15 @@
 {
   awesome = {
     pname = "awesome";
-    version = "d3c3380168b4c2aaf5e638b520fed82c761ee650";
+    version = "1239cdf4bc9208f57e4bf018d462c2ee63bf0387";
     src = fetchFromGitHub ({
       owner = "awesomeWM";
       repo = "awesome";
-      rev = "d3c3380168b4c2aaf5e638b520fed82c761ee650";
+      rev = "1239cdf4bc9208f57e4bf018d462c2ee63bf0387";
       fetchSubmodules = false;
-      sha256 = "sha256-8UuFwn4SFfxEa5lgr+Rq9uIOev586bc+iSppoJRLPDM=";
+      sha256 = "sha256-iAazEbkFOP6FyeUd4tXTQzPosqmNM0Mxf1c1m/eRKWs=";
     });
-    date = "2022-12-08";
+    date = "2022-12-09";
   };
   awesome-composite = {
     pname = "awesome-composite";
