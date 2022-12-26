@@ -10,11 +10,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1671815218,
-        "narHash": "sha256-r26Y25q+34xj7PL616yoEPwO8j5GMW+jT5GNevFtSE0=",
+        "lastModified": 1672020443,
+        "narHash": "sha256-GeQfkzaTHBTSh/pj1NTnK7R4c2W6JWqfVLsO0QGQDU0=",
         "owner": "ipetkov",
         "repo": "crane",
-        "rev": "8b66edc016237c696a4a02ff8e0840b554174d59",
+        "rev": "eae8252b68472863d83814c9165a513687cd319c",
         "type": "github"
       },
       "original": {
@@ -93,11 +93,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1671934316,
-        "narHash": "sha256-faHL815Q7hUgvQ9FTu1JNO2+0iJth3Gly3Tgm7V9rlo=",
+        "lastModified": 1672022408,
+        "narHash": "sha256-UVhtDt3wYRufH4TBVw5CNY+oR99tQx1VwgbeYprkPJs=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "66ac96a8745b7c407587a042e5728d21507a3e7b",
+        "rev": "6175aaa7d2ee65f59807f1f37d43e2121f443cd3",
         "type": "github"
       },
       "original": {
@@ -201,11 +201,11 @@
     "wezterm-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1671924539,
-        "narHash": "sha256-szdueEFIgKyuHC+StQ8gHTOy7ONiinAN4uHU8tFbDpQ=",
+        "lastModified": 1671973420,
+        "narHash": "sha256-g3x8NMqPCaCP3bOZrc2db/UkzN5fbMhPPoNt6+T0W0I=",
         "ref": "main",
-        "rev": "e8886752e87c3240df4148828797459776abfa7f",
-        "revCount": 6557,
+        "rev": "c39bbbb45130ee1c9a31a2e23b336f4c4e5bcf9c",
+        "revCount": 6558,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/wez/wezterm.git"
