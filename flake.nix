@@ -82,7 +82,7 @@
               in
               prev.picom.overrideAttrs (old: {
                 inherit (package) src version;
-                
+
                 buildInputs = (old.buildInputs or [ ]) ++ [ prev.pcre2 ];
               });
 
@@ -92,7 +92,7 @@
               in
               prev.picom.overrideAttrs (old: {
                 inherit (package) src version;
-                
+
                 buildInputs = (old.buildInputs or [ ]) ++ [ prev.pcre2 ];
               });
 
@@ -102,7 +102,7 @@
               in
               prev.picom.overrideAttrs (old: {
                 inherit (package) src version;
-                
+
                 buildInputs = (old.buildInputs or [ ]) ++ [ prev.pcre2 ];
               });
           };
@@ -291,7 +291,7 @@
 
                 (lib.optimizeStdenv "armv9-a" clangStdenv).mkDerivation { ... }
               */
-              optimizeStdenv = march: prev.stdenvAdapters.withCFlags (commonFlags ++ "-march=${march}");
+              optimizeStdenv = march: prev.stdenvAdapters.withCFlags (commonFlags ++ [ "-march=${march}" ]);
 
               /*
                 Example:
