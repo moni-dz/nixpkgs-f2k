@@ -3,15 +3,15 @@
 {
   awesome = {
     pname = "awesome";
-    version = "ee0663459922a41f57fa2cc936da80d5857eedc9";
+    version = "d5a987d9c68bb88384ff9490b0e56c2285d65258";
     src = fetchFromGitHub ({
       owner = "awesomeWM";
       repo = "awesome";
-      rev = "ee0663459922a41f57fa2cc936da80d5857eedc9";
+      rev = "d5a987d9c68bb88384ff9490b0e56c2285d65258";
       fetchSubmodules = false;
-      sha256 = "sha256-K9qOOdzo/KEcEb6DJ1Q1W6sqarbDAQ3cm7Oa6pbikHI=";
+      sha256 = "sha256-ThSZ5Eb6lD3ttKJ8hmF6mOX0Rc5InjwovB19gfeWXLw=";
     });
-    date = "2022-12-18";
+    date = "2023-01-11";
   };
   awesome-composite = {
     pname = "awesome-composite";
@@ -75,15 +75,15 @@
   };
   picom = {
     pname = "picom";
-    version = "60ac2b64db78363fe04189cc734daea3d721d87e";
+    version = "e20a02e67a6f3bd0b994a5236ab318caecc7df92";
     src = fetchFromGitHub ({
       owner = "yshui";
       repo = "picom";
-      rev = "60ac2b64db78363fe04189cc734daea3d721d87e";
+      rev = "e20a02e67a6f3bd0b994a5236ab318caecc7df92";
       fetchSubmodules = false;
-      sha256 = "sha256-DcTnulkhWPMqGDLD7V17f9Lxs4i44/H26gHo+dmbSCc=";
+      sha256 = "sha256-7VaoVb9T833zmXJQqvo8QoD7TKNmvOAy8RXH2bd1Rk0=";
     });
-    date = "2022-12-23";
+    date = "2023-01-12";
   };
   picom-dccsillag = {
     pname = "picom-dccsillag";
@@ -111,14 +111,14 @@
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
-    version = "c40ae56d53dd0a6ba0f06207870a5d4bb4d0fa38";
+    version = "88580e9347e9e78c74ecd8f7057de71f54c1d133";
     src = fetchFromGitHub ({
       owner = "stevenblack";
       repo = "hosts";
-      rev = "c40ae56d53dd0a6ba0f06207870a5d4bb4d0fa38";
+      rev = "88580e9347e9e78c74ecd8f7057de71f54c1d133";
       fetchSubmodules = false;
-      sha256 = "sha256-0mjjM/0zIhGaLjXz1t0GBC+fNxXam3ldZ2smnhD505w=";
+      sha256 = "sha256-x1fsJnStSdOppMSiFJ7wUVWe8V7Xk+njHs2CIR9f28Y=";
     });
-    date = "2023-01-11";
+    date = "2023-01-12";
   };
 }
