@@ -2,6 +2,37 @@
 
 **NOTE: these instructions aren't 100% what you should do, use accordingly to your configuration**
 
+# Non-flake configurations, enable flakes then append to `configuration.nix`, or `home.nix`:
+
+Enable `nix-command` and `flakes` **first** then rebuild with `nixos-rebuild switch`.
+
+```nix
+{
+  nix.extraOptions = ''
+    experimental-features = nix-command flakes
+  '';
+}
+```
+
+then after:
+
+```nix
+{
+  # using the overlays
+  nixpkgs.overlays = [
+    (builtins.getFlake "github:fortuneteller2k/nixpkgs-f2k").overlays.default
+  ];
+
+  # for NixOS modules (do not use them in home.nix)
+  imports = [ (builtins.getFlake "github:fortuneteller2k/nixpkgs-f2k").nixosModules.stevenblack ];
+  
+  environment.systemPackages = with pkgs; [
+    (builtins.getFlake "github:fortuneteller2k/nixpkgs-f2k").packages.${system}.wezterm-git
+  ];
+}
+```
+
+
 ## Flake enabled Nix:
 
 ```nix
@@ -34,29 +65,6 @@
 }
 ```
 
-## Non-flake configurations, enable flakes then append to `configuration.nix`, or `home.nix`:
-```nix
-{
-  # using the overlays
-  nixpkgs.overlays = [
-    (builtins.getFlake "github:fortuneteller2k/nixpkgs-f2k").overlays.default
-  ];
-
-  # for NixOS modules (do not use them in home.nix)
-  imports = [ (builtins.getFlake "github:fortuneteller2k/nixpkgs-f2k").nixosModules.stevenblack ];
-}
-```
-
-Enabling `nix-command` and `flakes`
-
-```nix
-{
-  nix.extraOptions = ''
-    experimental-features = nix-command flakes
-  '';
-}
-```
-
 ## Binary Cache
 
 ```sh
@@ -80,3 +88,7 @@ or if you're like me, and is doing it the manual approach
   ];
 }
 ```
+
+## making your own copy
+
+instead of forking, click the "Use this template" button
