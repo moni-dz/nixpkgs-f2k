@@ -181,7 +181,7 @@
     },
     "stevenblack-blocklist": {
         "cargoLocks": null,
-        "date": "2023-01-19",
+        "date": "2023-01-23",
         "extract": null,
         "name": "stevenblack-blocklist",
         "passthru": null,
@@ -193,10 +193,10 @@
             "name": null,
             "owner": "stevenblack",
             "repo": "hosts",
-            "rev": "157474a55839c3bf40acc5b3325f2d87da187700",
-            "sha256": "sha256-+gUP5AH44Mun4GOywvgKFg0pMdfhDP9JAbxMlNt56mU=",
+            "rev": "a3a9e18a89238f69fc42e96877dd62c46707ae3e",
+            "sha256": "sha256-LjkwDR1A/MMP2CLggjklsQmm0OB2CfDFKX1l5Esw8Ok=",
             "type": "github"
         },
-        "version": "157474a55839c3bf40acc5b3325f2d87da187700"
+        "version": "a3a9e18a89238f69fc42e96877dd62c46707ae3e"
     }
 }
