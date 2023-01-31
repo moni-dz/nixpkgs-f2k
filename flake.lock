@@ -93,11 +93,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1675046292,
-        "narHash": "sha256-8xUh/S42kcE0kZIlZyi/p8y6jqYCX4F+wr0KXHKK2O8=",
+        "lastModified": 1675133411,
+        "narHash": "sha256-w2bMAtAE94qO0XdOFGJSprv6tAL1I5Kdda7hfvCqguc=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "2cc50512c1e0a570e8de391f1fad7a8c07ee8372",
+        "rev": "0506d31b804b84172fcc92fae929f0ee67011225",
         "type": "github"
       },
       "original": {
@@ -132,11 +132,11 @@
     "river-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1674646740,
-        "narHash": "sha256-dprENIwcGDJJA9mfN6nOs0KXtWm2WZx1cYWPBuCCJPY=",
+        "lastModified": 1675118904,
+        "narHash": "sha256-4IfDtjIk8/lmppU4e6dHRrI0ZgUnaun3F9PWYBqwSH8=",
         "ref": "refs/heads/master",
-        "rev": "76952183c0cde7a8e2c53173567f9f98ae5258c6",
-        "revCount": 944,
+        "rev": "5274383c72aef8c9ecd73d4a82469a3cee29c83d",
+        "revCount": 945,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/riverwm/river.git"
@@ -201,11 +201,11 @@
     "wezterm-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1674859974,
-        "narHash": "sha256-Qs/NhfNxMAbQpFmx9H0pMC3Q6tOLcDjokIapuG1DIQg=",
+        "lastModified": 1675051705,
+        "narHash": "sha256-8A3K3p4B1FQkM7DwOiR95Kh3/GeRAF6fHgL9DdgDLOk=",
         "ref": "main",
-        "rev": "691ec187ba29fcae45ddf4e4f88fd02c49988c86",
-        "revCount": 6649,
+        "rev": "df12dd9d0092a0609d6fe14aaa4470324a264eda",
+        "revCount": 6650,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/wez/wezterm.git"
