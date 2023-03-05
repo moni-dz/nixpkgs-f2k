@@ -8,9 +8,7 @@ Enable `nix-command` and `flakes` **first** then rebuild with `nixos-rebuild swi
 
 ```nix
 {
-  nix.extraOptions = ''
-    experimental-features = nix-command flakes
-  '';
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }
 ```
 
