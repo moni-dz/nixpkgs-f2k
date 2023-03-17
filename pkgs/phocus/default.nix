@@ -42,8 +42,8 @@ stdenvNoCC.mkDerivation rec {
   installFlags = [ "DESTDIR=$(out)" "PREFIX=" ];
 
   meta = with lib; {
-    description = "phocus with horizon theme";
-    homepage = "https://github.com/fortuneteller2k/gtk";
+    description = "From scratch, clean and opinionated GTK3 implementation of the phocus color scheme";
+    homepage = "https://github.com/phocus/gtk";
     license = [ licenses.mit ];
     maintainers = with maintainers; [ fortuneteller2k ];
   };
