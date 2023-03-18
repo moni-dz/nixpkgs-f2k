@@ -27,15 +27,15 @@
   };
   lshw = {
     pname = "lshw";
-    version = "42fef565731411a784101de614a54bff79d1858e";
+    version = "e7cde935da1017976b51761fd0e14e598d98e26f";
     src = fetchFromGitHub ({
       owner = "lyonel";
       repo = "lshw";
-      rev = "42fef565731411a784101de614a54bff79d1858e";
+      rev = "e7cde935da1017976b51761fd0e14e598d98e26f";
       fetchSubmodules = false;
-      sha256 = "sha256-Gt9RoTBCr1f5szmuRdrmQo9FNAflv+arq+KfFGP9b1E=";
+      sha256 = "sha256-VWLvKIiXrcM3lq2AOvshB8J098Pd4pv14GGttmhE0VE=";
     });
-    date = "2022-08-31";
+    date = "2023-03-17";
   };
   mpv-discord = {
     pname = "mpv-discord";

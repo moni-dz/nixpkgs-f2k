@@ -41,7 +41,7 @@
     },
     "lshw": {
         "cargoLocks": null,
-        "date": "2022-08-31",
+        "date": "2023-03-17",
         "extract": null,
         "name": "lshw",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "lyonel",
             "repo": "lshw",
-            "rev": "42fef565731411a784101de614a54bff79d1858e",
-            "sha256": "sha256-Gt9RoTBCr1f5szmuRdrmQo9FNAflv+arq+KfFGP9b1E=",
+            "rev": "e7cde935da1017976b51761fd0e14e598d98e26f",
+            "sha256": "sha256-VWLvKIiXrcM3lq2AOvshB8J098Pd4pv14GGttmhE0VE=",
             "type": "github"
         },
-        "version": "42fef565731411a784101de614a54bff79d1858e"
+        "version": "e7cde935da1017976b51761fd0e14e598d98e26f"
     },
     "mpv-discord": {
         "cargoLocks": null,
