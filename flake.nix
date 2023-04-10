@@ -5,6 +5,7 @@
     crane.url = "github:ipetkov/crane";
     nixpkgs.url = "github:NixOS/nixpkgs/master";
     nixpkgs-fmt.url = "github:nix-community/nixpkgs-fmt";
+    emacs.url = "github:nix-community/emacs-overlay";
 
     # follows
     crane.inputs.nixpkgs.follows = "nixpkgs";
@@ -27,7 +28,7 @@
     };
   };
 
-  outputs = args@{ self, nixpkgs, crane, nixpkgs-fmt, ... }:
+  outputs = args@{ self, emacs, nixpkgs, crane, nixpkgs-fmt, ... }:
     let
       linux = [ "x86_64-linux" ];
       darwin = [ "aarch64-darwin" "x86_64-darwin" ];
@@ -36,7 +37,11 @@
         inherit system;
         allowUnfree = true;
         allowUnsupportedSystem = true;
-        overlays = [ self.overlays.default ];
+
+        overlays = [
+          self.overlays.default
+          emacs.overlay
+        ];
       };
     in
     {
@@ -105,6 +110,44 @@
 
                 buildInputs = (old.buildInputs or [ ]) ++ [ prev.pcre2 ];
               });
+          };
+
+          # If using as an overlay, you need emacs.overlay from nix-community/emacs-overlay
+          editors = _: prev: {
+            emacs-plus-git = (prev.emacsPgtk.override { withX = false; }).overrideAttrs (fdrv: pdrv: {
+              pname = "emacs-plus-git";
+              name = "${fdrv.pname}-${pdrv.version}";
+
+              # Taken from https://github.com/d12frosted/homebrew-emacs-plus/tree/master/patches/emacs-30
+              patches = (pdrv.patches or [ ]) ++ [
+                (prev.fetchpatch {
+                  url = "https://raw.githubusercontent.com/d12frosted/homebrew-emacs-plus/master/patches/emacs-29/poll.patch";
+                  hash = "sha256-jN9MlD8/ZrnLuP2/HUXXEVVd6A+aRZNYFdZF8ReJGfY=";
+                })
+
+                (prev.fetchpatch {
+                  url = "https://raw.githubusercontent.com/d12frosted/homebrew-emacs-plus/master/patches/emacs-29/round-undecorated-frame.patch";
+                  hash = "sha256-qPenMhtRGtL9a0BvGnPF4G1+2AJ1Qylgn/lUM8J2CVI=";
+                })
+
+                (prev.fetchpatch {
+                  url = "https://raw.githubusercontent.com/d12frosted/homebrew-emacs-plus/master/patches/emacs-28/fix-window-role.patch";
+                  hash = "sha256-+z/KfsBm1lvZTZNiMbxzXQGRTjkCFO4QPlEK35upjsE=";
+                })
+
+                (prev.fetchpatch {
+                  url = "https://raw.githubusercontent.com/d12frosted/homebrew-emacs-plus/master/patches/emacs-28/no-frame-refocus-cocoa.patch";
+                  hash = "sha256-QLGplGoRpM4qgrIAJIbVJJsa4xj34axwT3LiWt++j/c=";
+                })
+
+                (prev.fetchpatch {
+                  url = "https://raw.githubusercontent.com/d12frosted/homebrew-emacs-plus/master/patches/emacs-28/system-appearance.patch";
+                  hash = "sha256-oM6fXdXCWVcBnNrzXmF0ZMdp8j0pzkLE66WteeCutv8=";
+                })
+              ];
+
+              platforms = prev.lib.platforms.darwin;
+            });
           };
 
           fonts = _: prev: {
@@ -316,6 +359,7 @@
 
           darwin = final: prev: with self.overlays;
             (fonts final prev)
+            // (editors final prev)
             // (terminal-emulators final prev)
             // (stdenvs final prev);
 

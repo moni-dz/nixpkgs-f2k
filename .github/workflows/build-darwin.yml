@@ -29,4 +29,4 @@ jobs:
       with:
         name: fortuneteller2k
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-    - run: nix build -L .#wezterm-git
+    - run: nix build -L .#emacs-plus-git
