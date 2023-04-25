@@ -34,6 +34,7 @@
 
 let
   pname = "wezterm";
+  version = src.rev;
 
   nativeBuildInputs = [
     pkg-config
@@ -69,7 +70,7 @@ let
   ];
 
   cargoArtifacts = crane-lib.buildDepsOnly {
-    inherit src pname nativeBuildInputs buildInputs;
+    inherit src pname version nativeBuildInputs buildInputs;
   };
 in
 crane-lib.buildPackage rec {
