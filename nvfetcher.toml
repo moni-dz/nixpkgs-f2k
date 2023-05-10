@@ -32,6 +32,11 @@ src.git = "https://github.com/dccsillag/picom"
 src.branch = "implement-window-animations"
 fetch.github = "dccsillag/picom"
 
+[picom-ft-labs]
+src.git = "https://github.com/FT-Labs/picom"
+src.branch = "generalanimation"
+fetch.github = "FT-Labs/picom"
+
 [picom-pijulius]
 src.git = "https://github.com/pijulius/picom"
 src.branch = "implement-window-animations"

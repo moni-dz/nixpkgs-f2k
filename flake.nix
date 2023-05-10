@@ -101,6 +101,16 @@
                 buildInputs = (old.buildInputs or [ ]) ++ [ prev.pcre2 ];
               });
 
+            picom-ft-labs =
+              let
+                package = getPackage "picom-ft-labs" prev;
+              in
+              prev.picom.overrideAttrs (old: {
+                inherit (package) src version;
+
+                buildInputs = (old.buildInputs or [ ]) ++ [ prev.pcre2 ];
+              });
+
             picom-pijulius =
               let
                 package = getPackage "picom-pijulius" prev;
