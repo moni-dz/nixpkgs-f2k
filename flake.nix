@@ -306,6 +306,11 @@
               gtk3Support = true;
             };
 
+            awesome-luajit-git = prev.awesome-git.override {
+              lua = prev.luajit;
+              gtk3Support = true;
+            };
+
             # Yes, it's a *compositor* because of how Wayland works, I can't be bothered.
             river-git = prev.river.overrideAttrs (_: {
               src = args.river-src;
