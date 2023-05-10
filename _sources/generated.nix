@@ -97,6 +97,18 @@
     });
     date = "2022-05-29";
   };
+  picom-ft-labs = {
+    pname = "picom-ft-labs";
+    version = "e9834a5e350415d9e036d48304405bdb2d8a1567";
+    src = fetchFromGitHub ({
+      owner = "FT-Labs";
+      repo = "picom";
+      rev = "e9834a5e350415d9e036d48304405bdb2d8a1567";
+      fetchSubmodules = false;
+      sha256 = "sha256-KX+/nO/nJlUjsZwVg2/vQy+byYmtnKbtxuhyiq/tWg8=";
+    });
+    date = "2023-04-25";
+  };
   picom-pijulius = {
     pname = "picom-pijulius";
     version = "982bb43e5d4116f1a37a0bde01c9bda0b88705b9";
