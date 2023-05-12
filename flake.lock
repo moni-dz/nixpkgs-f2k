@@ -29,11 +29,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1683771025,
-        "narHash": "sha256-Mjd5rbDa+y2dAUdgZPZh1/Y3IqbEE+5tYkDaUvMluoY=",
+        "lastModified": 1683828712,
+        "narHash": "sha256-frB0BacpjtmzDunFZwyRZSNlyOvcxpL0ohtQVvFtiA8=",
         "owner": "nix-community",
         "repo": "emacs-overlay",
-        "rev": "2948ffc1d2d9ca9bcb22297234dadd369633e87b",
+        "rev": "b0100f5fdc823be12bbcb31bcc5293fc74e04a56",
         "type": "github"
       },
       "original": {
@@ -168,11 +168,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1683767558,
-        "narHash": "sha256-IdGjeG3AVQiNSbEUVYYvzHhUjlhfofsDWphMJV75Z9M=",
+        "lastModified": 1683854027,
+        "narHash": "sha256-O7OPHhzRaLdyklF71jApPJBKIkOSryy0Xp63dN4TK4Y=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "1780cbef7286c4b62f2a0c8bf63373381fa9b31a",
+        "rev": "6dee6324c73b6b4004ac4a766a2a91768d95c4cb",
         "type": "github"
       },
       "original": {
@@ -185,11 +185,11 @@
     "river-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1683034657,
-        "narHash": "sha256-WAn6zVY7mq3EUZcdyeY1wQxbLJ+3SBMHBWQWWQy/1M4=",
+        "lastModified": 1683838954,
+        "narHash": "sha256-4Gwi7PiITj6i41YnngecFWd/pt5UQwslOM71C7tUR4k=",
         "ref": "refs/heads/master",
-        "rev": "5de9bf846b27af2c001a780a0d524e8fba7637a2",
-        "revCount": 1031,
+        "rev": "792d94253c191e653e4025a648d574d9f8ce99bf",
+        "revCount": 1032,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/riverwm/river.git"
