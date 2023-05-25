@@ -10,22 +10,6 @@
     # follows
     crane.inputs.nixpkgs.follows = "nixpkgs";
     nixpkgs-fmt.inputs.nixpkgs.follows = "nixpkgs";
-
-    # nvfetcher seems to don't like submodules
-    river-src = {
-      type = "git";
-      url = "https://github.com/riverwm/river.git";
-      submodules = true;
-      flake = false;
-    };
-
-    wezterm-src = {
-      type = "git";
-      url = "https://github.com/wez/wezterm.git";
-      ref = "main";
-      submodules = true;
-      flake = false;
-    };
   };
 
   outputs = args@{ self, emacs, nixpkgs, crane, nixpkgs-fmt, ... }:
@@ -176,13 +160,15 @@
           };
 
           terminal-emulators = _: prev: {
-            wezterm-git = prev.darwin.apple_sdk_11_0.callPackage ./pkgs/wezterm {
-              inherit (prev.darwin.apple_sdk_11_0.frameworks) Cocoa CoreGraphics Foundation UserNotifications;
-
-              src = args.wezterm-src;
-              version = versionOf args.wezterm-src;
-              crane-lib = crane.lib."${prev.system}";
-            };
+            wezterm-git =
+              let
+                package = getPackage "wezterm" prev;
+              in
+              prev.darwin.apple_sdk_11_0.callPackage ./pkgs/wezterm {
+                inherit (prev.darwin.apple_sdk_11_0.frameworks) Cocoa CoreGraphics Foundation UserNotifications;
+                inherit (package) src version;
+                crane-lib = crane.lib."${prev.system}";
+              };
           };
 
           themes = _: prev: {
@@ -312,10 +298,13 @@
             };
 
             # Yes, it's a *compositor* because of how Wayland works, I can't be bothered.
-            river-git = prev.river.overrideAttrs (_: {
-              src = args.river-src;
-              version = versionOf args.river-src;
-            });
+            river-git = 
+              let
+                package = getPackage "river" prev;
+              in
+              prev.river.overrideAttrs (_: {
+                inherit (package) src version;
+              });
           };
 
           stdenvs = final: prev:

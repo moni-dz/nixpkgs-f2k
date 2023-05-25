@@ -34,7 +34,6 @@
 
 let
   pname = "wezterm";
-  version = src.rev;
 
   nativeBuildInputs = [
     pkg-config

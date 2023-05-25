@@ -42,6 +42,16 @@ src.git = "https://github.com/pijulius/picom"
 src.branch = "implement-window-animations"
 fetch.github = "pijulius/picom"
 
+[river]
+src.git = "https://github.com/riverwm/river"
+fetch.git = "https://github.com/riverwm/river.git"
+git.fetchSubmodules = true
+
 [stevenblack-blocklist]
 src.git = "https://github.com/stevenblack/hosts"
 fetch.github = "stevenblack/hosts"
+
+[wezterm]
+src.git = "https://github.com/wez/wezterm"
+fetch.git = "https://github.com/wez/wezterm.git"
+git.fetchSubmodules = true

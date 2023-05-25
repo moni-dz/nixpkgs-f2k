@@ -182,32 +182,12 @@
         "type": "github"
       }
     },
-    "river-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1683838954,
-        "narHash": "sha256-4Gwi7PiITj6i41YnngecFWd/pt5UQwslOM71C7tUR4k=",
-        "ref": "refs/heads/master",
-        "rev": "792d94253c191e653e4025a648d574d9f8ce99bf",
-        "revCount": 1032,
-        "submodules": true,
-        "type": "git",
-        "url": "https://github.com/riverwm/river.git"
-      },
-      "original": {
-        "submodules": true,
-        "type": "git",
-        "url": "https://github.com/riverwm/river.git"
-      }
-    },
     "root": {
       "inputs": {
         "crane": "crane",
         "emacs": "emacs",
         "nixpkgs": "nixpkgs_2",
-        "nixpkgs-fmt": "nixpkgs-fmt",
-        "river-src": "river-src",
-        "wezterm-src": "wezterm-src"
+        "nixpkgs-fmt": "nixpkgs-fmt"
       }
     },
     "rust-analyzer-src": {
@@ -265,25 +245,6 @@
         "owner": "nix-systems",
         "repo": "default",
         "type": "github"
-      }
-    },
-    "wezterm-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1684934411,
-        "narHash": "sha256-EEE1RSG1AYSsAu7GuqYD0YIvUx1NTd39mifCwr5su00=",
-        "ref": "main",
-        "rev": "1cd340bbd2c84f0c889ade734ab518b450129eef",
-        "revCount": 7227,
-        "submodules": true,
-        "type": "git",
-        "url": "https://github.com/wez/wezterm.git"
-      },
-      "original": {
-        "ref": "main",
-        "submodules": true,
-        "type": "git",
-        "url": "https://github.com/wez/wezterm.git"
       }
     }
   },

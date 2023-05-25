@@ -199,9 +199,28 @@
         },
         "version": "982bb43e5d4116f1a37a0bde01c9bda0b88705b9"
     },
+    "river": {
+        "cargoLocks": null,
+        "date": "2023-05-11",
+        "extract": null,
+        "name": "river",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "792d94253c191e653e4025a648d574d9f8ce99bf",
+            "sha256": "sha256-4Gwi7PiITj6i41YnngecFWd/pt5UQwslOM71C7tUR4k=",
+            "type": "git",
+            "url": "https://github.com/riverwm/river.git"
+        },
+        "version": "792d94253c191e653e4025a648d574d9f8ce99bf"
+    },
     "stevenblack-blocklist": {
         "cargoLocks": null,
-        "date": "2023-05-21",
+        "date": "2023-05-24",
         "extract": null,
         "name": "stevenblack-blocklist",
         "passthru": null,
@@ -213,10 +232,29 @@
             "name": null,
             "owner": "stevenblack",
             "repo": "hosts",
-            "rev": "9f2ba78232978a20b329ba975fe545521126d9da",
-            "sha256": "sha256-9QcW+ewb9ssi7qT6DWKCwHbIibpOxXDA+06++DHsu6Q=",
+            "rev": "bdc96809c82664310f26c07c675e6881e7738112",
+            "sha256": "sha256-4EuJAQBGQnUbqdAJZFyq3MSZIC4r46tgVWiBeGJggjo=",
             "type": "github"
         },
-        "version": "9f2ba78232978a20b329ba975fe545521126d9da"
+        "version": "bdc96809c82664310f26c07c675e6881e7738112"
+    },
+    "wezterm": {
+        "cargoLocks": null,
+        "date": "2023-05-24",
+        "extract": null,
+        "name": "wezterm",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "1cd340bbd2c84f0c889ade734ab518b450129eef",
+            "sha256": "sha256-EEE1RSG1AYSsAu7GuqYD0YIvUx1NTd39mifCwr5su00=",
+            "type": "git",
+            "url": "https://github.com/wez/wezterm.git"
+        },
+        "version": "1cd340bbd2c84f0c889ade734ab518b450129eef"
     }
 }
