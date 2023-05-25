@@ -39,8 +39,6 @@
           getPackage = pname: pkgs: (import ./_sources/generated.nix {
             inherit (pkgs) fetchgit fetchurl fetchFromGitHub dockerTools;
           }).${pname};
-
-          versionOf = input: input.rev;
         in
         {
           applications = final: prev: {
@@ -298,7 +296,7 @@
             };
 
             # Yes, it's a *compositor* because of how Wayland works, I can't be bothered.
-            river-git = 
+            river-git =
               let
                 package = getPackage "river" prev;
               in
