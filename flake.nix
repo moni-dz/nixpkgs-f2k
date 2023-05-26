@@ -106,7 +106,7 @@
 
           # If using as an overlay, you need emacs.overlay from nix-community/emacs-overlay
           editors = _: prev: {
-            emacs-plus-git = (prev.emacsPgtk.override { withX = false; }).overrideAttrs (fdrv: pdrv: {
+            emacs-plus-git = prev.emacsGit.overrideAttrs (fdrv: pdrv: {
               pname = "emacs-plus-git";
               name = "${fdrv.pname}-${pdrv.version}";
 
