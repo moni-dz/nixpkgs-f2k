@@ -75,15 +75,15 @@
   };
   picom = {
     pname = "picom";
-    version = "3aed5599c3f73cbfa53b0249795e76ab07cf9ecd";
+    version = "5b6f6ecbf5877ca18eb7c028247f67650959e5ef";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "3aed5599c3f73cbfa53b0249795e76ab07cf9ecd";
+      rev = "5b6f6ecbf5877ca18eb7c028247f67650959e5ef";
       fetchSubmodules = false;
-      sha256 = "sha256-XuQzOaR+9z6TNRwJ4sWVsLiD91bzKkXnapPdKjOxGo0=";
+      sha256 = "sha256-aAmgZB8ZhTIjGGCS11bzw+J5pxprDsN5S8UKEajh2wo=";
     };
-    date = "2023-05-08";
+    date = "2023-06-12";
   };
   picom-dccsillag = {
     pname = "picom-dccsillag";
@@ -136,11 +136,11 @@
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
-    version = "1c11dc2a8bfd5050c9fbf5425daa6ceac3e15ee6";
+    version = "d1807cf5431ec73eef2794315b37c4b3ef78e3da";
     src = fetchFromGitHub {
       owner = "stevenblack";
       repo = "hosts";
-      rev = "1c11dc2a8bfd5050c9fbf5425daa6ceac3e15ee6";
+      rev = "d1807cf5431ec73eef2794315b37c4b3ef78e3da";
       fetchSubmodules = false;
       sha256 = "sha256-JfC13Dckx4kGopqY01us0LYtmkmntWiQ0PdY8z90WOY=";
     };
@@ -148,15 +148,15 @@
   };
   wezterm = {
     pname = "wezterm";
-    version = "95e44f2199d9779e353bccf387a1eb2dbaf41f44";
+    version = "baf9d970816e015bee41ed5eb9186ef7f71c454c";
     src = fetchgit {
       url = "https://github.com/wez/wezterm.git";
-      rev = "95e44f2199d9779e353bccf387a1eb2dbaf41f44";
+      rev = "baf9d970816e015bee41ed5eb9186ef7f71c454c";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-w/iQoWng7nrE+HAg0umpq8RCU0bjw5JogR2HHufspI8=";
+      sha256 = "sha256-9dCCT3Nd6XAZBKIlbqKQZj8ruUudtwcbd3CYJIK9Dl8=";
     };
-    date = "2023-05-30";
+    date = "2023-06-12";
   };
 }
