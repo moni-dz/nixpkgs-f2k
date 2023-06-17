@@ -62,47 +62,70 @@
               });
           };
 
-          compositors = _: prev: {
-            picom-git =
-              let
-                package = getPackage "picom" prev;
-              in
-              prev.picom.overrideAttrs (old: {
+          compositors =
+            let
+              mkPicom = package: pkgs: pkgs.picom.overrideAttrs (old: {
                 inherit (package) src version;
 
-                buildInputs = (old.buildInputs or [ ]) ++ [ prev.pcre2 ];
+                buildInputs = (old.buildInputs or [ ]) ++ [
+                  pkgs.pcre2
+                  pkgs.xorg.xcbutil
+                ];
               });
+            in
+            _: prev: {
+              picom-git =
+                let
+                  package = getPackage "picom" prev;
+                in
+                prev.picom.overrideAttrs (old: {
+                  inherit (package) src version;
 
-            picom-dccsillag =
-              let
-                package = getPackage "picom-dccsillag" prev;
-              in
-              prev.picom.overrideAttrs (old: {
-                inherit (package) src version;
+                  buildInputs = (old.buildInputs or [ ]) ++ [
+                    prev.pcre2
+                    prev.xorg.xcbutil
+                  ];
+                });
 
-                buildInputs = (old.buildInputs or [ ]) ++ [ prev.pcre2 ];
-              });
+              picom-dccsillag =
+                let
+                  package = getPackage "picom-dccsillag" prev;
+                in
+                prev.picom.overrideAttrs (old: {
+                  inherit (package) src version;
 
-            picom-ft-labs =
-              let
-                package = getPackage "picom-ft-labs" prev;
-              in
-              prev.picom.overrideAttrs (old: {
-                inherit (package) src version;
+                  buildInputs = (old.buildInputs or [ ]) ++ [
+                    prev.pcre2
+                    prev.xorg.xcbutil
+                  ];
+                });
 
-                buildInputs = (old.buildInputs or [ ]) ++ [ prev.pcre2 ];
-              });
+              picom-ft-labs =
+                let
+                  package = getPackage "picom-ft-labs" prev;
+                in
+                prev.picom.overrideAttrs (old: {
+                  inherit (package) src version;
 
-            picom-pijulius =
-              let
-                package = getPackage "picom-pijulius" prev;
-              in
-              prev.picom.overrideAttrs (old: {
-                inherit (package) src version;
+                  buildInputs = (old.buildInputs or [ ]) ++ [
+                    prev.pcre2
+                    prev.xorg.xcbutil
+                  ];
+                });
 
-                buildInputs = (old.buildInputs or [ ]) ++ [ prev.pcre2 ];
-              });
-          };
+              picom-pijulius =
+                let
+                  package = getPackage "picom-pijulius" prev;
+                in
+                prev.picom.overrideAttrs (old: {
+                  inherit (package) src version;
+
+                  buildInputs = (old.buildInputs or [ ]) ++ [
+                    prev.pcre2
+                    prev.xorg.xcbutil
+                  ];
+                });
+            };
 
           # If using as an overlay, you need emacs.overlay from nix-community/emacs-overlay
           editors = _: prev: {
