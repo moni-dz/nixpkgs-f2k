@@ -64,67 +64,23 @@
 
           compositors =
             let
-              mkPicom = package: pkgs: pkgs.picom.overrideAttrs (old: {
-                inherit (package) src version;
-
-                buildInputs = (old.buildInputs or [ ]) ++ [
-                  pkgs.pcre2
-                  pkgs.xorg.xcbutil
-                ];
-              });
+              mkPicom = name: pkgs:
+                let
+                  package = getPackage name pkgs;
+                in
+                pkgs.picom.overrideAttrs (old: {
+                  inherit (package) src version;
+                  buildInputs = (old.buildInputs or [ ]) ++ [
+                    pkgs.pcre2
+                    pkgs.xorg.xcbutil
+                  ];
+                });
             in
             _: prev: {
-              picom-git =
-                let
-                  package = getPackage "picom" prev;
-                in
-                prev.picom.overrideAttrs (old: {
-                  inherit (package) src version;
-
-                  buildInputs = (old.buildInputs or [ ]) ++ [
-                    prev.pcre2
-                    prev.xorg.xcbutil
-                  ];
-                });
-
-              picom-dccsillag =
-                let
-                  package = getPackage "picom-dccsillag" prev;
-                in
-                prev.picom.overrideAttrs (old: {
-                  inherit (package) src version;
-
-                  buildInputs = (old.buildInputs or [ ]) ++ [
-                    prev.pcre2
-                    prev.xorg.xcbutil
-                  ];
-                });
-
-              picom-ft-labs =
-                let
-                  package = getPackage "picom-ft-labs" prev;
-                in
-                prev.picom.overrideAttrs (old: {
-                  inherit (package) src version;
-
-                  buildInputs = (old.buildInputs or [ ]) ++ [
-                    prev.pcre2
-                    prev.xorg.xcbutil
-                  ];
-                });
-
-              picom-pijulius =
-                let
-                  package = getPackage "picom-pijulius" prev;
-                in
-                prev.picom.overrideAttrs (old: {
-                  inherit (package) src version;
-
-                  buildInputs = (old.buildInputs or [ ]) ++ [
-                    prev.pcre2
-                    prev.xorg.xcbutil
-                  ];
-                });
+              picom-git = mkPicom "picom" prev;
+              picom-dccsillag = mkPicom "picom-dccsillag" prev;
+              picom-ft-labs = mkPicom "picom-ft-labs" prev;
+              picom-pijulius = mkPicom "picom-pijulius" prev;
             };
 
           # If using as an overlay, you need emacs.overlay from nix-community/emacs-overlay
