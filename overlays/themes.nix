@@ -6,6 +6,15 @@
       let
         package = getPackage "phocus" prev;
       in
+      prev.callPackage ../pkgs/phocus/vanilla.nix {
+        inherit (package) src version;
+        inherit (prev.nodePackages) sass;
+      };
+
+    phocus-modified =
+      let
+        package = getPackage "phocus" prev;
+      in
       prev.callPackage ../pkgs/phocus {
         inherit (package) src version;
 
