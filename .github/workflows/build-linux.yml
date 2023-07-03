@@ -11,14 +11,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3.0.2
-    - uses: cachix/install-nix-action@v17
+    - uses: actions/checkout@v3.5.3
+    - uses: cachix/install-nix-action@v22
       with:
         install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.10.0pre20220629_b7eb4ac/install
         extra_nix_config: |
           experimental-features = nix-command flakes
-    - uses: cachix/cachix-action@v10
+    - uses: cachix/cachix-action@v12
       with:
         name: fortuneteller2k
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-    - run: nix build -L .#awesome-git .#awesome-composite-git .#awesome-luajit-git .#picom-git .#picom-dccsillag .#picom-ft-labs .#picom-pijulius .#glfw-wayland-minecraft .#mpv-discord .#mpv-discord-script .#lshw-git .#nvidia-exec .#wezterm-git
+    - run: nix build -L .#awesome-git .#awesome-composite-git .#awesome-luajit-git .#picom-git .#picom-dccsillag .#picom-ft-labs .#picom-pijulius .#mpv-discord .#mpv-discord-script .#lshw-git .#nvidia-exec .#wezterm-git

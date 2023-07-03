@@ -5,10 +5,16 @@ on:
   push:
 jobs:
   tests:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        runtime: [osx-arm64]
+        include:
+          - runtime: osx-arm64
+            os: macos-latest
     steps:
-    - uses: actions/checkout@v3.0.2
-    - uses: cachix/install-nix-action@v17
+    - uses: actions/checkout@v3.5.3
+    - uses: cachix/install-nix-action@v22
       with:
         install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.9.0pre20220428_660835d/install
         extra_nix_config: |

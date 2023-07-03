@@ -5,8 +5,7 @@ with lib;
 let
   cfg = config.networking.stevenblack;
 
-  activatedHosts = with cfg.block; [ ]
-    ++ optionals fakeNews [ "fakenews" ]
+  activatedHosts = with cfg.block; optionals fakeNews [ "fakenews" ]
     ++ optionals gambling [ "gambling" ]
     ++ optionals porn [ "porn" ]
     ++ optionals social [ "social" ];
@@ -33,8 +32,7 @@ in
   };
 
   config = mkIf cfg.enable {
-    networking.hostFiles = [ ]
-      ++ optionals (activatedHosts != [ ]) [ hostsPath ]
+    networking.hostFiles = optionals (activatedHosts != [ ]) [ hostsPath ]
       ++ optionals (activatedHosts == [ ]) [ "${pkgs.stevenblack-blocklist}/hosts" ];
   };
 

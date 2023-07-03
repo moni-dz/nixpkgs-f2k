@@ -20,7 +20,7 @@ rustPlatform.buildRustPackage {
     };
   };
 
-  nativeBuildInputs = [];
+  nativeBuildInputs = [ ];
   buildInputs = lib.optionals stdenv.isDarwin [ SystemConfiguration ];
 
   # needs an actual setup
