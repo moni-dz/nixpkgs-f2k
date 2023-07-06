@@ -33,8 +33,8 @@
 
         packages =
           if lib.hasSuffix "darwin" system
-          then builtins.removeAttrs (self.overlays.darwin pkgs pkgs) [ "lib" ]
-          else builtins.removeAttrs (self.overlays.linux pkgs pkgs) [ "lib" ];
+          then removeAttrs (self.overlays.darwin pkgs pkgs) [ "lib" ]
+          else removeAttrs (self.overlays.linux pkgs pkgs) [ "lib" ];
 
         formatter = inputs.nixpkgs-fmt.defaultPackage.${system};
       };

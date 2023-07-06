@@ -20,12 +20,12 @@ in
   config = mkIf cfg.enable {
     assertions = with config.services.xserver; [
       {
-        assertion = builtins.elem "nvidia" videoDrivers;
+        assertion = __elem "nvidia" videoDrivers;
         message = "nvidia-exec requires the nvidia driver to be present in services.xserver.videoDrivers";
       }
 
       {
-        assertion = builtins.head videoDrivers == "intel" || builtins.head videoDrivers == "amdgpu";
+        assertion = __head videoDrivers == "intel" || __head videoDrivers == "amdgpu";
 
         message = ''
           nvidia-exec requires that the intel/amdgpu driver be loaded first.

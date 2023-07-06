@@ -25,14 +25,14 @@ then after:
 {
   # using the overlays
   nixpkgs.overlays = [
-    (builtins.getFlake "github:fortuneteller2k/nixpkgs-f2k").overlays.default
+    (__getFlake "github:fortuneteller2k/nixpkgs-f2k").overlays.default
   ];
 
   # for NixOS modules (do not use them in home.nix)
-  imports = [ (builtins.getFlake "github:fortuneteller2k/nixpkgs-f2k").nixosModules.stevenblack ];
+  imports = [ (__getFlake "github:fortuneteller2k/nixpkgs-f2k").nixosModules.stevenblack ];
   
   environment.systemPackages = with pkgs; [
-    (builtins.getFlake "github:fortuneteller2k/nixpkgs-f2k").packages.${system}.wezterm-git
+    (__getFlake "github:fortuneteller2k/nixpkgs-f2k").packages.${system}.wezterm-git
   ];
 }
 ```
