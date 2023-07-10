@@ -8,7 +8,7 @@
           package = getPackage name pkgs;
           extraGIPackages = with pkgs; [ networkmanager upower playerctl ];
         in
-        (pkgs.awesome.override { gtk3Support = true; }).overrideAttrs (_: {
+        (pkgs.awesome.override { gtk3Support = true; }).overrideAttrs (old: {
           inherit (package) src version;
 
           patches = [ ];
@@ -17,6 +17,8 @@
             patchShebangs tests/examples/_postprocess.lua
             patchShebangs tests/examples/_postprocess_cleanup.lua
           '';
+
+          cmakeFlags = old.cmakeFlags ++ [ "-DGENERATE_MANPAGES=OFF" ];
 
           GI_TYPELIB_PATH =
             let

@@ -15,7 +15,7 @@
 
   outputs = inputs@{ self, parts, ... }: parts.lib.mkFlake { inherit inputs; } {
     imports = [ ./overlays ];
-    systems = [ "aarch64-darwin" "x86_64-darwin" "x86_64-linux" ];
+    systems = [ "aarch64-darwin" "aarch64-linux" "x86_64-darwin" "x86_64-linux" ];
 
     _module.args.getPackage = pname: pkgs: (pkgs.callPackage ./_sources/generated.nix { }).${pname};
 
