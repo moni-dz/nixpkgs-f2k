@@ -201,7 +201,7 @@
     },
     "river": {
         "cargoLocks": null,
-        "date": "2023-07-09",
+        "date": "2023-07-11",
         "extract": null,
         "name": "river",
         "passthru": null,
@@ -211,12 +211,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "b35d779122eeb2a31a8300e407191f12bb883e8c",
-            "sha256": "sha256-VAbyBTwCvQnr3Km4DMub9TmP/+yjvLAfQ0SQ8bFxEeU=",
+            "rev": "c16628c7f57c51d50f2d10a96c265fb0afaddb02",
+            "sha256": "sha256-E3Xtv7JeCmafiNmpuS5VuLgh1TDAbibPtMo6A9Pz6EQ=",
             "type": "git",
             "url": "https://github.com/riverwm/river.git"
         },
-        "version": "b35d779122eeb2a31a8300e407191f12bb883e8c"
+        "version": "c16628c7f57c51d50f2d10a96c265fb0afaddb02"
     },
     "stevenblack-blocklist": {
         "cargoLocks": null,
@@ -240,7 +240,7 @@
     },
     "wezterm": {
         "cargoLocks": null,
-        "date": "2023-07-10",
+        "date": "2023-07-11",
         "extract": null,
         "name": "wezterm",
         "passthru": null,
@@ -250,11 +250,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "d07ec3e8bb14cf784f9ca74ed69f5ab03d685650",
-            "sha256": "sha256-5SEFwE8pbUrkp/Zme6goAPAOtl6QLErgndDYxxWpDsA=",
+            "rev": "523660c19222d157969cf073709436050747478b",
+            "sha256": "sha256-dxdbCywgu2CqO3jDG3Yr+XPm01QSflg/1CiEs6zYhFs=",
             "type": "git",
             "url": "https://github.com/wez/wezterm.git"
         },
-        "version": "d07ec3e8bb14cf784f9ca74ed69f5ab03d685650"
+        "version": "523660c19222d157969cf073709436050747478b"
     }
 }
