@@ -20,7 +20,8 @@
         "-fno-trapping-math"
         "-frounding-math"
         "-fsingle-precision-constant"
-        # not supported on clang 14 yet, and isn't ignored
+        "-ftree-vectorize"
+        # not supported on clang yet, and isn't ignored
         # "-fcx-limited-range"
         # "-fcx-fortran-rules"
       ];
