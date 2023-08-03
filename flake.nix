@@ -3,6 +3,7 @@
 
   inputs = {
     crane.url = "github:ipetkov/crane";
+    rust.url = "github:oxalica/rust-overlay";
     nixpkgs.url = "github:NixOS/nixpkgs/master";
     nixpkgs-fmt.url = "github:nix-community/nixpkgs-fmt";
     parts.url = "github:hercules-ci/flake-parts";
@@ -10,6 +11,7 @@
 
     # follows
     crane.inputs.nixpkgs.follows = "nixpkgs";
+    rust.inputs.nixpkgs.follows = "nixpkgs";
     nixpkgs-fmt.inputs.nixpkgs.follows = "nixpkgs";
   };
 
