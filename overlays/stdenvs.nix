@@ -1,4 +1,4 @@
-{ getPackage, ... }:
+_:
 
 {
   flake.overlays.stdenvs = final: prev:
