@@ -33,7 +33,7 @@
 }:
 
 let
-  pname = "wezterm";
+  pname = "wezterm-git";
 
   nativeBuildInputs = [
     pkg-config
