@@ -250,11 +250,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "59b8664eb3ff01d0a29eecbabe72b34d944dc829",
-            "sha256": "sha256-fDMAImMN9yobpmDI2gLeCGiVCqFgXJFbNw9sDapMBLg=",
+            "rev": "bf1726343131f0dae4eb5d2dd7e6b15e3e6754fc",
+            "sha256": "sha256-sG7uj2qnSzwLLKc/S92exRd5k/g2JLzHumCJQEvnsW0=",
             "type": "git",
             "url": "https://github.com/wez/wezterm.git"
         },
-        "version": "59b8664eb3ff01d0a29eecbabe72b34d944dc829"
+        "version": "bf1726343131f0dae4eb5d2dd7e6b15e3e6754fc"
     }
 }
