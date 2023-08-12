@@ -7,6 +7,7 @@
     ./editors.nix
     ./fonts.nix
     ./misc.nix
+    ./shells.nix
     ./stdenvs.nix
     ./terminal-emulators.nix
     ./themes.nix
