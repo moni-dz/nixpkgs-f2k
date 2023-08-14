@@ -1,7 +1,7 @@
 {
     "awesome": {
         "cargoLocks": null,
-        "date": "2023-08-12",
+        "date": "2023-08-13",
         "extract": null,
         "name": "awesome",
         "passthru": null,
@@ -13,11 +13,11 @@
             "name": null,
             "owner": "awesomeWM",
             "repo": "awesome",
-            "rev": "ed71b17f1bed57b837377f77f7a895e7ee834f89",
-            "sha256": "sha256-xstRramPwHma3gZrWNR6La3dccMBRykK+oLZWfakirE=",
+            "rev": "d36e1324d17efd571cec252374a2ef5f1eeae4fd",
+            "sha256": "sha256-zCxghNGk/GsSt2+9JK8eXRySn9pHXaFhrRU3OtFrDoA=",
             "type": "github"
         },
-        "version": "ed71b17f1bed57b837377f77f7a895e7ee834f89"
+        "version": "d36e1324d17efd571cec252374a2ef5f1eeae4fd"
     },
     "awesome-composite": {
         "cargoLocks": null,
@@ -220,7 +220,7 @@
     },
     "stevenblack-blocklist": {
         "cargoLocks": null,
-        "date": "2023-08-10",
+        "date": "2023-08-13",
         "extract": null,
         "name": "stevenblack-blocklist",
         "passthru": null,
@@ -232,11 +232,11 @@
             "name": null,
             "owner": "stevenblack",
             "repo": "hosts",
-            "rev": "7ecb84e53b2a4d1e439a4fafb367ea1a45ca7808",
-            "sha256": "sha256-4d05pGZ8D90JL5zD9KKT4dPb3T12aYoP/69J9mVYn+M=",
+            "rev": "23b74c7756e473d6e0f813f1f28f650972f6fe53",
+            "sha256": "sha256-0GgQndhR4wMrvbNWrlDFTpbsKQSj/4U9xsodxFgcS4g=",
             "type": "github"
         },
-        "version": "7ecb84e53b2a4d1e439a4fafb367ea1a45ca7808"
+        "version": "23b74c7756e473d6e0f813f1f28f650972f6fe53"
     },
     "wezterm": {
         "cargoLocks": null,
