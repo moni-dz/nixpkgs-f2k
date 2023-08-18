@@ -3,15 +3,15 @@
 {
   awesome = {
     pname = "awesome";
-    version = "d36e1324d17efd571cec252374a2ef5f1eeae4fd";
+    version = "28381d2792856419d4860dd6b9ed9b94b457c7f2";
     src = fetchFromGitHub {
       owner = "awesomeWM";
       repo = "awesome";
-      rev = "d36e1324d17efd571cec252374a2ef5f1eeae4fd";
+      rev = "28381d2792856419d4860dd6b9ed9b94b457c7f2";
       fetchSubmodules = false;
-      sha256 = "sha256-zCxghNGk/GsSt2+9JK8eXRySn9pHXaFhrRU3OtFrDoA=";
+      sha256 = "sha256-p2cpQhKj/mhd8904MnjGbXf70cT/coG4XdIB5P/hvW4=";
     };
-    date = "2023-08-13";
+    date = "2023-08-17";
   };
   awesome-composite = {
     pname = "awesome-composite";
@@ -136,27 +136,27 @@
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
-    version = "7311969c450a7d455378b73992466ff53323c0dc";
+    version = "03e1e33213c66bd3cf1a690076863b5946fbfdc4";
     src = fetchFromGitHub {
       owner = "stevenblack";
       repo = "hosts";
-      rev = "7311969c450a7d455378b73992466ff53323c0dc";
+      rev = "03e1e33213c66bd3cf1a690076863b5946fbfdc4";
       fetchSubmodules = false;
-      sha256 = "sha256-NuHkshew4x94RMB53z7aY++PoIyF8q9gXawyxPWNwzg=";
+      sha256 = "sha256-AV1MZIlfgSStmsHL7vJ8f7pBeKs5YfSzSZiWt0uDy84=";
     };
-    date = "2023-08-16";
+    date = "2023-08-17";
   };
   wezterm = {
     pname = "wezterm";
-    version = "2516afa249473a8f7d3a6aad509cec243d43b790";
+    version = "87a009924c94460f8e78761283bc09e8623b2c44";
     src = fetchgit {
       url = "https://github.com/wez/wezterm.git";
-      rev = "2516afa249473a8f7d3a6aad509cec243d43b790";
+      rev = "87a009924c94460f8e78761283bc09e8623b2c44";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-55UnYpI3Xg2qBQxUsZH7H3M4nG0uAeNNrUO7mhaPNq8=";
+      sha256 = "sha256-/cMAT904+RWRPTAVvr5PaXXRbaWpBGTQ0qsg/relagM=";
     };
-    date = "2023-08-16";
+    date = "2023-08-17";
   };
 }
