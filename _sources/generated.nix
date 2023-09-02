@@ -51,15 +51,15 @@
   };
   nvidia-exec = {
     pname = "nvidia-exec";
-    version = "9b125cd1d360b48d1f0c1be5fa939e56c71913d3";
+    version = "98003e6b7c0b9fdba5e91bc6d275848161172260";
     src = fetchFromGitHub {
       owner = "pedro00dk";
       repo = "nvidia-exec";
-      rev = "9b125cd1d360b48d1f0c1be5fa939e56c71913d3";
+      rev = "98003e6b7c0b9fdba5e91bc6d275848161172260";
       fetchSubmodules = false;
-      sha256 = "sha256-pR7+FTedDlYKky/AxTlR4ayLqeIbCq68bjBklClrhBY=";
+      sha256 = "sha256-NXKEc7IfsuOoRoa2Z8AbodvahSs0DRqseQBsoO6BDec=";
     };
-    date = "2023-03-12";
+    date = "2023-09-01";
   };
   phocus = {
     pname = "phocus";
