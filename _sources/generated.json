@@ -121,7 +121,7 @@
     },
     "picom": {
         "cargoLocks": null,
-        "date": "2023-09-10",
+        "date": "2023-09-15",
         "extract": null,
         "name": "picom",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "d9e5795818bcc6afa93c1fd872ae5d2deecc6241",
-            "sha256": "sha256-ddRt1JTa6lVNK8msfGUIXKyTuIa0i35no006eBOJByM=",
+            "rev": "fbc803b9839c19a65c6c46421147c29b46f446fb",
+            "sha256": "sha256-OamLuacizek/6nEBPSUj3wOzHuuxZJdowRaXIlBAu94=",
             "type": "github"
         },
-        "version": "d9e5795818bcc6afa93c1fd872ae5d2deecc6241"
+        "version": "fbc803b9839c19a65c6c46421147c29b46f446fb"
     },
     "picom-dccsillag": {
         "cargoLocks": null,
@@ -220,7 +220,7 @@
     },
     "stevenblack-blocklist": {
         "cargoLocks": null,
-        "date": "2023-09-10",
+        "date": "2023-09-14",
         "extract": null,
         "name": "stevenblack-blocklist",
         "passthru": null,
@@ -232,11 +232,11 @@
             "name": null,
             "owner": "stevenblack",
             "repo": "hosts",
-            "rev": "1f745934590cc289fda9cd899a420b4d3ef2af30",
-            "sha256": "sha256-RSCXsrvKjocvx4SMA3nHY9qtc3cMYf1gGImWm1+stl8=",
+            "rev": "f91afbf85c34a491b25ba556db7d319ca96582fc",
+            "sha256": "sha256-NWu6K+fXrTxXBffHtrtleLjaB0vvQmbp7SPbIj8wQFI=",
             "type": "github"
         },
-        "version": "1f745934590cc289fda9cd899a420b4d3ef2af30"
+        "version": "f91afbf85c34a491b25ba556db7d319ca96582fc"
     },
     "wezterm": {
         "cargoLocks": null,
