@@ -136,27 +136,27 @@
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
-    version = "1cdb3159b92b61124eab5668d8ffa6ed841cc916";
+    version = "a84c71c8fb5e7edb9bd2f77f6c54ceca78ebae3d";
     src = fetchFromGitHub {
       owner = "stevenblack";
       repo = "hosts";
-      rev = "1cdb3159b92b61124eab5668d8ffa6ed841cc916";
+      rev = "a84c71c8fb5e7edb9bd2f77f6c54ceca78ebae3d";
       fetchSubmodules = false;
-      sha256 = "sha256-MXr9PXYdHD8aXdmNjqJ+IVmRsiJWXtKdb640ESEm4Qw=";
+      sha256 = "sha256-eKM58BHntEzf5sOTYKlmXNBW/HsKYmJmSOqNBn6w6HA=";
     };
-    date = "2023-10-02";
+    date = "2023-10-04";
   };
   wezterm = {
     pname = "wezterm";
-    version = "9f6181b41440abf752608d55b380ba17907ed4ea";
+    version = "11dec45f08e3c7a611f59b030d4a9bd391807604";
     src = fetchgit {
       url = "https://github.com/wez/wezterm.git";
-      rev = "9f6181b41440abf752608d55b380ba17907ed4ea";
+      rev = "11dec45f08e3c7a611f59b030d4a9bd391807604";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-OVRUXaN+cRCU0T5771+jtFN7mdZ7AHLxGOlXqPoUKwA=";
+      sha256 = "sha256-flVptTUqNWvXVuWXdgjaDDfCVyc7O+9OUsI/4QgMyiY=";
     };
-    date = "2023-10-03";
+    date = "2023-10-04";
   };
 }
