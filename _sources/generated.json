@@ -201,7 +201,7 @@
     },
     "river": {
         "cargoLocks": null,
-        "date": "2023-10-16",
+        "date": "2023-10-17",
         "extract": null,
         "name": "river",
         "passthru": null,
@@ -211,16 +211,16 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "d73ef51c89c67ab2125387d20488a32654507e73",
-            "sha256": "sha256-vsE6zkdHXUBTAwcGtEZ1x5jVNwMND3BOmZ63vtvdLVI=",
+            "rev": "f364e1b81b482465978cd5fdacbc32dbfa37534d",
+            "sha256": "sha256-nJmQW0U/s1SfJE85enW98lPc0TKdAz8wlomY+5VRT4Q=",
             "type": "git",
             "url": "https://github.com/riverwm/river.git"
         },
-        "version": "d73ef51c89c67ab2125387d20488a32654507e73"
+        "version": "f364e1b81b482465978cd5fdacbc32dbfa37534d"
     },
     "stevenblack-blocklist": {
         "cargoLocks": null,
-        "date": "2023-10-13",
+        "date": "2023-10-17",
         "extract": null,
         "name": "stevenblack-blocklist",
         "passthru": null,
@@ -232,15 +232,15 @@
             "name": null,
             "owner": "stevenblack",
             "repo": "hosts",
-            "rev": "be423f999d8df73c5afbd589a2cc243a1b6b638a",
-            "sha256": "sha256-vC0EJQOKdW3eYQnb4hYbNa38PcEx0E2v57nxkSoU82M=",
+            "rev": "9b6cb1109ab675ece26b57801e78d81e221ba0cc",
+            "sha256": "sha256-BdVTqXuaJVA5ndAhBuir6g5R+RzNGGvOmyaEqxlyTGg=",
             "type": "github"
         },
-        "version": "be423f999d8df73c5afbd589a2cc243a1b6b638a"
+        "version": "9b6cb1109ab675ece26b57801e78d81e221ba0cc"
     },
     "wezterm": {
         "cargoLocks": null,
-        "date": "2023-10-04",
+        "date": "2023-10-17",
         "extract": null,
         "name": "wezterm",
         "passthru": null,
@@ -250,11 +250,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "11dec45f08e3c7a611f59b030d4a9bd391807604",
-            "sha256": "sha256-flVptTUqNWvXVuWXdgjaDDfCVyc7O+9OUsI/4QgMyiY=",
+            "rev": "fec90ae04bf448d4b1475ba1d0ba1392846a70d6",
+            "sha256": "sha256-7eMeNdmo8vpSnoPamShdLSTAUcK/mCiEpL30t+5spvc=",
             "type": "git",
             "url": "https://github.com/wez/wezterm.git"
         },
-        "version": "11dec45f08e3c7a611f59b030d4a9bd391807604"
+        "version": "fec90ae04bf448d4b1475ba1d0ba1392846a70d6"
     }
 }
