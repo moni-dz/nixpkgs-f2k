@@ -123,28 +123,28 @@
   };
   river = {
     pname = "river";
-    version = "f364e1b81b482465978cd5fdacbc32dbfa37534d";
+    version = "ad1e0aa75232a63122c2e4a45b260d2fcae97aad";
     src = fetchgit {
       url = "https://github.com/riverwm/river.git";
-      rev = "f364e1b81b482465978cd5fdacbc32dbfa37534d";
+      rev = "ad1e0aa75232a63122c2e4a45b260d2fcae97aad";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-nJmQW0U/s1SfJE85enW98lPc0TKdAz8wlomY+5VRT4Q=";
+      sha256 = "sha256-NCFdY5g8R3cOqKXHzwL8CP8SbTEZGXlpV5zYFKa2rx0=";
     };
-    date = "2023-10-17";
+    date = "2023-10-18";
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
-    version = "9b6cb1109ab675ece26b57801e78d81e221ba0cc";
+    version = "5b03c5f9c15dd936cff6f6d221ee023a376dde7f";
     src = fetchFromGitHub {
       owner = "stevenblack";
       repo = "hosts";
-      rev = "9b6cb1109ab675ece26b57801e78d81e221ba0cc";
+      rev = "5b03c5f9c15dd936cff6f6d221ee023a376dde7f";
       fetchSubmodules = false;
-      sha256 = "sha256-BdVTqXuaJVA5ndAhBuir6g5R+RzNGGvOmyaEqxlyTGg=";
+      sha256 = "sha256-fPMGNj1dXrbxJDxiC8U41NLz1vL5m3Ayw8uC1HJm4sU=";
     };
-    date = "2023-10-17";
+    date = "2023-10-18";
   };
   wezterm = {
     pname = "wezterm";
