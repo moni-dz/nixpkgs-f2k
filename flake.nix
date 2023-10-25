@@ -29,10 +29,11 @@
       {
         _module.args.pkgs = pkgs;
 
-        packages =
+        # remove in 1 week or 2...
+        packages = lib.warn "nixpkgs-f2k: I recently changed my GitHub username, change your inputs accordingly..." (
           if lib.hasSuffix "darwin" system
           then removeAttrs (self.overlays.darwin pkgs pkgs) [ "lib" ]
-          else removeAttrs (self.overlays.linux pkgs pkgs) [ "lib" ];
+          else removeAttrs (self.overlays.linux pkgs pkgs) [ "lib" ]);
 
         formatter = inputs.nixpkgs-fmt.defaultPackage.${system};
       };
