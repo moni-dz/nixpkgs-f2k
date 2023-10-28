@@ -21,5 +21,7 @@
     };
 
     man-pages-xnu = prev.callPackage ../pkgs/man-pages-xnu { };
+
+    geyser = prev.callPackage ../pkgs/geyser { };
   };
 }
