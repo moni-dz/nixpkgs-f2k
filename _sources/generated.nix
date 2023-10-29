@@ -136,15 +136,15 @@
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
-    version = "05cdb4d0a2161aed9e83307c3cfe5c145460862d";
+    version = "b05eca9505722abe416b46fd4eb55dda7443da7e";
     src = fetchFromGitHub {
       owner = "stevenblack";
       repo = "hosts";
-      rev = "05cdb4d0a2161aed9e83307c3cfe5c145460862d";
+      rev = "b05eca9505722abe416b46fd4eb55dda7443da7e";
       fetchSubmodules = false;
-      sha256 = "sha256-0GcBuv9ecO3Q8/RqarWN4jK0HIbTjrSuuJ5ofi+7OXU=";
+      sha256 = "sha256-H5odKLF7WXXJ0sX6EgesoeGgV3L5sJW5qpg5SkLCJ3E=";
     };
-    date = "2023-10-23";
+    date = "2023-10-27";
   };
   wezterm = {
     pname = "wezterm";
