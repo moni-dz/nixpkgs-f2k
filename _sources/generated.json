@@ -211,12 +211,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "04dea1edee9545dd3bb936cb1b51f1ebab4a5e54",
-            "sha256": "sha256-YTSci/W3CHMQj47shSpiFm7Xv3t5kNEBvqXTC4+VLWQ=",
+            "rev": "69b61602cfa8ee5afd2a03748005e17eebeb6919",
+            "sha256": "sha256-Q1c7W0s9Nbb3UGVRQME3uewpo7ZvGWr9tT7cqZ9m1iw=",
             "type": "git",
             "url": "https://github.com/riverwm/river.git"
         },
-        "version": "04dea1edee9545dd3bb936cb1b51f1ebab4a5e54"
+        "version": "69b61602cfa8ee5afd2a03748005e17eebeb6919"
     },
     "stevenblack-blocklist": {
         "cargoLocks": null,

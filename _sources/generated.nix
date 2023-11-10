@@ -123,14 +123,14 @@
   };
   river = {
     pname = "river";
-    version = "04dea1edee9545dd3bb936cb1b51f1ebab4a5e54";
+    version = "69b61602cfa8ee5afd2a03748005e17eebeb6919";
     src = fetchgit {
       url = "https://github.com/riverwm/river.git";
-      rev = "04dea1edee9545dd3bb936cb1b51f1ebab4a5e54";
+      rev = "69b61602cfa8ee5afd2a03748005e17eebeb6919";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-YTSci/W3CHMQj47shSpiFm7Xv3t5kNEBvqXTC4+VLWQ=";
+      sha256 = "sha256-Q1c7W0s9Nbb3UGVRQME3uewpo7ZvGWr9tT7cqZ9m1iw=";
     };
     date = "2023-11-09";
   };
