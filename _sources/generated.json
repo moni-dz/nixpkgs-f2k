@@ -121,7 +121,7 @@
     },
     "picom": {
         "cargoLocks": null,
-        "date": "2023-12-20",
+        "date": "2023-12-22",
         "extract": null,
         "name": "picom",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "b368072e12acdb069bd5075886d555fccf66fe2b",
-            "sha256": "sha256-6rRoFeMtazQ/B0HaQEqPIPe0/dVVrffmcJtZzJG1HZs=",
+            "rev": "496452cfce5e002e3795f7b36590af4f10b58798",
+            "sha256": "sha256-bLZnKgTT/L4tI1Z1aO3V2teYTvAof0ndLd3ZD2IaFV0=",
             "type": "github"
         },
-        "version": "b368072e12acdb069bd5075886d555fccf66fe2b"
+        "version": "496452cfce5e002e3795f7b36590af4f10b58798"
     },
     "picom-dccsillag": {
         "cargoLocks": null,
@@ -240,7 +240,7 @@
     },
     "wezterm": {
         "cargoLocks": null,
-        "date": "2023-12-03",
+        "date": "2023-12-21",
         "extract": null,
         "name": "wezterm",
         "passthru": null,
@@ -250,11 +250,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "e3cd2e93d0ee5f3af7f3fe0af86ffad0cf8c7ea8",
-            "sha256": "sha256-sj3S1fWC6j9Q/Yc+4IpLbKC3lttUWFk65ROyCdQt+Zc=",
+            "rev": "84ae00c868e711cf97b2bfe885892428f1131a1d",
+            "sha256": "sha256-Sx5NtapMe+CtSlW9mfxUHhzF+n9tV2j/St6pku26Rj0=",
             "type": "git",
             "url": "https://github.com/wez/wezterm.git"
         },
-        "version": "e3cd2e93d0ee5f3af7f3fe0af86ffad0cf8c7ea8"
+        "version": "84ae00c868e711cf97b2bfe885892428f1131a1d"
     }
 }
