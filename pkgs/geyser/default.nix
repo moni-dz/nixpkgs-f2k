@@ -1,6 +1,6 @@
 { lib, stdenvNoCC, fetchurl, jre, makeBinaryWrapper }:
 
-stdenvNoCC.mkDerivation (finalAttrs: {
+stdenvNoCC.mkDerivation {
   pname = "geyser";
   version = "340";
 
@@ -36,4 +36,4 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     platforms = lib.platforms.unix;
     mainProgram = "geyser";
   };
-})
+}
