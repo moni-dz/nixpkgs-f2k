@@ -13,21 +13,6 @@ _:
       commonFlags = optlevel: [
         "-O${optlevel}"
         "-pipe"
-        "-ffloat-store"
-        "-fexcess-precision=fast"
-        "-ffast-math"
-        "-fno-rounding-math"
-        "-fno-signaling-nans"
-        "-fno-math-errno"
-        "-funsafe-math-optimizations"
-        "-fassociative-math"
-        "-freciprocal-math"
-        "-ffinite-math-only"
-        "-fno-signed-zeros"
-        "-fno-trapping-math"
-        "-frounding-math"
-        "-fsingle-precision-constant"
-        "-ftree-vectorize"
       ];
 
       /*
