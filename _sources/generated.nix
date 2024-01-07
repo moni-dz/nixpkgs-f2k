@@ -27,15 +27,15 @@
   };
   lshw = {
     pname = "lshw";
-    version = "4b78fe716c81e404de280043e046db52632168df";
+    version = "15e4ca64647ad119b69be63274e5de2696d3934f";
     src = fetchFromGitHub {
       owner = "lyonel";
       repo = "lshw";
-      rev = "4b78fe716c81e404de280043e046db52632168df";
+      rev = "15e4ca64647ad119b69be63274e5de2696d3934f";
       fetchSubmodules = false;
-      sha256 = "sha256-UQnaycIgIvzbcFptu/zeQcm7gcEOKH+azIYSeFk+PJs=";
+      sha256 = "sha256-kHuWfKmifTwlvvLk0FtZzeI4UMleoJ7LDsQHO076l84=";
     };
-    date = "2023-12-21";
+    date = "2024-01-06";
   };
   mpv-discord = {
     pname = "mpv-discord";
@@ -123,16 +123,16 @@
   };
   river = {
     pname = "river";
-    version = "9aa0f1a9a686e792d63f52e6dff8e13f33284e61";
+    version = "afbc84c994ee72f05362f25b28837c2f3ed0d980";
     src = fetchgit {
       url = "https://github.com/riverwm/river.git";
-      rev = "9aa0f1a9a686e792d63f52e6dff8e13f33284e61";
+      rev = "afbc84c994ee72f05362f25b28837c2f3ed0d980";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-4TF/m/ZYO0rbdqdLht8zjYHfiFFn2L0xz5ClvxsuRo0=";
+      sha256 = "sha256-1/4c2ks+DUd0kPsESjdgwMQikiHVt9yCgYeXeOc7AO0=";
     };
-    date = "2024-01-05";
+    date = "2024-01-06";
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";

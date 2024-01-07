@@ -41,7 +41,7 @@
     },
     "lshw": {
         "cargoLocks": null,
-        "date": "2023-12-21",
+        "date": "2024-01-06",
         "extract": null,
         "name": "lshw",
         "passthru": null,
@@ -53,11 +53,11 @@
             "name": null,
             "owner": "lyonel",
             "repo": "lshw",
-            "rev": "4b78fe716c81e404de280043e046db52632168df",
-            "sha256": "sha256-UQnaycIgIvzbcFptu/zeQcm7gcEOKH+azIYSeFk+PJs=",
+            "rev": "15e4ca64647ad119b69be63274e5de2696d3934f",
+            "sha256": "sha256-kHuWfKmifTwlvvLk0FtZzeI4UMleoJ7LDsQHO076l84=",
             "type": "github"
         },
-        "version": "4b78fe716c81e404de280043e046db52632168df"
+        "version": "15e4ca64647ad119b69be63274e5de2696d3934f"
     },
     "mpv-discord": {
         "cargoLocks": null,
@@ -201,7 +201,7 @@
     },
     "river": {
         "cargoLocks": null,
-        "date": "2024-01-05",
+        "date": "2024-01-06",
         "extract": null,
         "name": "river",
         "passthru": null,
@@ -211,12 +211,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "9aa0f1a9a686e792d63f52e6dff8e13f33284e61",
-            "sha256": "sha256-4TF/m/ZYO0rbdqdLht8zjYHfiFFn2L0xz5ClvxsuRo0=",
+            "rev": "afbc84c994ee72f05362f25b28837c2f3ed0d980",
+            "sha256": "sha256-1/4c2ks+DUd0kPsESjdgwMQikiHVt9yCgYeXeOc7AO0=",
             "type": "git",
             "url": "https://github.com/riverwm/river.git"
         },
-        "version": "9aa0f1a9a686e792d63f52e6dff8e13f33284e61"
+        "version": "afbc84c994ee72f05362f25b28837c2f3ed0d980"
     },
     "stevenblack-blocklist": {
         "cargoLocks": null,
