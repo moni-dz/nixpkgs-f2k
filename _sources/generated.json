@@ -101,7 +101,7 @@
     },
     "phocus": {
         "cargoLocks": null,
-        "date": "2022-11-03",
+        "date": "2024-01-12",
         "extract": null,
         "name": "phocus",
         "passthru": null,
@@ -113,11 +113,11 @@
             "name": null,
             "owner": "phocus",
             "repo": "gtk",
-            "rev": "0cf0eb35a927bffcb797db8a074ce240823d92de",
-            "sha256": "sha256-URuoDJVRQ05S+u7mkz1EN5HWquhTC4OqY8MqAbl0crk=",
+            "rev": "d77ea2472d59c134c7748818f72ad26b6ef9c026",
+            "sha256": "sha256-RvqcjJmz354ukKJhgYP/A5Dn1urt20L+LKbRk0C8Nhs=",
             "type": "github"
         },
-        "version": "0cf0eb35a927bffcb797db8a074ce240823d92de"
+        "version": "d77ea2472d59c134c7748818f72ad26b6ef9c026"
     },
     "picom": {
         "cargoLocks": null,
@@ -201,7 +201,7 @@
     },
     "river": {
         "cargoLocks": null,
-        "date": "2024-01-11",
+        "date": "2024-01-12",
         "extract": null,
         "name": "river",
         "passthru": null,
@@ -211,12 +211,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "62dbe34bdafd2c3d15fc4d1555350011b2ccdae5",
-            "sha256": "sha256-ZuCgmSGsc7k3qwykGdf8eBKCjVOVO7SR8rKmBhDr0Cc=",
+            "rev": "6e9bd83e1d0e2132d2def338b51f66867cd88907",
+            "sha256": "sha256-9VUiK87/Fz3mzLJuj+qQPf0+mVFeYyb6n6vyctTu7cE=",
             "type": "git",
             "url": "https://github.com/riverwm/river.git"
         },
-        "version": "62dbe34bdafd2c3d15fc4d1555350011b2ccdae5"
+        "version": "6e9bd83e1d0e2132d2def338b51f66867cd88907"
     },
     "stevenblack-blocklist": {
         "cargoLocks": null,
