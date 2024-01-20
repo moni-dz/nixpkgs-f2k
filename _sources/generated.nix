@@ -148,15 +148,15 @@
   };
   wezterm = {
     pname = "wezterm";
-    version = "9181d010ff70b73ed314b3e36401b6a961af98b1";
+    version = "05eadb7cbbf26ae073f9555e587a040c82b30928";
     src = fetchgit {
       url = "https://github.com/wez/wezterm.git";
-      rev = "9181d010ff70b73ed314b3e36401b6a961af98b1";
+      rev = "05eadb7cbbf26ae073f9555e587a040c82b30928";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-pmdaKgEix2IDxsD8eeVL8Uu87o0BG/wMZRvkU6jESWY=";
+      sha256 = "sha256-y6HqUeHf/xXBkc5S4CcXlBIdTnbNOxoioPAuOlSnuBw=";
     };
-    date = "2024-01-18";
+    date = "2024-01-19";
   };
 }

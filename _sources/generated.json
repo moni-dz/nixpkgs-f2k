@@ -240,7 +240,7 @@
     },
     "wezterm": {
         "cargoLocks": null,
-        "date": "2024-01-18",
+        "date": "2024-01-19",
         "extract": null,
         "name": "wezterm",
         "passthru": null,
@@ -250,11 +250,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "9181d010ff70b73ed314b3e36401b6a961af98b1",
-            "sha256": "sha256-pmdaKgEix2IDxsD8eeVL8Uu87o0BG/wMZRvkU6jESWY=",
+            "rev": "05eadb7cbbf26ae073f9555e587a040c82b30928",
+            "sha256": "sha256-y6HqUeHf/xXBkc5S4CcXlBIdTnbNOxoioPAuOlSnuBw=",
             "type": "git",
             "url": "https://github.com/wez/wezterm.git"
         },
-        "version": "9181d010ff70b73ed314b3e36401b6a961af98b1"
+        "version": "05eadb7cbbf26ae073f9555e587a040c82b30928"
     }
 }
