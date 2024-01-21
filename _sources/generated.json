@@ -1,7 +1,7 @@
 {
     "awesome": {
         "cargoLocks": null,
-        "date": "2024-01-08",
+        "date": "2024-01-20",
         "extract": null,
         "name": "awesome",
         "passthru": null,
@@ -13,11 +13,11 @@
             "name": null,
             "owner": "awesomeWM",
             "repo": "awesome",
-            "rev": "75758b07f3c3c326d43ac682896dbcf18fac4bd7",
-            "sha256": "sha256-pT9gCia+Cj3huTbDcXf/O6+EL6Bw4PlvL00IJ1gT+OY=",
+            "rev": "e6f5c7980862b7c3ec6c50c643b15ff2249310cc",
+            "sha256": "sha256-afviu5b86JDWd5F12Ag81JPTu9qbXi3fAlBp9tv58fI=",
             "type": "github"
         },
-        "version": "75758b07f3c3c326d43ac682896dbcf18fac4bd7"
+        "version": "e6f5c7980862b7c3ec6c50c643b15ff2249310cc"
     },
     "awesome-composite": {
         "cargoLocks": null,
@@ -121,7 +121,7 @@
     },
     "picom": {
         "cargoLocks": null,
-        "date": "2024-01-18",
+        "date": "2024-01-20",
         "extract": null,
         "name": "picom",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "4c34944d76770f26236a542dce0f85b0b975433e",
-            "sha256": "sha256-OUJXhHapb0YTaavJmt16jasNIn4wSSijXuJeTZI9a1U=",
+            "rev": "197b4bd396590cb5df61eb54ec6a1dadf1115a5d",
+            "sha256": "sha256-KIblpEEW33ZxxTYuQ/lbUGEJcVdmSWdNOrVCvhOY/OU=",
             "type": "github"
         },
-        "version": "4c34944d76770f26236a542dce0f85b0b975433e"
+        "version": "197b4bd396590cb5df61eb54ec6a1dadf1115a5d"
     },
     "picom-dccsillag": {
         "cargoLocks": null,
@@ -240,7 +240,7 @@
     },
     "wezterm": {
         "cargoLocks": null,
-        "date": "2024-01-19",
+        "date": "2024-01-20",
         "extract": null,
         "name": "wezterm",
         "passthru": null,
@@ -250,11 +250,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "05eadb7cbbf26ae073f9555e587a040c82b30928",
-            "sha256": "sha256-y6HqUeHf/xXBkc5S4CcXlBIdTnbNOxoioPAuOlSnuBw=",
+            "rev": "3ec1cfba730b20e0426b6de106201bd7f32d4125",
+            "sha256": "sha256-QseexbwspBQRotiAJhFo371FN4eehR74vMzNoI7rGAE=",
             "type": "git",
             "url": "https://github.com/wez/wezterm.git"
         },
-        "version": "05eadb7cbbf26ae073f9555e587a040c82b30928"
+        "version": "3ec1cfba730b20e0426b6de106201bd7f32d4125"
     }
 }
