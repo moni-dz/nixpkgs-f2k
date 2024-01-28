@@ -220,7 +220,7 @@
     },
     "stevenblack-blocklist": {
         "cargoLocks": null,
-        "date": "2024-01-21",
+        "date": "2024-01-27",
         "extract": null,
         "name": "stevenblack-blocklist",
         "passthru": null,
@@ -232,15 +232,15 @@
             "name": null,
             "owner": "stevenblack",
             "repo": "hosts",
-            "rev": "01b3c89fbfdaa1156c37b04267eecdb9271c0f8d",
-            "sha256": "sha256-gqW1iysJQlzlK4xMRaIkjBkBJShaGUaQaStjHN+55oI=",
+            "rev": "741cbae6d7b1b3db598453aeed2e52cbea7455f0",
+            "sha256": "sha256-HyDiGDQYWf6v4rAz06SwL5jYEQhEhl7mP/nEYDRW9fE=",
             "type": "github"
         },
-        "version": "01b3c89fbfdaa1156c37b04267eecdb9271c0f8d"
+        "version": "741cbae6d7b1b3db598453aeed2e52cbea7455f0"
     },
     "wezterm": {
         "cargoLocks": null,
-        "date": "2024-01-26",
+        "date": "2024-01-27",
         "extract": null,
         "name": "wezterm",
         "passthru": null,
@@ -250,11 +250,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "178f35a496d5367b8c00bc5d5bb69b0425d2bf8d",
-            "sha256": "sha256-oop5yJMztZ546TWxqAVJyQcyQ11DKsYlLL3GTuwSHBU=",
+            "rev": "6de7c604526552eab6be355e31b0562e72c6dda0",
+            "sha256": "sha256-EIx+6He86mSCzLrufoDuLPuIQfOPju+Hp1dZTTTN4sI=",
             "type": "git",
             "url": "https://github.com/wez/wezterm.git"
         },
-        "version": "178f35a496d5367b8c00bc5d5bb69b0425d2bf8d"
+        "version": "6de7c604526552eab6be355e31b0562e72c6dda0"
     }
 }
