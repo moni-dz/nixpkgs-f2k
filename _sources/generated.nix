@@ -75,15 +75,15 @@
   };
   picom = {
     pname = "picom";
-    version = "90f5f4ca2944a7705e43b31b680fcf311efb3b4d";
+    version = "bbc657e4bc099ec2f958a222b658ab5a5345c055";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "90f5f4ca2944a7705e43b31b680fcf311efb3b4d";
+      rev = "bbc657e4bc099ec2f958a222b658ab5a5345c055";
       fetchSubmodules = false;
-      sha256 = "sha256-IE8tEKrSm65HpyJQuwt/ZHbLo/lhJ6cKbtqIMfzyfpY=";
+      sha256 = "sha256-1Vtj3sMJSBHSJh7aqD38igmFECaYpG+wJVYXT+m5OK0=";
     };
-    date = "2024-01-31";
+    date = "2024-02-02";
   };
   picom-dccsillag = {
     pname = "picom-dccsillag";
@@ -123,16 +123,16 @@
   };
   river = {
     pname = "river";
-    version = "69a51cadb41443103370247ac515f1067da4b932";
+    version = "66f1881a723a3a583ebf1d70d355593ca8d74607";
     src = fetchgit {
       url = "https://github.com/riverwm/river.git";
-      rev = "69a51cadb41443103370247ac515f1067da4b932";
+      rev = "66f1881a723a3a583ebf1d70d355593ca8d74607";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-5ZhAkP+O/+xm40mUWtY/WLbiSlxbmCTzIzDNPn5NxXg=";
+      sha256 = "sha256-IuqEiUQuDIb5yFp2NR43+sT/Z94bJW2s7vTrSnU59+E=";
     };
-    date = "2024-01-13";
+    date = "2024-02-01";
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
@@ -148,15 +148,15 @@
   };
   wezterm = {
     pname = "wezterm";
-    version = "17dadbeb1e170dc76c97afcdeae4ed27a50e99e5";
+    version = "5eea7eb17b9827dec7f6c3e2b6b0fde3669b41a0";
     src = fetchgit {
       url = "https://github.com/wez/wezterm.git";
-      rev = "17dadbeb1e170dc76c97afcdeae4ed27a50e99e5";
+      rev = "5eea7eb17b9827dec7f6c3e2b6b0fde3669b41a0";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-FM51EGgEETJCbdwFQqlFA2aw/XdCTU2m1EFXsYeTODk=";
+      sha256 = "sha256-WqLWipWAsRkVT+uNQqkqeQ77lAb/5+oA4UQZdYarjlI=";
     };
-    date = "2024-02-01";
+    date = "2024-02-02";
   };
 }
