@@ -121,7 +121,7 @@
     },
     "picom": {
         "cargoLocks": null,
-        "date": "2024-02-14",
+        "date": "2024-02-16",
         "extract": null,
         "name": "picom",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "f509008cb957802b953779647a5c6506da410424",
-            "sha256": "sha256-WGYY/kmRDgSen179s0llS2oWpHt3MUFMwnUfsrNfceY=",
+            "rev": "45ffdf9849c76c23754e26c89ee409973879427d",
+            "sha256": "sha256-IDuq+PYBoOKQFj5odp3TfXcADLqkEKX6KBeCJhJUWz8=",
             "type": "github"
         },
-        "version": "f509008cb957802b953779647a5c6506da410424"
+        "version": "45ffdf9849c76c23754e26c89ee409973879427d"
     },
     "picom-dccsillag": {
         "cargoLocks": null,
@@ -201,7 +201,7 @@
     },
     "river": {
         "cargoLocks": null,
-        "date": "2024-02-14",
+        "date": "2024-02-15",
         "extract": null,
         "name": "river",
         "passthru": null,
@@ -211,12 +211,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "0cae415a93c30d67b863fac13055bb9da8e75a8b",
-            "sha256": "sha256-PAcxWmCwCw3SLyFFwv8BvUt+k7A8mQUWaQdIv4+ZQDs=",
+            "rev": "2bdbe414e86e321bebc0075c53cc416bf4bf4273",
+            "sha256": "sha256-WGP5IlPNHgi4D2I2seYtDps91uRasBGTi2lzlp10ifU=",
             "type": "git",
             "url": "https://github.com/riverwm/river.git"
         },
-        "version": "0cae415a93c30d67b863fac13055bb9da8e75a8b"
+        "version": "2bdbe414e86e321bebc0075c53cc416bf4bf4273"
     },
     "stevenblack-blocklist": {
         "cargoLocks": null,
