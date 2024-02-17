@@ -75,13 +75,13 @@
   };
   picom = {
     pname = "picom";
-    version = "45ffdf9849c76c23754e26c89ee409973879427d";
+    version = "b99c7db73eb62204568c21d9542dce5388d4d356";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "45ffdf9849c76c23754e26c89ee409973879427d";
+      rev = "b99c7db73eb62204568c21d9542dce5388d4d356";
       fetchSubmodules = false;
-      sha256 = "sha256-IDuq+PYBoOKQFj5odp3TfXcADLqkEKX6KBeCJhJUWz8=";
+      sha256 = "sha256-efiOykP5pEn1fcDkx5SLoizHm0CbKKhgEGcKTeuzXhY=";
     };
     date = "2024-02-16";
   };
@@ -136,15 +136,15 @@
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
-    version = "888782854d173729fcc70db6d04654d83c9a67b4";
+    version = "61080e8dadbc9ee10d4567668cdbf017bb9f172e";
     src = fetchFromGitHub {
       owner = "stevenblack";
       repo = "hosts";
-      rev = "888782854d173729fcc70db6d04654d83c9a67b4";
+      rev = "61080e8dadbc9ee10d4567668cdbf017bb9f172e";
       fetchSubmodules = false;
-      sha256 = "sha256-gJbxB3eqMvUa0aSwPw86W37kk5lpInU+XdlExgrRnWs=";
+      sha256 = "sha256-Z6Kz4bRtswzoZt4xroSWfSZKMM+fWpsVQMI+Cy7EfVE=";
     };
-    date = "2024-02-14";
+    date = "2024-02-15";
   };
   wezterm = {
     pname = "wezterm";
