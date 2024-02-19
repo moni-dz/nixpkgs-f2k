@@ -75,15 +75,15 @@
   };
   picom = {
     pname = "picom";
-    version = "d1888b612c8fd385dde58db6671786ca35db3ac5";
+    version = "d74e026cecf792a0c912a288b06c7076bd515d1e";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "d1888b612c8fd385dde58db6671786ca35db3ac5";
+      rev = "d74e026cecf792a0c912a288b06c7076bd515d1e";
       fetchSubmodules = false;
-      sha256 = "sha256-rJaQTaTOzp/BgGpBxAGZ7TDadJIYK/0mi0nSom7zyxI=";
+      sha256 = "sha256-tnQgGa/abXcrgl39c9zIrd2xW9q3cBtFlyqM71d2z7c=";
     };
-    date = "2024-02-18";
+    date = "2024-02-19";
   };
   picom-dccsillag = {
     pname = "picom-dccsillag";
@@ -123,16 +123,16 @@
   };
   river = {
     pname = "river";
-    version = "2bdbe414e86e321bebc0075c53cc416bf4bf4273";
+    version = "d1bb27038b369d375f57ad10ad174a6d18682bbb";
     src = fetchgit {
       url = "https://github.com/riverwm/river.git";
-      rev = "2bdbe414e86e321bebc0075c53cc416bf4bf4273";
+      rev = "d1bb27038b369d375f57ad10ad174a6d18682bbb";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-WGP5IlPNHgi4D2I2seYtDps91uRasBGTi2lzlp10ifU=";
+      sha256 = "sha256-d8lCaNxlowtJuR8fOgMlwkKIVLRc2YBPMplkAaEkG60=";
     };
-    date = "2024-02-15";
+    date = "2024-02-18";
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
@@ -148,15 +148,15 @@
   };
   wezterm = {
     pname = "wezterm";
-    version = "22f9f8d288521508bd4cdc924d9f209d78b36483";
+    version = "85fb1ad2106d2351588718e6873a65ff498d9afb";
     src = fetchgit {
       url = "https://github.com/wez/wezterm.git";
-      rev = "22f9f8d288521508bd4cdc924d9f209d78b36483";
+      rev = "85fb1ad2106d2351588718e6873a65ff498d9afb";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-rn5iGkJlhDSVW/J8Nl/8dTFgFEe3a2dYWvX30S4wiXA=";
+      sha256 = "sha256-W61E9ekbCrSKCRCEdkeN2JXd2PmgZ4ozJm1Q1Oe7/g8=";
     };
-    date = "2024-02-12";
+    date = "2024-02-18";
   };
 }
