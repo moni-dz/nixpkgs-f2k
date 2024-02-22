@@ -121,7 +121,7 @@
     },
     "picom": {
         "cargoLocks": null,
-        "date": "2024-02-20",
+        "date": "2024-02-21",
         "extract": null,
         "name": "picom",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "ef722e57966f7eab2618ec01b9ebca754885c6dd",
-            "sha256": "sha256-RA0pPYmHMqeLMffre5L3jfCFylDEi9pgdX93RfTg6WU=",
+            "rev": "2be58f173fccf2c02e108c547662595e542468dc",
+            "sha256": "sha256-pLePYin3aieJ2mVe7mMYZg3Z0d1GDDl7ATPRGJM+Txg=",
             "type": "github"
         },
-        "version": "ef722e57966f7eab2618ec01b9ebca754885c6dd"
+        "version": "2be58f173fccf2c02e108c547662595e542468dc"
     },
     "picom-dccsillag": {
         "cargoLocks": null,
@@ -201,7 +201,7 @@
     },
     "river": {
         "cargoLocks": null,
-        "date": "2024-02-20",
+        "date": "2024-02-21",
         "extract": null,
         "name": "river",
         "passthru": null,
@@ -211,12 +211,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "53c09be846dfa3b05288208f5e25ce4328d3a855",
-            "sha256": "sha256-mCDMEwQfIAPQrk+7FMD0Q10ex8iFylfSh4KACLKm4Bs=",
+            "rev": "9b2d99fa79c2e4c2f354c3fa062bc79c5b79ddfe",
+            "sha256": "sha256-hKOIQZjUagRN2f0EQr0aVVf1ae+XcGWiuUHEJd7Qon0=",
             "type": "git",
             "url": "https://github.com/riverwm/river.git"
         },
-        "version": "53c09be846dfa3b05288208f5e25ce4328d3a855"
+        "version": "9b2d99fa79c2e4c2f354c3fa062bc79c5b79ddfe"
     },
     "stevenblack-blocklist": {
         "cargoLocks": null,
@@ -240,7 +240,7 @@
     },
     "wezterm": {
         "cargoLocks": null,
-        "date": "2024-02-18",
+        "date": "2024-02-21",
         "extract": null,
         "name": "wezterm",
         "passthru": null,
@@ -250,11 +250,11 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "85fb1ad2106d2351588718e6873a65ff498d9afb",
-            "sha256": "sha256-W61E9ekbCrSKCRCEdkeN2JXd2PmgZ4ozJm1Q1Oe7/g8=",
+            "rev": "95581d8697f3749f84ccb1402ac94ea6582b227f",
+            "sha256": "sha256-Ygs7y02eMgp/uVpc6YjmNgjC8dS1Phrv62WR5Qp/9g4=",
             "type": "git",
             "url": "https://github.com/wez/wezterm.git"
         },
-        "version": "85fb1ad2106d2351588718e6873a65ff498d9afb"
+        "version": "95581d8697f3749f84ccb1402ac94ea6582b227f"
     }
 }

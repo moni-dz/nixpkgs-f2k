@@ -75,15 +75,15 @@
   };
   picom = {
     pname = "picom";
-    version = "ef722e57966f7eab2618ec01b9ebca754885c6dd";
+    version = "2be58f173fccf2c02e108c547662595e542468dc";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "ef722e57966f7eab2618ec01b9ebca754885c6dd";
+      rev = "2be58f173fccf2c02e108c547662595e542468dc";
       fetchSubmodules = false;
-      sha256 = "sha256-RA0pPYmHMqeLMffre5L3jfCFylDEi9pgdX93RfTg6WU=";
+      sha256 = "sha256-pLePYin3aieJ2mVe7mMYZg3Z0d1GDDl7ATPRGJM+Txg=";
     };
-    date = "2024-02-20";
+    date = "2024-02-21";
   };
   picom-dccsillag = {
     pname = "picom-dccsillag";
@@ -123,16 +123,16 @@
   };
   river = {
     pname = "river";
-    version = "53c09be846dfa3b05288208f5e25ce4328d3a855";
+    version = "9b2d99fa79c2e4c2f354c3fa062bc79c5b79ddfe";
     src = fetchgit {
       url = "https://github.com/riverwm/river.git";
-      rev = "53c09be846dfa3b05288208f5e25ce4328d3a855";
+      rev = "9b2d99fa79c2e4c2f354c3fa062bc79c5b79ddfe";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-mCDMEwQfIAPQrk+7FMD0Q10ex8iFylfSh4KACLKm4Bs=";
+      sha256 = "sha256-hKOIQZjUagRN2f0EQr0aVVf1ae+XcGWiuUHEJd7Qon0=";
     };
-    date = "2024-02-20";
+    date = "2024-02-21";
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
@@ -148,15 +148,15 @@
   };
   wezterm = {
     pname = "wezterm";
-    version = "85fb1ad2106d2351588718e6873a65ff498d9afb";
+    version = "95581d8697f3749f84ccb1402ac94ea6582b227f";
     src = fetchgit {
       url = "https://github.com/wez/wezterm.git";
-      rev = "85fb1ad2106d2351588718e6873a65ff498d9afb";
+      rev = "95581d8697f3749f84ccb1402ac94ea6582b227f";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-W61E9ekbCrSKCRCEdkeN2JXd2PmgZ4ozJm1Q1Oe7/g8=";
+      sha256 = "sha256-Ygs7y02eMgp/uVpc6YjmNgjC8dS1Phrv62WR5Qp/9g4=";
     };
-    date = "2024-02-18";
+    date = "2024-02-21";
   };
 }
