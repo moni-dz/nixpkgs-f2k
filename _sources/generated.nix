@@ -123,16 +123,16 @@
   };
   river = {
     pname = "river";
-    version = "0605ce507e9eeef62f7047a76c4a8b586f8ff60a";
+    version = "12e6833f316a56e3dc4d31a4708ae3b0bbea7070";
     src = fetchgit {
       url = "https://github.com/riverwm/river.git";
-      rev = "0605ce507e9eeef62f7047a76c4a8b586f8ff60a";
+      rev = "12e6833f316a56e3dc4d31a4708ae3b0bbea7070";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-S1ct92AD6ui6nRCwUSgg/2M0UybLPedu4xrBluoW6as=";
+      sha256 = "sha256-gvCsOszUm5Vq9Mv3bE+wqBuATu3IpUV+UnAdRDkuY/s=";
     };
-    date = "2024-02-25";
+    date = "2024-02-27";
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
