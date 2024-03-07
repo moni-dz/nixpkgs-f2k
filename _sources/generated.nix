@@ -75,15 +75,15 @@
   };
   picom = {
     pname = "picom";
-    version = "617354fb3bb37457ac163ed5e6b26445af3df54c";
+    version = "040cc107f858708eb238a4e2fe1ace334fe60868";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "617354fb3bb37457ac163ed5e6b26445af3df54c";
+      rev = "040cc107f858708eb238a4e2fe1ace334fe60868";
       fetchSubmodules = false;
-      sha256 = "sha256-yPKCrKaUk0Gd03WE8v4u5Q4qZ6XRhWC9lzVqEsN73uY=";
+      sha256 = "sha256-99MZ/sLfEV32LWbb+cCxZVouNYjmTP14de28KUEWCOQ=";
     };
-    date = "2024-03-03";
+    date = "2024-03-06";
   };
   picom-dccsillag = {
     pname = "picom-dccsillag";
