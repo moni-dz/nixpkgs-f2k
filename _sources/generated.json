@@ -121,7 +121,7 @@
     },
     "picom": {
         "cargoLocks": null,
-        "date": "2024-03-06",
+        "date": "2024-03-11",
         "extract": null,
         "name": "picom",
         "passthru": null,
@@ -133,11 +133,11 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "040cc107f858708eb238a4e2fe1ace334fe60868",
-            "sha256": "sha256-99MZ/sLfEV32LWbb+cCxZVouNYjmTP14de28KUEWCOQ=",
+            "rev": "f7e538fe887ca96bbcf6549376ccf502f62a54c6",
+            "sha256": "sha256-eu7Zz/pWNWNdH4FUzdtTRsD/yD2vhWBfzewY6LE3UYo=",
             "type": "github"
         },
-        "version": "040cc107f858708eb238a4e2fe1ace334fe60868"
+        "version": "f7e538fe887ca96bbcf6549376ccf502f62a54c6"
     },
     "picom-dccsillag": {
         "cargoLocks": null,
@@ -201,7 +201,7 @@
     },
     "river": {
         "cargoLocks": null,
-        "date": "2024-03-09",
+        "date": "2024-03-12",
         "extract": null,
         "name": "river",
         "passthru": null,
@@ -211,16 +211,16 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "ac655593f3113ca1d94d27c5845f0406bf495c9a",
-            "sha256": "sha256-hVt7FRJ04Z04406wnsvLhH8fRxzLa2RVFhzOM5pQSQo=",
+            "rev": "46dbbe97997b2bbb8addd20fd59b926cbbf213ff",
+            "sha256": "sha256-4q+gp2gUoJGPXC1Wajc/ufCZdwnnYvvAQfvpte5J0IY=",
             "type": "git",
             "url": "https://github.com/riverwm/river.git"
         },
-        "version": "ac655593f3113ca1d94d27c5845f0406bf495c9a"
+        "version": "46dbbe97997b2bbb8addd20fd59b926cbbf213ff"
     },
     "stevenblack-blocklist": {
         "cargoLocks": null,
-        "date": "2024-03-10",
+        "date": "2024-03-12",
         "extract": null,
         "name": "stevenblack-blocklist",
         "passthru": null,
@@ -232,11 +232,11 @@
             "name": null,
             "owner": "stevenblack",
             "repo": "hosts",
-            "rev": "7eaea3c5132db65ec9facb5ff10e4f84324f7597",
-            "sha256": "sha256-lco2IThnMSmd0m0dIkJczaPhpGGC2K+zZEKKeXykW9o=",
+            "rev": "73614b0e31a4ef279251c454078bdb11696fd3ea",
+            "sha256": "sha256-9K2UMugfai0xo7JymuRU7tUj/B5bASELjoM0zDYsz0c=",
             "type": "github"
         },
-        "version": "7eaea3c5132db65ec9facb5ff10e4f84324f7597"
+        "version": "73614b0e31a4ef279251c454078bdb11696fd3ea"
     },
     "wezterm": {
         "cargoLocks": null,
