@@ -201,7 +201,7 @@
     },
     "river": {
         "cargoLocks": null,
-        "date": "2024-03-16",
+        "date": "2024-03-17",
         "extract": null,
         "name": "river",
         "passthru": null,
@@ -211,16 +211,16 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "ff8365d35002761adae58fb3fb8e430a5e72b1e3",
-            "sha256": "sha256-Ux3dhMuQrICUAsyJeHXcS7yamOJIhXEV8+JaOj8k3mQ=",
+            "rev": "f3cd98288ab107e6e51dd6e976ec795b3a13e295",
+            "sha256": "sha256-hf3+jVMeHQyQpyyLuoOa8J0Liy0GtAj+NoO8dJ1cAGA=",
             "type": "git",
             "url": "https://github.com/riverwm/river.git"
         },
-        "version": "ff8365d35002761adae58fb3fb8e430a5e72b1e3"
+        "version": "f3cd98288ab107e6e51dd6e976ec795b3a13e295"
     },
     "stevenblack-blocklist": {
         "cargoLocks": null,
-        "date": "2024-03-15",
+        "date": "2024-03-17",
         "extract": null,
         "name": "stevenblack-blocklist",
         "passthru": null,
@@ -232,11 +232,11 @@
             "name": null,
             "owner": "stevenblack",
             "repo": "hosts",
-            "rev": "7c0ba20a0a205e3bf89a34d6fa5776980b3bec27",
-            "sha256": "sha256-3ve+IZzSpMigIIIW7x/WVSkm/5IyKb0ggFLcanbzskU=",
+            "rev": "14b698abcd97446bae349292aacc9ecb4feb2db5",
+            "sha256": "sha256-O/aUJ5/uR25cF6fMYZf3jiG3FbUyG+fY89jcWnnYDH4=",
             "type": "github"
         },
-        "version": "7c0ba20a0a205e3bf89a34d6fa5776980b3bec27"
+        "version": "14b698abcd97446bae349292aacc9ecb4feb2db5"
     },
     "wezterm": {
         "cargoLocks": null,
