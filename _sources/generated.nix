@@ -3,15 +3,15 @@
 {
   awesome = {
     pname = "awesome";
-    version = "e6f5c7980862b7c3ec6c50c643b15ff2249310cc";
+    version = "8b1f8958b46b3e75618bc822d512bb4d449a89aa";
     src = fetchFromGitHub {
       owner = "awesomeWM";
       repo = "awesome";
-      rev = "e6f5c7980862b7c3ec6c50c643b15ff2249310cc";
+      rev = "8b1f8958b46b3e75618bc822d512bb4d449a89aa";
       fetchSubmodules = false;
-      sha256 = "sha256-afviu5b86JDWd5F12Ag81JPTu9qbXi3fAlBp9tv58fI=";
+      sha256 = "sha256-ZGZ53IWfQfNU8q/hKexFpb/2mJyqtK5M9t9HrXoEJCg=";
     };
-    date = "2024-01-20";
+    date = "2024-03-23";
   };
   awesome-composite = {
     pname = "awesome-composite";
@@ -75,13 +75,13 @@
   };
   picom = {
     pname = "picom";
-    version = "0e9e0688b89d8baba1cb73e98f5820bf8ac2932a";
+    version = "5df19aed2030c37395bc58fe71b12452d85b3cbe";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "0e9e0688b89d8baba1cb73e98f5820bf8ac2932a";
+      rev = "5df19aed2030c37395bc58fe71b12452d85b3cbe";
       fetchSubmodules = false;
-      sha256 = "sha256-80gvF5iCHQJAbV+1uvwJGdKdxKeVtVWNn484LlsXOgU=";
+      sha256 = "sha256-09g2l/I6EGLFqPpgsaEsj2tjDOP5dyzK5mgPJVWJY4c=";
     };
     date = "2024-03-24";
   };
@@ -123,16 +123,16 @@
   };
   river = {
     pname = "river";
-    version = "ed99d7bc14d1f77e3e49bb84ddbc7459c5b4182e";
+    version = "12de175e115f08d1a77b438910ba6dc58a3d80af";
     src = fetchgit {
       url = "https://github.com/riverwm/river.git";
-      rev = "ed99d7bc14d1f77e3e49bb84ddbc7459c5b4182e";
+      rev = "12de175e115f08d1a77b438910ba6dc58a3d80af";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-ItGssc7roTFBuVj1dpNtwkmy0KSMoPdD6iuDaexlpRc=";
+      sha256 = "sha256-i+5wQkGsiyN/LaGfuj306tdiv+7vcbgahL9JvscM4iw=";
     };
-    date = "2024-03-22";
+    date = "2024-03-24";
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
