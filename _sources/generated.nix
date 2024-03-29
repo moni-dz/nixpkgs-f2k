@@ -39,15 +39,15 @@
   };
   mpv-discord = {
     pname = "mpv-discord";
-    version = "861bfe54f4b3a1538c475fcf8e4e1fea38039419";
+    version = "65bed810bfb7f086a9e4e17d2370ada833a7b9da";
     src = fetchFromGitHub {
       owner = "tnychn";
       repo = "mpv-discord";
-      rev = "861bfe54f4b3a1538c475fcf8e4e1fea38039419";
+      rev = "65bed810bfb7f086a9e4e17d2370ada833a7b9da";
       fetchSubmodules = false;
-      sha256 = "sha256-P1UaXGboOiqrXapfLzJI6IT3esNtflkQkcNXt4Umukc=";
+      sha256 = "sha256-OFbNUHnKko9GoO5GPf9LheJTbgCUYqBt4u3p+ezDmxI=";
     };
-    date = "2022-02-21";
+    date = "2024-03-28";
   };
   nvidia-exec = {
     pname = "nvidia-exec";
@@ -111,15 +111,15 @@
   };
   picom-pijulius = {
     pname = "picom-pijulius";
-    version = "974cd7645b29c4dee600895518c06901847552ef";
+    version = "da21aa8ef70f9796bc8609fb495c3a1e02df93f9";
     src = fetchFromGitHub {
       owner = "pijulius";
       repo = "picom";
-      rev = "974cd7645b29c4dee600895518c06901847552ef";
+      rev = "da21aa8ef70f9796bc8609fb495c3a1e02df93f9";
       fetchSubmodules = false;
-      sha256 = "sha256-dnuwX15kYCI3vxi3AEd/6012YWYKuvviOZmLbqzj/4s=";
+      sha256 = "sha256-rxGWAot+6FnXKjNZkMl1uHHHEMVSxm36G3VoV1vSXLA=";
     };
-    date = "2024-03-21";
+    date = "2024-03-28";
   };
   river = {
     pname = "river";
@@ -136,15 +136,15 @@
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
-    version = "3e12f3989b1ddaa846bf895f64e6978e7183f9bc";
+    version = "f6d230e9a8fa05fb3f46107dac419eedcdd0fadd";
     src = fetchFromGitHub {
       owner = "stevenblack";
       repo = "hosts";
-      rev = "3e12f3989b1ddaa846bf895f64e6978e7183f9bc";
+      rev = "f6d230e9a8fa05fb3f46107dac419eedcdd0fadd";
       fetchSubmodules = false;
-      sha256 = "sha256-0keQEhEe2OWbjmkXODM2NxB/AHimD6MjxIr8n8gj+Qw=";
+      sha256 = "sha256-VnMRgby5ONbUxP3xit4x8bFEMRAqoGRY8l+tqJZXSL4=";
     };
-    date = "2024-03-23";
+    date = "2024-03-28";
   };
   wezterm = {
     pname = "wezterm";
