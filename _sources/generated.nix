@@ -75,13 +75,13 @@
   };
   picom = {
     pname = "picom";
-    version = "70a703df432bf164f7b82a860faf62563611e2e3";
+    version = "26414ddd38ce07b5aaef93e2ade74679fd5c970e";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "70a703df432bf164f7b82a860faf62563611e2e3";
+      rev = "26414ddd38ce07b5aaef93e2ade74679fd5c970e";
       fetchSubmodules = false;
-      sha256 = "sha256-4DTTOSNTAwaZXqHIcKDfIpddVsxyMcofXbdWMGmPa9c=";
+      sha256 = "sha256-IJqUKTuRoLtdO62jxmU1zHsIq7r+UhpsijrnNhIHHDk=";
     };
     date = "2024-04-06";
   };

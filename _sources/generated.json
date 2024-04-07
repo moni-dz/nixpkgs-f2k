@@ -133,11 +133,11 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "70a703df432bf164f7b82a860faf62563611e2e3",
-            "sha256": "sha256-4DTTOSNTAwaZXqHIcKDfIpddVsxyMcofXbdWMGmPa9c=",
+            "rev": "26414ddd38ce07b5aaef93e2ade74679fd5c970e",
+            "sha256": "sha256-IJqUKTuRoLtdO62jxmU1zHsIq7r+UhpsijrnNhIHHDk=",
             "type": "github"
         },
-        "version": "70a703df432bf164f7b82a860faf62563611e2e3"
+        "version": "26414ddd38ce07b5aaef93e2ade74679fd5c970e"
     },
     "picom-dccsillag": {
         "cargoLocks": null,
