@@ -201,7 +201,7 @@
     },
     "river": {
         "cargoLocks": null,
-        "date": "2024-04-09",
+        "date": "2024-04-15",
         "extract": null,
         "name": "river",
         "passthru": null,
@@ -211,12 +211,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "14e941bae16b1ca478c32198c131c4297157f888",
-            "sha256": "sha256-uACc9Cb1tSw3I0fMlEMX74NfU+Tg3It74tb+nc51AZ4=",
+            "rev": "70ad2af8f4520ef20b1867e04e37f33211506a2b",
+            "sha256": "sha256-/N+MwConeGUl2WWdgiUaGcet1B7Dxko5H0khXS9UT2g=",
             "type": "git",
             "url": "https://github.com/riverwm/river.git"
         },
-        "version": "14e941bae16b1ca478c32198c131c4297157f888"
+        "version": "70ad2af8f4520ef20b1867e04e37f33211506a2b"
     },
     "stevenblack-blocklist": {
         "cargoLocks": null,
