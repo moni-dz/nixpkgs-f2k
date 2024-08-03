@@ -3,15 +3,15 @@
 {
   awesome = {
     pname = "awesome";
-    version = "8b1f8958b46b3e75618bc822d512bb4d449a89aa";
+    version = "ad0290bc1aac3ec2391aa14784146a53ebf9d1f0";
     src = fetchFromGitHub {
       owner = "awesomeWM";
       repo = "awesome";
-      rev = "8b1f8958b46b3e75618bc822d512bb4d449a89aa";
+      rev = "ad0290bc1aac3ec2391aa14784146a53ebf9d1f0";
       fetchSubmodules = false;
-      sha256 = "sha256-ZGZ53IWfQfNU8q/hKexFpb/2mJyqtK5M9t9HrXoEJCg=";
+      sha256 = "sha256-uaskBbnX8NgxrprI4UbPfb5cRqdRsJZv0YXXshfsxFU=";
     };
-    date = "2024-03-23";
+    date = "2024-06-06";
   };
   awesome-composite = {
     pname = "awesome-composite";
@@ -27,15 +27,15 @@
   };
   lshw = {
     pname = "lshw";
-    version = "15e4ca64647ad119b69be63274e5de2696d3934f";
+    version = "befc2e215ab1b86af1af63fbfc26b56cd212339d";
     src = fetchFromGitHub {
       owner = "lyonel";
       repo = "lshw";
-      rev = "15e4ca64647ad119b69be63274e5de2696d3934f";
+      rev = "befc2e215ab1b86af1af63fbfc26b56cd212339d";
       fetchSubmodules = false;
-      sha256 = "sha256-kHuWfKmifTwlvvLk0FtZzeI4UMleoJ7LDsQHO076l84=";
+      sha256 = "sha256-MJXOTX6lGH729xAhaYz53jTdH414JEbHDnxe06AXFsI=";
     };
-    date = "2024-01-06";
+    date = "2024-06-12";
   };
   mpv-discord = {
     pname = "mpv-discord";
@@ -51,39 +51,39 @@
   };
   nvidia-exec = {
     pname = "nvidia-exec";
-    version = "98003e6b7c0b9fdba5e91bc6d275848161172260";
+    version = "24506efc915efb8ff029ac89764e016f83a2723d";
     src = fetchFromGitHub {
       owner = "pedro00dk";
       repo = "nvidia-exec";
-      rev = "98003e6b7c0b9fdba5e91bc6d275848161172260";
+      rev = "24506efc915efb8ff029ac89764e016f83a2723d";
       fetchSubmodules = false;
-      sha256 = "sha256-NXKEc7IfsuOoRoa2Z8AbodvahSs0DRqseQBsoO6BDec=";
+      sha256 = "sha256-Sn0zGM8jxuavJ2BrN09o7qMUhIFyp54ca1JTJGrGK7I=";
     };
-    date = "2023-09-01";
+    date = "2024-06-15";
   };
   phocus = {
     pname = "phocus";
-    version = "d77ea2472d59c134c7748818f72ad26b6ef9c026";
+    version = "9eb6df5c5ec2a7dfdfaa0daa35fd61918c5c86c9";
     src = fetchFromGitHub {
       owner = "phocus";
       repo = "gtk";
-      rev = "d77ea2472d59c134c7748818f72ad26b6ef9c026";
+      rev = "9eb6df5c5ec2a7dfdfaa0daa35fd61918c5c86c9";
       fetchSubmodules = false;
-      sha256 = "sha256-RvqcjJmz354ukKJhgYP/A5Dn1urt20L+LKbRk0C8Nhs=";
+      sha256 = "sha256-To4AL4XmAoHOVjlHQZMy8OaMt4G7v1h48Ka1XbWUSLI=";
     };
-    date = "2024-01-12";
+    date = "2024-06-18";
   };
   picom = {
     pname = "picom";
-    version = "2052bc70c32ce11fb534f6b2531d3d826101b9b3";
+    version = "797e60f618755c6ba142a31e9dc494eb62409391";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "2052bc70c32ce11fb534f6b2531d3d826101b9b3";
+      rev = "797e60f618755c6ba142a31e9dc494eb62409391";
       fetchSubmodules = false;
-      sha256 = "sha256-FJf+lO9cNiGY0UncAfOiQnH1xH8NC+bpi2kqB7rCC60=";
+      sha256 = "sha256-YXrnqcmPEinE6r0VE62zERdLDMwTxa4Gh9odBzQbjIE=";
     };
-    date = "2024-04-29";
+    date = "2024-08-03";
   };
   picom-dccsillag = {
     pname = "picom-dccsillag";
@@ -123,40 +123,42 @@
   };
   river = {
     pname = "river";
-    version = "5262a4c5a61f547acd29560f1af9cf342b9958ae";
+    version = "f5d37f9b4d70a20adb1825fb9d8e6d3f743b270c";
     src = fetchgit {
       url = "https://github.com/riverwm/river.git";
-      rev = "5262a4c5a61f547acd29560f1af9cf342b9958ae";
+      rev = "f5d37f9b4d70a20adb1825fb9d8e6d3f743b270c";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-MAQ4FRzkGrO2oHWU6VlnHpGQE8855Goq5SdjV46+yek=";
+      sparseCheckout = [ ];
+      sha256 = "sha256-YviJvHFxUvXCFUrp1km39DaOgpP8MrRxtfJK9cMfFSs=";
     };
-    date = "2024-04-24";
+    date = "2024-07-28";
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
-    version = "1ec290c91e75592e17bb4cbd1a649a5b692f02c2";
+    version = "e2ab86e3c7fc4fac942230b6b9c5585813ee34d8";
     src = fetchFromGitHub {
       owner = "stevenblack";
       repo = "hosts";
-      rev = "1ec290c91e75592e17bb4cbd1a649a5b692f02c2";
+      rev = "e2ab86e3c7fc4fac942230b6b9c5585813ee34d8";
       fetchSubmodules = false;
-      sha256 = "sha256-ugbqLpcXqMUUUIN3VEh5SYwLVvMV0MzI+hWc9HiP0WY=";
+      sha256 = "sha256-7kdegN29/9T1mD+bSJSfn8G+FbyMC0Bo0TN01PJHPdE=";
     };
-    date = "2024-05-01";
+    date = "2024-08-02";
   };
   wezterm = {
     pname = "wezterm";
-    version = "0184e88e97b6521df613df4ccdb2e896ce8b0ad0";
+    version = "56a27e93a9ee50aab50ff4d78308f9b3154b5122";
     src = fetchgit {
       url = "https://github.com/wez/wezterm.git";
-      rev = "0184e88e97b6521df613df4ccdb2e896ce8b0ad0";
+      rev = "56a27e93a9ee50aab50ff4d78308f9b3154b5122";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-exVTh69NeBloqNN1YS2B3tsOcSlGhHOMUaWn4/HciQ4=";
+      sparseCheckout = [ ];
+      sha256 = "sha256-zl0Me24ncrpXUCvkQHlbgUucf0zrkhFFI242wsSQKLw=";
     };
-    date = "2024-04-29";
+    date = "2024-07-30";
   };
 }
