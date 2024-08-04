@@ -4,12 +4,14 @@
   awesome = {
     pname = "awesome";
     version = "ad0290bc1aac3ec2391aa14784146a53ebf9d1f0";
-    src = fetchFromGitHub {
-      owner = "awesomeWM";
-      repo = "awesome";
+    src = fetchgit {
+      url = "https://github.com/awesomeWM/awesome.git";
       rev = "ad0290bc1aac3ec2391aa14784146a53ebf9d1f0";
       fetchSubmodules = false;
-      sha256 = "sha256-Ha9lACSCFyX15KVDQhomCfZV9vZKvRMCHhrcszucBEw=";
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-uaskBbnX8NgxrprI4UbPfb5cRqdRsJZv0YXXshfsxFU=";
     };
     date = "2024-06-06";
   };
@@ -21,7 +23,7 @@
       repo = "awesome";
       rev = "9a9b853a85d353b32a293414488807ffb9c33fa5";
       fetchSubmodules = false;
-      sha256 = "sha256-Ha9lACSCFyX15KVDQhomCfZV9vZKvRMCHhrcszucBEw=";
+      sha256 = "sha256-ilaoQs0HeSSoHzcgbPPbf7hsBsaVfjcnPaG1XA19G/Q=";
     };
     date = "2024-02-11";
   };
@@ -33,7 +35,7 @@
       repo = "lshw";
       rev = "befc2e215ab1b86af1af63fbfc26b56cd212339d";
       fetchSubmodules = false;
-      sha256 = "sha256-Ha9lACSCFyX15KVDQhomCfZV9vZKvRMCHhrcszucBEw=";
+      sha256 = "sha256-MJXOTX6lGH729xAhaYz53jTdH414JEbHDnxe06AXFsI=";
     };
     date = "2024-06-12";
   };
@@ -45,7 +47,7 @@
       repo = "mpv-discord";
       rev = "65bed810bfb7f086a9e4e17d2370ada833a7b9da";
       fetchSubmodules = false;
-      sha256 = "sha256-Ha9lACSCFyX15KVDQhomCfZV9vZKvRMCHhrcszucBEw=";
+      sha256 = "sha256-OFbNUHnKko9GoO5GPf9LheJTbgCUYqBt4u3p+ezDmxI=";
     };
     date = "2024-03-28";
   };
@@ -57,7 +59,7 @@
       repo = "nvidia-exec";
       rev = "24506efc915efb8ff029ac89764e016f83a2723d";
       fetchSubmodules = false;
-      sha256 = "sha256-Ha9lACSCFyX15KVDQhomCfZV9vZKvRMCHhrcszucBEw=";
+      sha256 = "sha256-Sn0zGM8jxuavJ2BrN09o7qMUhIFyp54ca1JTJGrGK7I=";
     };
     date = "2024-06-15";
   };
@@ -69,7 +71,7 @@
       repo = "gtk";
       rev = "9eb6df5c5ec2a7dfdfaa0daa35fd61918c5c86c9";
       fetchSubmodules = false;
-      sha256 = "sha256-Ha9lACSCFyX15KVDQhomCfZV9vZKvRMCHhrcszucBEw=";
+      sha256 = "sha256-To4AL4XmAoHOVjlHQZMy8OaMt4G7v1h48Ka1XbWUSLI=";
     };
     date = "2024-06-18";
   };
@@ -81,7 +83,7 @@
       repo = "picom";
       rev = "567c0bad985c1a062017e30a02cb56981dee6013";
       fetchSubmodules = false;
-      sha256 = "sha256-Ha9lACSCFyX15KVDQhomCfZV9vZKvRMCHhrcszucBEw=";
+      sha256 = "sha256-ywYV7uBS+DbEAQsr4nBvMi40P3eM5QzDG14uQuhfLWI=";
     };
     date = "2024-08-04";
   };
@@ -93,7 +95,7 @@
       repo = "picom";
       rev = "51b21355696add83f39ccdb8dd82ff5009ba0ae5";
       fetchSubmodules = false;
-      sha256 = "sha256-Ha9lACSCFyX15KVDQhomCfZV9vZKvRMCHhrcszucBEw=";
+      sha256 = "sha256-crCwRJd859DCIC0pEerpDqdX2j8ZrNAzVaSSB3mTPN8=";
     };
     date = "2022-05-29";
   };
@@ -105,7 +107,7 @@
       repo = "picom";
       rev = "e9834a5e350415d9e036d48304405bdb2d8a1567";
       fetchSubmodules = false;
-      sha256 = "sha256-Ha9lACSCFyX15KVDQhomCfZV9vZKvRMCHhrcszucBEw=";
+      sha256 = "sha256-KX+/nO/nJlUjsZwVg2/vQy+byYmtnKbtxuhyiq/tWg8=";
     };
     date = "2023-04-25";
   };
@@ -117,7 +119,7 @@
       repo = "picom";
       rev = "e7b14886ae644aaa657383f7c4f44be7797fd5f6";
       fetchSubmodules = false;
-      sha256 = "sha256-Ha9lACSCFyX15KVDQhomCfZV9vZKvRMCHhrcszucBEw=";
+      sha256 = "sha256-YQVp5HicO+jbvCYSY+hjDTnXCU6aS3aCvbux6NFcJ/Y=";
     };
     date = "2024-04-30";
   };
@@ -143,7 +145,7 @@
       repo = "hosts";
       rev = "e2ab86e3c7fc4fac942230b6b9c5585813ee34d8";
       fetchSubmodules = false;
-      sha256 = "sha256-Ha9lACSCFyX15KVDQhomCfZV9vZKvRMCHhrcszucBEw=";
+      sha256 = "sha256-7kdegN29/9T1mD+bSJSfn8G+FbyMC0Bo0TN01PJHPdE=";
     };
     date = "2024-08-02";
   };

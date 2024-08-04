@@ -1,6 +1,6 @@
 [awesome]
 src.git = "https://github.com/awesomeWM/awesome"
-fetch.github = "awesomeWM/awesome"
+fetch.git = "https://github.com/awesomeWM/awesome.git"
 
 [awesome-composite]
 src.git = "https://github.com/xinhaoyuan/awesome"
