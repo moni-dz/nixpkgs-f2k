@@ -15,7 +15,7 @@ jobs:
         install_url: https://github.com/nix-community/nix-unstable-installer/releases/download/nix-2.23.0pre20240603_da92ad7/install
         extra_nix_config: |
           experimental-features = nix-command flakes
-        nix_path: nixpkgs=channel:nixos-unstable
+        nix_path: nixpkgs=channel:nixpkgs-unstable
     - run: nix run github:berberman/nvfetcher && nix flake update
     - uses: cachix/cachix-action@v15
       with:
