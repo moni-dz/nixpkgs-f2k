@@ -23,7 +23,7 @@
       repo = "awesome";
       rev = "9a9b853a85d353b32a293414488807ffb9c33fa5";
       fetchSubmodules = false;
-      sha256 = "sha256-k1ehP+vuVihumABHwFiNmxUj+y7roq3CkaFOVWZ1SUo=";
+      sha256 = "sha256-pzR3cVECNZzU8Jo4+tr19x2gw46OaJfgO37oodzRHD8=";
     };
     date = "2024-02-11";
   };
@@ -35,7 +35,7 @@
       repo = "lshw";
       rev = "befc2e215ab1b86af1af63fbfc26b56cd212339d";
       fetchSubmodules = false;
-      sha256 = "sha256-k1ehP+vuVihumABHwFiNmxUj+y7roq3CkaFOVWZ1SUo=";
+      sha256 = "sha256-pzR3cVECNZzU8Jo4+tr19x2gw46OaJfgO37oodzRHD8=";
     };
     date = "2024-06-12";
   };
@@ -47,7 +47,7 @@
       repo = "mpv-discord";
       rev = "65bed810bfb7f086a9e4e17d2370ada833a7b9da";
       fetchSubmodules = false;
-      sha256 = "sha256-k1ehP+vuVihumABHwFiNmxUj+y7roq3CkaFOVWZ1SUo=";
+      sha256 = "sha256-pzR3cVECNZzU8Jo4+tr19x2gw46OaJfgO37oodzRHD8=";
     };
     date = "2024-03-28";
   };
@@ -59,7 +59,7 @@
       repo = "nvidia-exec";
       rev = "24506efc915efb8ff029ac89764e016f83a2723d";
       fetchSubmodules = false;
-      sha256 = "sha256-k1ehP+vuVihumABHwFiNmxUj+y7roq3CkaFOVWZ1SUo=";
+      sha256 = "sha256-pzR3cVECNZzU8Jo4+tr19x2gw46OaJfgO37oodzRHD8=";
     };
     date = "2024-06-15";
   };
@@ -71,7 +71,7 @@
       repo = "gtk";
       rev = "9eb6df5c5ec2a7dfdfaa0daa35fd61918c5c86c9";
       fetchSubmodules = false;
-      sha256 = "sha256-k1ehP+vuVihumABHwFiNmxUj+y7roq3CkaFOVWZ1SUo=";
+      sha256 = "sha256-pzR3cVECNZzU8Jo4+tr19x2gw46OaJfgO37oodzRHD8=";
     };
     date = "2024-06-18";
   };
@@ -83,7 +83,7 @@
       repo = "picom";
       rev = "890dc78a7175cae92b4699dfddeeabbeacebdb5e";
       fetchSubmodules = false;
-      sha256 = "sha256-k1ehP+vuVihumABHwFiNmxUj+y7roq3CkaFOVWZ1SUo=";
+      sha256 = "sha256-pzR3cVECNZzU8Jo4+tr19x2gw46OaJfgO37oodzRHD8=";
     };
     date = "2024-08-06";
   };
@@ -95,7 +95,7 @@
       repo = "picom";
       rev = "51b21355696add83f39ccdb8dd82ff5009ba0ae5";
       fetchSubmodules = false;
-      sha256 = "sha256-k1ehP+vuVihumABHwFiNmxUj+y7roq3CkaFOVWZ1SUo=";
+      sha256 = "sha256-pzR3cVECNZzU8Jo4+tr19x2gw46OaJfgO37oodzRHD8=";
     };
     date = "2022-05-29";
   };
@@ -107,7 +107,7 @@
       repo = "picom";
       rev = "e9834a5e350415d9e036d48304405bdb2d8a1567";
       fetchSubmodules = false;
-      sha256 = "sha256-k1ehP+vuVihumABHwFiNmxUj+y7roq3CkaFOVWZ1SUo=";
+      sha256 = "sha256-pzR3cVECNZzU8Jo4+tr19x2gw46OaJfgO37oodzRHD8=";
     };
     date = "2023-04-25";
   };
@@ -119,7 +119,7 @@
       repo = "picom";
       rev = "e7b14886ae644aaa657383f7c4f44be7797fd5f6";
       fetchSubmodules = false;
-      sha256 = "sha256-k1ehP+vuVihumABHwFiNmxUj+y7roq3CkaFOVWZ1SUo=";
+      sha256 = "sha256-pzR3cVECNZzU8Jo4+tr19x2gw46OaJfgO37oodzRHD8=";
     };
     date = "2024-04-30";
   };
@@ -139,15 +139,15 @@
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
-    version = "8bb5a4f6e2a9f902f44623d1cdf533428bfa10b2";
+    version = "7ebdf6905bb84ce1844f010e728640d28e23b2be";
     src = fetchFromGitHub {
       owner = "stevenblack";
       repo = "hosts";
-      rev = "8bb5a4f6e2a9f902f44623d1cdf533428bfa10b2";
+      rev = "7ebdf6905bb84ce1844f010e728640d28e23b2be";
       fetchSubmodules = false;
-      sha256 = "sha256-k1ehP+vuVihumABHwFiNmxUj+y7roq3CkaFOVWZ1SUo=";
+      sha256 = "sha256-pzR3cVECNZzU8Jo4+tr19x2gw46OaJfgO37oodzRHD8=";
     };
-    date = "2024-08-04";
+    date = "2024-08-08";
   };
   wezterm = {
     pname = "wezterm";
