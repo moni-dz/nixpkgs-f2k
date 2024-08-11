@@ -34,7 +34,7 @@
             "owner": "xinhaoyuan",
             "repo": "awesome",
             "rev": "9a9b853a85d353b32a293414488807ffb9c33fa5",
-            "sha256": "sha256-Yf8WjD2SujpZqD1FXxDH5TeDJzWV5i0V2X0CLmN9pRk=",
+            "sha256": "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=",
             "sparseCheckout": [],
             "type": "github"
         },
@@ -55,7 +55,7 @@
             "owner": "lyonel",
             "repo": "lshw",
             "rev": "befc2e215ab1b86af1af63fbfc26b56cd212339d",
-            "sha256": "sha256-Yf8WjD2SujpZqD1FXxDH5TeDJzWV5i0V2X0CLmN9pRk=",
+            "sha256": "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=",
             "sparseCheckout": [],
             "type": "github"
         },
@@ -76,7 +76,7 @@
             "owner": "tnychn",
             "repo": "mpv-discord",
             "rev": "65bed810bfb7f086a9e4e17d2370ada833a7b9da",
-            "sha256": "sha256-Yf8WjD2SujpZqD1FXxDH5TeDJzWV5i0V2X0CLmN9pRk=",
+            "sha256": "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=",
             "sparseCheckout": [],
             "type": "github"
         },
@@ -97,7 +97,7 @@
             "owner": "pedro00dk",
             "repo": "nvidia-exec",
             "rev": "24506efc915efb8ff029ac89764e016f83a2723d",
-            "sha256": "sha256-Yf8WjD2SujpZqD1FXxDH5TeDJzWV5i0V2X0CLmN9pRk=",
+            "sha256": "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=",
             "sparseCheckout": [],
             "type": "github"
         },
@@ -118,7 +118,7 @@
             "owner": "phocus",
             "repo": "gtk",
             "rev": "9eb6df5c5ec2a7dfdfaa0daa35fd61918c5c86c9",
-            "sha256": "sha256-Yf8WjD2SujpZqD1FXxDH5TeDJzWV5i0V2X0CLmN9pRk=",
+            "sha256": "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=",
             "sparseCheckout": [],
             "type": "github"
         },
@@ -139,7 +139,7 @@
             "owner": "yshui",
             "repo": "picom",
             "rev": "3df599c46ace5663671bb7eedcdd070d71039758",
-            "sha256": "sha256-Yf8WjD2SujpZqD1FXxDH5TeDJzWV5i0V2X0CLmN9pRk=",
+            "sha256": "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=",
             "sparseCheckout": [],
             "type": "github"
         },
@@ -160,7 +160,7 @@
             "owner": "dccsillag",
             "repo": "picom",
             "rev": "51b21355696add83f39ccdb8dd82ff5009ba0ae5",
-            "sha256": "sha256-Yf8WjD2SujpZqD1FXxDH5TeDJzWV5i0V2X0CLmN9pRk=",
+            "sha256": "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=",
             "sparseCheckout": [],
             "type": "github"
         },
@@ -181,7 +181,7 @@
             "owner": "FT-Labs",
             "repo": "picom",
             "rev": "e9834a5e350415d9e036d48304405bdb2d8a1567",
-            "sha256": "sha256-Yf8WjD2SujpZqD1FXxDH5TeDJzWV5i0V2X0CLmN9pRk=",
+            "sha256": "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=",
             "sparseCheckout": [],
             "type": "github"
         },
@@ -202,7 +202,7 @@
             "owner": "pijulius",
             "repo": "picom",
             "rev": "e7b14886ae644aaa657383f7c4f44be7797fd5f6",
-            "sha256": "sha256-Yf8WjD2SujpZqD1FXxDH5TeDJzWV5i0V2X0CLmN9pRk=",
+            "sha256": "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=",
             "sparseCheckout": [],
             "type": "github"
         },
@@ -243,7 +243,7 @@
             "owner": "stevenblack",
             "repo": "hosts",
             "rev": "7ebdf6905bb84ce1844f010e728640d28e23b2be",
-            "sha256": "sha256-Yf8WjD2SujpZqD1FXxDH5TeDJzWV5i0V2X0CLmN9pRk=",
+            "sha256": "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=",
             "sparseCheckout": [],
             "type": "github"
         },
