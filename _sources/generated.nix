@@ -23,7 +23,7 @@
       repo = "awesome";
       rev = "9a9b853a85d353b32a293414488807ffb9c33fa5";
       fetchSubmodules = false;
-      sha256 = "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=";
+      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
     };
     date = "2024-02-11";
   };
@@ -35,7 +35,7 @@
       repo = "lshw";
       rev = "befc2e215ab1b86af1af63fbfc26b56cd212339d";
       fetchSubmodules = false;
-      sha256 = "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=";
+      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
     };
     date = "2024-06-12";
   };
@@ -47,7 +47,7 @@
       repo = "mpv-discord";
       rev = "65bed810bfb7f086a9e4e17d2370ada833a7b9da";
       fetchSubmodules = false;
-      sha256 = "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=";
+      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
     };
     date = "2024-03-28";
   };
@@ -59,7 +59,7 @@
       repo = "nvidia-exec";
       rev = "24506efc915efb8ff029ac89764e016f83a2723d";
       fetchSubmodules = false;
-      sha256 = "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=";
+      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
     };
     date = "2024-06-15";
   };
@@ -71,7 +71,7 @@
       repo = "gtk";
       rev = "9eb6df5c5ec2a7dfdfaa0daa35fd61918c5c86c9";
       fetchSubmodules = false;
-      sha256 = "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=";
+      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
     };
     date = "2024-06-18";
   };
@@ -83,7 +83,7 @@
       repo = "picom";
       rev = "3df599c46ace5663671bb7eedcdd070d71039758";
       fetchSubmodules = false;
-      sha256 = "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=";
+      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
     };
     date = "2024-08-09";
   };
@@ -95,7 +95,7 @@
       repo = "picom";
       rev = "51b21355696add83f39ccdb8dd82ff5009ba0ae5";
       fetchSubmodules = false;
-      sha256 = "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=";
+      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
     };
     date = "2022-05-29";
   };
@@ -107,7 +107,7 @@
       repo = "picom";
       rev = "e9834a5e350415d9e036d48304405bdb2d8a1567";
       fetchSubmodules = false;
-      sha256 = "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=";
+      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
     };
     date = "2023-04-25";
   };
@@ -119,7 +119,7 @@
       repo = "picom";
       rev = "e7b14886ae644aaa657383f7c4f44be7797fd5f6";
       fetchSubmodules = false;
-      sha256 = "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=";
+      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
     };
     date = "2024-04-30";
   };
@@ -139,28 +139,28 @@
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
-    version = "7ebdf6905bb84ce1844f010e728640d28e23b2be";
+    version = "89e14e76ab0b71c7961dae6f3cc181bf0953b070";
     src = fetchFromGitHub {
       owner = "stevenblack";
       repo = "hosts";
-      rev = "7ebdf6905bb84ce1844f010e728640d28e23b2be";
+      rev = "89e14e76ab0b71c7961dae6f3cc181bf0953b070";
       fetchSubmodules = false;
-      sha256 = "sha256-e0Ow3+Qu7F11E1gWDJyQdQ1QUocimlGVSzYfvWiS1Ts=";
+      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
     };
-    date = "2024-08-08";
+    date = "2024-08-11";
   };
   wezterm = {
     pname = "wezterm";
-    version = "56a27e93a9ee50aab50ff4d78308f9b3154b5122";
+    version = "0ac1e948c5b4fb1d1dee532eba36c4669a64774e";
     src = fetchgit {
       url = "https://github.com/wez/wezterm.git";
-      rev = "56a27e93a9ee50aab50ff4d78308f9b3154b5122";
+      rev = "0ac1e948c5b4fb1d1dee532eba36c4669a64774e";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-zl0Me24ncrpXUCvkQHlbgUucf0zrkhFFI242wsSQKLw=";
+      sha256 = "sha256-RbaOZrnJ+gLWarqZsx4XQa4k5uHgdtsx7+gvmNQHdJQ=";
     };
-    date = "2024-07-30";
+    date = "2024-08-11";
   };
 }
