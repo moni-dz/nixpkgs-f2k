@@ -23,7 +23,7 @@
       repo = "awesome";
       rev = "9a9b853a85d353b32a293414488807ffb9c33fa5";
       fetchSubmodules = false;
-      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
+      sha256 = "sha256-M0LUTmoKuLTorvFhx5LxyErsUk2KV7jSjwDK5pKwMF8=";
     };
     date = "2024-02-11";
   };
@@ -35,7 +35,7 @@
       repo = "lshw";
       rev = "befc2e215ab1b86af1af63fbfc26b56cd212339d";
       fetchSubmodules = false;
-      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
+      sha256 = "sha256-M0LUTmoKuLTorvFhx5LxyErsUk2KV7jSjwDK5pKwMF8=";
     };
     date = "2024-06-12";
   };
@@ -47,7 +47,7 @@
       repo = "mpv-discord";
       rev = "65bed810bfb7f086a9e4e17d2370ada833a7b9da";
       fetchSubmodules = false;
-      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
+      sha256 = "sha256-M0LUTmoKuLTorvFhx5LxyErsUk2KV7jSjwDK5pKwMF8=";
     };
     date = "2024-03-28";
   };
@@ -59,7 +59,7 @@
       repo = "nvidia-exec";
       rev = "24506efc915efb8ff029ac89764e016f83a2723d";
       fetchSubmodules = false;
-      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
+      sha256 = "sha256-M0LUTmoKuLTorvFhx5LxyErsUk2KV7jSjwDK5pKwMF8=";
     };
     date = "2024-06-15";
   };
@@ -71,21 +71,21 @@
       repo = "gtk";
       rev = "9eb6df5c5ec2a7dfdfaa0daa35fd61918c5c86c9";
       fetchSubmodules = false;
-      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
+      sha256 = "sha256-M0LUTmoKuLTorvFhx5LxyErsUk2KV7jSjwDK5pKwMF8=";
     };
     date = "2024-06-18";
   };
   picom = {
     pname = "picom";
-    version = "3df599c46ace5663671bb7eedcdd070d71039758";
+    version = "c3e18a6e7a9299d9be421bcfc249bb348087d1ea";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "3df599c46ace5663671bb7eedcdd070d71039758";
+      rev = "c3e18a6e7a9299d9be421bcfc249bb348087d1ea";
       fetchSubmodules = false;
-      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
+      sha256 = "sha256-M0LUTmoKuLTorvFhx5LxyErsUk2KV7jSjwDK5pKwMF8=";
     };
-    date = "2024-08-09";
+    date = "2024-08-13";
   };
   picom-dccsillag = {
     pname = "picom-dccsillag";
@@ -95,7 +95,7 @@
       repo = "picom";
       rev = "51b21355696add83f39ccdb8dd82ff5009ba0ae5";
       fetchSubmodules = false;
-      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
+      sha256 = "sha256-M0LUTmoKuLTorvFhx5LxyErsUk2KV7jSjwDK5pKwMF8=";
     };
     date = "2022-05-29";
   };
@@ -107,7 +107,7 @@
       repo = "picom";
       rev = "e9834a5e350415d9e036d48304405bdb2d8a1567";
       fetchSubmodules = false;
-      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
+      sha256 = "sha256-M0LUTmoKuLTorvFhx5LxyErsUk2KV7jSjwDK5pKwMF8=";
     };
     date = "2023-04-25";
   };
@@ -119,7 +119,7 @@
       repo = "picom";
       rev = "e7b14886ae644aaa657383f7c4f44be7797fd5f6";
       fetchSubmodules = false;
-      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
+      sha256 = "sha256-M0LUTmoKuLTorvFhx5LxyErsUk2KV7jSjwDK5pKwMF8=";
     };
     date = "2024-04-30";
   };
@@ -145,7 +145,7 @@
       repo = "hosts";
       rev = "89e14e76ab0b71c7961dae6f3cc181bf0953b070";
       fetchSubmodules = false;
-      sha256 = "sha256-5kJwvADsbhiFuaYM095haYH8LMT3y/YG9L7m6X0WgXk=";
+      sha256 = "sha256-M0LUTmoKuLTorvFhx5LxyErsUk2KV7jSjwDK5pKwMF8=";
     };
     date = "2024-08-11";
   };
