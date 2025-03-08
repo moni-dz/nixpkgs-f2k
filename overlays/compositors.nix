@@ -10,8 +10,10 @@
         pkgs.picom.overrideAttrs (old: {
           inherit (package) src version;
           dontVersionCheck = true;
-          buildInputs = (old.buildInputs or [ ]) ++ [
+          nativeBuildInputs = (old.nativeBuildInputs or [ ]) ++ [
             pkgs.asciidoc
+          ];
+          buildInputs = (old.buildInputs or [ ]) ++ [
             pkgs.pcre
             pkgs.pcre2
             pkgs.xorg.xcbutil
