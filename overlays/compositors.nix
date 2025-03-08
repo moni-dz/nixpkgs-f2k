@@ -9,6 +9,7 @@
         in
         pkgs.picom.overrideAttrs (old: {
           inherit (package) src version;
+          dontVersionCheck = true;
           buildInputs = (old.buildInputs or [ ]) ++ [
             pkgs.pcre2
             pkgs.xorg.xcbutil
