@@ -18,8 +18,8 @@
     in
     _: prev: {
       picom-git = mkPicom "picom" prev;
-      picom-dccsillag = mkPicom "picom-dccsillag" prev;
-      picom-ft-labs = mkPicom "picom-ft-labs" prev;
-      picom-pijulius = mkPicom "picom-pijulius" prev;
+      picom-dccsillag-git = mkPicom "picom-dccsillag" prev;
+      picom-ft-labs-git = mkPicom "picom-ft-labs" prev;
+      picom-pijulius-git = mkPicom "picom-pijulius" prev;
     };
 }
