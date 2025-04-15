@@ -9,7 +9,6 @@
     ./misc.nix
     ./shells.nix
     ./stdenvs.nix
-    ./terminal-emulators.nix
     ./themes.nix
     ./window-managers.nix
   ];
@@ -19,14 +18,12 @@
       (fonts final prev)
       // (editors final prev)
       // (misc final prev)
-      // (terminal-emulators final prev)
       // (stdenvs final prev);
 
     linux = final: prev: with self.overlays;
       (applications final prev)
       // (compositors final prev)
       // (fonts final prev)
-      // (terminal-emulators final prev)
       // (themes final prev)
       // (misc final prev)
       // (window-managers final prev)
