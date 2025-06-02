@@ -17,6 +17,7 @@ jobs:
           experimental-features = nix-command flakes
         nix_path: nixpkgs=channel:nixpkgs-unstable
     - run: nix flake update
+    - run: nix run github:berberman/nvfetcher
     - uses: cachix/cachix-action@v15
       with:
         name: fortuneteller2k
