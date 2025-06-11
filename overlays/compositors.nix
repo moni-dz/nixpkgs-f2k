@@ -1,4 +1,4 @@
-{ getPackage, ... }:
+{ getPackage, infuse, ... }:
 
 {
   flake.overlays.compositors =
@@ -7,18 +7,23 @@
         let
           package = getPackage name pkgs;
         in
-        pkgs.picom.overrideAttrs (old: {
-          inherit (package) src version;
-          dontVersionCheck = true;
-          nativeBuildInputs = (old.nativeBuildInputs or [ ]) ++ [
-            pkgs.asciidoc
-          ];
-          buildInputs = (old.buildInputs or [ ]) ++ [
-            pkgs.pcre
-            pkgs.pcre2
-            pkgs.xorg.xcbutil
-          ];
-        });
+        infuse pkgs.picom {
+          __output = {
+            src.__assign = package.src;
+            version.__assign = package.version;
+            dontVersionCheck.__assign = true;
+
+            nativeBuildInputs.__append = [
+              pkgs.asciidoc
+            ];
+
+            buildInputs.__append = [
+              pkgs.pcre
+              pkgs.pcre2
+              pkgs.xorg.xcbutil
+            ];
+          };
+        };
     in
     _: prev: {
       picom-git = mkPicom "picom" prev;

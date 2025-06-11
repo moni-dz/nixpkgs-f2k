@@ -1,4 +1,4 @@
-{ getPackage, ... }:
+{ getPackage, infuse, ... }:
 
 {
   flake.overlays.applications = final: prev: {

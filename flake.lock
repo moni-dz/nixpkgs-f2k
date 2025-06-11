@@ -56,6 +56,21 @@
         "type": "github"
       }
     },
+    "infuse": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1738726976,
+        "ref": "refs/heads/trunk",
+        "rev": "c8fb7397039215e1444c835e36a0da7dc3c743f8",
+        "revCount": 48,
+        "type": "git",
+        "url": "https://codeberg.org/amjoseph/infuse.nix.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://codeberg.org/amjoseph/infuse.nix.git"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1749285348,
@@ -162,6 +177,7 @@
     "root": {
       "inputs": {
         "emacs": "emacs",
+        "infuse": "infuse",
         "nixpkgs": "nixpkgs_2",
         "nixpkgs-fmt": "nixpkgs-fmt",
         "parts": "parts"

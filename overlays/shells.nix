@@ -1,21 +1,25 @@
-{ lib, ... }:
+{ lib, infuse, ... }:
 
 {
   flake.overlays.devshells = _: prev: {
-    minimalMkShell = prev.mkShellNoCC.override {
-      stdenv = prev.stdenvNoCC.override {
-        cc = null;
-        preHook = "";
-        allowedRequisites = null;
+    minimalMkShell = infuse prev.mkShellNoCC {
+      __input.stdenv.__assign = infuse prev.stdenvNoCC {
+        __input = {
+          cc.__assign = null;
+          preHook.__assign = "";
+          allowedRequisites.__assign = null;
 
-        initialPath = lib.singleton (prev.coreutils.override {
-          aclSupport = false;
-          attrSupport = false;
-          gmpSupport = false;
-        });
+          initialPath.__assign = lib.singleton (infuse prev.coreutils {
+            __input = {
+              aclSupport.__assign = false;
+              attrSupport.__assign = false;
+              gmpSupport.__assign = false;
+            };
+          });
 
-        shell = lib.getExe (prev.bash.override { interactive = false; });
-        extraNativeBuildInputs = [ ];
+          shell.__assign = lib.getExe (infuse prev.bash { __input.interactive.__assign = false; });
+          extraNativeBuildInputs.__assign = [ ];
+        };
       };
     };
   };

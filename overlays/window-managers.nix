@@ -1,4 +1,4 @@
-{ getPackage, ... }:
+{ getPackage, infuse, ... }:
 
 {
   flake.overlays.window-managers = final: prev:
@@ -8,42 +8,34 @@
           package = getPackage name pkgs;
           extraGIPackages = with pkgs; [ networkmanager upower playerctl ];
         in
-        (pkgs.awesome.override { gtk3Support = true; }).overrideAttrs (old: {
-          inherit (package) src version;
+        infuse pkgs.awesome {
+          __input.gtk3Support.__assign = true;
+          __output = {
+            src.__assign = package.src;
+            version.__assign = package.version;
+            patches.__assign = [ ];
+            cmakeFlags.__append = [ "-DGENERATE_MANPAGES=OFF" ];
 
-          patches = [ ];
+            GI_TYPELIB_PATH.__assign =
+              let
+                mkTypeLibPath = pkg: "${pkg}/lib/girepository-1.0";
+                extraGITypeLibPaths = prev.lib.forEach extraGIPackages mkTypeLibPath;
+              in
+              prev.lib.concatStringsSep ":" (extraGITypeLibPaths ++ [ (mkTypeLibPath prev.pango.out) ]);
 
-          postPatch = ''
-            patchShebangs tests/examples/_postprocess.lua
-            patchShebangs tests/examples/_postprocess_cleanup.lua
-          '';
-
-          cmakeFlags = old.cmakeFlags ++ [ "-DGENERATE_MANPAGES=OFF" ];
-
-          GI_TYPELIB_PATH =
-            let
-              mkTypeLibPath = pkg: "${pkg}/lib/girepository-1.0";
-              extraGITypeLibPaths = prev.lib.forEach extraGIPackages mkTypeLibPath;
-            in
-            prev.lib.concatStringsSep ":" (extraGITypeLibPaths ++ [ (mkTypeLibPath prev.pango.out) ]);
-        });
+            postPatch.__assign = ''
+              patchShebangs tests/examples/_postprocess.lua
+              patchShebangs tests/examples/_postprocess_cleanup.lua
+            '';
+          };
+        };
     in
     {
       awesome-git = mkAwesome "awesome" prev;
       awesome-composite-git = mkAwesome "awesome-composite" prev;
 
-      awesome-luajit-git = final.awesome-git.override {
-        lua = prev.luajit;
-        gtk3Support = true;
+      awesome-luajit-git = infuse final.awesome-git {
+        __input.lua.__assign = prev.luajit;
       };
-
-      # Yes, it's a *compositor* because of how Wayland works, I can't be bothered.
-      river-git =
-        let
-          package = getPackage "river" prev;
-        in
-        prev.river.overrideAttrs (_: {
-          inherit (package) src version;
-        });
     };
 }

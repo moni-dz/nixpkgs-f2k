@@ -7,6 +7,11 @@
     parts.url = "github:hercules-ci/flake-parts";
     emacs.url = "github:nix-community/emacs-overlay";
 
+    infuse = {
+      url = "git+https://codeberg.org/amjoseph/infuse.nix.git";
+      flake = false;
+    };
+
     # follows
     nixpkgs-fmt.inputs.nixpkgs.follows = "nixpkgs";
   };
@@ -15,7 +20,10 @@
     imports = [ ./overlays ];
     systems = [ "aarch64-darwin" "aarch64-linux" "x86_64-darwin" "x86_64-linux" ];
 
-    _module.args.getPackage = pname: pkgs: (pkgs.callPackage ./_sources/generated.nix { }).${pname};
+    _module.args = {
+      getPackage = pname: pkgs: (pkgs.callPackage ./_sources/generated.nix { }).${pname};
+      infuse = (import "${inputs.infuse.outPath}/default.nix" { inherit (inputs.nixpkgs) lib; }).v1.infuse;
+    };
 
     perSystem = { lib, system, ... }:
       let
