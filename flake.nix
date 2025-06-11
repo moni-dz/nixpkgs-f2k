@@ -22,7 +22,7 @@
 
     _module.args = {
       getPackage = pname: pkgs: (pkgs.callPackage ./_sources/generated.nix { }).${pname};
-      infuse = (import "${inputs.infuse.outPath}/default.nix" { inherit (inputs.nixpkgs) lib; }).v1.infuse;
+      inherit ((import "${inputs.infuse.outPath}/default.nix" { inherit (inputs.nixpkgs) lib; }).v1) infuse;
     };
 
     perSystem = { lib, system, ... }:
