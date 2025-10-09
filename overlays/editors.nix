@@ -10,11 +10,6 @@
       # Taken from https://github.com/d12frosted/homebrew-emacs-plus/tree/master/patches/emacs-30
       patches = (pdrv.patches or [ ]) ++ [
         (prev.fetchpatch {
-          url = "https://raw.githubusercontent.com/d12frosted/homebrew-emacs-plus/master/patches/emacs-29/poll.patch";
-          hash = "sha256-jN9MlD8/ZrnLuP2/HUXXEVVd6A+aRZNYFdZF8ReJGfY=";
-        })
-
-        (prev.fetchpatch {
           url = "https://raw.githubusercontent.com/d12frosted/homebrew-emacs-plus/master/patches/emacs-30/round-undecorated-frame.patch";
           hash = "sha256-uYIxNTyfbprx5mCqMNFVrBcLeo+8e21qmBE3lpcnd+4=";
         })
