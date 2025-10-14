@@ -13,7 +13,14 @@
           __output = {
             src.__assign = package.src;
             version.__assign = package.version;
-            patches.__assign = [ ];
+
+            patches.__assign = [
+	      (pkgs.fetchpatch2 {
+		url = "https://patch-diff.githubusercontent.com/raw/awesomeWM/awesome/pull/4030.patch";
+		hash = "sha256-VvPrfEuLefeWd1vxUWvFq9qJaFrRxysVJo9s5VRppsY=";
+	      })
+	    ];
+
             cmakeFlags.__append = [ "-DGENERATE_MANPAGES=OFF" ];
 
             GI_TYPELIB_PATH.__assign =
@@ -26,6 +33,11 @@
             postPatch.__assign = ''
               patchShebangs tests/examples/_postprocess.lua
               patchShebangs tests/examples/_postprocess_cleanup.lua
+
+	        
+              substituteInPlace {,tests/examples/}CMakeLists.txt \
+                --replace-fail 'cmake_minimum_required(VERSION 3.0.0)' 'cmake_minimum_required(VERSION 3.10)' \
+                --replace-warn 'cmake_policy(VERSION 2.6)' 'cmake_policy(VERSION 3.10)'
             '';
           };
         };

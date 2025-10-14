@@ -1,7 +1,7 @@
 {
     "awesome": {
-        "cargoLocks": null,
-        "date": "2025-05-17",
+        "cargoLock": null,
+        "date": "2025-10-08",
         "extract": null,
         "name": "awesome",
         "passthru": null,
@@ -11,16 +11,16 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "f009815cb75139acf4d8ba3c1090bf2844d13f4c",
-            "sha256": "sha256-Tw5OZNe+FdqRvPdaWviDFHDCJ7KFvsBi12WryZt+PEs=",
+            "rev": "7263f646102cef47853004d77cf0c1371879e2ea",
+            "sha256": "sha256-Cus1sutC1uQ9ID6VfamLgsRKxhP9AqVbYIRvREV4nos=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/awesomeWM/awesome.git"
         },
-        "version": "f009815cb75139acf4d8ba3c1090bf2844d13f4c"
+        "version": "7263f646102cef47853004d77cf0c1371879e2ea"
     },
     "awesome-composite": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2024-12-29",
         "extract": null,
         "name": "awesome-composite",
@@ -41,8 +41,8 @@
         "version": "b85a5c704af174222409f4bfb74da2eb1d97ebe7"
     },
     "lshw": {
-        "cargoLocks": null,
-        "date": "2024-12-05",
+        "cargoLock": null,
+        "date": "2025-09-09",
         "extract": null,
         "name": "lshw",
         "passthru": null,
@@ -54,15 +54,15 @@
             "name": null,
             "owner": "lyonel",
             "repo": "lshw",
-            "rev": "98b74f64e769fb1f317d68e9f421880d998ad5b3",
-            "sha256": "sha256-1wA+nCSipRSRjiB88Lac/AWSlrU2UNo6a4GOEcGvVbE=",
+            "rev": "af7c69e1b6e9bfc81aef1c167f18d1515f413963",
+            "sha256": "sha256-bhXSp1peZq8s41gxr0BBg9PQSwG7brjK/x3QTDVqS88=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "98b74f64e769fb1f317d68e9f421880d998ad5b3"
+        "version": "af7c69e1b6e9bfc81aef1c167f18d1515f413963"
     },
     "mpv-discord": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2024-10-13",
         "extract": null,
         "name": "mpv-discord",
@@ -83,8 +83,8 @@
         "version": "9224b11a81c1c4886e03787b58c5aceae060148f"
     },
     "nvidia-exec": {
-        "cargoLocks": null,
-        "date": "2024-06-15",
+        "cargoLock": null,
+        "date": "2025-09-03",
         "extract": null,
         "name": "nvidia-exec",
         "passthru": null,
@@ -96,15 +96,15 @@
             "name": null,
             "owner": "pedro00dk",
             "repo": "nvidia-exec",
-            "rev": "24506efc915efb8ff029ac89764e016f83a2723d",
-            "sha256": "sha256-Sn0zGM8jxuavJ2BrN09o7qMUhIFyp54ca1JTJGrGK7I=",
+            "rev": "68be47dbc1f5398aa9301e944e9fa6e64f760659",
+            "sha256": "sha256-ikFGDv+LA4xhHLjNIxUfYmHedRW2VleNfE2bWuI1ZnU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "24506efc915efb8ff029ac89764e016f83a2723d"
+        "version": "68be47dbc1f5398aa9301e944e9fa6e64f760659"
     },
     "phocus": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2024-06-18",
         "extract": null,
         "name": "phocus",
@@ -125,8 +125,8 @@
         "version": "9eb6df5c5ec2a7dfdfaa0daa35fd61918c5c86c9"
     },
     "picom": {
-        "cargoLocks": null,
-        "date": "2025-06-22",
+        "cargoLock": null,
+        "date": "2025-08-23",
         "extract": null,
         "name": "picom",
         "passthru": null,
@@ -138,15 +138,15 @@
             "name": null,
             "owner": "yshui",
             "repo": "picom",
-            "rev": "9b8b0e956514779de15898475091de01d59b4394",
-            "sha256": "sha256-40FnUa5Kd/osJP67QHjvN/K4tN7HriUQEOaVu8gxHls=",
+            "rev": "69539edc0638019e3dd88c67007e90ce7f51174e",
+            "sha256": "sha256-mGEQSbSlurqim6JFhshsqypIDYXcTok8ySPMD/ee2fA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "9b8b0e956514779de15898475091de01d59b4394"
+        "version": "69539edc0638019e3dd88c67007e90ce7f51174e"
     },
     "picom-dccsillag": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2022-05-29",
         "extract": null,
         "name": "picom-dccsillag",
@@ -167,7 +167,7 @@
         "version": "51b21355696add83f39ccdb8dd82ff5009ba0ae5"
     },
     "picom-ft-labs": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2023-04-25",
         "extract": null,
         "name": "picom-ft-labs",
@@ -188,7 +188,7 @@
         "version": "e9834a5e350415d9e036d48304405bdb2d8a1567"
     },
     "picom-pijulius": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2024-04-30",
         "extract": null,
         "name": "picom-pijulius",
@@ -209,7 +209,7 @@
         "version": "e7b14886ae644aaa657383f7c4f44be7797fd5f6"
     },
     "river": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2025-03-29",
         "extract": null,
         "name": "river",
@@ -229,8 +229,8 @@
         "version": "46f77f30dcce06b7af0ec8dff5ae3e4fbc73176f"
     },
     "stevenblack-blocklist": {
-        "cargoLocks": null,
-        "date": "2025-06-23",
+        "cargoLock": null,
+        "date": "2025-10-13",
         "extract": null,
         "name": "stevenblack-blocklist",
         "passthru": null,
@@ -242,16 +242,16 @@
             "name": null,
             "owner": "stevenblack",
             "repo": "hosts",
-            "rev": "bfbfc7deb7dc2d9616b0feb67983203de1c74650",
-            "sha256": "sha256-M2nr4QDCFwP7jJ4oNuusGEUiIQWgJPXF0oOGQDXhyZM=",
+            "rev": "706999aff103c3d3e8c4ca53e84ffb0541dc0aba",
+            "sha256": "sha256-Vs87ZLfcfnuRGDlFvVoiKtIQuHquk84clNkBcVTMyxk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "bfbfc7deb7dc2d9616b0feb67983203de1c74650"
+        "version": "706999aff103c3d3e8c4ca53e84ffb0541dc0aba"
     },
     "wezterm": {
-        "cargoLocks": null,
-        "date": "2025-06-24",
+        "cargoLock": null,
+        "date": "2025-10-05",
         "extract": null,
         "name": "wezterm",
         "passthru": null,
@@ -261,12 +261,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "2deb317ec069b8f94ec1282253faaa71a8d997fc",
-            "sha256": "sha256-danJcaG4ZyMbqR+4xaVOVM7a+4Sehq5cum40iRt/HQ8=",
+            "rev": "db5d7437389eac5f63ad32e3b50d95b2b86065d1",
+            "sha256": "sha256-4OzgrXsSq68CP6iImhqW896X6ekv2seg4kaH3md6QLs=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/wez/wezterm.git"
         },
-        "version": "2deb317ec069b8f94ec1282253faaa71a8d997fc"
+        "version": "db5d7437389eac5f63ad32e3b50d95b2b86065d1"
     }
 }
