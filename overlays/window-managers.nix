@@ -17,7 +17,7 @@
             patches.__assign = [
 	      (pkgs.fetchpatch2 {
 		url = "https://patch-diff.githubusercontent.com/raw/awesomeWM/awesome/pull/4030.patch";
-		hash = "sha256-VvPrfEuLefeWd1vxUWvFq9qJaFrRxysVJo9s5VRppsY=";
+		hash = "sha256-vidbg6f79f8aK8fjHoXe29PB4E4MyCyCA3Fq/tervlA=";
 	      })
 	    ];
 
@@ -51,3 +51,4 @@
       };
     };
 }
+
