@@ -13,13 +13,7 @@
           __output = {
             src.__assign = package.src;
             version.__assign = package.version;
-
-            patches.__assign = [
-              (pkgs.fetchpatch2 {
-                url = "https://patch-diff.githubusercontent.com/raw/awesomeWM/awesome/pull/4030.patch";
-                hash = "sha256-vidbg6f79f8aK8fjHoXe29PB4E4MyCyCA3Fq/tervlA=";
-              })
-            ];
+            patches.__assign = [ ];
 
             cmakeFlags.__append = [ "-DGENERATE_MANPAGES=OFF" ];
 
