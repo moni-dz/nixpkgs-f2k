@@ -23,15 +23,10 @@
                 extraGITypeLibPaths = prev.lib.forEach extraGIPackages mkTypeLibPath;
               in
               prev.lib.concatStringsSep ":" (extraGITypeLibPaths ++ [ (mkTypeLibPath prev.pango.out) ]);
-
+              
             postPatch.__assign = ''
               patchShebangs tests/examples/_postprocess.lua
               patchShebangs tests/examples/_postprocess_cleanup.lua
-
-	        
-              substituteInPlace {,tests/examples/}CMakeLists.txt \
-                --replace-fail 'cmake_minimum_required(VERSION 3.0.0)' 'cmake_minimum_required(VERSION 3.10)' \
-                --replace-warn 'cmake_policy(VERSION 2.6)' 'cmake_policy(VERSION 3.10)'
             '';
           };
         };

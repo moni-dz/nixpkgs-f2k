@@ -8,41 +8,41 @@
 {
   awesome = {
     pname = "awesome";
-    version = "7263f646102cef47853004d77cf0c1371879e2ea";
+    version = "cab3e81dc6071e3c1c4bd15cf8fab91236c7f2bd";
     src = fetchgit {
       url = "https://github.com/awesomeWM/awesome.git";
-      rev = "7263f646102cef47853004d77cf0c1371879e2ea";
+      rev = "cab3e81dc6071e3c1c4bd15cf8fab91236c7f2bd";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-Cus1sutC1uQ9ID6VfamLgsRKxhP9AqVbYIRvREV4nos=";
+      sha256 = "sha256-g4cSjASTulAIXM1nSRGqdBRNOyUDl8A+WlJhF3duq+E=";
     };
-    date = "2025-10-08";
+    date = "2026-01-04";
   };
   awesome-composite = {
     pname = "awesome-composite";
-    version = "b85a5c704af174222409f4bfb74da2eb1d97ebe7";
+    version = "d550c7dbc377b77b892264535598f3daf7219519";
     src = fetchFromGitHub {
       owner = "xinhaoyuan";
       repo = "awesome";
-      rev = "b85a5c704af174222409f4bfb74da2eb1d97ebe7";
+      rev = "d550c7dbc377b77b892264535598f3daf7219519";
       fetchSubmodules = false;
-      sha256 = "sha256-n+ZriVZyXmqe8O9PW+IkYxai95bItGZLohUywZ7A1ro=";
+      sha256 = "sha256-lq4/iem1SIdUPSoAXLpYV4Hpnfyq0bduAx+vyVI3Wu0=";
     };
-    date = "2024-12-29";
+    date = "2025-11-03";
   };
   lshw = {
     pname = "lshw";
-    version = "af7c69e1b6e9bfc81aef1c167f18d1515f413963";
+    version = "209f8306e9500cf5ac32f01abb11ff6dcce76b0a";
     src = fetchFromGitHub {
       owner = "lyonel";
       repo = "lshw";
-      rev = "af7c69e1b6e9bfc81aef1c167f18d1515f413963";
+      rev = "209f8306e9500cf5ac32f01abb11ff6dcce76b0a";
       fetchSubmodules = false;
-      sha256 = "sha256-bhXSp1peZq8s41gxr0BBg9PQSwG7brjK/x3QTDVqS88=";
+      sha256 = "sha256-VpPLy0fzv0u6hQWceUDMZm6zoCfy/HN5BDt6yx1UzKE=";
     };
-    date = "2025-09-09";
+    date = "2025-11-03";
   };
   mpv-discord = {
     pname = "mpv-discord";
@@ -82,15 +82,15 @@
   };
   picom = {
     pname = "picom";
-    version = "69539edc0638019e3dd88c67007e90ce7f51174e";
+    version = "508608509212cadce894aea7605dde06c6dfc7b8";
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "69539edc0638019e3dd88c67007e90ce7f51174e";
+      rev = "508608509212cadce894aea7605dde06c6dfc7b8";
       fetchSubmodules = false;
-      sha256 = "sha256-mGEQSbSlurqim6JFhshsqypIDYXcTok8ySPMD/ee2fA=";
+      sha256 = "sha256-Y00XpJGRPoe5pcnw4jHasRVf+sSsNQjW9LPb0xflBMI=";
     };
-    date = "2025-08-23";
+    date = "2026-01-17";
   };
   picom-dccsillag = {
     pname = "picom-dccsillag";
@@ -130,42 +130,42 @@
   };
   river = {
     pname = "river";
-    version = "46f77f30dcce06b7af0ec8dff5ae3e4fbc73176f";
+    version = "f9e2ff831d957a0e3e1226da7fcb47e0d9888036";
     src = fetchgit {
       url = "https://github.com/riverwm/river.git";
-      rev = "46f77f30dcce06b7af0ec8dff5ae3e4fbc73176f";
+      rev = "f9e2ff831d957a0e3e1226da7fcb47e0d9888036";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-HGobwj2cssojDsdo3a9t17fVcuVHvuuWuVV4q+SVyL8=";
+      sha256 = "sha256-H+R6qvf/aIk2yHUB6mtU8/Aj4YWdk1evgYI/l6Ks070=";
     };
-    date = "2025-03-29";
+    date = "2026-01-21";
   };
   stevenblack-blocklist = {
     pname = "stevenblack-blocklist";
-    version = "706999aff103c3d3e8c4ca53e84ffb0541dc0aba";
+    version = "db2c832bea42d2961ced9a2de38d677cf7cb0035";
     src = fetchFromGitHub {
       owner = "stevenblack";
       repo = "hosts";
-      rev = "706999aff103c3d3e8c4ca53e84ffb0541dc0aba";
+      rev = "db2c832bea42d2961ced9a2de38d677cf7cb0035";
       fetchSubmodules = false;
-      sha256 = "sha256-Vs87ZLfcfnuRGDlFvVoiKtIQuHquk84clNkBcVTMyxk=";
+      sha256 = "sha256-rDxjb2MnnXwpPXkgHvZFsuCUFrZMVJ5taoGLlP5WLmw=";
     };
-    date = "2025-10-13";
+    date = "2026-01-21";
   };
   wezterm = {
     pname = "wezterm";
-    version = "db5d7437389eac5f63ad32e3b50d95b2b86065d1";
+    version = "05343b387085842b434d267f91b6b0ec157e4331";
     src = fetchgit {
       url = "https://github.com/wez/wezterm.git";
-      rev = "db5d7437389eac5f63ad32e3b50d95b2b86065d1";
+      rev = "05343b387085842b434d267f91b6b0ec157e4331";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-4OzgrXsSq68CP6iImhqW896X6ekv2seg4kaH3md6QLs=";
+      sha256 = "sha256-V6WvkNZryYofarsyfcmsuvtpNJ/c3O+DmOKNvoYPbmA=";
     };
-    date = "2025-10-05";
+    date = "2026-01-17";
   };
 }
