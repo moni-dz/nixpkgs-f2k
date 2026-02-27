@@ -17,7 +17,7 @@
 
             cmakeFlags.__append = [ "-DGENERATE_MANPAGES=OFF" ];
 
-            GI_TYPELIB_PATH.__assign =
+            env.GI_TYPELIB_PATH.__assign =
               let
                 mkTypeLibPath = pkg: "${pkg}/lib/girepository-1.0";
                 extraGITypeLibPaths = prev.lib.forEach extraGIPackages mkTypeLibPath;
