@@ -1,4 +1,4 @@
-{ lib, stdenv, rustPlatform, fetchFromGitLab, SystemConfiguration }:
+{ lib, rustPlatform, fetchFromGitLab }:
 
 rustPlatform.buildRustPackage {
   pname = "prowovider";
@@ -19,9 +19,6 @@ rustPlatform.buildRustPackage {
       "openid-provider-0.3.0" = "sha256-QWrQESKB+6CJoiu+ddYQTtCbi11c/7UBeG8SCT3sS9Q=";
     };
   };
-
-  nativeBuildInputs = [ ];
-  buildInputs = lib.optionals stdenv.isDarwin [ SystemConfiguration ];
 
   # needs an actual setup
   doCheck = false;

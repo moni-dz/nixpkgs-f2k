@@ -12,10 +12,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        runtime: [osx-x64, osx-arm64]
+        runtime: [osx-arm64]
         include:
-          - runtime: osx-x64
-            os: macos-latest
           - runtime: osx-arm64
             os: macos-latest
     steps:
