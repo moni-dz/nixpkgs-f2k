@@ -23,7 +23,7 @@ stdenvNoCC.mkDerivation rec {
     description = "A cross-platform Discord Rich Presence integration for mpv with no external dependencies (mpv script)";
     homepage = "https://github.com/tnychn/mpv-discord";
     license = licenses.mit;
-    maintainers = with maintainers; [ fortuneteller2k ];
+    maintainers = with maintainers; [ moni ];
   };
 }
 

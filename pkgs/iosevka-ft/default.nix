@@ -31,6 +31,6 @@ fetchurl rec {
     homepage = "https://github.com/fortuneteller2k/iosevka-ft";
     license = licenses.ofl;
     platforms = platforms.all;
-    maintainers = with maintainers; [ fortuneteller2k ];
+    maintainers = with maintainers; [ moni ];
   };
 }

@@ -23,7 +23,7 @@
                 extraGITypeLibPaths = prev.lib.forEach extraGIPackages mkTypeLibPath;
               in
               prev.lib.concatStringsSep ":" (extraGITypeLibPaths ++ [ (mkTypeLibPath prev.pango.out) ]);
-              
+
             postPatch.__assign = ''
               patchShebangs tests/examples/_postprocess.lua
               patchShebangs tests/examples/_postprocess_cleanup.lua

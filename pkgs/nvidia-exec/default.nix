@@ -20,6 +20,6 @@ stdenvNoCC.mkDerivation {
     license = licenses.gpl3Plus;
     platforms = platforms.linux;
     mainProgram = "nvx";
-    maintainers = with maintainers; [ fortuneteller2k ];
+    maintainers = with maintainers; [ moni ];
   };
 }

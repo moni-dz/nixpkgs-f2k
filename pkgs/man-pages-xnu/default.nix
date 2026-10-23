@@ -22,6 +22,6 @@ stdenvNoCC.mkDerivation (final: {
     description = "XNU development manual pages";
     homepage = "https://opensource.apple.com";
     platforms = platforms.unix;
-    license = licenses.apsl20;
+    license = licenses.apple-psl20;
   };
 })

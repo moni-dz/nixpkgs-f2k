@@ -17,13 +17,10 @@ jobs:
           - runtime: osx-arm64
             os: macos-latest
     steps:
-    - uses: actions/checkout@v3.5.3
-    - uses: cachix/install-nix-action@v31.4.0
-      with:
-        extra_nix_config: |
-          experimental-features = nix-command flakes
-    - uses: cachix/cachix-action@v15
+    - uses: actions/checkout@v7
+    - uses: DeterminateSystems/nix-installer-action@v23
+    - uses: cachix/cachix-action@v17
       with:
         name: fortuneteller2k
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-    - run: nix build -L .#emacs-plus-git 
+    - run: nix build -L .#emacs-plus-git

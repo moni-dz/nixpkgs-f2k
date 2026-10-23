@@ -12,6 +12,6 @@ stdenvNoCC.mkDerivation rec {
     description = "From scratch, clean and opinionated GTK3 implementation of the phocus color scheme";
     homepage = "https://github.com/phocus/gtk";
     license = [ licenses.mit ];
-    maintainers = with maintainers; [ fortuneteller2k ];
+    maintainers = with maintainers; [ moni ];
   };
 }
