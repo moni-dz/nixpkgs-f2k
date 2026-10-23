@@ -36,7 +36,7 @@
       awesome-composite-git = mkAwesome "awesome-composite" prev;
 
       awesome-luajit-git = infuse final.awesome-git {
-        __input.lua.__assign = prev.luajit;
+        __input.lua5_2_compat.__assign = prev.luajit;
       };
     };
 }
