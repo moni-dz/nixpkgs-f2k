@@ -17,4 +17,4 @@ jobs:
       with:
         name: fortuneteller2k
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-    - run: nix build -L --keep-going .#awesome-git .#awesome-composite-git .#awesome-luajit-git .#picom-git .#picom-dccsillag-git .#picom-ft-labs-git .#picom-pijulius-git .#mpv-discord .#mpv-discord-script
+    - run: nix build -L --keep-going .#awesome-git .#awesome-composite-git .#awesome-luajit-git .#picom-git .#picom-ft-labs-git .#mpv-discord .#mpv-discord-script

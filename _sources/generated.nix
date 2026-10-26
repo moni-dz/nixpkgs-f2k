@@ -92,18 +92,6 @@
     };
     date = "2026-01-17";
   };
-  picom-dccsillag = {
-    pname = "picom-dccsillag";
-    version = "51b21355696add83f39ccdb8dd82ff5009ba0ae5";
-    src = fetchFromGitHub {
-      owner = "dccsillag";
-      repo = "picom";
-      rev = "51b21355696add83f39ccdb8dd82ff5009ba0ae5";
-      fetchSubmodules = false;
-      sha256 = "sha256-crCwRJd859DCIC0pEerpDqdX2j8ZrNAzVaSSB3mTPN8=";
-    };
-    date = "2022-05-29";
-  };
   picom-ft-labs = {
     pname = "picom-ft-labs";
     version = "e9834a5e350415d9e036d48304405bdb2d8a1567";
@@ -115,18 +103,6 @@
       sha256 = "sha256-KX+/nO/nJlUjsZwVg2/vQy+byYmtnKbtxuhyiq/tWg8=";
     };
     date = "2023-04-25";
-  };
-  picom-pijulius = {
-    pname = "picom-pijulius";
-    version = "e7b14886ae644aaa657383f7c4f44be7797fd5f6";
-    src = fetchFromGitHub {
-      owner = "pijulius";
-      repo = "picom";
-      rev = "e7b14886ae644aaa657383f7c4f44be7797fd5f6";
-      fetchSubmodules = false;
-      sha256 = "sha256-YQVp5HicO+jbvCYSY+hjDTnXCU6aS3aCvbux6NFcJ/Y=";
-    };
-    date = "2024-04-30";
   };
   river = {
     pname = "river";

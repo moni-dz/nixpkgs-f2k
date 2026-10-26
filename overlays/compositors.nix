@@ -18,17 +18,14 @@
             ];
 
             buildInputs.__append = [
-              pkgs.pcre
               pkgs.pcre2
-              pkgs.xorg.xcbutil
+              pkgs.libxcb-util
             ];
           };
         };
     in
     _: prev: {
       picom-git = mkPicom "picom" prev;
-      picom-dccsillag-git = mkPicom "picom-dccsillag" prev;
       picom-ft-labs-git = mkPicom "picom-ft-labs" prev;
-      picom-pijulius-git = mkPicom "picom-pijulius" prev;
     };
 }

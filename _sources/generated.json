@@ -145,27 +145,6 @@
         },
         "version": "508608509212cadce894aea7605dde06c6dfc7b8"
     },
-    "picom-dccsillag": {
-        "cargoLock": null,
-        "date": "2022-05-29",
-        "extract": null,
-        "name": "picom-dccsillag",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "dccsillag",
-            "repo": "picom",
-            "rev": "51b21355696add83f39ccdb8dd82ff5009ba0ae5",
-            "sha256": "sha256-crCwRJd859DCIC0pEerpDqdX2j8ZrNAzVaSSB3mTPN8=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "51b21355696add83f39ccdb8dd82ff5009ba0ae5"
-    },
     "picom-ft-labs": {
         "cargoLock": null,
         "date": "2023-04-25",
@@ -186,27 +165,6 @@
             "type": "github"
         },
         "version": "e9834a5e350415d9e036d48304405bdb2d8a1567"
-    },
-    "picom-pijulius": {
-        "cargoLock": null,
-        "date": "2024-04-30",
-        "extract": null,
-        "name": "picom-pijulius",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "pijulius",
-            "repo": "picom",
-            "rev": "e7b14886ae644aaa657383f7c4f44be7797fd5f6",
-            "sha256": "sha256-YQVp5HicO+jbvCYSY+hjDTnXCU6aS3aCvbux6NFcJ/Y=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "e7b14886ae644aaa657383f7c4f44be7797fd5f6"
     },
     "river": {
         "cargoLock": null,
