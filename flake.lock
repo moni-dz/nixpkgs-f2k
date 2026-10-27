@@ -6,11 +6,11 @@
         "nixpkgs-stable": "nixpkgs-stable"
       },
       "locked": {
-        "lastModified": 1792987143,
-        "narHash": "sha256-BEBFcz1EfKNovjb39YiVayGjIOCjV3ECJBdGXB1soNI=",
+        "lastModified": 1793075281,
+        "narHash": "sha256-KroX9t4vx49vPTNjDrmpbHoZww7y6ZPv1v+mKNEC7dE=",
         "owner": "nix-community",
         "repo": "emacs-overlay",
-        "rev": "fdf0106142ae60a47bf666e766dfffca58cc0c1c",
+        "rev": "f11a79856c8110f8366253feeecff7f19f94f889",
         "type": "github"
       },
       "original": {
@@ -59,11 +59,11 @@
     "infuse": {
       "flake": false,
       "locked": {
-        "lastModified": 1782538150,
-        "narHash": "sha256-PFRrjDC62Mk7cgyst4l/riW0C7o39srZt/+rYq9Iovs=",
+        "lastModified": 1792963579,
+        "narHash": "sha256-xc3fDMajMbQUHj3Jm26SB8UhjEYx2bpHNu2DsGw5Lj8=",
         "ref": "refs/heads/trunk",
-        "rev": "364ea18b5611b5fd6a6acd7151411b430a70e194",
-        "revCount": 57,
+        "rev": "fb79a7663a229c41400256359882261fc23f001a",
+        "revCount": 59,
         "type": "git",
         "url": "https://codeberg.org/amjoseph/infuse.nix.git"
       },
@@ -143,11 +143,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1792999562,
-        "narHash": "sha256-NJHo5osrmPH7RClIWbrbXTdIGZ3+UDHq0Tjuyd7185M=",
+        "lastModified": 1793085962,
+        "narHash": "sha256-8vTHrx1jBmLUEB6caUxGdGlsok0XgND8b4R+5ku5KMA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c5ef3e49b738421c3e9e0c88fd72aff4c455b40e",
+        "rev": "6c3f600c57e6c682e850571c3cfdf54fdfb6a869",
         "type": "github"
       },
       "original": {
